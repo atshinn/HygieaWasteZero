@@ -1,5 +1,6 @@
 package com.example.tk.hygieawastezero;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -16,7 +17,9 @@ public class previewScreen extends AppCompatActivity {
         retake.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Code to get rid of previous picture to prevent memory leak, maybe?
-                setContentView(R.layout.activity_opening_capture);
+                //old: setContentView(R.layout.activity_opening_capture);
+                Intent startOpening = new Intent(previewScreen.this, openingCapture.class);
+                startActivity(startOpening);
             }
         });
 
@@ -24,7 +27,9 @@ public class previewScreen extends AppCompatActivity {
         confirm.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Code to send something to server and get ID of item back by next screen
-                setContentView(R.layout.activity_results_screen);
+                //old: setContentView(R.layout.activity_results_screen);
+                Intent startResults = new Intent(previewScreen.this, resultsScreen.class);
+                startActivity(startResults);
             }
         });
     }

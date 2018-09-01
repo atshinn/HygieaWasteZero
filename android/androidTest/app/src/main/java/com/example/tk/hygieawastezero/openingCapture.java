@@ -1,5 +1,6 @@
 package com.example.tk.hygieawastezero;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -16,7 +17,9 @@ public class openingCapture extends AppCompatActivity {
         capture.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Add code later to do camera stuff before setting content view
-                setContentView(R.layout.activity_preview_screen);
+                //setContentView(R.layout.activity_preview_screen);
+                Intent startPreview = new Intent(openingCapture.this, previewScreen.class);
+                startActivity(startPreview);
             }
         });
     }
