@@ -18,8 +18,10 @@ public class resultsScreen extends AppCompatActivity {
             public void onClick(View v) {
                 // Code to get rid of something maybe, who knows
                 //old: setContentView(R.layout.activity_opening_capture);
-                Intent startOpening = new Intent(resultsScreen.this, openingCapture.class);
-                startActivity(startOpening);
+                //old 2: Intent startOpening = new Intent(resultsScreen.this, openingCapture.class);
+                //old 2: startActivity(startOpening);
+                setResult(RESULT_OK);
+                finish();
             }
         });
     }
