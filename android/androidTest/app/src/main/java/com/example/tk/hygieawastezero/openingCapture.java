@@ -33,6 +33,7 @@ public class openingCapture extends AppCompatActivity implements SurfaceHolder.C
             public void onClick(View v) {
                 // Add code later to do camera stuff before setting content view
                 //setContentView(R.layout.activity_preview_screen);
+                camera.release();
                 Intent startPreview = new Intent(openingCapture.this, previewScreen.class);
                 startActivity(startPreview);
             }
