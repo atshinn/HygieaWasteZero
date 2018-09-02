@@ -64,7 +64,7 @@ public class openingCapture extends AppCompatActivity implements SurfaceHolder.C
             public void onPictureTaken(byte[] data, Camera camera) {
                 Intent startPreview = new Intent(openingCapture.this, previewScreen.class);
                 Bitmap decodeBitmap = BitmapFactory.decodeByteArray(data, 0, data.length);
-                saveToInternalStorage(decodeBitmap);
+                startPreview.putExtra("path", saveToInternalStorage(decodeBitmap));
                 camera.release();
                 startActivity(startPreview);
             }
@@ -75,7 +75,6 @@ public class openingCapture extends AppCompatActivity implements SurfaceHolder.C
         ContextWrapper cw = new ContextWrapper(getApplicationContext());
 
         File directory = cw.getDir("imageDir", Context.MODE_PRIVATE);
-        // Create imageDir
         File mypath = new File(directory,"pic.jpg");
 
         //Prints path nicely if needed

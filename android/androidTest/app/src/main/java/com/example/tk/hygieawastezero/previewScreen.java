@@ -1,5 +1,6 @@
 package com.example.tk.hygieawastezero;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -21,7 +22,10 @@ public class previewScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_preview_screen);
 
-        loadImageFromStorage("/data/user/0/com.example.tk.hygieawastezero/app_imageDir/");
+        Bundle extras = getIntent().getExtras();
+        assert extras != null;
+
+        loadImageFromStorage(extras.getString("path"));
 
         final Button retake = findViewById(R.id.retake);
         retake.setOnClickListener(new View.OnClickListener() {
