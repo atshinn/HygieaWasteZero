@@ -9,6 +9,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
+import android.widget.Spinner;
+import android.widget.TextView;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -17,6 +20,7 @@ import java.io.FileNotFoundException;
 public class previewScreen extends AppCompatActivity {
 
     int REQUEST_EXIT = 0;
+    private ProgressBar loadWidget;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,6 +60,13 @@ public class previewScreen extends AppCompatActivity {
 
         ////
 
+        ////How to change text live
+        //TextView txt = findViewById(R.id.loadingText);
+        //txt.setText("Testing the change");
+
+        loadWidget = findViewById(R.id.progressBar);
+        loadWidget.setIndeterminate(true);
+        loadWidget.setVisibility(View.VISIBLE);
         Intent startResults = new Intent(previewScreen.this, resultsScreen.class);
         startActivityForResult(startResults, REQUEST_EXIT);
     }
