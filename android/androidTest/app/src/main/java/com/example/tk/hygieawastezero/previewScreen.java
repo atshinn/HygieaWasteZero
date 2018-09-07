@@ -22,12 +22,18 @@ public class previewScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_preview_screen);
 
-        Bundle extras = getIntent().getExtras();
+        ////USE TO GRAB PATH TO IMAGE FROM PREVIOUS ACTIVITY////
+
+        /*Bundle extras = getIntent().getExtras();
         assert extras != null;
 
-        loadImageFromStorage(extras.getString("path"));
+        loadImageFromStorage(extras.getString("path"));*/
 
-        final Button retake = findViewById(R.id.retake);
+        ////
+
+        ////REMOVED BUTTONS////
+
+        /*final Button retake = findViewById(R.id.retake);
         retake.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Code to get rid of previous picture to prevent memory leak, maybe?
@@ -36,9 +42,9 @@ public class previewScreen extends AppCompatActivity {
                 //old 2: startActivity(startOpening);
                 finish();
             }
-        });
+        });*/
 
-        final Button confirm = findViewById(R.id.confirm);
+        /*final Button confirm = findViewById(R.id.confirm);
         confirm.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Code to send something to server and get ID of item back by next screen
@@ -46,16 +52,21 @@ public class previewScreen extends AppCompatActivity {
                 Intent startResults = new Intent(previewScreen.this, resultsScreen.class);
                 startActivityForResult(startResults, REQUEST_EXIT);
             }
-        });
+        });*/
 
+        ////
+
+        Intent startResults = new Intent(previewScreen.this, resultsScreen.class);
+        startActivityForResult(startResults, REQUEST_EXIT);
     }
     private void loadImageFromStorage(String path)
     {
         try {
             File f=new File(path, "pic.jpg");
             Bitmap b = BitmapFactory.decodeStream(new FileInputStream(f));
-            ImageView img = findViewById(R.id.picDisplay);
-            img.setImageBitmap(b);
+            ////Where img used to load to////
+            //ImageView img = findViewById(R.id.picDisplay);
+            //img.setImageBitmap(b);
         }
         catch (FileNotFoundException e)
         {
