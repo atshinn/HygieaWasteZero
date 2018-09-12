@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "hygiea-waste-zero",
+  "private_key_id": "17f0870f0deb1511fb3e947afb8a3ae9ba048c43",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC4Z8I6E9hp8zMd\nNG+qtjSIFF6XKKQHIqGw2UGj0gooQjuAlQ4c4vQJhmXpNVkSyUH3HRTRoqmFbKdc\nP4B1rMCZ3Wlz8jbjxOFPM6dsXWVeDwAqg29r6oi/XHIdEgNLRsZdXhLlpO3Nd/1W\nb5LYARucSOpu4x5PA1mT+qKjomcLNi9AFvmeVapyBDQhczChp3md0gxNhhDKYur2\nQMVV2tqxD4Y1BzQQsRnVJKEYrAHU807yM5SsM5wTv1DlLMgU+Jx62O/B/m6MVSY1\n+8wSgZfPXspDI3Dn+5GXdqk03PGflvPuuGvyN2A+c6pvf4sQmZfsWcrUisATmf30\nWonDAi2nAgMBAAECggEACHx9675OD1Ip4AYxvWF1OW32jG5KXimx1zmoU6mu3ftu\nUZSKebnYETgmKH1UBBFO/9hOxPb/ZiyB5zTk7IVut6YA3F0hOYot9D8kTVBfAd0e\n3NX/oq/Aa04N0lip3iT7rABQTlEwwGvtNLUdxOMIKkEQyNma43f7/1thcLZgl5tq\nsAcXqLF3XgQ2qlnK6XlCTIT7x/Oxk52U2SLEOUb5NSETZwEETheXMu0ORIY1aHmH\nq4A02zTBBfoooBTQMDplqVlY5YhNkNcRYcMLSZYzARMqvLHe31ZtHXvHRRXG3qZJ\nsQ5cUK7O51GlYBBAqBqOzCwu3uTOb6yxxY9vtOu9gQKBgQDsHg+dQ/FNX79r+qmX\nH5vHU5zSXVBkW/DBDfu4/7NzxQl3sWoDLsNuggUGOMwvUvEswMG0RL1icnkc9ZHd\nopLIYUt9wuDn2bd2W57YgOgnqs67aba5Qqt4oy2Ma84hGTUj8N3+odqsFH1KTcDh\nCpd7CnhO0cYHHdGag8Y/7ICfqQKBgQDH7vMEGG3ddG0gjJr6VY3AvQcGl0yhoBZ0\nCDexAFKmZ2qCn8JB7y26uqf94YgPu9E65AtPelahSsPx4OIxUZWKcema1Zd9xeo6\n/J5j5ay9nZaGX3wIWX03Le23iMycirKXAexOKLZfcTcqV5c36eUB1AwBhYMU7gwr\nkRIkzLT0zwKBgCQV9Az09Uv99iNqi8Cs9AHipXUBDehIpOLcYDxF2Ac5ddj1JF6Y\nJwYcmOf6hjo1UuakDvaeCtOg6yGh5kkZL5WwSPlPb0//1iogloZALTriv/Wkkmh9\n5/bn+W4ci8RDNfvoNAVWdzUVbJCOkYvTMpN7Zielp74usHoM6Z+bZY0BAoGAP2WA\nf4Lzi244kEKlfc2VFlGaIbfmH7XwiLh2WFTe4E8YkfTwlxGtcXFwhWt3Rm3qyX64\nK2qCf8CCY3dIohTZkz3NskAaOlKAlFW4L7sLTFDlAxTR8p/VuaKBp1nkb5r3SDTe\n5mW4doki0fVWSO+Mo0jGydC5IPDewQ3OMAcNNjcCgYEAnPcvb87gEpExiga+v7Qh\nXeq5X7GNYs9I9qfXr+saOJ6cF0n/4K3MoknpHvPw21DOrYLRQZXsjrT9sfIurxCx\nUqIpxYfdHt/T4F/lMrkI6aUUoz+lF9kd9Qq6szpOlqRKJ49ARmCKd9ThcfHMy+PT\n+sHwsQmUfrRs2YpwJRBUXU8=\n-----END PRIVATE KEY-----\n",
+  "client_email": "vision-server@hygiea-waste-zero.iam.gserviceaccount.com",
+  "client_id": "112257712484788479942",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/vision-server%40hygiea-waste-zero.iam.gserviceaccount.com"
+}

@@ -1,0 +1,22 @@
+{
+	"image":
+	{
+		"content":"replace me"
+	},
+	"features":
+	[
+		{
+			"type":"LANDMARK_DETECTION"
+		},
+		{
+			"type":"LOGO_DETECTION"
+		},
+		{
+			"type":"IMAGE_PROPERTIES"
+		},
+		{
+			"type":"LABEL_DETECTION"
+		}
+	]			
+}	
+

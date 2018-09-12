@@ -1,0 +1,10 @@
+{
+	"s3":
+	{
+		"region": "us-west-2",
+		"sakid": "AKIAJJBD7OXPPSDRD5LA",
+		"sak": "yo7GCfmmeZ23k1Au2pq9XAeVdm6VTlOsoyWpkdnz",
+		"bucket_name": "hywz.wastezero",
+		"file_url": "https://s3-us-west-1.amazonaws.com/hywz.wastezero/"
+	}
+}
