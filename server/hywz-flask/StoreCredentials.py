@@ -14,17 +14,21 @@ data = {}
 #creates file info
 data['login'] = []
 
-#----------ADDING IN CREDENTIALS----------
+#ADD LOGIN INFO
+def add():
 
-#creates new user
-data['login'].append({
-    'username': username,
-    'password': password
-})
+    #----------ADDING IN CREDENTIALS----------
 
-#----------ADD TO FILE----------
+    #creates new user
+    data['login'].append({
+        'username': username,
+        'password': password
+    })
 
-#dumps data to file
-with open('data.txt', 'w') as outfile:
-    json.dump(data, outfile)
-    
+    #----------ADD TO FILE----------
+
+    #dumps data to file
+    with open('data.txt', 'w') as outfile:
+        json.dump(data, outfile)
+        
+        
