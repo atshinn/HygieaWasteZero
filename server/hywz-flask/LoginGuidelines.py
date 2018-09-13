@@ -14,7 +14,16 @@ password = ''
 #Numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 #Symbols = ['-', '_', '`', '.', ' ']
 
+#Method to check guidelines 
 def guidelines(username, password):
+    
+    #checks username to make sure the correct characters are input 
+    # and it is between 8 and 16 characters long
     if username.isascii() and username.len() > 7 and username.len() < 17:
+        
+        #checks password to make sure the correct characters are input 
+        # and it is between 8 and 16 characters long
         if password.isascii() and password.len() > 7 and password.len() < 17:
+            
+            #if it meets the criteria, it passes
             return true
