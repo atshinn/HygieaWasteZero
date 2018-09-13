@@ -32,7 +32,8 @@ public class openingCapture extends AppCompatActivity implements SurfaceHolder.C
 
     SurfaceHolder previewHolder;
 
-    final int CAMERA_REQUEST_CODE = 1;
+    //OLD
+    //final int CAMERA_REQUEST_CODE = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,14 +51,14 @@ public class openingCapture extends AppCompatActivity implements SurfaceHolder.C
 
         final SurfaceView camPreview = findViewById(R.id.cameraPreview);
         previewHolder = camPreview.getHolder();
-        //For android 6 and above permissions
-        if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED){
-            ActivityCompat.requestPermissions(this, new String[] {android.Manifest.permission.CAMERA}, CAMERA_REQUEST_CODE);
-        }
-        else {
+        //For android 6 and above permissions//OLD
+        //if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED){
+        //    ActivityCompat.requestPermissions(this, new String[] {android.Manifest.permission.CAMERA}, CAMERA_REQUEST_CODE);
+        //}
+        //else {
             previewHolder.addCallback(this);
             previewHolder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
-        }
+        //}
 
         picCallback = new Camera.PictureCallback(){
             @Override
@@ -150,6 +151,7 @@ public class openingCapture extends AppCompatActivity implements SurfaceHolder.C
     @Override
     public void surfaceDestroyed(SurfaceHolder holder) {}
 
+    /*OLD
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
@@ -165,5 +167,5 @@ public class openingCapture extends AppCompatActivity implements SurfaceHolder.C
                 break;
             }
         }
-    }
+    }*/
 }
