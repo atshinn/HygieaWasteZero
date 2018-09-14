@@ -23,7 +23,8 @@
         </activity>
         <activity android:name=".openingCapture" />
         <activity android:name=".previewScreen" />
-        <activity android:name=".resultsScreen"></activity>
+        <activity android:name=".resultsScreen" />
+        <activity android:name=".signup"></activity>
     </application>
 
 </manifest>

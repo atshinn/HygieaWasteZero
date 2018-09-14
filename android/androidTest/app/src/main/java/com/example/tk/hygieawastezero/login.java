@@ -24,12 +24,23 @@ public class login extends AppCompatActivity {
             ActivityCompat.requestPermissions(this, new String[] {android.Manifest.permission.CAMERA}, CAMERA_REQUEST_CODE);
         }
 
+        //Plus once the text fields are here, code them to autofill if stored credentials are detected.
+
         final Button guest = findViewById(R.id.guest);
         guest.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent swap = new Intent(login.this, openingCapture.class);
                 startActivity(swap);
                 finish();
+            }
+        });
+
+        //Button var is called register purely to mitigate confusion when referring to the signup class.
+        final Button register = findViewById(R.id.signup);
+        register.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent swap = new Intent(login.this, signup.class);
+                startActivity(swap);
             }
         });
     }
