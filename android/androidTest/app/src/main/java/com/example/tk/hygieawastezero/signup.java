@@ -1,12 +1,22 @@
 package com.example.tk.hygieawastezero;
 
+import android.content.Context;
+import android.content.ContextWrapper;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.JsonWriter;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import org.json.JSONObject;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class signup extends AppCompatActivity {
 
@@ -15,6 +25,10 @@ public class signup extends AppCompatActivity {
 
     TextView namehint;
     TextView passhint;
+
+    TextView name;
+    TextView pass;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +43,7 @@ public class signup extends AppCompatActivity {
                 //Add some code later to grab text from text fields and validate it before finishing
                 //Probably some more code after that to store the text and send it off to the server
                 if(nameValid && passValid){
+                    saveCredsToInternal();
                     finish();
                 }
                 else{
@@ -45,7 +60,7 @@ public class signup extends AppCompatActivity {
         });
 
         //Live text validation for username and password
-        final EditText name = findViewById(R.id.registername);
+        name = findViewById(R.id.registername);
         name.addTextChangedListener(new TextValidator(name) {
             @Override
             public void validate(TextView textView, String text) {
@@ -95,7 +110,7 @@ public class signup extends AppCompatActivity {
             }
         });
 
-        final EditText pass = findViewById(R.id.registerpass);
+        pass = findViewById(R.id.registerpass);
         pass.addTextChangedListener(new TextValidator(pass) {
             @Override
             public void validate(TextView textView, String text) {
@@ -115,5 +130,28 @@ public class signup extends AppCompatActivity {
                 }
             }
         });
+
+    }
+    private void saveCredsToInternal() {
+        ContextWrapper cw = new ContextWrapper(getApplicationContext());
+        File directory = cw.getDir("credDir", Context.MODE_PRIVATE);
+        File mypath = new File(directory, "creds.json");
+
+        //Prints path nicely if needed
+        //Log.d("Path", mypath.toString());
+
+        try {
+            FileWriter fw = new FileWriter(mypath);
+            JsonWriter jw = new JsonWriter(fw);
+            jw.beginObject()
+                    .name("username")
+                    .value(name.getText().toString())
+                    .name("password")
+                    .value(pass.getText().toString())
+                    .endObject();
+            fw.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
