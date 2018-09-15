@@ -44,6 +44,7 @@ public class signup extends AppCompatActivity {
                 //Probably some more code after that to store the text and send it off to the server
                 if(nameValid && passValid){
                     saveCredsToInternal();
+                    setResult(RESULT_OK);
                     finish();
                 }
                 else{
@@ -55,6 +56,7 @@ public class signup extends AppCompatActivity {
         final Button cancel = findViewById(R.id.cancel);
         cancel.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                setResult(RESULT_CANCELED);
                 finish();
             }
         });

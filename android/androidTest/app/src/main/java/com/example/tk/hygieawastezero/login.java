@@ -32,6 +32,8 @@ public class login extends AppCompatActivity {
     TextView name;
     TextView pass;
 
+    int REQUEST_LOGIN = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -70,7 +72,8 @@ public class login extends AppCompatActivity {
         register.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent swap = new Intent(login.this, signup.class);
-                startActivity(swap);
+                //If activity comes back with an accepted credential, auto log them in.
+                startActivityForResult(swap, REQUEST_LOGIN);
             }
         });
 
@@ -87,7 +90,6 @@ public class login extends AppCompatActivity {
         switch (requestCode) {
             case CAMERA_REQUEST_CODE: {
                 if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-
                 } else {
                     Toast.makeText(this, "Camera Permissions are required for this app", Toast.LENGTH_LONG).show();
                     finish();
@@ -96,6 +98,19 @@ public class login extends AppCompatActivity {
             }
         }
     }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+
+        if (requestCode == REQUEST_LOGIN) {
+            if (resultCode == RESULT_OK) {
+                Intent swap = new Intent(login.this, openingCapture.class);
+                startActivity(swap);
+                finish();
+            }
+        }
+    }
+
     private void saveCredsToInternal() {
         ContextWrapper cw = new ContextWrapper(getApplicationContext());
         File directory = cw.getDir("credDir", Context.MODE_PRIVATE);
