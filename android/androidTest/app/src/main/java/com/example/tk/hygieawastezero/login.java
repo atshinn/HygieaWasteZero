@@ -50,6 +50,8 @@ public class login extends AppCompatActivity {
                 if(false){
                     saveCredsToInternal();
                     Intent swap = new Intent(login.this, openingCapture.class);
+                    swap.putExtra("username", name.getText().toString());
+                    swap.putExtra("password", pass.getText().toString());
                     startActivity(swap);
                     finish();
                 } else {

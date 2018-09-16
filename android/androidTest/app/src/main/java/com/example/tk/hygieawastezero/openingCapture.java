@@ -35,10 +35,21 @@ public class openingCapture extends AppCompatActivity implements SurfaceHolder.C
     //OLD
     //final int CAMERA_REQUEST_CODE = 1;
 
+    String username = "null";
+    String password = "null";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_opening_capture);
+
+        ////Stores credentials across activities
+        Bundle extras = getIntent().getExtras();
+        if(extras.getString("username") != null && extras.getString("password") != null){
+            username = extras.getString("username");
+            password = extras.getString("password");
+        }
+        ////
 
         final Button capture = findViewById(R.id.capture);
         capture.setOnClickListener(new View.OnClickListener() {
