@@ -43,13 +43,17 @@ public class openingCapture extends AppCompatActivity implements SurfaceHolder.C
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_opening_capture);
 
-        ////Stores credentials across activities
+        /*////Stores credentials across activities
         Bundle extras = getIntent().getExtras();
         if(extras.getString("username") != null && extras.getString("password") != null){
             username = extras.getString("username");
             password = extras.getString("password");
         }
-        ////
+        else{
+            username = "";
+            password = "";
+        }
+        ////*/
 
         final Button capture = findViewById(R.id.capture);
         capture.setOnClickListener(new View.OnClickListener() {

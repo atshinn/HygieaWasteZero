@@ -62,10 +62,13 @@ public class previewScreen extends AppCompatActivity {
         } catch(FileNotFoundException e) {
             Log.e(this.getClass().getSimpleName(), Log.getStackTraceString(e));
         }
-        HywzRestClient.post("image", new RequestParams(), new AsyncHttpResponseHandler() {
+        HywzRestClient.post("image", params, new AsyncHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
-
+                findViewById(R.id.progressBar).setVisibility(View.GONE);
+                Intent startResults = new Intent(previewScreen.this, resultsScreen.class);
+                startResults.putExtra("apiResults", new String(responseBody));
+                startActivityForResult(startResults, REQUEST_EXIT);
             }
             
             @Override
