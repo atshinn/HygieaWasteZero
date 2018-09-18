@@ -50,6 +50,8 @@ public class login extends AppCompatActivity {
                 if(false){
                     saveCredsToInternal();
                     Intent swap = new Intent(login.this, openingCapture.class);
+                    swap.putExtra("username", name.getText().toString());
+                    swap.putExtra("password", pass.getText().toString());
                     startActivity(swap);
                     finish();
                 } else {
@@ -147,7 +149,8 @@ public class login extends AppCompatActivity {
                 pass.setText(json.getString("password"));
             }
         } catch (Exception e){
-            e.printStackTrace();
+            //It's okay if it's not found, expected even.
+            //e.printStackTrace();
         }
     }
     public static String convertStreamToString(InputStream is) throws Exception {
