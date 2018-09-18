@@ -39,7 +39,6 @@ import cz.msebera.android.httpclient.Header;
 
 public class previewScreen extends AppCompatActivity {
 
-    int REQUEST_EXIT = 0;
     private ProgressBar loadWidget;
     private String gVisionRequestJsonStr = "{\\\"requests\\\":[{\\\"image\\\":{\\\"content\\\":},\\\"features\\\":[{\\\"type\\\":\\\"FACE_DETECTION\\\",},{\\\"type\\\":\\\"LANDMARK_DETECTION\\\",},\\\":\\\"LOGO_DETECTION\\\",},{\\\"type\\\":\\\"LABEL_DETECTION\\\",},{\\\"type\\\":\\\"IMAGE_PROPERTIES\\\",}]}]}";
     final private String url = "http://hywz-dev.us-west-1.elasticbeanstalk.com/";
@@ -68,7 +67,8 @@ public class previewScreen extends AppCompatActivity {
                 findViewById(R.id.progressBar).setVisibility(View.GONE);
                 Intent startResults = new Intent(previewScreen.this, resultsScreen.class);
                 startResults.putExtra("apiResults", new String(responseBody));
-                startActivityForResult(startResults, REQUEST_EXIT);
+                startActivity(startResults);
+                finish();
             }
             
             @Override
@@ -76,7 +76,8 @@ public class previewScreen extends AppCompatActivity {
                 findViewById(R.id.progressBar).setVisibility(View.GONE);
                 Intent startResults = new Intent(previewScreen.this, resultsScreen.class);
                 startResults.putExtra("apiResults", previewScreen.stackTraceToString(error));
-                startActivityForResult(startResults, REQUEST_EXIT);
+                startActivity(startResults);
+                finish();
             }
         });
 
@@ -177,16 +178,6 @@ public class previewScreen extends AppCompatActivity {
             return f;
         }
 
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-
-        if (requestCode == REQUEST_EXIT) {
-            if (resultCode == RESULT_OK) {
-                this.finish();
-            }
-        }
     }
 
     public JSONObject getRequestObj(String content){
