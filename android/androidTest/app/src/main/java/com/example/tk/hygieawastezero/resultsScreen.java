@@ -23,8 +23,8 @@ public class resultsScreen extends AppCompatActivity {
         TextView results = findViewById(R.id.resultText);
 
         //scrollable1.setText((String)extras.get("apiResults"));
-        scrollable2.setText("I set the text in code");
-        results.setText(resultStr);
+        scrollable2.setText(resultStr);
+        //results.setText(resultStr);
 
         goHome.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

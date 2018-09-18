@@ -7,6 +7,7 @@ import android.graphics.BitmapFactory;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Base64;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -19,6 +20,8 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.loopj.android.http.AsyncHttpResponseHandler;
+import com.loopj.android.http.RequestParams;
 
 
 import org.json.JSONArray;
@@ -29,13 +32,17 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.io.StringWriter;
+
+import cz.msebera.android.httpclient.Header;
 
 public class previewScreen extends AppCompatActivity {
 
     int REQUEST_EXIT = 0;
     private ProgressBar loadWidget;
-    private String gVisionRequestJsonStr = "{\\\"requests\\\":[{\\\"image\\\":{\\\"content\\\":\\\"REPLACEME\\\"},\\\"features\\\":[{\\\"type\\\":\\\"FACE_DETECTION\\\",\\\"maxResults\\\":1},{\\\"type\\\":\\\"LANDMARK_DETECTION\\\",\\\"maxResults\\\":1},{\\\"type\\\":\\\"LOGO_DETECTION\\\",\\\"maxResults\\\":1},{\\\"type\\\":\\\"LABEL_DETECTION\\\",\\\"maxResults\\\":1},{\\\"type\\\":\\\"IMAGE_PROPERTIES\\\",\\\"maxResults\\\":1}]}]}\\\"features\\\":[{\\\"type\\\":\\\"FACE_DETECTION\\\",\\\"maxResults\\\":1},{\\\"type\\\":\\\"LANDMARK_DETECTION\\\",\\\"maxResults\\\":1},{\\\"type\\\":\\\"LOGO_DETECTION\\\",\\\"maxResults\\\":1},{\\\"type\\\":\\\"LABEL_DETECTION\\\",\\\"maxResults\\\":1},{\\\"type\\\":\\\"FACE_DETECTION\\\",\\\"maxResults\\\":1}]}]}";
-    final private String url = "https://vision.googleapis.com/v1/images:annotate?key=AIzaSyDKdBvb9PpzsB4al3iMKQoX8zs6a9lNFL4";
+    private String gVisionRequestJsonStr = "{\\\"requests\\\":[{\\\"image\\\":{\\\"content\\\":},\\\"features\\\":[{\\\"type\\\":\\\"FACE_DETECTION\\\",},{\\\"type\\\":\\\"LANDMARK_DETECTION\\\",},\\\":\\\"LOGO_DETECTION\\\",},{\\\"type\\\":\\\"LABEL_DETECTION\\\",},{\\\"type\\\":\\\"IMAGE_PROPERTIES\\\",}]}]}";
+    final private String url = "http://hywz-dev.us-west-1.elasticbeanstalk.com/";
 
 
     static String apiResults = "";
@@ -43,15 +50,37 @@ public class previewScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_preview_screen);
-        RequestQueue requestQueue = Volley.newRequestQueue(this);
         loadWidget = findViewById(R.id.progressBar);
         loadWidget.setIndeterminate(true);
         loadWidget.setVisibility(View.VISIBLE);
-        JSONObject json = null;
 
         Bundle extras = getIntent().getExtras();
+        RequestParams params = new RequestParams();
+        File myFile = loadImageFromStorage(extras.getString("path"));
+        try {
+            params.put("file", myFile);
+        } catch(FileNotFoundException e) {
+            Log.e(this.getClass().getSimpleName(), Log.getStackTraceString(e));
+        }
+        HywzRestClient.post("image", new RequestParams(), new AsyncHttpResponseHandler() {
+            @Override
+            public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
+
+            }
+            
+            @Override
+            public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
+                findViewById(R.id.progressBar).setVisibility(View.GONE);
+                Intent startResults = new Intent(previewScreen.this, resultsScreen.class);
+                startResults.putExtra("apiResults", previewScreen.stackTraceToString(error));
+                startActivityForResult(startResults, REQUEST_EXIT);
+            }
+        });
+
+
+
         //gVisionRequestJsonStr = gVisionRequestJsonStr.replace("REPLACEME",this.loadImageFromStorage(extras.getString("path");
-        json = getRequestObj(loadImageFromStorage(extras.getString("path")));
+        /*json = getRequestObj(loadImageFromStorage(extras.getString("path"))); //getRequestObj("img_content");
 
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, url, json, new Response.Listener<JSONObject>() {
             @Override
@@ -69,13 +98,13 @@ public class previewScreen extends AppCompatActivity {
             public void onErrorResponse(VolleyError error) {
                 findViewById(R.id.progressBar).setVisibility(View.GONE);
                 Intent startResults = new Intent(previewScreen.this, resultsScreen.class);
-                startResults.putExtra("apiResults", error.getLocalizedMessage());
+                startResults.putExtra("apiResults", previewScreen.stackTraceToString(error));
                 startActivityForResult(startResults, REQUEST_EXIT);
             }
 
         });
 
-        requestQueue.add(jsonObjectRequest);
+        requestQueue.add(jsonObjectRequest);*/
 
 
 
@@ -123,22 +152,26 @@ public class previewScreen extends AppCompatActivity {
         //startResults.putExtra("apiResults", previewScreen.apiResults);
         //startActivityForResult(startResults, REQUEST_EXIT);
     }
-    private String loadImageFromStorage(String path)
+    private File loadImageFromStorage(String path)
     {
-        String encoded = "";
+        byte[] byteArray = null;
+        String encoded = "ERROR ENCODING";
+        File f = null;
         try {
             ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-            File f=new File(path, "pic.jpg");
+            f=new File(path, "pic.jpg");
             Bitmap b = BitmapFactory.decodeStream(new FileInputStream(f));
-            b.compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream);
-            byte[] byteArray = byteArrayOutputStream .toByteArray();
+            b.compress(Bitmap.CompressFormat.JPEG, 75, byteArrayOutputStream);
+            byteArray = byteArrayOutputStream .toByteArray();
             encoded = Base64.encodeToString(byteArray, Base64.DEFAULT);
         }
         catch (FileNotFoundException e)
         {
-            e.printStackTrace();
+            Log.e(this.getClass().getSimpleName(), previewScreen.stackTraceToString(e));
+        }catch(Exception e) {
+            Log.e(this.getClass().getSimpleName(), previewScreen.stackTraceToString(e));
         }finally{
-            return encoded;
+            return f;
         }
 
     }
@@ -161,7 +194,6 @@ public class previewScreen extends AppCompatActivity {
         try {
             image.put("content", content);
             labelDetection.put("type", "LABEL_DETECTION");
-            labelDetection.put("maxResults", 50);
             requests.put(image);
             requests.put(labelDetection);
             result.put("requests", requests);
@@ -169,7 +201,18 @@ public class previewScreen extends AppCompatActivity {
             e.printStackTrace();
             result = null;
         }
-
+        Log.d(this.getClass().getSimpleName(),result.toString());
         return result;
+    }
+
+    public static String stackTraceToString(VolleyError e){
+        StringWriter sw = new StringWriter();
+        e.printStackTrace(new PrintWriter(sw));
+        return sw.toString();
+    }
+    public static String stackTraceToString(Throwable e){
+        StringWriter sw = new StringWriter();
+        e.printStackTrace(new PrintWriter(sw));
+        return sw.toString();
     }
 }
