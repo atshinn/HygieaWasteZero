@@ -34,6 +34,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+//    override func viewDidAppear(_ animated: Bool) {
+//        self.performSegue(withIdentifier: "loginSegue", sender: self);
+//    }
+    
     func setupCaptureSession(){
         captureSession.sessionPreset = AVCaptureSession.Preset.photo
         
@@ -65,7 +69,7 @@ class ViewController: UIViewController {
             captureSession.addOutput(photoOutput!)
         }
         catch{
-            
+            print(error)
         }
         
     }
@@ -94,7 +98,7 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "DisplayPhotoSegue" {
-            let previewVC = segue.destination as! PreviewViewController
+            let previewVC = segue.destination as! ImageViewController
             previewVC.image = self.image
         }
     }
@@ -106,7 +110,7 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController : AVCapturePhotoCaptureDelegate{
+extension ViewController: AVCapturePhotoCaptureDelegate{
     func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
         if let imageData = photo.fileDataRepresentation(){
             image = UIImage(data: imageData)
