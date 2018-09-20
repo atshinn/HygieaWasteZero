@@ -32,7 +32,7 @@ public class resultsScreen extends AppCompatActivity {
                 //old: setContentView(R.layout.activity_opening_capture);
                 //old 2: Intent startOpening = new Intent(resultsScreen.this, openingCapture.class);
                 //old 2: startActivity(startOpening);
-                setResult(RESULT_OK);
+                //setResult(RESULT_OK);
                 finish();
             }
         });

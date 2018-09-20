@@ -7,16 +7,11 @@ import android.os.Bundle;
 import android.util.JsonWriter;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.json.JSONObject;
-
 import java.io.File;
-import java.io.FileOutputStream;
 import java.io.FileWriter;
-import java.io.IOException;
 
 public class signup extends AppCompatActivity {
 
@@ -34,8 +29,8 @@ public class signup extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
-        namehint = findViewById(R.id.namehint);
-        passhint = findViewById(R.id.passhint);
+        namehint = findViewById(R.id.registerNameHint);
+        passhint = findViewById(R.id.registerPassHint);
 
         final Button submit = findViewById(R.id.submit);
         submit.setOnClickListener(new View.OnClickListener() {
@@ -124,6 +119,9 @@ public class signup extends AppCompatActivity {
                     passValid = false;
                 } else if (text.charAt(0) == ' ' || text.charAt(text.length()-1) == ' '){
                     passhint.setText("Passwords cannot start or end with white space.");
+                    passValid = false;
+                } else if (text.length() > 64){
+                    passhint.setText("Password is too long.");
                     passValid = false;
                 }
                 else{

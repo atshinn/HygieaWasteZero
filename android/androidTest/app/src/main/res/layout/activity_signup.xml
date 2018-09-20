@@ -15,7 +15,7 @@
         android:text="Submit"
         app:layout_constraintBottom_toTopOf="@+id/cancel"
         app:layout_constraintStart_toStartOf="@+id/cancel"
-        app:layout_constraintTop_toBottomOf="@+id/passhint" />
+        app:layout_constraintTop_toBottomOf="@+id/registerPassHint" />
 
     <EditText
         android:id="@+id/registername"
@@ -26,7 +26,7 @@
         android:ems="10"
         android:hint="Username"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/namehint"
+        app:layout_constraintBottom_toTopOf="@+id/registerNameHint"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,11 +40,11 @@
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/passhint"
+        app:layout_constraintBottom_toTopOf="@+id/registerPassHint"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/namehint" />
+        app:layout_constraintTop_toBottomOf="@+id/registerNameHint" />
 
     <Button
         android:id="@+id/cancel"
@@ -58,7 +58,7 @@
         app:layout_constraintTop_toBottomOf="@+id/submit" />
 
     <TextView
-        android:id="@+id/namehint"
+        android:id="@+id/registerNameHint"
         android:layout_width="200dp"
         android:layout_height="0dp"
         android:layout_marginBottom="9dp"
@@ -69,7 +69,7 @@
         app:layout_constraintTop_toBottomOf="@+id/registername" />
 
     <TextView
-        android:id="@+id/passhint"
+        android:id="@+id/registerPassHint"
         android:layout_width="200dp"
         android:layout_height="0dp"
         android:layout_marginBottom="73dp"

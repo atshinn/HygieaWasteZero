@@ -29,6 +29,12 @@ public class login extends AppCompatActivity {
 
     final int CAMERA_REQUEST_CODE = 1;
 
+    boolean nameValid = false;
+    boolean passValid = false;
+
+    TextView namehint;
+    TextView passhint;
+
     TextView name;
     TextView pass;
 
@@ -43,19 +49,102 @@ public class login extends AppCompatActivity {
             ActivityCompat.requestPermissions(this, new String[] {android.Manifest.permission.CAMERA}, CAMERA_REQUEST_CODE);
         }
 
+        namehint = findViewById(R.id.logNameHint);
+        passhint = findViewById(R.id.logPassHint);
+
+        //Live text validation for username and password
+        name = findViewById(R.id.loginname);
+        name.addTextChangedListener(new TextValidator(name) {
+            @Override
+            public void validate(TextView textView, String text) {
+                int count = 0;
+                if(text.length() == 0)
+                {
+                    namehint.setText("Please enter a username.");
+                    nameValid = false;
+                }
+                else{
+                    for(int i = 0; i<text.length(); i++){
+                        if(!Character.isLetterOrDigit(text.charAt(i))){
+                            if(text.charAt(i) == '-' || text.charAt(i) == '_' || text.charAt(i) == '\''){
+                                nameValid = true;
+                                count = 0;
+                            }
+                            else if(text.charAt(i) == '.' && count == 0){
+                                count++;
+                                nameValid = true;
+                            }
+                            else{
+                                nameValid = false;
+                                i = text.length();
+                            }
+                        }
+                        else{
+                            count = 0;
+                            nameValid = true;
+                        }
+                    }
+                    if(!nameValid){
+                        namehint.setText("A character in the username is invalid, or too many .'s in a row.");
+                    }
+                    else if(text.charAt(0) == '.' || text.charAt(text.length()-1) == '.'){
+                        nameValid = false;
+                        namehint.setText("Usernames cannot start or end with a period.");
+                    }
+                    else if (text.length() > 64) {
+                        nameValid = false;
+                        namehint.setText("Username is too long.");
+                    }
+                    else{
+                        nameValid = true;
+                        namehint.setText("This is a valid username!");
+                    }
+                }
+            }
+        });
+
+        pass = findViewById(R.id.loginpass);
+        pass.addTextChangedListener(new TextValidator(pass) {
+            @Override
+            public void validate(TextView textView, String text) {
+                if(text.length() == 0){
+                    passhint.setText("Please enter a password.");
+                    passValid = false;
+                } else if (text.length() < 8){
+                    passhint.setText("Password is too short.");
+                    passValid = false;
+                } else if (text.charAt(0) == ' ' || text.charAt(text.length()-1) == ' '){
+                    passhint.setText("Passwords cannot start or end with white space.");
+                    passValid = false;
+                } else if (text.length() > 64){
+                    passhint.setText("Password is too long.");
+                    passValid = false;
+                }
+                else{
+                    passValid = true;
+                    passhint.setText("This is a valid password!");
+                }
+            }
+        });
+
         final Button login = findViewById(R.id.login);
         login.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 //Currently unlogin-able due to the lack of a server to check against, add code later to do this
-                if(false){
-                    saveCredsToInternal();
-                    Intent swap = new Intent(login.this, openingCapture.class);
-                    swap.putExtra("username", name.getText().toString());
-                    swap.putExtra("password", pass.getText().toString());
-                    startActivity(swap);
-                    finish();
+                if(nameValid && passValid){
+                    //Then send httpRequest
+                    if(false) { //if response is okay
+                        saveCredsToInternal();
+                        Intent swap = new Intent(login.this, openingCapture.class);
+                        swap.putExtra("username", name.getText().toString());
+                        swap.putExtra("password", pass.getText().toString());
+                        startActivity(swap);
+                        finish();
+                    } else {
+                        Toast.makeText(login.this, "Login information doesn't match any known account", Toast.LENGTH_LONG).show();
+                    }
                 } else {
-                    Toast.makeText(login.this, "Login information doesn't match any known account", Toast.LENGTH_LONG).show();
+                    Toast.makeText(login.this, "Login information doesn't match guidelines", Toast.LENGTH_LONG).show();
                 }
 
             }
