@@ -18,7 +18,8 @@
 		2C9B8FA1214F520A000307EB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9B8FA0214F520A000307EB /* LoginViewController.swift */; };
 		2C9B8FA5214F52CA000307EB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9B8FA4214F52CA000307EB /* SignUpViewController.swift */; };
 		2C9B8FA7214F53BB000307EB /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9B8FA6214F53BB000307EB /* ImageViewController.swift */; };
-		2CA35819213B748C00A8D148 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA35818213B748C00A8D148 /* PreviewViewController.swift */; };
+		2C9B8FA921536EC8000307EB /* ActIndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9B8FA821536EC8000307EB /* ActIndicatorViewController.swift */; };
+		2C9B8FAB2153804B000307EB /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9B8FAA2153804A000307EB /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +57,8 @@
 		2C9B8FA0214F520A000307EB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2C9B8FA4214F52CA000307EB /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		2C9B8FA6214F53BB000307EB /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
-		2CA35818213B748C00A8D148 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		2C9B8FA821536EC8000307EB /* ActIndicatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActIndicatorViewController.swift; sourceTree = "<group>"; };
+		2C9B8FAA2153804A000307EB /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,11 +110,12 @@
 			isa = PBXGroup;
 			children = (
 				2C5EA54E213B61B600846BC3 /* AppDelegate.swift */,
+				2C9B8FA821536EC8000307EB /* ActIndicatorViewController.swift */,
 				2C9B8FA4214F52CA000307EB /* SignUpViewController.swift */,
 				2C5EA550213B61B600846BC3 /* ViewController.swift */,
 				2C5EA552213B61B600846BC3 /* Main.storyboard */,
 				2C9B8FA0214F520A000307EB /* LoginViewController.swift */,
-				2CA35818213B748C00A8D148 /* PreviewViewController.swift */,
+				2C9B8FAA2153804A000307EB /* ResultViewController.swift */,
 				2C9B8FA6214F53BB000307EB /* ImageViewController.swift */,
 				2C5EA558213B61B900846BC3 /* Assets.xcassets */,
 				2C5EA55A213B61B900846BC3 /* LaunchScreen.storyboard */,
@@ -274,10 +277,11 @@
 				2C9B8FA5214F52CA000307EB /* SignUpViewController.swift in Sources */,
 				2C5EA557213B61B600846BC3 /* HygieaWasteSortingAppIOS.xcdatamodeld in Sources */,
 				2C5EA551213B61B600846BC3 /* ViewController.swift in Sources */,
+				2C9B8FAB2153804B000307EB /* ResultViewController.swift in Sources */,
 				2C9B8FA7214F53BB000307EB /* ImageViewController.swift in Sources */,
 				2C5EA54F213B61B600846BC3 /* AppDelegate.swift in Sources */,
 				2C9B8FA1214F520A000307EB /* LoginViewController.swift in Sources */,
-				2CA35819213B748C00A8D148 /* PreviewViewController.swift in Sources */,
+				2C9B8FA921536EC8000307EB /* ActIndicatorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

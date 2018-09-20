@@ -97,10 +97,13 @@ class ViewController: UIViewController {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "DisplayPhotoSegue" {
-            let previewVC = segue.destination as! ImageViewController
-            previewVC.image = self.image
-        }
+
+       
+        
+        //        if segue.identifier == "DisplayPhotoSegue" {
+//            let previewVC = segue.destination as! ImageViewController
+//            previewVC.image = self.image
+//        }
     }
 //    override func didReceiveMemoryWarning() {
 //        super.didReceiveMemoryWarning()
@@ -114,7 +117,8 @@ extension ViewController: AVCapturePhotoCaptureDelegate{
     func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
         if let imageData = photo.fileDataRepresentation(){
             image = UIImage(data: imageData)
-            performSegue(withIdentifier: "DisplayPhotoSegue" , sender: nil)
+            performSegue(withIdentifier: "LoadingSegue" , sender: nil)
+            //performSegue(withIdentifier: "DisplayPhotoSegue" , sender: nil)
     
         }
     }
