@@ -5,6 +5,7 @@ import android.content.ContextWrapper;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.JsonWriter;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -17,12 +18,15 @@ public class signup extends AppCompatActivity {
 
     boolean nameValid = false;
     boolean passValid = false;
+    boolean emailValid = false;
 
     TextView namehint;
     TextView passhint;
+    TextView emailhint;
 
     TextView name;
     TextView pass;
+    TextView email;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,13 +35,14 @@ public class signup extends AppCompatActivity {
 
         namehint = findViewById(R.id.registerNameHint);
         passhint = findViewById(R.id.registerPassHint);
+        emailhint = findViewById(R.id.registerEmailHint);
 
         final Button submit = findViewById(R.id.submit);
         submit.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 //Add some code later to grab text from text fields and validate it before finishing
                 //Probably some more code after that to store the text and send it off to the server
-                if(nameValid && passValid){
+                if(nameValid && passValid && emailValid){
                     saveCredsToInternal();
                     setResult(RESULT_OK);
                     finish();
@@ -131,6 +136,22 @@ public class signup extends AppCompatActivity {
             }
         });
 
+        email = findViewById(R.id.registerEmail);
+        email.addTextChangedListener(new TextValidator(email) {
+            @Override
+            public void validate(TextView textView, String text) {
+                if(text.length() == 0) {
+                    emailhint.setText("Please enter an email.");
+                    emailValid = false;
+                } else if (Patterns.EMAIL_ADDRESS.matcher(text).matches()){
+                    emailhint.setText("This is a valid email address!");
+                    emailValid = true;
+                } else {
+                    emailhint.setText("This is not a valid email address.");
+                    emailValid = false;
+                }
+            }
+        });
     }
     private void saveCredsToInternal() {
         ContextWrapper cw = new ContextWrapper(getApplicationContext());
