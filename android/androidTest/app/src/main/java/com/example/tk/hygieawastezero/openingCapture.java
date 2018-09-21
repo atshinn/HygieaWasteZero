@@ -24,6 +24,7 @@ import android.widget.Toast;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -40,6 +41,7 @@ public class openingCapture extends AppCompatActivity implements SurfaceHolder.C
 
     private FusedLocationProviderClient mFusedLocationClient;
 
+    private double[] loc = new double[2];
     //OLD
     //final int CAMERA_REQUEST_CODE = 1;
 
@@ -92,6 +94,8 @@ public class openingCapture extends AppCompatActivity implements SurfaceHolder.C
                 Intent startPreview = new Intent(openingCapture.this, previewScreen.class);
                 Bitmap decodeBitmap = BitmapFactory.decodeByteArray(data, 0, data.length);
                 startPreview.putExtra("path", saveToInternalStorage(decodeBitmap));
+                //double[] location = getLastLocation();
+                //Log.d("Location", "Latitude: " + location[0] + "  Longitude: " + location[1]);
                 startPreview.putExtra("location", getLastLocation());
                 camera.release();
                 startActivity(startPreview);
@@ -175,25 +179,32 @@ public class openingCapture extends AppCompatActivity implements SurfaceHolder.C
     }
 
     public double[] getLastLocation(){
-        final double[] loc = new double[2];
-        loc[0] = 0;
-        loc[1] = 0;
+        //loc[0] = 0;
+        //loc[1] = 0;
 
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED){
 
-            mFusedLocationClient.getLastLocation()
+            Task<Location> task = mFusedLocationClient.getLastLocation()
                     .addOnSuccessListener(this, new OnSuccessListener<Location>() {
                         @Override
                         public void onSuccess(Location location) {
                             // Got last known location. In some rare situations this can be null.
-                            if (location != null) {
-                                loc[0] = location.getLatitude();
-                                loc[1] = location.getLongitude();
+                            if (location == null) {
+                                location.setLatitude(0);
+                                location.setLongitude(0);
+                                //loc[0] = location.getLatitude();
+                                //loc[1] = location.getLongitude();
+                                //Log.d("Location", "Success!");
+                                //Log.d("Location", "Latitude: " + loc[0] + "  Longitude: " + loc[1]);
                             }
+                            //Log.d("Location", "Success, but null");
                         }
                     });
+            while(!task.isComplete()){}
+            loc[0] = task.getResult().getLatitude();
+            loc[1] = task.getResult().getLongitude();
         }
-
+        //Log.d("Location", "Latitude: " + loc[0] + "  Longitude: " + loc[1]);
         return loc;
     }
     @Override

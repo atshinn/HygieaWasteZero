@@ -53,7 +53,9 @@ public class previewScreen extends AppCompatActivity {
         loadWidget.setIndeterminate(true);
         loadWidget.setVisibility(View.VISIBLE);
 
-        final Bundle extras = getIntent().getExtras();
+        Bundle extras = getIntent().getExtras();
+        final double [] location = extras.getDoubleArray("location");
+        //Log.d("Location", "Latitude: " + location[0] + "  Longitude: " + location[1]);
         RequestParams params = new RequestParams();
         File myFile = loadImageFromStorage(extras.getString("path"));
         try {
@@ -67,7 +69,7 @@ public class previewScreen extends AppCompatActivity {
                 findViewById(R.id.progressBar).setVisibility(View.GONE);
                 Intent startResults = new Intent(previewScreen.this, resultsScreen.class);
                 startResults.putExtra("apiResults", new String(responseBody));
-                startResults.putExtra("location", extras.getDoubleArray("location"));
+                startResults.putExtra("location", location);
                 startActivity(startResults);
                 finish();
             }
