@@ -42,6 +42,8 @@ public class openingCapture extends AppCompatActivity implements SurfaceHolder.C
     private FusedLocationProviderClient mFusedLocationClient;
 
     private double[] loc = new double[2];
+
+    Task<Location> task;
     //OLD
     //final int CAMERA_REQUEST_CODE = 1;
 
@@ -67,7 +69,8 @@ public class openingCapture extends AppCompatActivity implements SurfaceHolder.C
         ////*/
 
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
-
+        getLastLocation();
+        
         final Button capture = findViewById(R.id.capture);
         capture.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -96,6 +99,8 @@ public class openingCapture extends AppCompatActivity implements SurfaceHolder.C
                 startPreview.putExtra("path", saveToInternalStorage(decodeBitmap));
                 //double[] location = getLastLocation();
                 //Log.d("Location", "Latitude: " + location[0] + "  Longitude: " + location[1]);
+                loc[0] = task.getResult().getLatitude();
+                loc[1] = task.getResult().getLongitude();
                 startPreview.putExtra("location", getLastLocation());
                 camera.release();
                 startActivity(startPreview);
@@ -184,7 +189,7 @@ public class openingCapture extends AppCompatActivity implements SurfaceHolder.C
 
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED){
 
-            Task<Location> task = mFusedLocationClient.getLastLocation()
+            task = mFusedLocationClient.getLastLocation()
                     .addOnSuccessListener(this, new OnSuccessListener<Location>() {
                         @Override
                         public void onSuccess(Location location) {
@@ -200,9 +205,9 @@ public class openingCapture extends AppCompatActivity implements SurfaceHolder.C
                             //Log.d("Location", "Success, but null");
                         }
                     });
-            while(!task.isComplete()){}
-            loc[0] = task.getResult().getLatitude();
-            loc[1] = task.getResult().getLongitude();
+            //while(!task.isComplete()){}
+            //loc[0] = task.getResult().getLatitude();
+            //loc[1] = task.getResult().getLongitude();
         }
         //Log.d("Location", "Latitude: " + loc[0] + "  Longitude: " + loc[1]);
         return loc;
