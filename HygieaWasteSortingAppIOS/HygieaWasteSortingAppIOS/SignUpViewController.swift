@@ -10,6 +10,14 @@ import UIKit
 
 class SignUpViewController: UIViewController {
 
+    @IBOutlet var takeUsername: UITextField!
+    
+    @IBOutlet var takePassword: UITextField!
+    
+    @IBOutlet var takeRepeatPassword: UITextField!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
