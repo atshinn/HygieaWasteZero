@@ -17,12 +17,16 @@ public class resultsScreen extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         final Button goHome = findViewById(R.id.goHome);
 
+        double[] location = extras.getDoubleArray("location");
         String resultStr = (String)extras.get("apiResults");
+        String locationStr = ("Latitude: " + location[0] + "\nLongitude: " + location[1]);
+
         TextView scrollable1 = findViewById(R.id.scrollableText);
         TextView scrollable2 = findViewById(R.id.ScrollableText);
         TextView results = findViewById(R.id.resultText);
 
         //scrollable1.setText((String)extras.get("apiResults"));
+        scrollable1.setText(locationStr);
         scrollable2.setText(resultStr);
         //results.setText(resultStr);
 

@@ -1,5 +1,6 @@
 package com.example.tk.hygieawastezero;
 
+import android.Manifest;
 import android.content.Context;
 import android.content.ContextWrapper;
 import android.content.Intent;
@@ -28,6 +29,7 @@ import java.io.InputStreamReader;
 public class login extends AppCompatActivity {
 
     final int CAMERA_REQUEST_CODE = 1;
+    final int LOCATION_REQUEST_CODE = 2;
 
     boolean nameValid = false;
     boolean passValid = false;
@@ -47,6 +49,9 @@ public class login extends AppCompatActivity {
         //For android 6 and above permissions
         if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED){
             ActivityCompat.requestPermissions(this, new String[] {android.Manifest.permission.CAMERA}, CAMERA_REQUEST_CODE);
+        }
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED){
+            ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.ACCESS_COARSE_LOCATION}, LOCATION_REQUEST_CODE);
         }
 
         namehint = findViewById(R.id.logNameHint);
@@ -183,6 +188,14 @@ public class login extends AppCompatActivity {
                 if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 } else {
                     Toast.makeText(this, "Camera Permissions are required for this app", Toast.LENGTH_LONG).show();
+                    finish();
+                }
+                break;
+            }
+            case LOCATION_REQUEST_CODE: {
+                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                } else {
+                    Toast.makeText(this, "Location Permissions are required for this app", Toast.LENGTH_LONG).show();
                     finish();
                 }
                 break;

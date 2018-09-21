@@ -1,5 +1,6 @@
 package com.example.tk.hygieawastezero;
 
+import android.Manifest;
 import android.content.Context;
 import android.content.ContextWrapper;
 import android.content.Intent;
@@ -8,6 +9,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
 import android.hardware.Camera;
+import android.location.Location;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -18,6 +20,10 @@ import android.view.SurfaceView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.tasks.OnSuccessListener;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -32,11 +38,14 @@ public class openingCapture extends AppCompatActivity implements SurfaceHolder.C
 
     SurfaceHolder previewHolder;
 
+    private FusedLocationProviderClient mFusedLocationClient;
+
     //OLD
     //final int CAMERA_REQUEST_CODE = 1;
 
     String username = "null";
     String password = "null";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +63,8 @@ public class openingCapture extends AppCompatActivity implements SurfaceHolder.C
             password = "";
         }
         ////*/
+
+        mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
 
         final Button capture = findViewById(R.id.capture);
         capture.setOnClickListener(new View.OnClickListener() {
@@ -81,6 +92,7 @@ public class openingCapture extends AppCompatActivity implements SurfaceHolder.C
                 Intent startPreview = new Intent(openingCapture.this, previewScreen.class);
                 Bitmap decodeBitmap = BitmapFactory.decodeByteArray(data, 0, data.length);
                 startPreview.putExtra("path", saveToInternalStorage(decodeBitmap));
+                startPreview.putExtra("location", getLastLocation());
                 camera.release();
                 startActivity(startPreview);
             }
@@ -160,6 +172,29 @@ public class openingCapture extends AppCompatActivity implements SurfaceHolder.C
             e.printStackTrace();
         }
         camera.startPreview();
+    }
+
+    public double[] getLastLocation(){
+        final double[] loc = new double[2];
+        loc[0] = 0;
+        loc[1] = 0;
+
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED){
+
+            mFusedLocationClient.getLastLocation()
+                    .addOnSuccessListener(this, new OnSuccessListener<Location>() {
+                        @Override
+                        public void onSuccess(Location location) {
+                            // Got last known location. In some rare situations this can be null.
+                            if (location != null) {
+                                loc[0] = location.getLatitude();
+                                loc[1] = location.getLongitude();
+                            }
+                        }
+                    });
+        }
+
+        return loc;
     }
     @Override
     public void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {}
