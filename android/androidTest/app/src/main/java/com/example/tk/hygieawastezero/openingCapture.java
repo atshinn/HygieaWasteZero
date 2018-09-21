@@ -70,7 +70,7 @@ public class openingCapture extends AppCompatActivity implements SurfaceHolder.C
 
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         getLastLocation();
-        
+
         final Button capture = findViewById(R.id.capture);
         capture.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -101,7 +101,7 @@ public class openingCapture extends AppCompatActivity implements SurfaceHolder.C
                 //Log.d("Location", "Latitude: " + location[0] + "  Longitude: " + location[1]);
                 loc[0] = task.getResult().getLatitude();
                 loc[1] = task.getResult().getLongitude();
-                startPreview.putExtra("location", getLastLocation());
+                startPreview.putExtra("location", loc);
                 camera.release();
                 startActivity(startPreview);
             }
@@ -183,7 +183,7 @@ public class openingCapture extends AppCompatActivity implements SurfaceHolder.C
         camera.startPreview();
     }
 
-    public double[] getLastLocation(){
+    public void getLastLocation(){
         //loc[0] = 0;
         //loc[1] = 0;
 
@@ -210,7 +210,7 @@ public class openingCapture extends AppCompatActivity implements SurfaceHolder.C
             //loc[1] = task.getResult().getLongitude();
         }
         //Log.d("Location", "Latitude: " + loc[0] + "  Longitude: " + loc[1]);
-        return loc;
+        //return loc;
     }
     @Override
     public void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {}
