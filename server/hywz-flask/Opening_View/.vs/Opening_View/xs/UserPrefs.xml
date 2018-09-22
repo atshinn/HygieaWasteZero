@@ -1,0 +1,15 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="../StoreCredentials.py">
+    <Files>
+      <File FileName="../StoreCredentials.py" Line="7" Column="14" />
+      <File FileName="../CheckCredentials.py" Line="18" Column="71" />
+      <File FileName="../LoginGuidelines.py" Line="28" Column="49" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
