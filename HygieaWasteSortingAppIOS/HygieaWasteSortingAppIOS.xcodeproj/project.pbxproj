@@ -211,28 +211,16 @@
 				TargetAttributes = {
 					2C5EA54A213B61B600846BC3 = {
 						CreatedOnToolsVersion = 9.3;
-<<<<<<< HEAD
 						ProvisioningStyle = Automatic;
 					};
 					2C5EA561213B61B900846BC3 = {
 						CreatedOnToolsVersion = 9.3;
 						ProvisioningStyle = Automatic;
-=======
-						LastSwiftMigration = 1000;
-					};
-					2C5EA561213B61B900846BC3 = {
-						CreatedOnToolsVersion = 9.3;
-						LastSwiftMigration = 1000;
->>>>>>> a7498833bb26d84119e76045cb921104838ed77c
 						TestTargetID = 2C5EA54A213B61B600846BC3;
 					};
 					2C5EA56C213B61B900846BC3 = {
 						CreatedOnToolsVersion = 9.3;
-<<<<<<< HEAD
 						ProvisioningStyle = Automatic;
-=======
-						LastSwiftMigration = 1000;
->>>>>>> a7498833bb26d84119e76045cb921104838ed77c
 						TestTargetID = 2C5EA54A213B61B600846BC3;
 					};
 				};
@@ -469,20 +457,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2KH2Q727NM;
+				DEVELOPMENT_TEAM = MZP86L6CF2;
 				INFOPLIST_FILE = HygieaWasteSortingAppIOS/Info.plist;
-<<<<<<< HEAD
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.asu.bsse.halgham2.HygieaWasteSortingAppIOS;
-=======
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = edu.asu.bsse.jaalbin.HygieaWasteSortingAppIOS;
->>>>>>> a7498833bb26d84119e76045cb921104838ed77c
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -492,20 +472,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2KH2Q727NM;
+				DEVELOPMENT_TEAM = MZP86L6CF2;
 				INFOPLIST_FILE = HygieaWasteSortingAppIOS/Info.plist;
-<<<<<<< HEAD
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.asu.bsse.halgham2.HygieaWasteSortingAppIOS;
-=======
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = edu.asu.bsse.jaalbin.HygieaWasteSortingAppIOS;
->>>>>>> a7498833bb26d84119e76045cb921104838ed77c
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -520,7 +492,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.asu.bsse.halgham2.HygieaWasteSortingAppIOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HygieaWasteSortingAppIOS.app/HygieaWasteSortingAppIOS";
 			};
@@ -536,7 +508,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.asu.bsse.halgham2.HygieaWasteSortingAppIOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HygieaWasteSortingAppIOS.app/HygieaWasteSortingAppIOS";
 			};
@@ -551,7 +523,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.asu.bsse.halgham2.HygieaWasteSortingAppIOSUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = HygieaWasteSortingAppIOS;
 			};
@@ -566,7 +538,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.asu.bsse.halgham2.HygieaWasteSortingAppIOSUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = HygieaWasteSortingAppIOS;
 			};
