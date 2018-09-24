@@ -10,9 +10,12 @@ import UIKit
 
 class SignUpViewController: UIViewController {
 
-    @IBOutlet var takeUsername: UITextField!
+    UIUsername
     
-    @IBOutlet var takePassword: UITextField!
+    
+    @IBOutlet var takeUsername: UIUsername!
+    
+    @IBOutlet var takePassword: UIPassword!
     
     @IBOutlet var takeRepeatPassword: UITextField!
     
