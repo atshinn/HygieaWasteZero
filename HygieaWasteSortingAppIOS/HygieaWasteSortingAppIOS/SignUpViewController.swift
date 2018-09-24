@@ -10,20 +10,32 @@ import UIKit
 
 class SignUpViewController: UIViewController {
 
-<<<<<<< HEAD
-    UIUsername
+    //Used for outputing an error statement for user
+    @IBOutlet var ErrorStatement: UILabel!
     
+    //Username input
+    @IBOutlet var takeUsername: UITextField!
     
-    @IBOutlet var takeUsername: UIUsername!
-    
-    @IBOutlet var takePassword: UIPassword!
+    //Password and Password check input
+    @IBOutlet var takePassword: UITextField!
     
     @IBOutlet var takeRepeatPassword: UITextField!
     
+    //Check to make sure the inputs are correct
+    @IBAction func Register(sender: UIButton) {
     
-    
-=======
->>>>>>> 6ac6bcbdcf032cb4ee13b716ba5545a92771e8b8
+        if takePassword != takeRepeatPassword {
+            ErrorStatement.text = "Passwords do not match"
+        }
+        
+        var i: Double = 0
+        
+        for i in takeUsername{
+            
+        }
+
+    }
+        
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -20,6 +20,10 @@
 		2C9B8FA7214F53BB000307EB /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9B8FA6214F53BB000307EB /* ImageViewController.swift */; };
 		2C9B8FA921536EC8000307EB /* ActIndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9B8FA821536EC8000307EB /* ActIndicatorViewController.swift */; };
 		2C9B8FAB2153804B000307EB /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9B8FAA2153804A000307EB /* ResultViewController.swift */; };
+		2EACC03A21598E8800440C55 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9B8FA0214F520A000307EB /* LoginViewController.swift */; };
+		2EACC03B21598E8900440C55 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9B8FA0214F520A000307EB /* LoginViewController.swift */; };
+		2EACC03E21598EBB00440C55 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9B8FA4214F52CA000307EB /* SignUpViewController.swift */; };
+		2EACC03F21598EBC00440C55 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9B8FA4214F52CA000307EB /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -292,6 +296,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EACC03E21598EBB00440C55 /* SignUpViewController.swift in Sources */,
+				2EACC03A21598E8800440C55 /* LoginViewController.swift in Sources */,
 				2C5EA567213B61B900846BC3 /* HygieaWasteSortingAppIOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +306,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EACC03F21598EBC00440C55 /* SignUpViewController.swift in Sources */,
+				2EACC03B21598E8900440C55 /* LoginViewController.swift in Sources */,
 				2C5EA572213B61B900846BC3 /* HygieaWasteSortingAppIOSUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
