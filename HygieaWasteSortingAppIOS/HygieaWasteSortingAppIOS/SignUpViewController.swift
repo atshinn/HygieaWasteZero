@@ -10,6 +10,7 @@ import UIKit
 
 class SignUpViewController: UIViewController {
 
+<<<<<<< HEAD
     UIUsername
     
     
@@ -21,6 +22,8 @@ class SignUpViewController: UIViewController {
     
     
     
+=======
+>>>>>>> 6ac6bcbdcf032cb4ee13b716ba5545a92771e8b8
     override func viewDidLoad() {
         super.viewDidLoad()
 
