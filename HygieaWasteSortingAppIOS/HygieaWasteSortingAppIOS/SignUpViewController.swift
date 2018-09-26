@@ -10,6 +10,14 @@ import UIKit
 
 class SignUpViewController: UIViewController {
 
+    //String Inputs
+    var username: String = ""
+    var password: String = ""
+    var repeatPassword: String = ""
+    
+    //Array
+    let symbols = ["Q", "q", "W", "w", "E", "e", "R", "r", "T", "t", "Y", "y", "U", "u", "I", "i", "O", "o", "P", "p", "A", "a", "S", "s", "D", "d", "F", "f", "G", "g", "H", "h", "J", "j", "K", "k", "L", "l", "Z", "z", "X", "x", "C", "c", "V", "v", "B", "b", "N", "n", "M", "m", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "-", "_", "`", ".", " "]
+    
     //Used for outputing an error statement for user
     @IBOutlet var ErrorStatement: UILabel!
     
@@ -24,14 +32,65 @@ class SignUpViewController: UIViewController {
     //Check to make sure the inputs are correct
     @IBAction func Register(sender: UIButton) {
     
-        if takePassword != takeRepeatPassword {
+        //Take Inputs
+        username = takeUsername.text!
+        password = takePassword.text!
+        repeatPassword = takeRepeatPassword.text!
+        
+        //Check if passwords match
+        if password != repeatPassword {
             ErrorStatement.text = "Passwords do not match"
         }
         
-        var i: Double = 0
+        //Checks length of username
+        if username.count < 8 {
+            if username.count > 16 {
+                ErrorStatement.text = "Username must be between 8 and 16 characters"
+            }
+        }
         
-        for i in takeUsername{
+        //Checks length of password
+        if password.count < 8 {
+            if password.count > 16 {
+                ErrorStatement.text = "Password must be between 8 and 16 characters"
+            }
+        }
+        
+        //Variables for checking symbols
+        var i: Double = 0
+        var j: Double = 0
+        //var temp: String = ""
+        
+        //Checks that username is the correct symbols
+        for i in username {
             
+            //temp = username[i]
+            
+            for j in symbols {
+                //ERROR NEED HELP
+                if username[i] == symbols[j] {
+                    break
+                }
+                else {
+                    ErrorStatement.text = "Username containing incorrect symbols. Please only use Letters, Numbers, Spaces, and the following symbols: '-', '_', '`, '."
+                }
+            }
+        }
+        
+        //Checks that password is the correct symbols
+        for i in password {
+            
+            //temp = username[i]
+            
+            for j in symbols {
+                //ERROR NEED HELP
+                if password[i] == symbols[j] {
+                    break
+                }
+                else {
+                    ErrorStatement.text = "Password containing incorrect symbols. Please only use Letters, Numbers, Spaces, and the following symbols: '-', '_', '`, '."
+                }
+            }
         }
 
     }
