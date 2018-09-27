@@ -10,7 +10,43 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    //String Inputs
+    var username: String = ""
+    var password: String = ""
     
+    @IBOutlet var ErrorStatement: UILabel!
+    
+    @IBOutlet var takeUsername: UITextField!
+    
+    @IBOutlet var takePassword: UITextField!
+    
+    @IBAction func checkLogin(_ sender: UIButton) {
+        //Take Inputs
+        username = takeUsername.text!
+        password = takePassword.text!
+        
+        //Flag to see if username and password are correct
+        var flag: Bool = false
+        
+        //Need Json connection???
+        if username == username {
+            if password == password {
+                flag = true
+            }
+        }
+        
+        if flag == true {
+            //Successful login
+        }
+        else {
+            ErrorStatement.text = "Incorrect Username or Password"
+        }
+        
+    }
+    
+    @IBAction func jumpToSignUp(_ sender: UIButton) {
+        //Jump to Signup
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

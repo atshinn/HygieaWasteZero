@@ -71,11 +71,24 @@
                                     <segue destination="eGx-6p-xZ4" kind="presentation" identifier="registerSegue" id="bWc-tz-Jyj"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWl-NY-5d1">
+                                <rect key="frame" x="17" y="295" width="196" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="0ad-Dz-mDf"/>
                     </view>
                     <navigationItem key="navigationItem" id="4KE-Kk-PgM"/>
+                    <connections>
+                        <outlet property="ErrorStatement" destination="zWl-NY-5d1" id="UmP-GL-duc"/>
+                        <outlet property="jumpToSignUp" destination="xkt-7A-qDi" id="TgO-zm-UDJ"/>
+                        <outlet property="takePassword" destination="o8w-TZ-gqr" id="1Cc-lx-VLg"/>
+                        <outlet property="takeUsername" destination="gy3-O9-9t8" id="JBV-PL-MjM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dln-Nc-AAX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

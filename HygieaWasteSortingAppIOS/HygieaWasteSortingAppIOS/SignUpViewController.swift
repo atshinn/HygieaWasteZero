@@ -37,14 +37,24 @@ class SignUpViewController: UIViewController {
         password = takePassword.text!
         repeatPassword = takeRepeatPassword.text!
         
+        //Variables for checking symbols
+        var i: Double = 0
+        var j: Double = 0
+        //var temp: String = ""
+        
+        //Flag to see if username and password can be accepted
+        var flag: Bool = true
+        
         //Check if passwords match
         if password != repeatPassword {
+            flag = false
             ErrorStatement.text = "Passwords do not match"
         }
         
         //Checks length of username
         if username.count < 8 {
             if username.count > 16 {
+                flag = false
                 ErrorStatement.text = "Username must be between 8 and 16 characters"
             }
         }
@@ -52,14 +62,10 @@ class SignUpViewController: UIViewController {
         //Checks length of password
         if password.count < 8 {
             if password.count > 16 {
+                flag = false
                 ErrorStatement.text = "Password must be between 8 and 16 characters"
             }
         }
-        
-        //Variables for checking symbols
-        var i: Double = 0
-        var j: Double = 0
-        //var temp: String = ""
         
         //Checks that username is the correct symbols
         for i in username {
@@ -72,6 +78,7 @@ class SignUpViewController: UIViewController {
                     break
                 }
                 else {
+                    flag = false
                     ErrorStatement.text = "Username containing incorrect symbols. Please only use Letters, Numbers, Spaces, and the following symbols: '-', '_', '`, '."
                 }
             }
@@ -88,12 +95,23 @@ class SignUpViewController: UIViewController {
                     break
                 }
                 else {
+                    flag = false
                     ErrorStatement.text = "Password containing incorrect symbols. Please only use Letters, Numbers, Spaces, and the following symbols: '-', '_', '`, '."
                 }
             }
         }
+        
+        if flag == true {
+            //NEED HELP CANT FIGURE OUT JSON
+            //store username and password
+        }
 
     }
+    
+    @IBAction func jumpToLogin(_ sender: UIButton) {
+        //jump to Login
+    }
+    
         
     override func viewDidLoad() {
         super.viewDidLoad()
