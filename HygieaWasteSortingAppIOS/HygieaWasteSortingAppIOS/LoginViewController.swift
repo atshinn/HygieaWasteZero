@@ -7,17 +7,20 @@
 //
 
 import UIKit
+import CoreLocation
 
-class LoginViewController: UIViewController {
-
+class LoginViewController: UIViewController, CLLocationManagerDelegate {
     
+    let locManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
+        locManager.delegate = self
+        setupDevice()
     }
-
+    func setupDevice(){
+        locManager.requestWhenInUseAuthorization()
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
