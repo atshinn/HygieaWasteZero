@@ -93,7 +93,7 @@ class LoginViewController: UIViewController, CLLocationManagerDelegate{
         }
         //This func notifies users of errors, more cases may need to be added later
     }
-    ////------------------------------------------------------------------////
+    ////---------------(End "All of these functions")-------------------////
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
