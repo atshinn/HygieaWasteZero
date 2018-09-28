@@ -16,7 +16,7 @@ class SignUpViewController: UIViewController {
     var repeatPassword: String = ""
     
     //Array
-    let symbols = ["Q", "q", "W", "w", "E", "e", "R", "r", "T", "t", "Y", "y", "U", "u", "I", "i", "O", "o", "P", "p", "A", "a", "S", "s", "D", "d", "F", "f", "G", "g", "H", "h", "J", "j", "K", "k", "L", "l", "Z", "z", "X", "x", "C", "c", "V", "v", "B", "b", "N", "n", "M", "m", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "-", "_", "`", ".", " "]
+    let symbols = "QqWwEeRrTtYyUuIiOoPpAaSsDdFfGgHhJjKkLlZzXxCcVvBbNnMm0123456789-_`. "
     
     //Used for outputing an error statement for user
     @IBOutlet var ErrorStatement: UILabel!
@@ -74,7 +74,7 @@ class SignUpViewController: UIViewController {
             
             for j in symbols {
                 //ERROR NEED HELP
-                if username[i] == symbols[j] {
+                if i == j {
                     break
                 }
                 else {
@@ -91,7 +91,7 @@ class SignUpViewController: UIViewController {
             
             for j in symbols {
                 //ERROR NEED HELP
-                if password[i] == symbols[j] {
+                if i == j {
                     break
                 }
                 else {
