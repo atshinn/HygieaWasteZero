@@ -32,9 +32,20 @@ class LoginViewController: UIViewController, CLLocationManagerDelegate{
         //Flag to see if username and password are correct
         var flag: Bool = false
         
-        //Need Json connection???
-        if username == username {
-            if password == password {
+        //Info from Json
+        struct StoredData {
+            var name: String
+            var username: String
+            var email: String
+            var password: String
+        }
+        
+        let decoder = JSONDecoder()
+        
+        let stored = try decoder.decode(StoredData.self, from: jsonObject)
+        
+        if username == stored.username {
+            if password == stored.password {
                 flag = true
             }
         }

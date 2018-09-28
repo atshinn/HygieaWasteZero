@@ -11,7 +11,9 @@ import UIKit
 class SignUpViewController: UIViewController {
 
     //String Inputs
+    var name: String = ""
     var username: String = ""
+    var email: String = ""
     var password: String = ""
     var repeatPassword: String = ""
     
@@ -21,8 +23,14 @@ class SignUpViewController: UIViewController {
     //Used for outputing an error statement for user
     @IBOutlet var ErrorStatement: UILabel!
     
+    //Name input
+    @IBOutlet var takeName: UITextField!
+    
     //Username input
     @IBOutlet var takeUsername: UITextField!
+    
+    //Email input
+    @IBOutlet var takeEmail: UITextField!
     
     //Password and Password check input
     @IBOutlet var takePassword: UITextField!
@@ -33,14 +41,11 @@ class SignUpViewController: UIViewController {
     @IBAction func Register(sender: UIButton) {
     
         //Take Inputs
+        name = takeName.text!
         username = takeUsername.text!
+        email = takeEmail.text!
         password = takePassword.text!
         repeatPassword = takeRepeatPassword.text!
-        
-        //Variables for checking symbols
-        var i: Double = 0
-        var j: Double = 0
-        //var temp: String = ""
         
         //Flag to see if username and password can be accepted
         var flag: Bool = true
@@ -70,10 +75,7 @@ class SignUpViewController: UIViewController {
         //Checks that username is the correct symbols
         for i in username {
             
-            //temp = username[i]
-            
             for j in symbols {
-                //ERROR NEED HELP
                 if i == j {
                     break
                 }
@@ -87,10 +89,7 @@ class SignUpViewController: UIViewController {
         //Checks that password is the correct symbols
         for i in password {
             
-            //temp = username[i]
-            
             for j in symbols {
-                //ERROR NEED HELP
                 if i == j {
                     break
                 }
@@ -102,8 +101,14 @@ class SignUpViewController: UIViewController {
         }
         
         if flag == true {
-            //NEED HELP CANT FIGURE OUT JSON
-            //store username and password
+            let jsonObject: NSDictionary = [
+                "name": name,
+                "username": username,
+                "password": password,
+                "email": email
+            ]
+            
+            let valid = JSONSerialization.isValidJSONObject(jsonObject)
         }
 
     }
