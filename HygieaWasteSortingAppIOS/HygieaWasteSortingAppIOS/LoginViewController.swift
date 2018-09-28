@@ -83,6 +83,7 @@ class LoginViewController: UIViewController, CLLocationManagerDelegate{
         let mostRecentLoc = locations.last!
         
         //do something with the location
+        let coordinate = mostRecentLoc.coordinate
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
