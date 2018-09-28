@@ -2,7 +2,7 @@
 //  ResultViewController.swift
 //  HygieaWasteSortingAppIOS
 //
-//  Created by Khalid Alqahtani on 9/20/18.
+//  Created by Hesham Alghamdi on 9/20/18.
 //  Copyright © 2018 Arizona State University. All rights reserved.
 //
 
