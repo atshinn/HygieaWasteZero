@@ -10,6 +10,16 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
+    @IBAction func BackToCamera(_ sender: Any) {
+        performSegue(withIdentifier: "BackToCameraSegue" , sender: nil)
+    }
+    
+    
+    @IBOutlet weak var ResultsLabel: UILabel!
+    
+    @IBOutlet weak var InstructionScrollView: UIScrollView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

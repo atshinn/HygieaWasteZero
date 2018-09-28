@@ -388,14 +388,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wuE-x5-5Hk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="288"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpa-fv-WFm">
+                                <rect key="frame" x="122" y="624" width="130" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go back to camera"/>
+                                <connections>
+                                    <action selector="BackToCamera:" destination="3Eb-Jv-c40" eventType="touchUpInside" id="KBC-e5-Lnd"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="BackToCameraSegue" id="iNs-Ow-Yzh"/>
+                                </connections>
+                            </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YlJ-2Y-js9">
-                                <rect key="frame" x="0.0" y="347" width="375" height="320"/>
+                                <rect key="frame" x="0.0" y="296" width="375" height="320"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pbK-TK-JrH"/>
                     </view>
+                    <connections>
+                        <outlet property="InstructionScrollView" destination="YlJ-2Y-js9" id="guR-mQ-MoK"/>
+                        <outlet property="ResultsLabel" destination="wuE-x5-5Hk" id="tYT-hu-84H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uVS-3j-oLw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -421,6 +441,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="33M-Cj-5fn"/>
+        <segue reference="iNs-Ow-Yzh"/>
     </inferredMetricsTieBreakers>
 </document>
