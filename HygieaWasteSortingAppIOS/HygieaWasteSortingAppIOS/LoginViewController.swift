@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import CoreLocation
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, CLLocationManagerDelegate{
 
+    //LocationManager base
+    let locManager = CLLocationManager()
+    
     //String Inputs
     var username: String = ""
     var password: String = ""
@@ -52,8 +56,44 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        locManager.requestWhenInUseAuthorization()
+        locManager.requestAlwaysAuthorization()
+        startReceivingLocation()
     }
 
+    //// ALL OF THESE FUNCTIONS SHOULD BE USED WHEN LOCATION IS RETRIEVED ////
+    func startReceivingLocation(){
+        let authStatus = CLLocationManager.authorizationStatus()
+        if authStatus != .authorizedAlways {
+            //User hasn't authorized access to location info
+            return
+        }
+        
+        if !CLLocationManager.significantLocationChangeMonitoringAvailable() {
+            // Service is not available
+            return
+        }
+        
+        locManager.delegate = self
+        //Might need to be moved; start only when needed, stop when not needed later
+        locManager.startMonitoringSignificantLocationChanges()
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let mostRecentLoc = locations.last!
+        
+        //do something with the location
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        if let error = error as? CLError, error.code == .denied {
+            //Loc updates are not authorized
+            manager.stopMonitoringSignificantLocationChanges()
+            return
+        }
+        //This func notifies users of errors, more cases may need to be added later
+    }
+    ////------------------------------------------------------------------////
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
