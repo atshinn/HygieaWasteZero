@@ -63,6 +63,11 @@ class LoginViewController: UIViewController, CLLocationManagerDelegate{
         //Jump to Signup
     }
     
+    @IBAction func jumpToGuest(_ sender: UIButton) {
+        //Jump to Camera for now
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

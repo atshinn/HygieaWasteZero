@@ -78,6 +78,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EwY-aY-Kr5">
+                                <rect key="frame" x="114" y="411" width="146" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.26961671399999998" blue="0.13717105909999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Sign in as a Guest">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="0ad-Dz-mDf"/>
@@ -85,6 +94,7 @@
                     <navigationItem key="navigationItem" id="4KE-Kk-PgM"/>
                     <connections>
                         <outlet property="ErrorStatement" destination="zWl-NY-5d1" id="UmP-GL-duc"/>
+                        <outlet property="jumpToGuest" destination="gy3-O9-9t8" id="tK0-Cu-ioQ"/>
                         <outlet property="jumpToSignUp" destination="xkt-7A-qDi" id="TgO-zm-UDJ"/>
                         <outlet property="takePassword" destination="o8w-TZ-gqr" id="1Cc-lx-VLg"/>
                         <outlet property="takeUsername" destination="gy3-O9-9t8" id="JBV-PL-MjM"/>
@@ -92,7 +102,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dln-Nc-AAX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1212" y="123"/>
+            <point key="canvasLocation" x="1212" y="122.78860569715144"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FRf-Zx-eol">
