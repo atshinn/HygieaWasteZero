@@ -60,7 +60,7 @@
                                 <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Log in"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="33M-Cj-5fn"/>
+                                    <segue destination="BYZ-38-t0r" kind="push" id="Qp7-cz-MGK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkt-7A-qDi">
@@ -68,7 +68,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign up"/>
                                 <connections>
-                                    <segue destination="eGx-6p-xZ4" kind="presentation" identifier="registerSegue" id="bWc-tz-Jyj"/>
+                                    <segue destination="eGx-6p-xZ4" kind="push" id="ak2-eG-lhX"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWl-NY-5d1">
@@ -86,6 +86,9 @@
                                 <state key="normal" title="Sign in as a Guest">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="push" id="dF6-PM-Pex"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -94,7 +97,6 @@
                     <navigationItem key="navigationItem" id="4KE-Kk-PgM"/>
                     <connections>
                         <outlet property="ErrorStatement" destination="zWl-NY-5d1" id="UmP-GL-duc"/>
-                        <outlet property="jumpToGuest" destination="gy3-O9-9t8" id="tK0-Cu-ioQ"/>
                         <outlet property="jumpToSignUp" destination="xkt-7A-qDi" id="TgO-zm-UDJ"/>
                         <outlet property="takePassword" destination="o8w-TZ-gqr" id="1Cc-lx-VLg"/>
                         <outlet property="takeUsername" destination="gy3-O9-9t8" id="JBV-PL-MjM"/>
@@ -222,6 +224,9 @@
                                 <rect key="frame" x="121" y="575" width="133" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Already a member?"/>
+                                <connections>
+                                    <segue destination="nxY-yJ-EcQ" kind="push" id="zPh-Uy-MDD"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIo-9g-VnV">
                                 <rect key="frame" x="51" y="323" width="196" height="21"/>
@@ -269,6 +274,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="vVp-Bz-ldI"/>
                     </view>
+                    <navigationItem key="navigationItem" id="g92-mF-IV5"/>
                     <connections>
                         <outlet property="ErrorStatement" destination="xIo-9g-VnV" id="jS3-es-IRv"/>
                         <outlet property="Register" destination="NuN-5z-QWS" id="9m8-fq-uFU"/>
@@ -453,6 +459,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="33M-Cj-5fn"/>
+        <segue reference="ak2-eG-lhX"/>
+        <segue reference="Qp7-cz-MGK"/>
+        <segue reference="zPh-Uy-MDD"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -42,13 +42,13 @@ class LoginViewController: UIViewController, CLLocationManagerDelegate{
         
         let decoder = JSONDecoder()
         
-        let stored = try decoder.decode(StoredData.self, from: jsonObject)
+        //let stored = try decoder.decode(StoredData.self, from: jsonObject)
         
-        if username == stored.username {
-            if password == stored.password {
-                flag = true
-            }
-        }
+        //if username == stored.username {
+        //    if password == stored.password {
+        //        flag = true
+        //    }
+        //}
         
         if flag == true {
             //Successful login
