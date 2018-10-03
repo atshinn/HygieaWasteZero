@@ -38,7 +38,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet var takeRepeatPassword: UITextField!
     
     //Check to make sure the inputs are correct
-    @IBAction func Register(sender: UIButton) {
+    @IBAction func Register(sender: ViewController) {
     
         //Take Inputs
         name = takeName.text!
@@ -113,7 +113,7 @@ class SignUpViewController: UIViewController {
 
     }
     
-    @IBAction func jumpToLogin(_ sender: UIButton) {
+    @IBAction func jumpToLogin(_ sender: LoginViewController) {
         //jump to Login
     }
     

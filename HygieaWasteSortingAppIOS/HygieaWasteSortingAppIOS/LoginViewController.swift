@@ -24,7 +24,7 @@ class LoginViewController: UIViewController, CLLocationManagerDelegate{
     
     @IBOutlet var takePassword: UITextField!
     
-    @IBAction func checkLogin(_ sender: UIButton) {
+    @IBAction func checkLogin(_ sender: ViewController) {
         //Take Inputs
         username = takeUsername.text!
         password = takePassword.text!
@@ -42,13 +42,13 @@ class LoginViewController: UIViewController, CLLocationManagerDelegate{
         
         let decoder = JSONDecoder()
         
-        //let stored = try decoder.decode(StoredData.self, from: jsonObject)
+        let stored = try decoder.decode(StoredData.self, from: jsonObject)
         
-        //if username == stored.username {
-        //    if password == stored.password {
-        //        flag = true
-        //    }
-        //}
+        if username == stored.username {
+            if password == stored.password {
+                flag = true
+            }
+        }
         
         if flag == true {
             //Successful login
@@ -59,11 +59,11 @@ class LoginViewController: UIViewController, CLLocationManagerDelegate{
         
     }
     
-    @IBAction func jumpToSignUp(_ sender: UIButton) {
+    @IBAction func jumpToSignUp(_ sender: SignUpViewController) {
         //Jump to Signup
     }
     
-    @IBAction func jumpToGuest(_ sender: UIButton) {
+    @IBAction func jumpToGuest(_ sender: ViewController) {
         //Jump to Camera for now
     }
     
