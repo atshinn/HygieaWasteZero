@@ -101,14 +101,38 @@ class SignUpViewController: UIViewController {
         }
         
         if flag == true {
-            let jsonObject: NSDictionary = [
-                "name": name,
-                "username": username,
-                "password": password,
-                "email": email
-            ]
+            //let jsonObject: NSDictionary = [
+            //    "name": name,
+            //    "username": username,
+            //    "password": password,
+            //    "email": email
+            //]
             
-            let valid = JSONSerialization.isValidJSONObject(jsonObject)
+            //struct data {
+            //    let nam = name.self
+            //    let usernam = username
+            //    let passwor = password
+            //    let emai = email
+            //}
+            
+            struct jsonData: Codable {
+                let name: String
+                let username: String
+                let email: String
+                let password: String
+                let repeatPassword: String
+            }
+            
+            enum CodingKeys: String {
+                case name
+                case username
+                case email
+                case password
+            }
+            
+            let encoder = JSONEncoder()
+            
+            //let valid = JSONSerialization.isValidJSONObject(jsonData)
         }
 
     }
