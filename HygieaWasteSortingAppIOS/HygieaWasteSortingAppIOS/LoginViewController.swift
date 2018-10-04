@@ -40,9 +40,16 @@ class LoginViewController: UIViewController, CLLocationManagerDelegate{
             var password: String
         }
         
-        let data = try JSONSerialization.data(withJSONObject: StoredData, options: [])
+        struct jsonData: Codable {
+            let name: String
+            let username: String
+            let email: String
+            let password: String
+        }
+        
+        let data = try! JSONSerialization.data(withJSONObject: StoredData.self, options: [])
         let decoder = JSONDecoder()
-        let stored = try decoder.decode(StoredData.self, from: data)
+        let stored = try! decoder.decode(jsonData.self, from: data)
         
         if username == stored.username {
             if password == stored.password {
