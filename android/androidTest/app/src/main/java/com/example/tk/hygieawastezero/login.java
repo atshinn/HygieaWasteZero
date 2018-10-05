@@ -28,6 +28,8 @@ import java.io.InputStreamReader;
 
 public class login extends AppCompatActivity {
 
+    //Cognito id: 53hqi241c7u51am44nckkjv6m2ugv0jima5nqglgu07ebtrsm7
+
     final int CAMERA_REQUEST_CODE = 1;
     final int LOCATION_REQUEST_CODE = 2;
 
