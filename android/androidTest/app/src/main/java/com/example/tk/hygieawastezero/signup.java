@@ -7,9 +7,14 @@ import android.os.Bundle;
 import android.util.JsonWriter;
 import android.util.Patterns;
 import android.view.View;
+import android.webkit.WebChromeClient;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
 
 import java.io.File;
 import java.io.FileWriter;
@@ -27,6 +32,8 @@ public class signup extends AppCompatActivity {
     TextView name;
     TextView pass;
     TextView email;
+
+    private WebView signupView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -152,6 +159,39 @@ public class signup extends AppCompatActivity {
                 }
             }
         });
+
+        namehint.setVisibility(View.INVISIBLE);
+        passhint.setVisibility(View.INVISIBLE);
+        emailhint.setVisibility(View.INVISIBLE);
+        submit.setVisibility(View.INVISIBLE);
+        cancel.setVisibility(View.INVISIBLE);
+        name.setVisibility(View.INVISIBLE);
+        pass.setVisibility(View.INVISIBLE);
+        email.setVisibility(View.INVISIBLE);
+
+        signupView = findViewById(R.id.signupView);
+
+        signupView.getSettings().setJavaScriptEnabled(true);
+        signupView.getSettings().setPluginState(WebSettings.PluginState.ON);
+        signupView.getSettings().setBuiltInZoomControls(true);
+        signupView.getSettings().setSupportZoom(true);
+        signupView.getSettings().setLoadWithOverviewMode(true);
+        signupView.getSettings().setUseWideViewPort(true);
+
+        signupView.setScrollBarStyle(WebView.SCROLLBARS_OUTSIDE_OVERLAY);
+        signupView.setScrollbarFadingEnabled(false);
+
+        signupView.setInitialScale(30);
+        signupView.setWebViewClient(new webBrowser());
+        signupView.loadUrl("www.google.com");
+        /*signupView.getSettings().setJavaScriptEnabled(true);
+        signupView.setWebViewClient(new WebViewClient(){
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url){
+                view.loadUrl("www.google.com");//https://hywz-auth/login?response_type=token&client_id=8mrvs89q1frh6hqooc4nt9b0&redirect_uri=hygieawastezero://");
+                return true;
+            }
+        });*/
     }
     private void saveCredsToInternal() {
         ContextWrapper cw = new ContextWrapper(getApplicationContext());

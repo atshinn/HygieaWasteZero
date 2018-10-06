@@ -12,11 +12,12 @@ import android.os.Bundle;
 import android.util.JsonWriter;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.json.JSONArray;
+import com.amazonaws.mobileconnectors.cognitoidentityprovider.CognitoUserPool;
+import com.amazonaws.regions.Regions;
+
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
@@ -28,7 +29,9 @@ import java.io.InputStreamReader;
 
 public class login extends AppCompatActivity {
 
-    //Cognito id: 53hqi241c7u51am44nckkjv6m2ugv0jima5nqglgu07ebtrsm7
+    //Cognito secret: 53hqi241c7u51am44nckkjv6m2ugv0jima5nqglgu07ebtrsm7
+
+    CognitoUserPool userPool = new CognitoUserPool(getBaseContext(), "us-west-2_2KW8CF0tm", "8mrvs89q1frh6hqooc4nt9b0", "53hqi241c7u51am44nckkjv6m2ugv0jima5nqglgu07ebtrsm7", Regions.DEFAULT_REGION);
 
     final int CAMERA_REQUEST_CODE = 1;
     final int LOCATION_REQUEST_CODE = 2;
