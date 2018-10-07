@@ -2,11 +2,15 @@ package com.example.tk.hygieawastezero;
 
 import android.content.Context;
 import android.content.ContextWrapper;
+import android.graphics.Bitmap;
+import android.graphics.Color;
+import android.net.http.SslError;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.JsonWriter;
 import android.util.Patterns;
 import android.view.View;
+import android.webkit.SslErrorHandler;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -172,26 +176,18 @@ public class signup extends AppCompatActivity {
         signupView = findViewById(R.id.signupView);
 
         signupView.getSettings().setJavaScriptEnabled(true);
-        signupView.getSettings().setPluginState(WebSettings.PluginState.ON);
-        signupView.getSettings().setBuiltInZoomControls(true);
-        signupView.getSettings().setSupportZoom(true);
-        signupView.getSettings().setLoadWithOverviewMode(true);
         signupView.getSettings().setUseWideViewPort(true);
+        signupView.getSettings().setLoadWithOverviewMode(true);
+        signupView.getSettings().setSupportZoom(true);
+        signupView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
+        signupView.setBackgroundColor(Color.WHITE);
 
-        signupView.setScrollBarStyle(WebView.SCROLLBARS_OUTSIDE_OVERLAY);
-        signupView.setScrollbarFadingEnabled(false);
-
-        signupView.setInitialScale(30);
+        signupView.setWebChromeClient(new WebChromeClient());
         signupView.setWebViewClient(new webBrowser());
-        signupView.loadUrl("www.google.com");
-        /*signupView.getSettings().setJavaScriptEnabled(true);
-        signupView.setWebViewClient(new WebViewClient(){
-            @Override
-            public boolean shouldOverrideUrlLoading(WebView view, String url){
-                view.loadUrl("www.google.com");//https://hywz-auth/login?response_type=token&client_id=8mrvs89q1frh6hqooc4nt9b0&redirect_uri=hygieawastezero://");
-                return true;
-            }
-        });*/
+        //Note to self: Always use the fully correct URL, this won't account for any minor differences
+        signupView.loadUrl("https://www.google.com/");
+        //The Url we have to access at some point: https://hywz-auth/login?response_type=token&client_id=8mrvs89q1frh6hqooc4nt9b0&redirect_uri=hygieawastezero://
+
     }
     private void saveCredsToInternal() {
         ContextWrapper cw = new ContextWrapper(getApplicationContext());
