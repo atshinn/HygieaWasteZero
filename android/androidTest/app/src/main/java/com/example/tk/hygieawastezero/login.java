@@ -5,12 +5,15 @@ import android.content.Context;
 import android.content.ContextWrapper;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.JsonWriter;
 import android.view.View;
+import android.webkit.WebChromeClient;
+import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -46,6 +49,8 @@ public class login extends AppCompatActivity {
     TextView pass;
 
     int REQUEST_LOGIN = 0;
+
+    private WebView loginView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -182,6 +187,29 @@ public class login extends AppCompatActivity {
         pass = findViewById(R.id.loginpass);
 
         loadCredsFromInternal();
+
+        namehint.setVisibility(View.INVISIBLE);
+        passhint.setVisibility(View.INVISIBLE);
+        name.setVisibility(View.INVISIBLE);
+        pass.setVisibility(View.INVISIBLE);
+        login.setVisibility(View.INVISIBLE);
+        guest.setVisibility(View.INVISIBLE);
+        register.setVisibility(View.INVISIBLE);
+
+        loginView = findViewById(R.id.loginView);
+
+        loginView.getSettings().setJavaScriptEnabled(true);
+        loginView.getSettings().setUseWideViewPort(true);
+        loginView.getSettings().setLoadWithOverviewMode(true);
+        loginView.getSettings().setSupportZoom(true);
+        loginView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
+        loginView.setBackgroundColor(Color.WHITE);
+
+        loginView.setWebChromeClient(new WebChromeClient());
+        loginView.setWebViewClient(new webBrowser());
+        //Note to self: Always use the fully correct URL, this won't account for any minor differences
+        //signupView.loadUrl("https://www.google.com/");
+        loginView.loadUrl("https://hywz-auth.auth.us-west-2.amazoncognito.com/login?response_type=token&client_id=8mrvs89q1frh6hqooc4nt9b0&redirect_uri=hygieawastezero://");
     }
 
     @Override
