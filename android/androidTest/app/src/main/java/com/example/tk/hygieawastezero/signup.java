@@ -183,7 +183,7 @@ public class signup extends AppCompatActivity {
         signupView.setBackgroundColor(Color.WHITE);
 
         signupView.setWebChromeClient(new WebChromeClient());
-        signupView.setWebViewClient(new webBrowser());
+        //signupView.setWebViewClient(new webBrowser());
         //Note to self: Always use the fully correct URL, this won't account for any minor differences
         //signupView.loadUrl("https://www.google.com/");
         signupView.loadUrl("https://hywz-auth.auth.us-west-2.amazoncognito.com/login?response_type=token&client_id=8mrvs89q1frh6hqooc4nt9b0&redirect_uri=hygieawastezero://");

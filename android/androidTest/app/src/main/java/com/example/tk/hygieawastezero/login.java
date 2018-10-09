@@ -6,15 +6,19 @@ import android.content.ContextWrapper;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
+import android.os.Handler;
+import android.os.Message;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.JsonWriter;
+import android.util.Log;
 import android.view.View;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -34,7 +38,8 @@ public class login extends AppCompatActivity {
 
     //Cognito secret: 53hqi241c7u51am44nckkjv6m2ugv0jima5nqglgu07ebtrsm7
 
-    CognitoUserPool userPool = new CognitoUserPool(getBaseContext(), "us-west-2_2KW8CF0tm", "8mrvs89q1frh6hqooc4nt9b0", "53hqi241c7u51am44nckkjv6m2ugv0jima5nqglgu07ebtrsm7", Regions.DEFAULT_REGION);
+    CognitoUserPool userPool = new CognitoUserPool(getBaseContext(), "us-west-2_2KW8CF0tm", "8mrvs89q1frh6hqooc4nt9b0", "53hqi241c7u51am44nckkjv6m2ugv0jima5nqglgu07ebtrsm7", Regions.US_WEST_2);
+    String key_url = "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_2KW8CF0tm/.well-known/jwks.json";
 
     final int CAMERA_REQUEST_CODE = 1;
     final int LOCATION_REQUEST_CODE = 2;
@@ -51,7 +56,9 @@ public class login extends AppCompatActivity {
     int REQUEST_LOGIN = 0;
 
     private WebView loginView;
+    private String token = "";
 
+    private ProgressBar loadWidget;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,6 +70,10 @@ public class login extends AppCompatActivity {
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED){
             ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.ACCESS_COARSE_LOCATION}, LOCATION_REQUEST_CODE);
         }
+
+        loadWidget = findViewById(R.id.progressBarLogin);
+        loadWidget.setIndeterminate(true);
+        loadWidget.setVisibility(View.INVISIBLE);
 
         namehint = findViewById(R.id.logNameHint);
         passhint = findViewById(R.id.logPassHint);
@@ -206,10 +217,16 @@ public class login extends AppCompatActivity {
         loginView.setBackgroundColor(Color.WHITE);
 
         loginView.setWebChromeClient(new WebChromeClient());
-        loginView.setWebViewClient(new webBrowser());
+        loginView.setWebViewClient(webBrowser.getINSTANCE());
         //Note to self: Always use the fully correct URL, this won't account for any minor differences
         //signupView.loadUrl("https://www.google.com/");
         loginView.loadUrl("https://hywz-auth.auth.us-west-2.amazoncognito.com/login?response_type=token&client_id=8mrvs89q1frh6hqooc4nt9b0&redirect_uri=hygieawastezero://");
+        pollWebView();
+        //Don't do these things ---v
+        //while(token == ""){} //Main thread waits while user navigates signup/signin screens
+        ////implement token handling here
+        //Log.d("Token", token);
+
     }
 
     @Override
@@ -305,5 +322,54 @@ public class login extends AppCompatActivity {
         String ret = convertStreamToString(fin);
         fin.close();
         return ret;
+    }
+
+    public void pollWebView(){
+
+        final Handler tokenHandler = new Handler() {
+            @Override
+            public void handleMessage(Message msg) {
+                String token = (String) msg.obj;
+                loginView.setVisibility(View.INVISIBLE);
+                loadWidget.setVisibility(View.VISIBLE);
+                setToken(token);
+                handleToken();
+            }
+        };
+        new Thread(new Runnable() {
+            int runthrough = 0;
+            @Override
+            public void run() {
+                while (runthrough < 1) {
+                    try {
+                        Thread.sleep(1000);
+                        tokenHandler.post(new Runnable() {
+                            @Override
+                            public void run() {
+                                if (webBrowser.getINSTANCE().getTokenChanged()){
+                                    String token = webBrowser.getINSTANCE().getToken();
+                                    Message msg = new Message();
+                                    msg.obj = token;
+                                    tokenHandler.sendMessage(msg);
+                                }
+                            }
+                        });
+                        if (webBrowser.getINSTANCE().getTokenChanged()){
+                            runthrough++;
+                        }
+                    } catch (Exception e) {
+                    }
+                }
+            }
+        }).start();
+
+    }
+
+    public void setToken(String t){
+        token = t;
+    }
+
+    public void handleToken(){
+        Log.d("Token: ", token);
     }
 }
