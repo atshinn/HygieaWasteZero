@@ -370,6 +370,11 @@ public class login extends AppCompatActivity {
     }
 
     public void handleToken(){
-        Log.d("Token: ", token);
+        Log.d("Token", token);
+        tokenBearer bearer = new tokenBearer(token);
+        Log.d("Id", bearer.getIdToken());
+        Log.d("Access", bearer.getAccessToken());
+        Log.d("Expires in", Integer.toString(bearer.getExpiration()));
+        Log.d("Token type", bearer.getTokenType());
     }
 }
