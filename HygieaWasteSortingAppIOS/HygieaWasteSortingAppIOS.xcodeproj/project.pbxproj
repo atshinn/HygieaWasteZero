@@ -24,7 +24,13 @@
 		2EACC03B21598E8900440C55 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9B8FA0214F520A000307EB /* LoginViewController.swift */; };
 		2EACC03E21598EBB00440C55 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9B8FA4214F52CA000307EB /* SignUpViewController.swift */; };
 		2EACC03F21598EBC00440C55 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9B8FA4214F52CA000307EB /* SignUpViewController.swift */; };
+<<<<<<< HEAD
 		8E94B44A8FCB95DB9F1E2960 /* Pods_HygieaWasteSortingAppIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E37AC24C0C109EA1182898B /* Pods_HygieaWasteSortingAppIOS.framework */; };
+=======
+		610A5C0D193C9F89204B1180 /* Pods_HygieaWasteSortingAppIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1D995AD180B33996984FEB /* Pods_HygieaWasteSortingAppIOS.framework */; };
+		8F3D50972555ED20EA30F8C6 /* Pods_HygieaWasteSortingAppIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71440A26A5DE0C79F2FAF071 /* Pods_HygieaWasteSortingAppIOSTests.framework */; };
+		D7D3C0A860F7B7C0C7C22EB1 /* Pods_HygieaWasteSortingAppIOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE6B9DA77EAF8AD52192671D /* Pods_HygieaWasteSortingAppIOSUITests.framework */; };
+>>>>>>> cb8b84e95056d971743e530b9cf340269a00fe88
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +51,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		0E37AC24C0C109EA1182898B /* Pods_HygieaWasteSortingAppIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HygieaWasteSortingAppIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+=======
+		1ABF89D2EB65A199CF9CB50D /* Pods-HygieaWasteSortingAppIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HygieaWasteSortingAppIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-HygieaWasteSortingAppIOS/Pods-HygieaWasteSortingAppIOS.release.xcconfig"; sourceTree = "<group>"; };
+>>>>>>> cb8b84e95056d971743e530b9cf340269a00fe88
 		2C5EA54B213B61B600846BC3 /* HygieaWasteSortingAppIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HygieaWasteSortingAppIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C5EA54E213B61B600846BC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C5EA550213B61B600846BC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,8 +75,19 @@
 		2C9B8FA6214F53BB000307EB /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		2C9B8FA821536EC8000307EB /* ActIndicatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActIndicatorViewController.swift; sourceTree = "<group>"; };
 		2C9B8FAA2153804A000307EB /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		AFBC675DA31493F0E81423CD /* Pods-HygieaWasteSortingAppIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HygieaWasteSortingAppIOS.debug.xcconfig"; path = "Target Support Files/Pods-HygieaWasteSortingAppIOS/Pods-HygieaWasteSortingAppIOS.debug.xcconfig"; sourceTree = "<group>"; };
 		BE95F35733B0E4CAD6613CFA /* Pods-HygieaWasteSortingAppIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HygieaWasteSortingAppIOS.release.xcconfig"; path = "Target Support Files/Pods-HygieaWasteSortingAppIOS/Pods-HygieaWasteSortingAppIOS.release.xcconfig"; sourceTree = "<group>"; };
+=======
+		35C8972A3A2E5B2827FA6DD8 /* Pods-HygieaWasteSortingAppIOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HygieaWasteSortingAppIOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HygieaWasteSortingAppIOSUITests/Pods-HygieaWasteSortingAppIOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		44CBAC3ADD00CCD1015AA129 /* Pods-HygieaWasteSortingAppIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HygieaWasteSortingAppIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HygieaWasteSortingAppIOS/Pods-HygieaWasteSortingAppIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		46CD24633C9A3F6A14E7BE85 /* Pods-HygieaWasteSortingAppIOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HygieaWasteSortingAppIOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HygieaWasteSortingAppIOSTests/Pods-HygieaWasteSortingAppIOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4CCA5DC4D0648B47BC7FE6E2 /* Pods-HygieaWasteSortingAppIOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HygieaWasteSortingAppIOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HygieaWasteSortingAppIOSUITests/Pods-HygieaWasteSortingAppIOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5C12B0190D7C90C887F57E03 /* Pods-HygieaWasteSortingAppIOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HygieaWasteSortingAppIOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HygieaWasteSortingAppIOSTests/Pods-HygieaWasteSortingAppIOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		6B1D995AD180B33996984FEB /* Pods_HygieaWasteSortingAppIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HygieaWasteSortingAppIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71440A26A5DE0C79F2FAF071 /* Pods_HygieaWasteSortingAppIOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HygieaWasteSortingAppIOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE6B9DA77EAF8AD52192671D /* Pods_HygieaWasteSortingAppIOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HygieaWasteSortingAppIOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+>>>>>>> cb8b84e95056d971743e530b9cf340269a00fe88
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +95,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				8E94B44A8FCB95DB9F1E2960 /* Pods_HygieaWasteSortingAppIOS.framework in Frameworks */,
+=======
+				610A5C0D193C9F89204B1180 /* Pods_HygieaWasteSortingAppIOS.framework in Frameworks */,
+>>>>>>> cb8b84e95056d971743e530b9cf340269a00fe88
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F3D50972555ED20EA30F8C6 /* Pods_HygieaWasteSortingAppIOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7D3C0A860F7B7C0C7C22EB1 /* Pods_HygieaWasteSortingAppIOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,8 +129,13 @@
 				2C5EA565213B61B900846BC3 /* HygieaWasteSortingAppIOSTests */,
 				2C5EA570213B61B900846BC3 /* HygieaWasteSortingAppIOSUITests */,
 				2C5EA54C213B61B600846BC3 /* Products */,
+<<<<<<< HEAD
 				4665CFFECCABC674D7FD0F6D /* Pods */,
 				B6B86A353751665CF547FEE8 /* Frameworks */,
+=======
+				AA1484191F11AB44D05B78CD /* Pods */,
+				3EDDC9F1EC681172BE32F1DF /* Frameworks */,
+>>>>>>> cb8b84e95056d971743e530b9cf340269a00fe88
 			);
 			sourceTree = "<group>";
 		};
@@ -154,6 +186,7 @@
 			path = HygieaWasteSortingAppIOSUITests;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		4665CFFECCABC674D7FD0F6D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +203,29 @@
 				0E37AC24C0C109EA1182898B /* Pods_HygieaWasteSortingAppIOS.framework */,
 			);
 			name = Frameworks;
+=======
+		3EDDC9F1EC681172BE32F1DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B1D995AD180B33996984FEB /* Pods_HygieaWasteSortingAppIOS.framework */,
+				71440A26A5DE0C79F2FAF071 /* Pods_HygieaWasteSortingAppIOSTests.framework */,
+				BE6B9DA77EAF8AD52192671D /* Pods_HygieaWasteSortingAppIOSUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA1484191F11AB44D05B78CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				44CBAC3ADD00CCD1015AA129 /* Pods-HygieaWasteSortingAppIOS.debug.xcconfig */,
+				1ABF89D2EB65A199CF9CB50D /* Pods-HygieaWasteSortingAppIOS.release.xcconfig */,
+				46CD24633C9A3F6A14E7BE85 /* Pods-HygieaWasteSortingAppIOSTests.debug.xcconfig */,
+				5C12B0190D7C90C887F57E03 /* Pods-HygieaWasteSortingAppIOSTests.release.xcconfig */,
+				4CCA5DC4D0648B47BC7FE6E2 /* Pods-HygieaWasteSortingAppIOSUITests.debug.xcconfig */,
+				35C8972A3A2E5B2827FA6DD8 /* Pods-HygieaWasteSortingAppIOSUITests.release.xcconfig */,
+			);
+			name = Pods;
+>>>>>>> cb8b84e95056d971743e530b9cf340269a00fe88
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,11 +235,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C5EA576213B61B900846BC3 /* Build configuration list for PBXNativeTarget "HygieaWasteSortingAppIOS" */;
 			buildPhases = (
+<<<<<<< HEAD
 				EBA8C81EB32F781B81360E06 /* [CP] Check Pods Manifest.lock */,
 				2C5EA547213B61B600846BC3 /* Sources */,
 				2C5EA548213B61B600846BC3 /* Frameworks */,
 				2C5EA549213B61B600846BC3 /* Resources */,
 				219D9B17EDB57B0E28340E34 /* [CP] Embed Pods Frameworks */,
+=======
+				2BD70C7EE686041B99FB43B7 /* [CP] Check Pods Manifest.lock */,
+				2C5EA547213B61B600846BC3 /* Sources */,
+				2C5EA548213B61B600846BC3 /* Frameworks */,
+				2C5EA549213B61B600846BC3 /* Resources */,
+				789B269086927914E14F728E /* [CP] Embed Pods Frameworks */,
+>>>>>>> cb8b84e95056d971743e530b9cf340269a00fe88
 			);
 			buildRules = (
 			);
@@ -198,6 +262,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C5EA579213B61B900846BC3 /* Build configuration list for PBXNativeTarget "HygieaWasteSortingAppIOSTests" */;
 			buildPhases = (
+				581FD74816BF65BF88767299 /* [CP] Check Pods Manifest.lock */,
 				2C5EA55E213B61B900846BC3 /* Sources */,
 				2C5EA55F213B61B900846BC3 /* Frameworks */,
 				2C5EA560213B61B900846BC3 /* Resources */,
@@ -216,6 +281,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C5EA57C213B61B900846BC3 /* Build configuration list for PBXNativeTarget "HygieaWasteSortingAppIOSUITests" */;
 			buildPhases = (
+				AAAF4F77AC17B9FE41E94EBD /* [CP] Check Pods Manifest.lock */,
 				2C5EA569213B61B900846BC3 /* Sources */,
 				2C5EA56A213B61B900846BC3 /* Frameworks */,
 				2C5EA56B213B61B900846BC3 /* Resources */,
@@ -304,7 +370,11 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+<<<<<<< HEAD
 		219D9B17EDB57B0E28340E34 /* [CP] Embed Pods Frameworks */ = {
+=======
+		2BD70C7EE686041B99FB43B7 /* [CP] Check Pods Manifest.lock */ = {
+>>>>>>> cb8b84e95056d971743e530b9cf340269a00fe88
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -312,7 +382,55 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
+<<<<<<< HEAD
 				"${PODS_ROOT}/Target Support Files/Pods-HygieaWasteSortingAppIOS/Pods-HygieaWasteSortingAppIOS-frameworks.sh",
+=======
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HygieaWasteSortingAppIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		581FD74816BF65BF88767299 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HygieaWasteSortingAppIOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		789B269086927914E14F728E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HygieaWasteSortingAppIOS/Pods-HygieaWasteSortingAppIOS-frameworks.sh",
+>>>>>>> cb8b84e95056d971743e530b9cf340269a00fe88
 				"${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSAuthUI/AWSAuthUI.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSAutoScaling/AWSAutoScaling.framework",
@@ -391,10 +509,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
+<<<<<<< HEAD
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HygieaWasteSortingAppIOS/Pods-HygieaWasteSortingAppIOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EBA8C81EB32F781B81360E06 /* [CP] Check Pods Manifest.lock */ = {
+=======
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HygieaWasteSortingAppIOS/Pods-HygieaWasteSortingAppIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAAF4F77AC17B9FE41E94EBD /* [CP] Check Pods Manifest.lock */ = {
+>>>>>>> cb8b84e95056d971743e530b9cf340269a00fe88
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -409,7 +534,11 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+<<<<<<< HEAD
 				"$(DERIVED_FILE_DIR)/Pods-HygieaWasteSortingAppIOS-checkManifestLockResult.txt",
+=======
+				"$(DERIVED_FILE_DIR)/Pods-HygieaWasteSortingAppIOSUITests-checkManifestLockResult.txt",
+>>>>>>> cb8b84e95056d971743e530b9cf340269a00fe88
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -604,7 +733,11 @@
 		};
 		2C5EA577213B61B900846BC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+<<<<<<< HEAD
 			baseConfigurationReference = AFBC675DA31493F0E81423CD /* Pods-HygieaWasteSortingAppIOS.debug.xcconfig */;
+=======
+			baseConfigurationReference = 44CBAC3ADD00CCD1015AA129 /* Pods-HygieaWasteSortingAppIOS.debug.xcconfig */;
+>>>>>>> cb8b84e95056d971743e530b9cf340269a00fe88
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -622,7 +755,11 @@
 		};
 		2C5EA578213B61B900846BC3 /* Release */ = {
 			isa = XCBuildConfiguration;
+<<<<<<< HEAD
 			baseConfigurationReference = BE95F35733B0E4CAD6613CFA /* Pods-HygieaWasteSortingAppIOS.release.xcconfig */;
+=======
+			baseConfigurationReference = 1ABF89D2EB65A199CF9CB50D /* Pods-HygieaWasteSortingAppIOS.release.xcconfig */;
+>>>>>>> cb8b84e95056d971743e530b9cf340269a00fe88
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -640,6 +777,7 @@
 		};
 		2C5EA57A213B61B900846BC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46CD24633C9A3F6A14E7BE85 /* Pods-HygieaWasteSortingAppIOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -656,6 +794,7 @@
 		};
 		2C5EA57B213B61B900846BC3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C12B0190D7C90C887F57E03 /* Pods-HygieaWasteSortingAppIOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -672,6 +811,7 @@
 		};
 		2C5EA57D213B61B900846BC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CCA5DC4D0648B47BC7FE6E2 /* Pods-HygieaWasteSortingAppIOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -687,6 +827,7 @@
 		};
 		2C5EA57E213B61B900846BC3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35C8972A3A2E5B2827FA6DD8 /* Pods-HygieaWasteSortingAppIOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

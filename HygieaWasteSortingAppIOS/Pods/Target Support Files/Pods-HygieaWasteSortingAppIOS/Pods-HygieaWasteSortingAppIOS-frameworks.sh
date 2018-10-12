@@ -47,6 +47,7 @@ install_framework()
   local basename
   basename="$(basename -s .framework "$1")"
   binary="${destination}/${basename}.framework/${basename}"
+<<<<<<< HEAD
 
   if ! [ -r "$binary" ]; then
     binary="${destination}/${basename}"
@@ -54,6 +55,10 @@ install_framework()
     echo "Destination binary is symlinked..."
     dirname="$(dirname "${binary}")"
     binary="${dirname}/$(readlink "${binary}")"
+=======
+  if ! [ -r "$binary" ]; then
+    binary="${destination}/${basename}"
+>>>>>>> cb8b84e95056d971743e530b9cf340269a00fe88
   fi
 
   # Strip invalid architectures so "fat" simulator / device frameworks work on device
@@ -106,8 +111,13 @@ install_dsym() {
 
 # Signs a framework with the provided identity
 code_sign_if_enabled() {
+<<<<<<< HEAD
   if [ -n "${EXPANDED_CODE_SIGN_IDENTITY:-}" -a "${CODE_SIGNING_REQUIRED:-}" != "NO" -a "${CODE_SIGNING_ALLOWED}" != "NO" ]; then
     # Use the current code_sign_identity
+=======
+  if [ -n "${EXPANDED_CODE_SIGN_IDENTITY}" -a "${CODE_SIGNING_REQUIRED:-}" != "NO" -a "${CODE_SIGNING_ALLOWED}" != "NO" ]; then
+    # Use the current code_sign_identitiy
+>>>>>>> cb8b84e95056d971743e530b9cf340269a00fe88
     echo "Code Signing $1 with Identity ${EXPANDED_CODE_SIGN_IDENTITY_NAME}"
     local code_sign_cmd="/usr/bin/codesign --force --sign ${EXPANDED_CODE_SIGN_IDENTITY} ${OTHER_CODE_SIGN_FLAGS:-} --preserve-metadata=identifier,entitlements '$1'"
 
