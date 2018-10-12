@@ -14,6 +14,8 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Spinner;
 import android.widget.TextView;
+
+import com.amazonaws.auth.CognitoCachingCredentialsProvider;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -34,16 +36,25 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import cz.msebera.android.httpclient.Header;
+
+import com.amazonaws.mobile.client.AWSMobileClient;
+import com.amazonaws.mobileconnectors.s3.transferutility.TransferUtility;
+import com.amazonaws.mobileconnectors.s3.transferutility.TransferState;
+import com.amazonaws.mobileconnectors.s3.transferutility.TransferObserver;
+import com.amazonaws.mobileconnectors.s3.transferutility.TransferListener;
+import com.amazonaws.services.s3.AmazonS3Client;
 
 public class previewScreen extends AppCompatActivity {
 
     private ProgressBar loadWidget;
     private String gVisionRequestJsonStr = "{\\\"requests\\\":[{\\\"image\\\":{\\\"content\\\":},\\\"features\\\":[{\\\"type\\\":\\\"FACE_DETECTION\\\",},{\\\"type\\\":\\\"LANDMARK_DETECTION\\\",},\\\":\\\"LOGO_DETECTION\\\",},{\\\"type\\\":\\\"LABEL_DETECTION\\\",},{\\\"type\\\":\\\"IMAGE_PROPERTIES\\\",}]}]}";
     final private String url = "http://hywz-dev.us-west-1.elasticbeanstalk.com/";
-
-
+    public static CognitoCachingCredentialsProvider creds = null;
+    public static String fn = "";
     static String apiResults = "";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +70,13 @@ public class previewScreen extends AppCompatActivity {
         RequestParams params = new RequestParams();
         File myFile = loadImageFromStorage(extras.getString("path"));
         try {
+            uploadImage(myFile);
+        }catch(Exception e){
+            Intent goBacktoLogin = new Intent(previewScreen.this, login.class);
+
+            startActivity(goBacktoLogin);
+        }
+        /*try {
             params.put("file", myFile);
         } catch(FileNotFoundException e) {
             Log.e(this.getClass().getSimpleName(), Log.getStackTraceString(e));
@@ -211,5 +229,44 @@ public class previewScreen extends AppCompatActivity {
         StringWriter sw = new StringWriter();
         e.printStackTrace(new PrintWriter(sw));
         return sw.toString();
+    }
+
+    private void uploadImage(File img) throws Exception {
+        if(creds == null) {
+            Log.e(this.getClass().getSimpleName(), "creds object is null");
+            throw new Exception("CREDENTIALS ARE NULL");
+        }
+        TransferUtility transferUtil = TransferUtility.builder()
+                .context(getApplicationContext())
+                .awsConfiguration(AWSMobileClient.getInstance().getConfiguration())
+                .s3Client(new AmazonS3Client(creds))
+                .build();
+
+        previewScreen.fn = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss").format(new Date());
+        TransferObserver transferObv = transferUtil.upload(fn, img);
+
+        transferObv.setTransferListener(new TransferListener() {
+            @Override
+            public void onStateChanged(int id, TransferState state) {
+                if(TransferState.COMPLETED == state) {
+                    Intent startResults = new Intent(previewScreen.this, resultsScreen.class);
+                    startResults.putExtra("apiResults", previewScreen.fn);
+                    startActivity(startResults);
+                }
+            }
+
+            @Override
+            public void onProgressChanged(int id, long bytesCurrent, long bytesTotal) {
+
+            }
+
+            @Override
+            public void onError(int id, Exception ex) {
+                String exStr = previewScreen.stackTraceToString(ex);
+                Intent startResults = new Intent(previewScreen.this, resultsScreen.class);
+                startResults.putExtra("apiResults", exStr);
+                startActivity(startResults);
+            }
+        });
     }
 }
