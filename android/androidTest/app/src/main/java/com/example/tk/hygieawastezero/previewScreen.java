@@ -56,6 +56,7 @@ public class previewScreen extends AppCompatActivity {
     public static CognitoCachingCredentialsProvider creds = null;
     public static String fn = "";
     static String apiResults = "";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -74,6 +75,7 @@ public class previewScreen extends AppCompatActivity {
         }catch(Exception e){
             Intent goBacktoLogin = new Intent(previewScreen.this, login.class);
 
+            Log.e(this.getClass().getSimpleName(), stackTraceToString(e));
             startActivity(goBacktoLogin);
         }
         /*try {
@@ -232,14 +234,15 @@ public class previewScreen extends AppCompatActivity {
     }
 
     private void uploadImage(File img) throws Exception {
-        if(creds == null) {
+        if(login.credentialsProvider == null) {
             Log.e(this.getClass().getSimpleName(), "creds object is null");
             throw new Exception("CREDENTIALS ARE NULL");
         }
         TransferUtility transferUtil = TransferUtility.builder()
+                .defaultBucket("s3-us-west-1.amazonaws.com//hywz.wastezero")
                 .context(getApplicationContext())
                 .awsConfiguration(AWSMobileClient.getInstance().getConfiguration())
-                .s3Client(new AmazonS3Client(creds))
+                .s3Client(new AmazonS3Client(login.credentialsProvider))
                 .build();
 
         previewScreen.fn = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss").format(new Date());

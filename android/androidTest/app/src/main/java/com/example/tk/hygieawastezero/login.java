@@ -45,7 +45,7 @@ public class login extends AppCompatActivity {
     CognitoUserPool userPool;
     String key_url = "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_2KW8CF0tm/.well-known/jwks.json";
     // Initialize the Amazon Cognito credentials provider
-    CognitoCachingCredentialsProvider credentialsProvider;
+    public static CognitoCachingCredentialsProvider credentialsProvider;
     AmazonS3Client s3Client;
 
     final int CAMERA_REQUEST_CODE = 1;
