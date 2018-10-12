@@ -22,8 +22,12 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.amazonaws.auth.AWSSessionCredentials;
+import com.amazonaws.auth.CognitoCachingCredentialsProvider;
 import com.amazonaws.mobileconnectors.cognitoidentityprovider.CognitoUserPool;
 import com.amazonaws.regions.Regions;
+import com.amazonaws.services.cognitoidentity.model.Credentials;
+import com.amazonaws.services.s3.AmazonS3Client;
 
 import org.json.JSONObject;
 
@@ -33,13 +37,16 @@ import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.HashMap;
+import java.util.Map;
 
 public class login extends AppCompatActivity {
-
-    //Cognito secret: 53hqi241c7u51am44nckkjv6m2ugv0jima5nqglgu07ebtrsm7
-
-    CognitoUserPool userPool = new CognitoUserPool(getBaseContext(), "us-west-2_2KW8CF0tm", "8mrvs89q1frh6hqooc4nt9b0", "53hqi241c7u51am44nckkjv6m2ugv0jima5nqglgu07ebtrsm7", Regions.US_WEST_2);
+    Context appContext;
+    CognitoUserPool userPool;
     String key_url = "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_2KW8CF0tm/.well-known/jwks.json";
+    // Initialize the Amazon Cognito credentials provider
+    CognitoCachingCredentialsProvider credentialsProvider;
+    AmazonS3Client s3Client;
 
     final int CAMERA_REQUEST_CODE = 1;
     final int LOCATION_REQUEST_CODE = 2;
@@ -70,6 +77,14 @@ public class login extends AppCompatActivity {
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED){
             ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.ACCESS_COARSE_LOCATION}, LOCATION_REQUEST_CODE);
         }
+
+        userPool  = new CognitoUserPool(getApplicationContext(), "us-west-2_2KW8CF0tm", "8mrvs89q1frh6hqooc4nt9b0", "53hqi241c7u51am44nckkjv6m2ugv0jima5nqglgu07ebtrsm7", Regions.US_WEST_2);
+        credentialsProvider = new CognitoCachingCredentialsProvider(
+                getApplicationContext(),
+                "us-west-2:6bd013d4-d707-4d4b-9174-29170cd89ad1", // Identity pool ID
+                Regions.US_WEST_2 // Region
+        );
+        s3Client = new AmazonS3Client(credentialsProvider);
 
         loadWidget = findViewById(R.id.progressBarLogin);
         loadWidget.setIndeterminate(true);
@@ -370,11 +385,38 @@ public class login extends AppCompatActivity {
     }
 
     public void handleToken(){
-        Log.d("Token", token);
+        //Log.d("Token", token);
         tokenBearer bearer = new tokenBearer(token);
-        Log.d("Id", bearer.getIdToken());
-        Log.d("Access", bearer.getAccessToken());
-        Log.d("Expires in", Integer.toString(bearer.getExpiration()));
-        Log.d("Token type", bearer.getTokenType());
+        //Log.d("Id", bearer.getIdToken());
+        //Log.d("Access", bearer.getAccessToken());
+        //Log.d("Expires in", Integer.toString(bearer.getExpiration()));
+        //Log.d("Token type", bearer.getTokenType());
+        Map<String, String> logins = new HashMap<String, String>();
+        logins.put("cognito-idp.us-west-2.amazonaws.com/us-west-2_2KW8CF0tm", bearer.getIdToken());
+        credentialsProvider.setLogins(logins);
+        final Handler credsHandler = new Handler() {
+            @Override
+            public void handleMessage(Message msg) {
+                AWSSessionCredentials credentials = (AWSSessionCredentials) msg.obj;
+                handleCreds(credentials);
+            }
+        };
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                AWSSessionCredentials creds = credentialsProvider.getCredentials();
+                Message msg = new Message();
+                msg.obj = creds;
+                credsHandler.sendMessage(msg);
+            }
+        }).start();
+    }
+
+    public void handleCreds(AWSSessionCredentials c){
+        Intent swap = new Intent(login.this, openingCapture.class);
+        swap.putExtra("accessKey", c.getAWSAccessKeyId());
+        swap.putExtra("secretKey", c.getAWSSecretKey());
+        startActivity(swap);
+        finish();
     }
 }

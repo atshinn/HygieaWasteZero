@@ -47,8 +47,8 @@ public class openingCapture extends AppCompatActivity implements SurfaceHolder.C
     //OLD
     //final int CAMERA_REQUEST_CODE = 1;
 
-    String username = "null";
-    String password = "null";
+    String accessKey = "null";
+    String secretKey = "null";
 
 
     @Override
@@ -56,17 +56,11 @@ public class openingCapture extends AppCompatActivity implements SurfaceHolder.C
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_opening_capture);
 
-        /*////Stores credentials across activities
+        ////Stores credentials across activities
         Bundle extras = getIntent().getExtras();
-        if(extras.getString("username") != null && extras.getString("password") != null){
-            username = extras.getString("username");
-            password = extras.getString("password");
-        }
-        else{
-            username = "";
-            password = "";
-        }
-        ////*/
+        accessKey = extras.getString("accessKey");
+        secretKey = extras.getString("secretKey");
+        ////
 
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         getLastLocation();
@@ -102,6 +96,8 @@ public class openingCapture extends AppCompatActivity implements SurfaceHolder.C
                 loc[0] = task.getResult().getLatitude();
                 loc[1] = task.getResult().getLongitude();
                 startPreview.putExtra("location", loc);
+                startPreview.putExtra("accessKey", accessKey);
+                startPreview.putExtra("secretKey", secretKey);
                 camera.release();
                 startActivity(startPreview);
             }
