@@ -1,6 +1,0 @@
-framework module Pods_HygieaWasteSortingAppIOSUITests {
-  umbrella header "Pods-HygieaWasteSortingAppIOSUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

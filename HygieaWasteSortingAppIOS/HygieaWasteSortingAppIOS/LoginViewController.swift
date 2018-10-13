@@ -8,9 +8,6 @@
 
 import UIKit
 import CoreLocation
-import AWSCognitoIdentityProvider.h
-
-
 
 class LoginViewController: UIViewController, CLLocationManagerDelegate{
 
