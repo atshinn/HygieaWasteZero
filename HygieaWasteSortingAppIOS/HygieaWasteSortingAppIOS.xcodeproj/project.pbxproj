@@ -27,17 +27,23 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 2bd6c46... revert #131
 		8E94B44A8FCB95DB9F1E2960 /* Pods_HygieaWasteSortingAppIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E37AC24C0C109EA1182898B /* Pods_HygieaWasteSortingAppIOS.framework */; };
 =======
 		610A5C0D193C9F89204B1180 /* Pods_HygieaWasteSortingAppIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1D995AD180B33996984FEB /* Pods_HygieaWasteSortingAppIOS.framework */; };
 		8F3D50972555ED20EA30F8C6 /* Pods_HygieaWasteSortingAppIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71440A26A5DE0C79F2FAF071 /* Pods_HygieaWasteSortingAppIOSTests.framework */; };
 		D7D3C0A860F7B7C0C7C22EB1 /* Pods_HygieaWasteSortingAppIOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE6B9DA77EAF8AD52192671D /* Pods_HygieaWasteSortingAppIOSUITests.framework */; };
 >>>>>>> cb8b84e95056d971743e530b9cf340269a00fe88
+<<<<<<< HEAD
 =======
 >>>>>>> parent of f03af14... Task #131
 =======
 		8E94B44A8FCB95DB9F1E2960 /* Pods_HygieaWasteSortingAppIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E37AC24C0C109EA1182898B /* Pods_HygieaWasteSortingAppIOS.framework */; };
 >>>>>>> parent of a504489... Merge branch 'IOS' of https://github.com/atshinn/HygieaWasteZero into IOS
+=======
+>>>>>>> parent of 2bd6c46... revert #131
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,15 +67,21 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 2bd6c46... revert #131
 		0E37AC24C0C109EA1182898B /* Pods_HygieaWasteSortingAppIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HygieaWasteSortingAppIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 =======
 		1ABF89D2EB65A199CF9CB50D /* Pods-HygieaWasteSortingAppIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HygieaWasteSortingAppIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-HygieaWasteSortingAppIOS/Pods-HygieaWasteSortingAppIOS.release.xcconfig"; sourceTree = "<group>"; };
 >>>>>>> cb8b84e95056d971743e530b9cf340269a00fe88
+<<<<<<< HEAD
 =======
 >>>>>>> parent of f03af14... Task #131
 =======
 		0E37AC24C0C109EA1182898B /* Pods_HygieaWasteSortingAppIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HygieaWasteSortingAppIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 >>>>>>> parent of a504489... Merge branch 'IOS' of https://github.com/atshinn/HygieaWasteZero into IOS
+=======
+>>>>>>> parent of 2bd6c46... revert #131
 		2C5EA54B213B61B600846BC3 /* HygieaWasteSortingAppIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HygieaWasteSortingAppIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C5EA54E213B61B600846BC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C5EA550213B61B600846BC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +104,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 2bd6c46... revert #131
 		AFBC675DA31493F0E81423CD /* Pods-HygieaWasteSortingAppIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HygieaWasteSortingAppIOS.debug.xcconfig"; path = "Target Support Files/Pods-HygieaWasteSortingAppIOS/Pods-HygieaWasteSortingAppIOS.debug.xcconfig"; sourceTree = "<group>"; };
 		BE95F35733B0E4CAD6613CFA /* Pods-HygieaWasteSortingAppIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HygieaWasteSortingAppIOS.release.xcconfig"; path = "Target Support Files/Pods-HygieaWasteSortingAppIOS/Pods-HygieaWasteSortingAppIOS.release.xcconfig"; sourceTree = "<group>"; };
 =======
@@ -104,12 +119,15 @@
 		71440A26A5DE0C79F2FAF071 /* Pods_HygieaWasteSortingAppIOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HygieaWasteSortingAppIOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE6B9DA77EAF8AD52192671D /* Pods_HygieaWasteSortingAppIOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HygieaWasteSortingAppIOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 >>>>>>> cb8b84e95056d971743e530b9cf340269a00fe88
+<<<<<<< HEAD
 =======
 >>>>>>> parent of f03af14... Task #131
 =======
 		AFBC675DA31493F0E81423CD /* Pods-HygieaWasteSortingAppIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HygieaWasteSortingAppIOS.debug.xcconfig"; path = "Target Support Files/Pods-HygieaWasteSortingAppIOS/Pods-HygieaWasteSortingAppIOS.debug.xcconfig"; sourceTree = "<group>"; };
 		BE95F35733B0E4CAD6613CFA /* Pods-HygieaWasteSortingAppIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HygieaWasteSortingAppIOS.release.xcconfig"; path = "Target Support Files/Pods-HygieaWasteSortingAppIOS/Pods-HygieaWasteSortingAppIOS.release.xcconfig"; sourceTree = "<group>"; };
 >>>>>>> parent of a504489... Merge branch 'IOS' of https://github.com/atshinn/HygieaWasteZero into IOS
+=======
+>>>>>>> parent of 2bd6c46... revert #131
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,15 +138,21 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 2bd6c46... revert #131
 				8E94B44A8FCB95DB9F1E2960 /* Pods_HygieaWasteSortingAppIOS.framework in Frameworks */,
 =======
 				610A5C0D193C9F89204B1180 /* Pods_HygieaWasteSortingAppIOS.framework in Frameworks */,
 >>>>>>> cb8b84e95056d971743e530b9cf340269a00fe88
+<<<<<<< HEAD
 =======
 >>>>>>> parent of f03af14... Task #131
 =======
 				8E94B44A8FCB95DB9F1E2960 /* Pods_HygieaWasteSortingAppIOS.framework in Frameworks */,
 >>>>>>> parent of a504489... Merge branch 'IOS' of https://github.com/atshinn/HygieaWasteZero into IOS
+=======
+>>>>>>> parent of 2bd6c46... revert #131
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,18 +183,24 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 2bd6c46... revert #131
 				4665CFFECCABC674D7FD0F6D /* Pods */,
 				B6B86A353751665CF547FEE8 /* Frameworks */,
 =======
 				AA1484191F11AB44D05B78CD /* Pods */,
 				3EDDC9F1EC681172BE32F1DF /* Frameworks */,
 >>>>>>> cb8b84e95056d971743e530b9cf340269a00fe88
+<<<<<<< HEAD
 =======
 >>>>>>> parent of f03af14... Task #131
 =======
 				4665CFFECCABC674D7FD0F6D /* Pods */,
 				B6B86A353751665CF547FEE8 /* Frameworks */,
 >>>>>>> parent of a504489... Merge branch 'IOS' of https://github.com/atshinn/HygieaWasteZero into IOS
+=======
+>>>>>>> parent of 2bd6c46... revert #131
 			);
 			sourceTree = "<group>";
 		};
@@ -224,8 +254,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of a504489... Merge branch 'IOS' of https://github.com/atshinn/HygieaWasteZero into IOS
+=======
+>>>>>>> parent of 2bd6c46... revert #131
 		4665CFFECCABC674D7FD0F6D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,8 +277,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-=======
->>>>>>> parent of f03af14... Task #131
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -256,8 +287,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of a504489... Merge branch 'IOS' of https://github.com/atshinn/HygieaWasteZero into IOS
+=======
+>>>>>>> parent of 2bd6c46... revert #131
 				EBA8C81EB32F781B81360E06 /* [CP] Check Pods Manifest.lock */,
 				2C5EA547213B61B600846BC3 /* Sources */,
 				2C5EA548213B61B600846BC3 /* Frameworks */,
@@ -271,6 +305,7 @@
 				2C5EA549213B61B600846BC3 /* Resources */,
 				789B269086927914E14F728E /* [CP] Embed Pods Frameworks */,
 >>>>>>> cb8b84e95056d971743e530b9cf340269a00fe88
+<<<<<<< HEAD
 =======
 				2C5EA547213B61B600846BC3 /* Sources */,
 				2C5EA548213B61B600846BC3 /* Frameworks */,
@@ -278,6 +313,8 @@
 >>>>>>> parent of f03af14... Task #131
 =======
 >>>>>>> parent of a504489... Merge branch 'IOS' of https://github.com/atshinn/HygieaWasteZero into IOS
+=======
+>>>>>>> parent of 2bd6c46... revert #131
 			);
 			buildRules = (
 			);
@@ -397,7 +434,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-<<<<<<< HEAD
 /* Begin PBXShellScriptBuildPhase section */
 		219D9B17EDB57B0E28340E34 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -513,8 +549,6 @@
 		};
 /* End PBXShellScriptBuildPhase section */
 
-=======
->>>>>>> parent of f03af14... Task #131
 /* Begin PBXSourcesBuildPhase section */
 		2C5EA547213B61B600846BC3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -704,15 +738,21 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 2bd6c46... revert #131
 			baseConfigurationReference = AFBC675DA31493F0E81423CD /* Pods-HygieaWasteSortingAppIOS.debug.xcconfig */;
 =======
 			baseConfigurationReference = 44CBAC3ADD00CCD1015AA129 /* Pods-HygieaWasteSortingAppIOS.debug.xcconfig */;
 >>>>>>> cb8b84e95056d971743e530b9cf340269a00fe88
+<<<<<<< HEAD
 =======
 >>>>>>> parent of f03af14... Task #131
 =======
 			baseConfigurationReference = AFBC675DA31493F0E81423CD /* Pods-HygieaWasteSortingAppIOS.debug.xcconfig */;
 >>>>>>> parent of a504489... Merge branch 'IOS' of https://github.com/atshinn/HygieaWasteZero into IOS
+=======
+>>>>>>> parent of 2bd6c46... revert #131
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -733,15 +773,21 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 2bd6c46... revert #131
 			baseConfigurationReference = BE95F35733B0E4CAD6613CFA /* Pods-HygieaWasteSortingAppIOS.release.xcconfig */;
 =======
 			baseConfigurationReference = 1ABF89D2EB65A199CF9CB50D /* Pods-HygieaWasteSortingAppIOS.release.xcconfig */;
 >>>>>>> cb8b84e95056d971743e530b9cf340269a00fe88
+<<<<<<< HEAD
 =======
 >>>>>>> parent of f03af14... Task #131
 =======
 			baseConfigurationReference = BE95F35733B0E4CAD6613CFA /* Pods-HygieaWasteSortingAppIOS.release.xcconfig */;
 >>>>>>> parent of a504489... Merge branch 'IOS' of https://github.com/atshinn/HygieaWasteZero into IOS
+=======
+>>>>>>> parent of 2bd6c46... revert #131
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
