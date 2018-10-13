@@ -3,17 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 >>>>>>> parent of a504489... Merge branch 'IOS' of https://github.com/atshinn/HygieaWasteZero into IOS
-=======
->>>>>>> parent of 2bd6c46... revert #131
 /* Begin PBXAggregateTarget section */
 		CBEC0089982B1907511A709AB2298343 /* AWSAuth */ = {
 			isa = PBXAggregateTarget;
@@ -2426,532 +2423,13 @@
 		91CB54DFEA99DE2FA2BF30B2380155A5 /* AWSURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSURLResponseSerialization.h; path = AWSCore/Serialization/AWSURLResponseSerialization.h; sourceTree = "<group>"; };
 		9262502C8DFD1B4231FDFB58E86D3103 /* AWSCognitoIdentityProviderModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSCognitoIdentityProviderModel.m; path = AWSCognitoIdentityProvider/CognitoIdentityProvider/AWSCognitoIdentityProviderModel.m; sourceTree = "<group>"; };
 		93334D0F5CF8B01EAB64421EDD9BFCA3 /* AWSPinpointTargetingService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSPinpointTargetingService.h; path = AWSPinpoint/AWSPinpointTargeting/AWSPinpointTargetingService.h; sourceTree = "<group>"; };
+=======
+/* Begin PBXFileReference section */
+>>>>>>> parent of f03af14... Task #131
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93B42C2374D0936600CCE2DA8F70D617 /* AWSSNSModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSSNSModel.m; path = AWSSNS/AWSSNSModel.m; sourceTree = "<group>"; };
-		93DDC1945AAF4B95A016EBEEB9E26753 /* AWSLambdaService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSLambdaService.h; path = AWSLambda/AWSLambdaService.h; sourceTree = "<group>"; };
-		93F36D912274AC219782E9ED9B935AB6 /* AWSIoTManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSIoTManager.h; path = AWSIoT/AWSIoTManager.h; sourceTree = "<group>"; };
-		9404104144E0A5A2C28958CAB92BDF78 /* FBSDKServerConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKServerConfiguration.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/ServerConfiguration/FBSDKServerConfiguration.m; sourceTree = "<group>"; };
-		9438526D5F5B820691FE251C0F482E0E /* AWSModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSModel.m; path = AWSCore/Utility/AWSModel.m; sourceTree = "<group>"; };
-		948C14E2B9BF9BECC9EDB51CAA6143EC /* AWSSES-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSSES-umbrella.h"; sourceTree = "<group>"; };
-		948D9EEF4DFB036D2994A4FCB2B71B2A /* AWSRekognition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSRekognition.h; path = AWSRekognition/AWSRekognition.h; sourceTree = "<group>"; };
-		94ECF2B57DDE34B1371B7406F509BB75 /* FBSDKGraphRequest+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBSDKGraphRequest+Internal.h"; path = "FBSDKCoreKit/FBSDKCoreKit/Internal/Network/FBSDKGraphRequest+Internal.h"; sourceTree = "<group>"; };
-		9538D11FB427A51A667170BFD73C3788 /* FBSDKLoginKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKLoginKit.h; path = FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit.h; sourceTree = "<group>"; };
-		95605AEAF312376C9D15FBED7D5976BF /* AWSPinpointTargetingResources.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSPinpointTargetingResources.h; path = AWSPinpoint/AWSPinpointTargeting/AWSPinpointTargetingResources.h; sourceTree = "<group>"; };
-		9561A485F8748B1F299D1DCE38752267 /* AWSFacebookSignIn-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AWSFacebookSignIn-Info.plist"; sourceTree = "<group>"; };
-		956848DB1900CF1ED2BAF0DC84015CAB /* AWSSQS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AWSSQS.modulemap; sourceTree = "<group>"; };
-		956D82E299ED34B764657132773CE866 /* FBSDKDeviceLoginManagerResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKDeviceLoginManagerResult.m; path = FBSDKLoginKit/FBSDKLoginKit/FBSDKDeviceLoginManagerResult.m; sourceTree = "<group>"; };
-		95B3B9B0D030CA18AF40EFCDA287A551 /* AWSRekognitionResources.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSRekognitionResources.m; path = AWSRekognition/AWSRekognitionResources.m; sourceTree = "<group>"; };
-		95F27ED9F5D1C83A4D6F33162CDD6118 /* AWSPolly.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AWSPolly.modulemap; sourceTree = "<group>"; };
-		965541219551AEDEB9EBADC92ABD3480 /* FBSDKLoginTooltipView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKLoginTooltipView.h; path = FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginTooltipView.h; sourceTree = "<group>"; };
-		969006123C701CF4EAE5CE4C660D9AC9 /* AWSPolly-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AWSPolly-Info.plist"; sourceTree = "<group>"; };
-		96A41589C20BF020E237C5DC674A85C9 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSDKCoreKit.framework; path = FBSDKCoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		96AC6ECD13EA2E1E8C3B381604BF4872 /* AWSService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSService.h; path = AWSCore/Service/AWSService.h; sourceTree = "<group>"; };
-		96F1472FB44991EDF7EB8C2F8F4C41BF /* AWSIoTDataResources.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSIoTDataResources.m; path = AWSIoT/AWSIoTDataResources.m; sourceTree = "<group>"; };
-		970CCB304E358047E078C18418F9EE26 /* AWSMobileAnalyticsDefaultContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsDefaultContext.m; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsDefaultContext.m; sourceTree = "<group>"; };
-		971024F6C9F1FD1E3BC91260A9A049E7 /* FBSDKProfile+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBSDKProfile+Internal.h"; path = "FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKProfile+Internal.h"; sourceTree = "<group>"; };
-		9745959F253F8FCEC68476F0B68A6EFD /* AWSS3-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSS3-umbrella.h"; sourceTree = "<group>"; };
-		97C230CBF9598C3555255E7CC75CE3E9 /* AWSCore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AWSCore.modulemap; sourceTree = "<group>"; };
-		97CBD5B66E84CCEE599489EF726F0239 /* FBSDKDeviceRequestsHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKDeviceRequestsHelper.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKDeviceRequestsHelper.m; sourceTree = "<group>"; };
-		97D40CD8022DA693DA58934E7323799B /* AWSPinpoint.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AWSPinpoint.modulemap; sourceTree = "<group>"; };
-		97EB47FB88D4F3476B4A06422E3F45D8 /* FBSDKGraphRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKGraphRequest.h; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphRequest.h; sourceTree = "<group>"; };
-		9826D9F152253365F9AE04BA17243E9A /* FBSDKLogo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKLogo.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/UI/FBSDKLogo.h; sourceTree = "<group>"; };
-		982CD9C6E62D4B8AA17B12F6A79B2DA7 /* FBSDKBase64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKBase64.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/Base64/FBSDKBase64.h; sourceTree = "<group>"; };
-		9873086C0467B59667C8381C4A045644 /* AWSCancellationTokenSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCancellationTokenSource.h; path = AWSCore/Bolts/AWSCancellationTokenSource.h; sourceTree = "<group>"; };
-		9883A986D5621B237CF789E8099D266C /* AWSCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCategory.h; path = AWSCore/Utility/AWSCategory.h; sourceTree = "<group>"; };
-		98FBC465278E4E6B93745808C69EF800 /* FBSDKColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKColor.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/UI/FBSDKColor.h; sourceTree = "<group>"; };
-		991BA12FD4BDF80180F12133BBD84C08 /* AWSFormTableDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSFormTableDelegate.h; path = AWSAuthSDK/Sources/AWSUserPoolsSignIn/UserPoolsUI/AWSFormTableDelegate.h; sourceTree = "<group>"; };
-		9963A34ACA48E9C6D8913E86991D547A /* AWSSNS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSSNS-umbrella.h"; sourceTree = "<group>"; };
-		9999D3EDD080E435CC75F2E398A61FDB /* AWSJKBigInteger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSJKBigInteger.h; path = AWSCognitoIdentityProvider/Internal/JKBigInteger/AWSJKBigInteger.h; sourceTree = "<group>"; };
-		99C2ED3CA9B947CB9B87AB3658310B63 /* AWSKMS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AWSKMS-Info.plist"; sourceTree = "<group>"; };
-		99E904D1B50F9752619215C47A28B6A2 /* AWSS3TransferUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSS3TransferUtility.m; path = AWSS3/AWSS3TransferUtility.m; sourceTree = "<group>"; };
-		9A0E392E638E9B299933FDC6CC8EEA32 /* AWSKMS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSKMS.h; path = AWSKMS/AWSKMS.h; sourceTree = "<group>"; };
-		9A2497AE388C361C805A3A3F173A5511 /* AWSTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSTask.h; path = AWSCore/Bolts/AWSTask.h; sourceTree = "<group>"; };
-		9AA7B1E6FFDF6B63F3AFC5030DD2619B /* BFAudioSourceError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFAudioSourceError.h; path = AWSLex/Bluefront/include/BFAudioSourceError.h; sourceTree = "<group>"; };
-		9ACAABCACFFA90008BCABD233C2917FF /* BFVoiceActivityDetectorDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFVoiceActivityDetectorDelegate.h; path = AWSLex/Bluefront/include/BFVoiceActivityDetectorDelegate.h; sourceTree = "<group>"; };
-		9B6DE3036CDFD34D09502BDB1C65C4A2 /* AWSLogs-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSLogs-umbrella.h"; sourceTree = "<group>"; };
-		9BB378EA075E479477B5096A4A3A30A9 /* FBSDKSystemAccountStoreAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKSystemAccountStoreAdapter.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKSystemAccountStoreAdapter.h; sourceTree = "<group>"; };
-		9BBE647AC03505AA3DDD08B33937C973 /* AWSTaskCompletionSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSTaskCompletionSource.m; path = AWSCore/Bolts/AWSTaskCompletionSource.m; sourceTree = "<group>"; };
-		9C2F42FFBD24DC74499CE1A97010AAC4 /* AWSCognitoIdentityResources.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSCognitoIdentityResources.m; path = AWSCore/CognitoIdentity/AWSCognitoIdentityResources.m; sourceTree = "<group>"; };
-		9C7BB1EB6AFCAEA411A66B4A58503CDB /* AWSMobileAnalyticsIOSLifeCycleManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsIOSLifeCycleManager.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsIOSLifeCycleManager.h; sourceTree = "<group>"; };
-		9C9A59B906E8B50F054AF9A6F7E890A0 /* AWSMobileAnalyticsIOSSystem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsIOSSystem.m; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsIOSSystem.m; sourceTree = "<group>"; };
-		9C9B3ECE20577F14ED22D6B72A0EF6D9 /* FBSDKAppEventsUninstall.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKAppEventsUninstall.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/AppEvents/FBSDKAppEventsUninstall.m; sourceTree = "<group>"; };
-		9CBBFD63FFD7D719A32FE14A1DDD6254 /* AWSMantle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMantle.h; path = AWSCore/Mantle/AWSMantle.h; sourceTree = "<group>"; };
-		9CD1B069306CA4C40578325F29B5DB0C /* FBSDKGraphRequestPiggybackManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKGraphRequestPiggybackManager.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/Network/FBSDKGraphRequestPiggybackManager.h; sourceTree = "<group>"; };
-		9CD75A5C357466DEBD77A7469E66C97A /* BFWebViewAppLinkResolver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFWebViewAppLinkResolver.h; path = Bolts/iOS/BFWebViewAppLinkResolver.h; sourceTree = "<group>"; };
-		9D22D3F9C4F95A0A44607E97F548B7DA /* AWSGoogleSignInProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSGoogleSignInProvider.h; path = AWSAuthSDK/Sources/AWSGoogleSignIn/AWSGoogleSignInProvider.h; sourceTree = "<group>"; };
-		9D293CF75CBDBE8F6C8E07761FD8AB09 /* AWSLambdaResources.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSLambdaResources.m; path = AWSLambda/AWSLambdaResources.m; sourceTree = "<group>"; };
-		9D5CC5228AA3748CA6ED03F4299C550A /* AWSMobileAnalyticsUniqueIdService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsUniqueIdService.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsUniqueIdService.h; sourceTree = "<group>"; };
-		9D63ED64257CA5BC792E37F8F79B53F0 /* AWSExecutor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSExecutor.m; path = AWSCore/Bolts/AWSExecutor.m; sourceTree = "<group>"; };
-		9D6927496BAB365E37C61EDF920DE951 /* FBSDKLoginManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKLoginManager.m; path = FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginManager.m; sourceTree = "<group>"; };
-		9D8FE741DDE351178455703E0B61FFDB /* AWSCognitoIdentityUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoIdentityUser.h; path = AWSCognitoIdentityProvider/AWSCognitoIdentityUser.h; sourceTree = "<group>"; };
-		9DC31DB94C39DBB2F44E913D9E51C970 /* FBSDKGraphRequestBody.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKGraphRequestBody.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/Network/FBSDKGraphRequestBody.m; sourceTree = "<group>"; };
-		9DC74B400C21554F0F8ABC7A008582BC /* AWSClientContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSClientContext.m; path = AWSCore/Service/AWSClientContext.m; sourceTree = "<group>"; };
-		9DCD2428B0930A8DDBBBDD6C7438AB72 /* AWSMobileAnalyticsSDKInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsSDKInfo.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsSDKInfo.h; sourceTree = "<group>"; };
-		9E2CC9A2E6E22F03DDB5B29C9B530490 /* AWSMobileAnalyticsEventConstraintDecorator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsEventConstraintDecorator.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsEventConstraintDecorator.h; sourceTree = "<group>"; };
-		9E3AC1CDB9DD7653CA0E18A38E6407B3 /* AWSS3TransferManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSS3TransferManager.m; path = AWSS3/AWSS3TransferManager.m; sourceTree = "<group>"; };
-		9E65009C8AFF06CCBE1061A30BA69476 /* AWSKMS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AWSKMS-dummy.m"; sourceTree = "<group>"; };
-		9E6DEB4DA38CE91AD7DCDE8BCD296ED1 /* AWSMachineLearning-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AWSMachineLearning-dummy.m"; sourceTree = "<group>"; };
-		9E73E3C777F867D2C293BB6B89BB2D18 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = AWSAuthSDK/Sources/AWSFacebookSignIn/Images.xcassets; sourceTree = "<group>"; };
-		9E86AE135BF1142FDB317E2FD4E8074A /* Media.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = AWSLex/Media.xcassets; sourceTree = "<group>"; };
-		9EB51857B717288EBC8ECCED89866132 /* AWSSQSService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSSQSService.h; path = AWSSQS/AWSSQSService.h; sourceTree = "<group>"; };
-		9ED8ABF5035FEAD7DAEA94B0F891DD62 /* AWSXMLWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSXMLWriter.h; path = AWSCore/XMLWriter/AWSXMLWriter.h; sourceTree = "<group>"; };
-		9ED983485A65EC2460901C7E85A9D1FC /* AWSLex-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AWSLex-Info.plist"; sourceTree = "<group>"; };
-		9EE09C426812778C00E6E79EC60A11EF /* BFTaskCompletionSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFTaskCompletionSource.m; path = Bolts/Common/BFTaskCompletionSource.m; sourceTree = "<group>"; };
-		9F20610FFF436412F4834CA2AA4A120D /* FBSDKCrypto.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKCrypto.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/Cryptography/FBSDKCrypto.m; sourceTree = "<group>"; };
-		9F37CD205FC94D84028E4CBDB45CFD0C /* FBSDKLoginConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKLoginConstants.m; path = FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginConstants.m; sourceTree = "<group>"; };
-		9F644ED4BD14EAA1102B7435F06B9831 /* AWSUserPoolsUIOperations.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSUserPoolsUIOperations.m; path = AWSAuthSDK/Sources/AWSUserPoolsSignIn/AWSUserPoolsUIOperations.m; sourceTree = "<group>"; };
-		9F836F8116CE231B48E1C5433BA2A4DB /* FBSDKAppLinkTarget.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAppLinkTarget.h; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKAppLinkTarget.h; sourceTree = "<group>"; };
-		9FFD5631AB5567795FBDF09F51630925 /* FBSDKViewImpressionTracker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKViewImpressionTracker.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/UI/FBSDKViewImpressionTracker.m; sourceTree = "<group>"; };
-		A002E6F2AD715BFEE924D0103CCE4B2C /* AWSCognitoRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSCognitoRecord.m; path = AWSCognito/AWSCognitoRecord.m; sourceTree = "<group>"; };
-		A03E6293167DAEF21EB331B7744113DC /* AWSSESModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSSESModel.h; path = AWSSES/AWSSESModel.h; sourceTree = "<group>"; };
-		A0653202926D9C033553DAA4650A66A0 /* FBSDKConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKConstants.m; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKConstants.m; sourceTree = "<group>"; };
-		A0EDA348410BFA840516D312E37AE09A /* AWSUserPoolsSignIn.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AWSUserPoolsSignIn.xcconfig; sourceTree = "<group>"; };
-		A0F0D8880051EBC6EBFA809308AC271B /* FBSDKButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKButton.m; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKButton.m; sourceTree = "<group>"; };
-		A1048DFEC5DA5B461E77C27380611A1E /* AWSTableInputCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSTableInputCell.h; path = AWSAuthSDK/Sources/AWSUserPoolsSignIn/UserPoolsUI/AWSTableInputCell.h; sourceTree = "<group>"; };
-		A111D6B85A338BE15EADE3677294A281 /* BFURL_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFURL_Internal.h; path = Bolts/iOS/Internal/BFURL_Internal.h; sourceTree = "<group>"; };
-		A12CF3B52DEEEA241C854BB5B155A599 /* AWSS3-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSS3-prefix.pch"; sourceTree = "<group>"; };
-		A16858138B63EA20EBF2A86ACDDA279C /* FBSDKBridgeAPIProtocolNativeV1.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKBridgeAPIProtocolNativeV1.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/BridgeAPI/ProtocolVersions/FBSDKBridgeAPIProtocolNativeV1.m; sourceTree = "<group>"; };
-		A170C46309C6C3D8F9B28FB700EAE0D9 /* AWSFirehoseRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSFirehoseRecorder.h; path = AWSKinesis/AWSFirehoseRecorder.h; sourceTree = "<group>"; };
-		A1C20C730187B870849EA9581C574C69 /* FBSDKDeviceLoginManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKDeviceLoginManager.h; path = FBSDKLoginKit/FBSDKLoginKit/FBSDKDeviceLoginManager.h; sourceTree = "<group>"; };
-		A1D6A0948AF93B7A5500009CE08649C3 /* AWSCognitoAuth.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSCognitoAuth.m; path = AWSCognitoAuth/AWSCognitoAuth.m; sourceTree = "<group>"; };
-		A1EEE7F446960672766E65B96826E403 /* AWSGoogleSignIn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AWSGoogleSignIn.framework; path = AWSGoogleSignIn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A23CCD74BE89DE03E33E88EC112B2FE1 /* Pods-HygieaWasteSortingAppIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HygieaWasteSortingAppIOS.release.xcconfig"; sourceTree = "<group>"; };
-		A266E9D1A5D27A8DD9C214F523915E7B /* AWSAutoScalingResources.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSAutoScalingResources.h; path = AWSAutoScaling/AWSAutoScalingResources.h; sourceTree = "<group>"; };
-		A26963F5DD4A2F84C249DFC2B7490EED /* FBSDKCoreKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSDKCoreKit-Info.plist"; sourceTree = "<group>"; };
-		A2BD008B8DEA221EA0AB6AC90A16D217 /* AWSMobileAnalyticsVirtualMonetizationEventBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsVirtualMonetizationEventBuilder.h; path = AWSMobileAnalytics/AWSMobileAnalyticsVirtualMonetizationEventBuilder.h; sourceTree = "<group>"; };
-		A2BD32657ECD27DCF2282DEBEFFEF1BA /* AWSLexRequestRetryHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSLexRequestRetryHandler.m; path = AWSLex/AWSLexRequestRetryHandler.m; sourceTree = "<group>"; };
-		A360A8201B74C831983DD82C9044430F /* AWSExecutor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSExecutor.h; path = AWSCore/Bolts/AWSExecutor.h; sourceTree = "<group>"; };
-		A39E4285DCB2E4EF77E497DCF9C3898A /* AWSIoTKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSIoTKeychain.h; path = AWSIoT/Internal/AWSIoTKeychain.h; sourceTree = "<group>"; };
-		A3B6385D95C437C95A2B6C7EF9022B99 /* AWSIoT.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSIoT.h; path = AWSIoT/AWSIoT.h; sourceTree = "<group>"; };
-		A4958D00F0BF2C3A7AB87A42D54C6827 /* AWSSTSModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSSTSModel.h; path = AWSCore/STS/AWSSTSModel.h; sourceTree = "<group>"; };
-		A4F4472A0EB818BFB3D90C32F95B3695 /* AWSDynamoDBModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSDynamoDBModel.h; path = AWSDynamoDB/AWSDynamoDBModel.h; sourceTree = "<group>"; };
-		A50B43D6D73ED24313A76FB19D2633D8 /* FBSDKWebViewAppLinkResolver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKWebViewAppLinkResolver.h; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKWebViewAppLinkResolver.h; sourceTree = "<group>"; };
-		A511621677AA46B7DA3D64A174DCB4B9 /* AWSClientContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSClientContext.h; path = AWSCore/Service/AWSClientContext.h; sourceTree = "<group>"; };
-		A514B99FC0867101C4BFE4FC11815E9C /* AWSDDASLLogCapture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSDDASLLogCapture.h; path = AWSCore/Logging/AWSDDASLLogCapture.h; sourceTree = "<group>"; };
-		A6022C1BFF95DD3B236E17DE8062127C /* ResourceBundle-AWSFacebookSignIn-AWSFacebookSignIn-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-AWSFacebookSignIn-AWSFacebookSignIn-Info.plist"; sourceTree = "<group>"; };
-		A61C1112588C0AC2707A6586CA5ECD57 /* AWSPollySynthesizeSpeechURLBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSPollySynthesizeSpeechURLBuilder.h; path = AWSPolly/AWSPollySynthesizeSpeechURLBuilder.h; sourceTree = "<group>"; };
-		A634F4A4F9A2C1ACC04DE277DF278556 /* AWSKinesis-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AWSKinesis-dummy.m"; sourceTree = "<group>"; };
-		A650F57F833C0D337802CA78EE1C307C /* AWSLex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSLex.h; path = AWSLex/AWSLex.h; sourceTree = "<group>"; };
-		A66812727056D7850CC62E86967A42F4 /* AWSKinesis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AWSKinesis.framework; path = AWSKinesis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6A43BF94D3DE15929CA9E6AFA4D3414 /* AWSCognitoIdentityProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoIdentityProvider.h; path = AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.h; sourceTree = "<group>"; };
-		A6D0BC4002C7C19424595FFE1A876AD9 /* AWSAuthCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AWSAuthCore.framework; path = AWSAuthCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A70F20979B8515351B0623E919F6BC4E /* FBSDKMonotonicTime.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKMonotonicTime.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKMonotonicTime.m; sourceTree = "<group>"; };
-		A72ACE9F57691FA5395ACBBA9FBDE185 /* FBSDKEventBinding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKEventBinding.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/AppEvents/Codeless/FBSDKEventBinding.m; sourceTree = "<group>"; };
-		A72CA2AE2657F942993927A301C64AE4 /* AWSSES-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AWSSES-Info.plist"; sourceTree = "<group>"; };
-		A77D985183BC447360DF7D22130A5C0A /* Fabric.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Fabric.h; path = AWSCore/Fabric/Fabric.h; sourceTree = "<group>"; };
-		A7C128CB4FBE0EE1BC8E730D9AB3DD1D /* AWSMobileAnalyticsMonetizationEventBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsMonetizationEventBuilder.m; path = AWSMobileAnalytics/AWSMobileAnalyticsMonetizationEventBuilder.m; sourceTree = "<group>"; };
-		A81808B77416B5E722BB1326D2E6BC8B /* FBSDKProfile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKProfile.h; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKProfile.h; sourceTree = "<group>"; };
-		A81E0E655EE1ED7A86C0299CC123043E /* AWSSimpleDBModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSSimpleDBModel.h; path = AWSSimpleDB/AWSSimpleDBModel.h; sourceTree = "<group>"; };
-		A8642D8440A735B74EE903AB70A99754 /* AWSEC2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AWSEC2.framework; path = AWSEC2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A885977AB12CC2575E38A295333B4E6E /* AWSS3Service.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSS3Service.m; path = AWSS3/AWSS3Service.m; sourceTree = "<group>"; };
-		A8D7D5C5213B0876BA1ABC6F68F3ADC0 /* BFExecutor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFExecutor.h; path = Bolts/Common/BFExecutor.h; sourceTree = "<group>"; };
-		A8EEC5C5A0A4742C08243FDD296DCC20 /* AWSMobileClient-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AWSMobileClient-Info.plist"; sourceTree = "<group>"; };
-		A92BE7AD465A84B027B9B4545EDF0A24 /* FBSDKApplicationDelegate+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBSDKApplicationDelegate+Internal.h"; path = "FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKApplicationDelegate+Internal.h"; sourceTree = "<group>"; };
-		A9C1E16B81E1BF744045BEB69B1F0301 /* FBSDKServerConfigurationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKServerConfigurationManager.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/ServerConfiguration/FBSDKServerConfigurationManager.m; sourceTree = "<group>"; };
-		A9C3CCD2F19B76EB03E74B7589B78802 /* AWSElasticLoadBalancing-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSElasticLoadBalancing-umbrella.h"; sourceTree = "<group>"; };
-		AA400E2A752E3366A0C3FC2B1C331CCA /* AWSLexVoiceButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSLexVoiceButton.m; path = AWSLex/AWSLexVoiceButton.m; sourceTree = "<group>"; };
-		AA6AABBE69038900C9CCB7A2D9B27569 /* AWSLogs.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AWSLogs.xcconfig; sourceTree = "<group>"; };
-		AB04F14C9F5A0493B8B66AF945DEB00F /* AWSDDMultiFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSDDMultiFormatter.m; path = AWSCore/Logging/AWSDDMultiFormatter.m; sourceTree = "<group>"; };
-		AB2B0181AE4C36B67767AE031865FA2F /* AWSLexInteractionKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSLexInteractionKit.h; path = AWSLex/AWSLexInteractionKit.h; sourceTree = "<group>"; };
-		AB537AE8B67CD74F4E2A0B75FC671B46 /* AWSMobileAnalyticsDefaultDeliveryClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsDefaultDeliveryClient.m; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsDefaultDeliveryClient.m; sourceTree = "<group>"; };
-		ABA1E486DDFD715D20C0846E5B848B27 /* FBSDKMaleSilhouetteIcon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKMaleSilhouetteIcon.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/UI/FBSDKMaleSilhouetteIcon.h; sourceTree = "<group>"; };
-		ABCC1D3E134873129F8608BC03861FB2 /* _FBSDKLoginRecoveryAttempter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _FBSDKLoginRecoveryAttempter.h; path = FBSDKLoginKit/FBSDKLoginKit/Internal/_FBSDKLoginRecoveryAttempter.h; sourceTree = "<group>"; };
-		ABD117C4A139138EF5BFA70165521429 /* AWSSNSModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSSNSModel.h; path = AWSSNS/AWSSNSModel.h; sourceTree = "<group>"; };
-		AC080CFDA27414830611BBAA5ECAAA93 /* AWSAuthUI.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AWSAuthUI.xcconfig; sourceTree = "<group>"; };
-		AC601E6D521C3DA01595E18385D36544 /* AWSRekognitionResources.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSRekognitionResources.h; path = AWSRekognition/AWSRekognitionResources.h; sourceTree = "<group>"; };
-		AC821E1D16F802309C94BDE3958B5E49 /* AWSCancellationToken.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSCancellationToken.m; path = AWSCore/Bolts/AWSCancellationToken.m; sourceTree = "<group>"; };
-		AC8B5DA8DF1EE66BCB97F503D90F089B /* AWSUserPoolsSignIn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSUserPoolsSignIn.h; path = AWSAuthSDK/Sources/AWSUserPoolsSignIn/AWSUserPoolsSignIn.h; sourceTree = "<group>"; };
-		AD04C2FFB424AA4BCCCB4402CE5F522A /* AWSLexRequestRetryHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSLexRequestRetryHandler.h; path = AWSLex/AWSLexRequestRetryHandler.h; sourceTree = "<group>"; };
-		AD19C6ADFB242B7A02D32494A706DEA8 /* FBSDKDeviceLoginError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKDeviceLoginError.h; path = FBSDKLoginKit/FBSDKLoginKit/Internal/FBSDKDeviceLoginError.h; sourceTree = "<group>"; };
-		AD4CE06D74EA4DF113E880F076EB4BEF /* AWSCognitoIdentityProviderHKDF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoIdentityProviderHKDF.h; path = AWSCognitoIdentityProvider/Internal/AWSCognitoIdentityProviderHKDF.h; sourceTree = "<group>"; };
-		ADED4365513713C8EBDD89221BE4BF62 /* AWSCognitoIdentityProvider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AWSCognitoIdentityProvider-dummy.m"; sourceTree = "<group>"; };
-		AE4FDE109A3F496199F769297BC74091 /* BFAudioEncoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFAudioEncoding.h; path = AWSLex/Bluefront/include/BFAudioEncoding.h; sourceTree = "<group>"; };
-		AE837CBD5494C74C605131240191E008 /* AWSMobileAnalyticsDefaultEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsDefaultEvent.m; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsDefaultEvent.m; sourceTree = "<group>"; };
-		AE8426B8C6693D5BF8E1519B6A649930 /* FBSDKGraphRequestConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKGraphRequestConnection.h; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphRequestConnection.h; sourceTree = "<group>"; };
-		AF08755F6876B03B9D32B735283510E5 /* AWSCognitoIdentityProviderASF.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSCognitoIdentityProviderASF.m; path = AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF.m; sourceTree = "<group>"; };
-		AF2C27FDA66E48CE904DD03B64B2DB1D /* AWSMobileAnalyticsERSResources.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsERSResources.m; path = AWSMobileAnalytics/AWSMobileAnalyticsERS/AWSMobileAnalyticsERSResources.m; sourceTree = "<group>"; };
-		AF61DB33154D9659EE83167D7E1774D6 /* Fabric+FABKits.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Fabric+FABKits.h"; path = "AWSCore/Fabric/Fabric+FABKits.h"; sourceTree = "<group>"; };
-		AFB5F26E6E4D2441B0D745428E4B7DFE /* BFAppLinkReturnToRefererController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFAppLinkReturnToRefererController.m; path = Bolts/iOS/BFAppLinkReturnToRefererController.m; sourceTree = "<group>"; };
-		AFFC5EFB8018EEC29C8A5D42666D8FDF /* AWSMQTTDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMQTTDecoder.h; path = AWSIoT/Internal/MQTTSDK/AWSMQTTDecoder.h; sourceTree = "<group>"; };
-		B039B3C46CAAFB31D03C28E782BBBDFD /* AWSAuthUIConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSAuthUIConfiguration.h; path = AWSAuthSDK/Sources/AWSAuthUI/AWSAuthUIConfiguration.h; sourceTree = "<group>"; };
-		B05CE0521AFA3D8EE868DA6680C760FD /* AWSMobileAnalyticsPrefsUniqueIdService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsPrefsUniqueIdService.m; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsPrefsUniqueIdService.m; sourceTree = "<group>"; };
-		B0A73BCCB3EB34CE33DD26AF11D7C565 /* AWSMachineLearning.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMachineLearning.h; path = AWSMachineLearning/AWSMachineLearning.h; sourceTree = "<group>"; };
-		B0B5EC79BF7D29B2E6BCC098EE7F1723 /* FBSDKGraphErrorRecoveryProcessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKGraphErrorRecoveryProcessor.m; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphErrorRecoveryProcessor.m; sourceTree = "<group>"; };
-		B1303FA23CFA770F4ABF8FD48D53B558 /* AWSIoTModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSIoTModel.h; path = AWSIoT/AWSIoTModel.h; sourceTree = "<group>"; };
-		B1E9F01FC4B0BC4615FC8D768918DC77 /* AWSCancellationTokenRegistration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSCancellationTokenRegistration.m; path = AWSCore/Bolts/AWSCancellationTokenRegistration.m; sourceTree = "<group>"; };
-		B269145034E166EFB59E1B2B9024483B /* Bolts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Bolts.framework; path = Bolts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3600B4D8643465820A5A56DC5171195 /* BFAppLink.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFAppLink.h; path = Bolts/iOS/BFAppLink.h; sourceTree = "<group>"; };
-		B3969E997C9E7F73D203EB82C99E18AF /* AWSCognitoUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoUtil.h; path = AWSCognito/Internal/AWSCognitoUtil.h; sourceTree = "<group>"; };
-		B3AF35CC29C6903C430713CFA4F3F396 /* AWSPinpointNotificationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSPinpointNotificationManager.h; path = AWSPinpoint/AWSPinpointNotificationManager.h; sourceTree = "<group>"; };
-		B3C47F8E1611CE565FA4097440723D56 /* AWSSimpleDBResources.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSSimpleDBResources.m; path = AWSSimpleDB/AWSSimpleDBResources.m; sourceTree = "<group>"; };
-		B3D669E87815F129BCAE02687CBA8B51 /* NSData+AWSCognitoIdentityProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+AWSCognitoIdentityProvider.m"; path = "AWSCognitoIdentityProvider/Internal/NSData+AWSCognitoIdentityProvider.m"; sourceTree = "<group>"; };
-		B3ECE4EE835E695F53B09E503F2D20D9 /* AWSSES.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AWSSES.xcconfig; sourceTree = "<group>"; };
-		B45CBBD5DB2851F1FB2490F7A69DD933 /* AWSKMS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSKMS-prefix.pch"; sourceTree = "<group>"; };
-		B4AB532B1C3ECD1336FB68C8DA070326 /* AWSLexResources.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSLexResources.m; path = AWSLex/AWSLexResources.m; sourceTree = "<group>"; };
-		B4C70452D138589E3B03361CF9996C7F /* AWSCognitoIdentityProviderASF.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AWSCognitoIdentityProviderASF.xcconfig; sourceTree = "<group>"; };
-		B506CBC4506197FC6A7B7461D2312B69 /* AWSMachineLearningModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMachineLearningModel.h; path = AWSMachineLearning/AWSMachineLearningModel.h; sourceTree = "<group>"; };
-		B511F92B56A3AE50B395B550F6D3D9FF /* FBSDKCoreKit+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBSDKCoreKit+Internal.h"; path = "FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKCoreKit+Internal.h"; sourceTree = "<group>"; };
-		B514867FA23101BDC1DC954AF7520B8F /* ResourceBundle-AWSGoogleSignIn-AWSGoogleSignIn-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-AWSGoogleSignIn-AWSGoogleSignIn-Info.plist"; sourceTree = "<group>"; };
-		B5451729F04DC2DDA795919837E8FA41 /* GIDGoogleUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GIDGoogleUser.h; path = AWSAuthSDK/Dependencies/GoogleHeaders/GIDGoogleUser.h; sourceTree = "<group>"; };
-		B555CDBDD4D37C01FDBAA651C36DF3B7 /* AWSPinpointStringUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSPinpointStringUtils.m; path = AWSPinpoint/Internal/AWSPinpointStringUtils.m; sourceTree = "<group>"; };
-		B55ED82589AFABAD59AC402EB28FCEF0 /* AWSKinesisRecorder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSKinesisRecorder.m; path = AWSKinesis/AWSKinesisRecorder.m; sourceTree = "<group>"; };
-		B62FED5AB2B61072937A6697C9161033 /* AWSUserPoolsUIOperations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSUserPoolsUIOperations.h; path = AWSAuthSDK/Sources/AWSUserPoolsSignIn/AWSUserPoolsUIOperations.h; sourceTree = "<group>"; };
-		B67B344F6011A26B3D090B3189E8F3A1 /* NSObject+AWSMTLComparisonAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+AWSMTLComparisonAdditions.h"; path = "AWSCore/Mantle/NSObject+AWSMTLComparisonAdditions.h"; sourceTree = "<group>"; };
-		B6951F0CC690D912224A6F287634A305 /* AWSFacebookSignInButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSFacebookSignInButton.m; path = AWSAuthSDK/Sources/AWSFacebookSignIn/AWSFacebookSignInButton.m; sourceTree = "<group>"; };
-		B697F36A54F78DBACF3895AF03076524 /* AWSMobileAnalyticsBufferedReader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsBufferedReader.m; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsBufferedReader.m; sourceTree = "<group>"; };
-		B6A50EDC82EB2F4678724758A8604CDB /* AWSSQS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSSQS-prefix.pch"; sourceTree = "<group>"; };
-		B6F22802A603ADDA7F4D1EA53594A8B7 /* FBSDKAccessTokenCacheV4.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAccessTokenCacheV4.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/TokenCaching/FBSDKAccessTokenCacheV4.h; sourceTree = "<group>"; };
-		B6F95925B2820B55AE7B66475859CCCC /* AWSSQS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AWSSQS-Info.plist"; sourceTree = "<group>"; };
-		B7103B026EC4E86239045CD53B188910 /* AWSCore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AWSCore.xcconfig; sourceTree = "<group>"; };
-		B74F5E8FACD3CDC3373046256DDB67CC /* AWSSQS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AWSSQS.framework; path = AWSSQS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B751521A62DCA37995F6AD19B715576B /* AWSCognitoIdentityProviderResources.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSCognitoIdentityProviderResources.m; path = AWSCognitoIdentityProvider/CognitoIdentityProvider/AWSCognitoIdentityProviderResources.m; sourceTree = "<group>"; };
-		B7605F4796D0BBD5A3D1C4BB7C8C1982 /* FBSDKPaymentObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKPaymentObserver.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/AppEvents/FBSDKPaymentObserver.m; sourceTree = "<group>"; };
-		B7E7C56D132C767E58C44C662428F4CA /* AWSSNS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AWSSNS-Info.plist"; sourceTree = "<group>"; };
-		B821C75FB40970961FA48D586C047E90 /* AWSCognitoSyncModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoSyncModel.h; path = AWSCognito/CognitoSync/AWSCognitoSyncModel.h; sourceTree = "<group>"; };
-		B8521E0B589705D2BA7AAAAF375A6727 /* BFURL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFURL.h; path = Bolts/iOS/BFURL.h; sourceTree = "<group>"; };
-		B8779E9E602A9ECA539D7F9264520F97 /* AWSKinesis.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AWSKinesis.modulemap; sourceTree = "<group>"; };
-		B8860A312A2B73E857DC60684525DAA7 /* AWSDynamoDBObjectMapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSDynamoDBObjectMapper.h; path = AWSDynamoDB/AWSDynamoDBObjectMapper.h; sourceTree = "<group>"; };
-		B8B1240E4E19E4A3BE460EBE492E1D08 /* AWSPinpointEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSPinpointEvent.m; path = AWSPinpoint/AWSPinpointEvent.m; sourceTree = "<group>"; };
-		B8FE9E46A6BB0FE6EA0DA30DB979780F /* AWSMobileAnalyticsConfiguring.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsConfiguring.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsConfiguring.h; sourceTree = "<group>"; };
-		B90E3DB04F19C34848E90C717D418513 /* AWSMobileAnalyticsEventClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsEventClient.h; path = AWSMobileAnalytics/AWSMobileAnalyticsEventClient.h; sourceTree = "<group>"; };
-		B9381FF9E5518A18B51C7FB80139C06F /* AWSFormTableDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSFormTableDelegate.m; path = AWSAuthSDK/Sources/AWSUserPoolsSignIn/UserPoolsUI/AWSFormTableDelegate.m; sourceTree = "<group>"; };
-		B96E0FB1DB3E061754F1674E24DA2EAC /* FBSDKViewHierarchy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKViewHierarchy.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/AppEvents/Codeless/FBSDKViewHierarchy.m; sourceTree = "<group>"; };
-		B9A45F634C0B76B16CA117CA447E4EA7 /* Bolts.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Bolts.modulemap; sourceTree = "<group>"; };
-		B9C00D66D688C398A61C84DB32BC8B60 /* AWSSignInProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSSignInProvider.h; path = AWSAuthSDK/Sources/AWSAuthCore/AWSSignInProvider.h; sourceTree = "<group>"; };
-		B9DE2C057B2EB3E00DC5AA617B15477A /* AWSMobileAnalyticsSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsSession.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsSession.h; sourceTree = "<group>"; };
-		BA5FE3D399D87D5578BC333748D753BA /* FBSDKAppLinkNavigation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAppLinkNavigation.h; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKAppLinkNavigation.h; sourceTree = "<group>"; };
-		BA6D7DE0CE800747E566CF2418576E83 /* FBSDKAppEventsState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAppEventsState.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/AppEvents/FBSDKAppEventsState.h; sourceTree = "<group>"; };
-		BA795E52A9F429B7578FB09EC0A517A3 /* AWSCloudWatchService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSCloudWatchService.m; path = AWSCloudWatch/AWSCloudWatchService.m; sourceTree = "<group>"; };
-		BA931283F0CAACFB4BED0EE524E61193 /* AWSIdentityProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSIdentityProvider.m; path = AWSCore/Authentication/AWSIdentityProvider.m; sourceTree = "<group>"; };
-		BA97D8FF69D127680038ECF8F1F298D3 /* AWSSimpleDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AWSSimpleDB-dummy.m"; sourceTree = "<group>"; };
-		BB0A67C1E0AB8E6D2BA9967FDEF8F475 /* AWSMobileAnalyticsEventStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsEventStore.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsEventStore.h; sourceTree = "<group>"; };
-		BB0EC50F99A6D650A3790D309C2C31D5 /* AWSCocoaLumberjack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCocoaLumberjack.h; path = AWSCore/Logging/AWSCocoaLumberjack.h; sourceTree = "<group>"; };
-		BB2E0AF008E522A24EB3D7AEE322D855 /* AWSIoTResources.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSIoTResources.m; path = AWSIoT/AWSIoTResources.m; sourceTree = "<group>"; };
-		BB695F1ACA8B5D90CCCDBB3E93765C02 /* AWSCognitoIdentity+Fabric.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "AWSCognitoIdentity+Fabric.m"; path = "AWSCore/CognitoIdentity/AWSCognitoIdentity+Fabric.m"; sourceTree = "<group>"; };
-		BB727C1D67721A3F92B172B235307DCE /* AWSSignInButtonView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSSignInButtonView.h; path = AWSAuthSDK/Sources/AWSAuthCore/AWSSignInButtonView.h; sourceTree = "<group>"; };
-		BBBC75E835395FABD0C91F1C36125EB4 /* AWSMachineLearningResources.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMachineLearningResources.m; path = AWSMachineLearning/AWSMachineLearningResources.m; sourceTree = "<group>"; };
-		BBBCD63B7FE44828176FB5DED816F4FB /* AWSElasticLoadBalancing-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSElasticLoadBalancing-prefix.pch"; sourceTree = "<group>"; };
-		BC07E4C54833E7B8EA4FBFAAFCD137D7 /* FBSDKDeviceLoginCodeInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKDeviceLoginCodeInfo.m; path = FBSDKLoginKit/FBSDKLoginKit/FBSDKDeviceLoginCodeInfo.m; sourceTree = "<group>"; };
-		BC27C2A05A55DAA90861F14B004972AA /* FBSDKProfilePictureView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKProfilePictureView.h; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKProfilePictureView.h; sourceTree = "<group>"; };
-		BC379402019FB0389F607F9C35D8974E /* AWSUICKeyChainStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSUICKeyChainStore.m; path = AWSCore/UICKeyChainStore/AWSUICKeyChainStore.m; sourceTree = "<group>"; };
-		BC720DBC60E74857BB96A9BA87379EB8 /* FBSDKWebDialog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKWebDialog.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/WebDialog/FBSDKWebDialog.m; sourceTree = "<group>"; };
-		BC803B4933B8CE6B3067273256B74D31 /* FBSDKInternalUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKInternalUtility.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKInternalUtility.h; sourceTree = "<group>"; };
-		BCA87E4036693F98747244CB92E44B02 /* AWSLogging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSLogging.m; path = AWSCore/Utility/AWSLogging.m; sourceTree = "<group>"; };
-		BCC3DB0949A8F1A8811F5504FE1C18FF /* AWSCognitoSyncResources.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoSyncResources.h; path = AWSCognito/CognitoSync/AWSCognitoSyncResources.h; sourceTree = "<group>"; };
-		BCE040A43CF06C1D81568191C25B7903 /* FBSDKAccessTokenCaching.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAccessTokenCaching.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/TokenCaching/FBSDKAccessTokenCaching.h; sourceTree = "<group>"; };
-		BCEF6B6FF5C477C82B0E6ED790370F1C /* ResourceBundle-AWSAuthUI-AWSAuthUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-AWSAuthUI-AWSAuthUI-Info.plist"; sourceTree = "<group>"; };
-		BCF9A29998EEAF5B247EE2F1347C3973 /* Bolts-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Bolts-dummy.m"; sourceTree = "<group>"; };
-		BD8B4A40E586C7860E8EA85A07875D3E /* AWSSimpleDBService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSSimpleDBService.m; path = AWSSimpleDB/AWSSimpleDBService.m; sourceTree = "<group>"; };
-		BDB223B8C2E4D14983E860990C37B5B9 /* AWSMobileAnalyticsRandomUUIDGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsRandomUUIDGenerator.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsRandomUUIDGenerator.h; sourceTree = "<group>"; };
-		BDE48394CEF86CE09DC6EB5A7CE4BDB1 /* AWSMobileAnalyticsDeliveryPolicyFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsDeliveryPolicyFactory.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsDeliveryPolicyFactory.h; sourceTree = "<group>"; };
-		BEBD47EEDE00F1B11D7703E37674E6BF /* FBSDKURLConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKURLConnection.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/Network/FBSDKURLConnection.m; sourceTree = "<group>"; };
-		BEC32B761DC0A7CA4B3D092816A10075 /* GIDAuthentication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GIDAuthentication.h; path = AWSAuthSDK/Dependencies/GoogleHeaders/GIDAuthentication.h; sourceTree = "<group>"; };
-		BECB6B87DEAA9D4A2C3526B6C4727398 /* FBSDKDeviceRequestsHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKDeviceRequestsHelper.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKDeviceRequestsHelper.h; sourceTree = "<group>"; };
-		BED6D35D5A2470881A4EE4BB669EF1E2 /* AWSMobileAnalyticsUniqueIdGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsUniqueIdGenerator.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsUniqueIdGenerator.h; sourceTree = "<group>"; };
-		BF1B1F63E15916FC0B41C1804A47D01C /* AWSDDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSDDAbstractDatabaseLogger.m; path = AWSCore/Logging/AWSDDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
-		BF4A2F7E45F1372D36EF1E8F7F798EC4 /* FBSDKDeviceLoginError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKDeviceLoginError.m; path = FBSDKLoginKit/FBSDKLoginKit/Internal/FBSDKDeviceLoginError.m; sourceTree = "<group>"; };
-		BF76B2340B5E7FFE2E0D654EBBDFBE64 /* AWSMobileClient-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSMobileClient-prefix.pch"; sourceTree = "<group>"; };
-		C00AD54AB7DF660088897E14ED252ABF /* FBSDKAccessTokenCacheV3_17.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKAccessTokenCacheV3_17.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/TokenCaching/FBSDKAccessTokenCacheV3_17.m; sourceTree = "<group>"; };
-		C036FB3EE4E5D3327B9F972908B325E8 /* AWSS3.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AWSS3.xcconfig; sourceTree = "<group>"; };
-		C080BA565D77394B0341CC171EE7C87D /* FBSDKMutableCopying.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKMutableCopying.h; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKMutableCopying.h; sourceTree = "<group>"; };
-		C089B1BA0E02B8A56C2CA88F4738EE84 /* AWSAuthCore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSAuthCore-prefix.pch"; sourceTree = "<group>"; };
-		C0FC01603F867EA83E7DC3285B717116 /* FBSDKDynamicFrameworkLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKDynamicFrameworkLoader.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKDynamicFrameworkLoader.h; sourceTree = "<group>"; };
-		C120E1DD7AC9811584CFCC8E6CA89EE5 /* AWSCognitoSQLiteManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSCognitoSQLiteManager.m; path = AWSCognito/Internal/AWSCognitoSQLiteManager.m; sourceTree = "<group>"; };
-		C15F6E213F2FB82A5F57B206E0359458 /* AWSPinpointTargetingModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSPinpointTargetingModel.m; path = AWSPinpoint/AWSPinpointTargeting/AWSPinpointTargetingModel.m; sourceTree = "<group>"; };
-		C15FFE2B3251B2600B836ED2D2450985 /* AWSLex-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSLex-umbrella.h"; sourceTree = "<group>"; };
-		C1924B89493856F448C4688085BA38DD /* FBSDKTriStateBOOL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKTriStateBOOL.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKTriStateBOOL.h; sourceTree = "<group>"; };
-		C1FBEBDB0D88141877837B962F316292 /* AWSMobileAnalyticsIOSConnectivity.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsIOSConnectivity.m; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsIOSConnectivity.m; sourceTree = "<group>"; };
-		C26963A68AE2D0D92C6F71A29C843817 /* FBSDKLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKLogger.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKLogger.h; sourceTree = "<group>"; };
-		C28964977185EFC7A1210C52B35A9322 /* FBSDKMath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKMath.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKMath.h; sourceTree = "<group>"; };
-		C2D549E384E91B4F5CE2BAED34AD225C /* AWSIdentityProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSIdentityProvider.h; path = AWSCore/Authentication/AWSIdentityProvider.h; sourceTree = "<group>"; };
-		C2E5D5881191DEC09ED4BDB09976EE0F /* AWSLex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AWSLex.framework; path = AWSLex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2EC19F09351536FC5B19439E1E7F775 /* _FBSDKTemporaryErrorRecoveryAttempter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _FBSDKTemporaryErrorRecoveryAttempter.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/ErrorRecovery/_FBSDKTemporaryErrorRecoveryAttempter.h; sourceTree = "<group>"; };
-		C2FF804F2CB152DED32792D21463C262 /* AWSPinpointEndpointProfile.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSPinpointEndpointProfile.m; path = AWSPinpoint/AWSPinpointEndpointProfile.m; sourceTree = "<group>"; };
-		C3175E507A156CE1AD31EFD77F2EF4A8 /* AWSMQTTDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMQTTDecoder.m; path = AWSIoT/Internal/MQTTSDK/AWSMQTTDecoder.m; sourceTree = "<group>"; };
-		C3195B5346B2665FD08E6B8A60573201 /* AWSEC2Service.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSEC2Service.h; path = AWSEC2/AWSEC2Service.h; sourceTree = "<group>"; };
-		C379265635D94503A91B4D0B2E197B4D /* AWSTMCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSTMCache.m; path = AWSCore/TMCache/AWSTMCache.m; sourceTree = "<group>"; };
-		C398CFF7A3EBC9AED448BC77E6DAD376 /* FBSDKBoltsMeasurementEventListener.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKBoltsMeasurementEventListener.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/AppLink/FBSDKBoltsMeasurementEventListener.m; sourceTree = "<group>"; };
-		C3D4BBA5105BFAF268A71E0D7279D39A /* FBSDKKeychainStoreViaBundleID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKKeychainStoreViaBundleID.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/TokenCaching/FBSDKKeychainStoreViaBundleID.h; sourceTree = "<group>"; };
-		C3DBD466595A715E4BC736ECF7761788 /* AWSFirehoseResources.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSFirehoseResources.m; path = AWSKinesis/AWSFirehoseResources.m; sourceTree = "<group>"; };
-		C45C3C2AC51D94F139CD3E69BBD38149 /* AWSMobileAnalyticsDefaultSessionClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsDefaultSessionClient.m; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsDefaultSessionClient.m; sourceTree = "<group>"; };
-		C488CC47A579BAB2E12C2A6721698313 /* FBSDKLoginCompletion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKLoginCompletion.m; path = FBSDKLoginKit/FBSDKLoginKit/Internal/FBSDKLoginCompletion.m; sourceTree = "<group>"; };
-		C4CC6AC03FA3E1977899114DCCB5AB09 /* AWSKMSService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSKMSService.m; path = AWSKMS/AWSKMSService.m; sourceTree = "<group>"; };
-		C5128A3AED60F2DDFB53EA2AB32DE058 /* AWSAuthCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSAuthCore.h; path = AWSAuthSDK/Sources/AWSAuthCore/AWSAuthCore.h; sourceTree = "<group>"; };
-		C51FBE75F59B6B8AC9AE2D0C6089C54B /* AWSS3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSS3.h; path = AWSS3/AWSS3.h; sourceTree = "<group>"; };
-		C5879F9EE1EDCB3034F1DDCD88A959CD /* AWSMobileClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileClient.h; path = AWSAuthSDK/Sources/AWSMobileClient/AWSMobileClient.h; sourceTree = "<group>"; };
-		C62C1FC3544E50B366A8B1AAAB497519 /* AWSDDContextFilterLogFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSDDContextFilterLogFormatter.m; path = AWSCore/Logging/Extensions/AWSDDContextFilterLogFormatter.m; sourceTree = "<group>"; };
-		C66ADAAF720D41CF0BAA7E9D3F9146DA /* AWSSignInViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSSignInViewController.m; path = AWSAuthSDK/Sources/AWSAuthUI/AWSSignInViewController.m; sourceTree = "<group>"; };
-		C679BA77915932A37B84B7F3B080D70C /* FBSDKSwizzler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKSwizzler.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKSwizzler.m; sourceTree = "<group>"; };
-		C7020E02745665E508DB7DB4C2F6C722 /* AWSCognitoIdentityProviderASF-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AWSCognitoIdentityProviderASF-Info.plist"; sourceTree = "<group>"; };
-		C716094731858823D9748E44638AED6E /* AWSGoogleSignIn.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AWSGoogleSignIn.xcconfig; sourceTree = "<group>"; };
-		C74D28744CCFCC808A60729A35B02DF1 /* AWSCognitoRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoRecord.h; path = AWSCognito/AWSCognitoRecord.h; sourceTree = "<group>"; };
-		C785879A4FF3E426A665864E40EE5A89 /* AWSMTLValueTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMTLValueTransformer.m; path = AWSCore/Mantle/AWSMTLValueTransformer.m; sourceTree = "<group>"; };
-		C807749BCD6764E4F764211AB4CE811D /* FBSDKBase64.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKBase64.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/Base64/FBSDKBase64.m; sourceTree = "<group>"; };
-		C80EE6F6438889760AC82D7670A2E4D7 /* FBSDKBridgeAPIProtocolWebV2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKBridgeAPIProtocolWebV2.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/BridgeAPI/ProtocolVersions/FBSDKBridgeAPIProtocolWebV2.h; sourceTree = "<group>"; };
-		C836F6F40A737A4466D562E340837DB2 /* AWSFacebookSignInProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSFacebookSignInProvider.h; path = AWSAuthSDK/Sources/AWSFacebookSignIn/AWSFacebookSignInProvider.h; sourceTree = "<group>"; };
-		C84EA542875D2182E0022DC61DBE31B4 /* AWSTMMemoryCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSTMMemoryCache.h; path = AWSCore/TMCache/AWSTMMemoryCache.h; sourceTree = "<group>"; };
-		C867D47E92186D32378F43D5F156A46B /* FBSDKCodelessMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKCodelessMacros.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/AppEvents/Codeless/FBSDKCodelessMacros.h; sourceTree = "<group>"; };
-		C897CDBEE0875FA608E31CEE11064F6E /* AWSSynchronizedMutableDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSSynchronizedMutableDictionary.m; path = AWSCore/Utility/AWSSynchronizedMutableDictionary.m; sourceTree = "<group>"; };
-		C8D41111D77192D7DFDB99A4268F7BAA /* FBSDKBridgeAPIProtocolType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKBridgeAPIProtocolType.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/BridgeAPI/FBSDKBridgeAPIProtocolType.h; sourceTree = "<group>"; };
-		C8FCB087B6178AE38723B95EB9CE0B54 /* AWSMobileAnalyticsActiveSessionState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsActiveSessionState.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsActiveSessionState.h; sourceTree = "<group>"; };
-		C93D9DA023A794CF0AA15488A394C722 /* AWSMobileAnalyticsConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsConfiguration.h; path = AWSMobileAnalytics/AWSMobileAnalyticsConfiguration.h; sourceTree = "<group>"; };
-		C98F6576483FC3780C024A70CA591204 /* AWSLexSignature.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSLexSignature.m; path = AWSLex/AWSLexSignature.m; sourceTree = "<group>"; };
-		C9C267C107648731723C76362155E418 /* AWSMobileAnalyticsEventConstraintDecorator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsEventConstraintDecorator.m; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsEventConstraintDecorator.m; sourceTree = "<group>"; };
-		C9C323C213CED80C402F865D839C8DBA /* Bolts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Bolts.h; path = Bolts/Common/Bolts.h; sourceTree = "<group>"; };
-		C9D7068834493A3423C313C907BA19B2 /* AWSKMSService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSKMSService.h; path = AWSKMS/AWSKMSService.h; sourceTree = "<group>"; };
-		CA391C88B829A15E9FF4A20680C7407B /* AWSPollyEnumTranslatorUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSPollyEnumTranslatorUtility.h; path = AWSPolly/AWSPollyEnumTranslatorUtility.h; sourceTree = "<group>"; };
-		CA93AC4E85870DDFC9F80D4028CFA2C7 /* AWSFirehoseService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSFirehoseService.h; path = AWSKinesis/AWSFirehoseService.h; sourceTree = "<group>"; };
-		CAA9A83F46E96AD801EACE055B18D503 /* AWSMobileAnalyticsLifeCycleManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsLifeCycleManager.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsLifeCycleManager.h; sourceTree = "<group>"; };
-		CB15F720C475AE9A9746BBFF0E5D1D6E /* AWSDynamoDBService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSDynamoDBService.m; path = AWSDynamoDB/AWSDynamoDBService.m; sourceTree = "<group>"; };
-		CB48A917E436AD193DDE7B720963C73A /* FBSDKGraphRequestBody.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKGraphRequestBody.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/Network/FBSDKGraphRequestBody.h; sourceTree = "<group>"; };
-		CB7CAC09D902CB02CA7E62B6EB47DAB4 /* AWSCognitoIdentityProviderModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoIdentityProviderModel.h; path = AWSCognitoIdentityProvider/CognitoIdentityProvider/AWSCognitoIdentityProviderModel.h; sourceTree = "<group>"; };
-		CC1D83E69A644B27CA259C801BA2B11B /* AWSKinesisRequestRetryHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSKinesisRequestRetryHandler.m; path = AWSKinesis/AWSKinesisRequestRetryHandler.m; sourceTree = "<group>"; };
-		CC3376331A27370A0ADCA1444044C9D5 /* AWSSNS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSSNS.h; path = AWSSNS/AWSSNS.h; sourceTree = "<group>"; };
-		CC94B89C1C5385550A8CC58646B70630 /* AWSFMResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSFMResultSet.m; path = AWSCore/FMDB/AWSFMResultSet.m; sourceTree = "<group>"; };
-		CCB026CA2B084F16DD171D5083761433 /* AWSEXTScope.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSEXTScope.m; path = AWSCore/Mantle/extobjc/AWSEXTScope.m; sourceTree = "<group>"; };
-		CCC967E9099768AB91653E2EB013A04F /* FBSDKBridgeAPICrypto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKBridgeAPICrypto.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/BridgeAPI/FBSDKBridgeAPICrypto.h; sourceTree = "<group>"; };
-		CD4373B1212CECCF6DACBD5943540B09 /* AWSSignInViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSSignInViewController.h; path = AWSAuthSDK/Sources/AWSAuthUI/AWSSignInViewController.h; sourceTree = "<group>"; };
-		CD8223B3122F5BDEC3AA64617DBD747D /* FBSDKWebViewAppLinkResolver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKWebViewAppLinkResolver.m; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKWebViewAppLinkResolver.m; sourceTree = "<group>"; };
-		CDA82BE527BB59944E87634F8567D4DD /* AWSCognitoIdentityProviderASF-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AWSCognitoIdentityProviderASF-dummy.m"; sourceTree = "<group>"; };
-		CE4D9444541008EAC710F4D682449C0D /* AWSMobileAnalyticsDefaultFileManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsDefaultFileManager.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsDefaultFileManager.h; sourceTree = "<group>"; };
-		CECD4413033780A5F4101D944E03317F /* AWSRekognition-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSRekognition-umbrella.h"; sourceTree = "<group>"; };
-		CF1A0944480EA470A815FA8F584A5E42 /* AWSUserPoolMFAViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSUserPoolMFAViewController.h; path = AWSAuthSDK/Sources/AWSUserPoolsSignIn/UserPoolsUI/AWSUserPoolMFAViewController.h; sourceTree = "<group>"; };
-		CFBC279344EF347E351C247C7EA3EF56 /* AWSMobileAnalyticsCountDownLatch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsCountDownLatch.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsCountDownLatch.h; sourceTree = "<group>"; };
-		CFD2983EBA24685D8A93316C66444425 /* BFAppLink_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFAppLink_Internal.h; path = Bolts/iOS/Internal/BFAppLink_Internal.h; sourceTree = "<group>"; };
-		CFDCBB4D284A59954BF4571F2B89C164 /* AWSLogsModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSLogsModel.m; path = AWSLogs/AWSLogsModel.m; sourceTree = "<group>"; };
-		CFEC10ECDD5A5279DC189D108539D69C /* AWSMobileAnalyticsDefaultSessionClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsDefaultSessionClient.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsDefaultSessionClient.h; sourceTree = "<group>"; };
-		D03AD23FB830E671E1D228B61BA18BAD /* FBSDKBridgeAPIProtocolWebV1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKBridgeAPIProtocolWebV1.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/BridgeAPI/ProtocolVersions/FBSDKBridgeAPIProtocolWebV1.h; sourceTree = "<group>"; };
-		D03C04B272C4CDAB0303131E805B48B8 /* NSValueTransformer+AWSMTLInversionAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValueTransformer+AWSMTLInversionAdditions.m"; path = "AWSCore/Mantle/NSValueTransformer+AWSMTLInversionAdditions.m"; sourceTree = "<group>"; };
-		D05AC59743A83BFA103D1CE9D14D7849 /* AWSFacebookSignIn.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = AWSFacebookSignIn.bundle; path = "AWSFacebookSignIn-AWSFacebookSignIn.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D14F0D349D2AE9ABF4470E2EFB3E8E47 /* FBSDKBridgeAPIProtocolNativeV1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKBridgeAPIProtocolNativeV1.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/BridgeAPI/ProtocolVersions/FBSDKBridgeAPIProtocolNativeV1.h; sourceTree = "<group>"; };
-		D152E9DA2AD067954301F9ACC583BB36 /* AWSMobileAnalyticsDeliveryClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsDeliveryClient.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsDeliveryClient.h; sourceTree = "<group>"; };
-		D174ED6F0C0C6EA3D6ABFB72784DBBFB /* FBSDKAccessTokenCacheV3.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKAccessTokenCacheV3.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/TokenCaching/FBSDKAccessTokenCacheV3.m; sourceTree = "<group>"; };
-		D1A0D16A7F8EBE7C0C2B6C7E18599A8B /* AWSMTLModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMTLModel.m; path = AWSCore/Mantle/AWSMTLModel.m; sourceTree = "<group>"; };
-		D1A96A95E241835391A0758D4BC68C17 /* FBSDKBridgeAPIRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKBridgeAPIRequest.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/BridgeAPI/FBSDKBridgeAPIRequest.h; sourceTree = "<group>"; };
-		D20E3B17B231A57BD99C66A662857AE0 /* FBSDKGraphRequestMetadata.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKGraphRequestMetadata.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/Network/FBSDKGraphRequestMetadata.h; sourceTree = "<group>"; };
-		D25FDDBC08CFA1EDA44AEC01BE2A3EC4 /* AWSSTS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSSTS.h; path = AWSCore/STS/AWSSTS.h; sourceTree = "<group>"; };
-		D28685EF8CF325C4E415C9E16F6CCDCF /* FBSDKErrorConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKErrorConfiguration.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/ServerConfiguration/FBSDKErrorConfiguration.h; sourceTree = "<group>"; };
-		D29899194394599E620EB2CA1C56D94F /* AWSMobileAnalyticsDateUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsDateUtils.m; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsDateUtils.m; sourceTree = "<group>"; };
-		D29CB3AE8195AA12FC4666EDFC0444B1 /* AWSLex.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AWSLex.modulemap; sourceTree = "<group>"; };
-		D2BD59CE54D0CC3735162118B993F50D /* AWSDynamoDBRequestRetryHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSDynamoDBRequestRetryHandler.m; path = AWSDynamoDB/AWSDynamoDBRequestRetryHandler.m; sourceTree = "<group>"; };
-		D36EBB0C599877FA62E494B172E76BA5 /* AWSPinpointDateUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSPinpointDateUtils.m; path = AWSPinpoint/Internal/AWSPinpointDateUtils.m; sourceTree = "<group>"; };
-		D45F41E75A084B472E806AFEC66DE385 /* Bolts-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bolts-prefix.pch"; sourceTree = "<group>"; };
-		D47440300B522A2E83CC1ED2BE28049C /* AWSAuthUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AWSAuthUI-dummy.m"; sourceTree = "<group>"; };
-		D47468284E3EBA4B90FE3633CBBAB795 /* AWSCognito-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSCognito-prefix.pch"; sourceTree = "<group>"; };
-		D4787474592B446B31F6443B2D8D2AEB /* FBSDKMaleSilhouetteIcon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKMaleSilhouetteIcon.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/UI/FBSDKMaleSilhouetteIcon.m; sourceTree = "<group>"; };
-		D4C03B3F3B79C42D09FA99812DB251B8 /* AWSAutoScaling-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSAutoScaling-prefix.pch"; sourceTree = "<group>"; };
-		D4F54481B1D3D30D34A396BB941255F0 /* AWSPollyService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSPollyService.m; path = AWSPolly/AWSPollyService.m; sourceTree = "<group>"; };
-		D4FB71946FDD416F01B2504E990A2463 /* AWSUserPoolsSignIn.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AWSUserPoolsSignIn.modulemap; sourceTree = "<group>"; };
-		D54611D0C03D408FC4F286D5BCEEA000 /* AWSAutoScaling.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AWSAutoScaling.modulemap; sourceTree = "<group>"; };
-		D5C9A886F8E2B5EAD64F2F35DA55E8A7 /* AWSTaskCompletionSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSTaskCompletionSource.h; path = AWSCore/Bolts/AWSTaskCompletionSource.h; sourceTree = "<group>"; };
-		D5CEDB757023932534623F7A131C4334 /* FBSDKURL_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKURL_Internal.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKURL_Internal.h; sourceTree = "<group>"; };
-		D5FFBAC25328777A5F4661D9C59E1DEC /* FBSDKAppLink.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKAppLink.m; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKAppLink.m; sourceTree = "<group>"; };
-		D648CCECB9D0842929AD04F1DE883069 /* AWSSESResources.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSSESResources.h; path = AWSSES/AWSSESResources.h; sourceTree = "<group>"; };
-		D64ECEB7943146A702A8B0F8C073C922 /* AWSLogs-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AWSLogs-Info.plist"; sourceTree = "<group>"; };
-		D6DB821DC85D46F134A89F0B049118E5 /* AWSMobileAnalyticsERSModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsERSModel.m; path = AWSMobileAnalytics/AWSMobileAnalyticsERS/AWSMobileAnalyticsERSModel.m; sourceTree = "<group>"; };
-		D70FD17017C85D25B7221974FC18725B /* AWSMobileAnalyticsDefaultEventClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsDefaultEventClient.m; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsDefaultEventClient.m; sourceTree = "<group>"; };
-		D72F58D91F3D068ABAAD3496CC6648FC /* AWSGZIPEncodingJSONRequestSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSGZIPEncodingJSONRequestSerializer.m; path = AWSKinesis/Internal/AWSGZIPEncodingJSONRequestSerializer.m; sourceTree = "<group>"; };
-		D770A4C22B1514AB5B81A526FADEFB3A /* AWSMobileAnalyticsERSResources.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsERSResources.h; path = AWSMobileAnalytics/AWSMobileAnalyticsERS/AWSMobileAnalyticsERSResources.h; sourceTree = "<group>"; };
-		D7A28A6648E17D2D14B4FE7B88E5331C /* AWSMobileAnalyticsConfigurationKeys.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsConfigurationKeys.m; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsConfigurationKeys.m; sourceTree = "<group>"; };
-		D7A58E663F1A448988F9FB5B047126C0 /* AWSCognitoService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoService.h; path = AWSCognito/AWSCognitoService.h; sourceTree = "<group>"; };
-		D7B31DB09C6460148B2E5EDC0CBFAD27 /* FBSDKAppLinkUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKAppLinkUtility.m; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKAppLinkUtility.m; sourceTree = "<group>"; };
-		D7CED58B4E4B91DF35EBA39971635957 /* AWSSQSResources.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSSQSResources.h; path = AWSSQS/AWSSQSResources.h; sourceTree = "<group>"; };
-		D8E21AB1DF842E2DB77F69DDB723052F /* AWSEXTRuntimeExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSEXTRuntimeExtensions.m; path = AWSCore/Mantle/extobjc/AWSEXTRuntimeExtensions.m; sourceTree = "<group>"; };
-		D8E93427B9B6D794762100C6F05B9554 /* AWSLambda.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AWSLambda.modulemap; sourceTree = "<group>"; };
-		D920EA8421D5EE8B2C577C892795099F /* AWSMobileAnalyticsSubmissionTimePolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsSubmissionTimePolicy.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsSubmissionTimePolicy.h; sourceTree = "<group>"; };
-		D965B49C091E18244B5CA4039CFB3ADD /* AWSMobileAnalyticsSessionStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsSessionStore.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsSessionStore.h; sourceTree = "<group>"; };
-		D99931A5EDF72F84C1944EF7AB69C337 /* AWSUserPoolsSignIn-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AWSUserPoolsSignIn-Info.plist"; sourceTree = "<group>"; };
-		D9B4240F231CDB0758BADE4AFF7F6FF9 /* AWSMobileAnalyticsInactiveSessionState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsInactiveSessionState.m; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsInactiveSessionState.m; sourceTree = "<group>"; };
-		D9CD36114C00568BCAD6C503330E45B2 /* AWSFacebookSignIn-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AWSFacebookSignIn-dummy.m"; sourceTree = "<group>"; };
-		DA6831A14BCC9A4F8E15408666655A63 /* AWSCognitoIdentity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoIdentity.h; path = AWSCore/CognitoIdentity/AWSCognitoIdentity.h; sourceTree = "<group>"; };
-		DA6C1E4DF5EE4B5B0A92C9FF4ABF6629 /* AWSLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSLogging.h; path = AWSCore/Utility/AWSLogging.h; sourceTree = "<group>"; };
-		DA93CCD00AF87A15402344CD6548C6A0 /* AWSSQS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AWSSQS.xcconfig; sourceTree = "<group>"; };
-		DB12A975E86645103C74A3F80CC8AC7D /* AWSPinpointAnalyticsClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSPinpointAnalyticsClient.h; path = AWSPinpoint/AWSPinpointAnalyticsClient.h; sourceTree = "<group>"; };
-		DBC2C1CDA5A71548BCD86635AE41EFD2 /* AWSMTLModel+NSCoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AWSMTLModel+NSCoding.h"; path = "AWSCore/Mantle/AWSMTLModel+NSCoding.h"; sourceTree = "<group>"; };
-		DBD8DB5101F7885916B41D61957804CA /* AWSCognitoIdentityProviderResources.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoIdentityProviderResources.h; path = AWSCognitoIdentityProvider/CognitoIdentityProvider/AWSCognitoIdentityProviderResources.h; sourceTree = "<group>"; };
-		DC1DD2346D1A5F00EE541B0948817B09 /* FBSDKMeasurementEvent_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKMeasurementEvent_Internal.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKMeasurementEvent_Internal.h; sourceTree = "<group>"; };
-		DC21545206202C4E399F55D6E16CF8D3 /* AWSCognitoDataset.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSCognitoDataset.m; path = AWSCognito/AWSCognitoDataset.m; sourceTree = "<group>"; };
-		DC9B218846CEBF5D9B22B0BF75EE8723 /* AWSMobileAnalyticsWriter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsWriter.m; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsWriter.m; sourceTree = "<group>"; };
-		DCD5027D8AA04A46156F42A21F548316 /* BFMeasurementEvent_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFMeasurementEvent_Internal.h; path = Bolts/iOS/Internal/BFMeasurementEvent_Internal.h; sourceTree = "<group>"; };
-		DCD5BE41DB62B88BE552188020DE039A /* AWSSignInManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSSignInManager.h; path = AWSAuthSDK/Sources/AWSAuthCore/AWSSignInManager.h; sourceTree = "<group>"; };
-		DCE1A3E16276013CA6B825FF333333C0 /* NSObject+AWSMTLComparisonAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+AWSMTLComparisonAdditions.m"; path = "AWSCore/Mantle/NSObject+AWSMTLComparisonAdditions.m"; sourceTree = "<group>"; };
-		DD2B676894876FD9EC727916305878B4 /* AWSMobileAnalyticsSessionClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsSessionClient.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsSessionClient.h; sourceTree = "<group>"; };
-		DD3C59E75D68A986CE4581BEA8A6931E /* AWSMobileAnalytics-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSMobileAnalytics-prefix.pch"; sourceTree = "<group>"; };
-		DD6EDC1CE9BD9D70E4F007B3962DA991 /* AWSLexModel+Extensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "AWSLexModel+Extensions.m"; path = "AWSLex/AWSLexModel+Extensions.m"; sourceTree = "<group>"; };
-		DD91DD0E4973A169ADFF92FF5D8F34FA /* AWSLambdaInvoker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSLambdaInvoker.m; path = AWSLambda/AWSLambdaInvoker.m; sourceTree = "<group>"; };
-		DD9E28A5B50034CCC4D941046B93C2E8 /* AWSCloudWatch-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSCloudWatch-umbrella.h"; sourceTree = "<group>"; };
-		DDE2E01A544F213A51E6311D0032C483 /* AWSPinpointContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSPinpointContext.h; path = AWSPinpoint/Internal/AWSPinpointContext.h; sourceTree = "<group>"; };
-		DE0E7A4FD4C93E115CE7D24A5B679D6D /* FBSDKButton+Subclass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBSDKButton+Subclass.h"; path = "FBSDKCoreKit/FBSDKCoreKit/Internal/UI/FBSDKButton+Subclass.h"; sourceTree = "<group>"; };
-		DE0FA4731841CB534FC77A8397B5E60C /* AWSS3TransferUtilityDatabaseHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSS3TransferUtilityDatabaseHelper.m; path = AWSS3/AWSS3TransferUtilityDatabaseHelper.m; sourceTree = "<group>"; };
-		DE194F631A3B98FCCFF5C68915F26642 /* NSDictionary+AWSMTLManipulationAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+AWSMTLManipulationAdditions.m"; path = "AWSCore/Mantle/NSDictionary+AWSMTLManipulationAdditions.m"; sourceTree = "<group>"; };
-		DE44AC02F4DD13A91A54DE6D47D6C8C0 /* AWSIoT-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSIoT-prefix.pch"; sourceTree = "<group>"; };
-		DE87E37F6A74EE2A05CAA8D4F1400D24 /* FBSDKViewImpressionTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKViewImpressionTracker.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/UI/FBSDKViewImpressionTracker.h; sourceTree = "<group>"; };
-		DE92319FACC78E0928F49B047A73671B /* AWSMQTTEncoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMQTTEncoder.m; path = AWSIoT/Internal/MQTTSDK/AWSMQTTEncoder.m; sourceTree = "<group>"; };
-		DECF0DCE1A10F93291D97B6D213CDF38 /* AWSPollyEnumTranslatorUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSPollyEnumTranslatorUtility.m; path = AWSPolly/AWSPollyEnumTranslatorUtility.m; sourceTree = "<group>"; };
-		DF29B05E97C3618EBA3DA07FF3B887E2 /* FBSDKColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKColor.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/UI/FBSDKColor.m; sourceTree = "<group>"; };
-		DFF712CBCEAF6B76C76074A831609287 /* FBSDKURLSessionTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKURLSessionTask.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/Network/FBSDKURLSessionTask.m; sourceTree = "<group>"; };
-		E00D733492E60ACF83B43E14EC5CA5A4 /* AWSKMS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AWSKMS.framework; path = AWSKMS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E08751D37022DA7F275F6082E5714366 /* AWSElasticLoadBalancing-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AWSElasticLoadBalancing-dummy.m"; sourceTree = "<group>"; };
-		E0C7CB0C5D163E7C558A683C44C63345 /* AWSLogs-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSLogs-prefix.pch"; sourceTree = "<group>"; };
-		E0CF8DF890BC16EE1F568CD23FCB3561 /* Pods-HygieaWasteSortingAppIOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HygieaWasteSortingAppIOS-umbrella.h"; sourceTree = "<group>"; };
-		E0D13BEA075672C3DBFF5480D3E752E6 /* AWSPinpointSessionClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSPinpointSessionClient.h; path = AWSPinpoint/AWSPinpointSessionClient.h; sourceTree = "<group>"; };
-		E0D5133C428160164FF1AD6F7333701D /* AWSAutoScaling-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AWSAutoScaling-dummy.m"; sourceTree = "<group>"; };
-		E0E50AEA481CD1B0CDE0113C295D291D /* AWSSimpleDBModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSSimpleDBModel.m; path = AWSSimpleDB/AWSSimpleDBModel.m; sourceTree = "<group>"; };
-		E12B63894557E3956D3D22001E7A6FAE /* AWSKinesisResources.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSKinesisResources.h; path = AWSKinesis/AWSKinesisResources.h; sourceTree = "<group>"; };
-		E1439BD7532796AAC44B26DBDF453BB6 /* AWSElasticLoadBalancing-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AWSElasticLoadBalancing-Info.plist"; sourceTree = "<group>"; };
-		E1931DF6958F9F37BBCFF8C4FDF35BA7 /* BFAppLinkTarget.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFAppLinkTarget.m; path = Bolts/iOS/BFAppLinkTarget.m; sourceTree = "<group>"; };
-		E1B2B3BD915E7020FA769F4EB68EE9C8 /* AWSLex-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSLex-prefix.pch"; sourceTree = "<group>"; };
-		E1CBB382B1880A797D7836679A51E191 /* FBSDKKeychainStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKKeychainStore.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/TokenCaching/FBSDKKeychainStore.h; sourceTree = "<group>"; };
-		E1E8DA6A898FFD8637E69AD9B118E7FE /* AWSCognitoIdentityModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoIdentityModel.h; path = AWSCore/CognitoIdentity/AWSCognitoIdentityModel.h; sourceTree = "<group>"; };
-		E25C868A958F0B35B111C994A190E4CC /* AWSMobileAnalyticsSerializable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsSerializable.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsSerializable.h; sourceTree = "<group>"; };
-		E2D12735DC155C61B9B7DCEE77D7D607 /* AWSSNSResources.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSSNSResources.m; path = AWSSNS/AWSSNSResources.m; sourceTree = "<group>"; };
-		E2E795EE61999BD60BC5F7AC0FC99E3A /* AWSRekognitionModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSRekognitionModel.h; path = AWSRekognition/AWSRekognitionModel.h; sourceTree = "<group>"; };
-		E37D03078AC126892E34F405EC6D55A9 /* FBSDKKeychainStoreViaBundleID.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKKeychainStoreViaBundleID.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/TokenCaching/FBSDKKeychainStoreViaBundleID.m; sourceTree = "<group>"; };
-		E383DBFAE4AA1C732FCB488FFD2E7B1E /* AWSAuthUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSAuthUI-umbrella.h"; sourceTree = "<group>"; };
-		E387F8773CEFA3F2BD7634A1B53FC244 /* AWSElasticLoadBalancingResources.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSElasticLoadBalancingResources.h; path = AWSElasticLoadBalancing/AWSElasticLoadBalancingResources.h; sourceTree = "<group>"; };
-		E3A514BDFA1D2E7C3FB93484D3A4F4BC /* FBSDKDeviceLoginCodeInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKDeviceLoginCodeInfo.h; path = FBSDKLoginKit/FBSDKLoginKit/FBSDKDeviceLoginCodeInfo.h; sourceTree = "<group>"; };
-		E3B46FDE877B2F99180BF043AE1A456B /* AWSAuthCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AWSAuthCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E3C847072C4C93CA144D7BC2F10061B2 /* FBSDKAccessTokenCacheV3_17.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAccessTokenCacheV3_17.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/TokenCaching/FBSDKAccessTokenCacheV3_17.h; sourceTree = "<group>"; };
-		E3D200CED5C0BFDAB138CFA8B01A980C /* FBSDKEventBinding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKEventBinding.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/AppEvents/Codeless/FBSDKEventBinding.h; sourceTree = "<group>"; };
-		E3DD1100377230A8025D123C7D92D80E /* AWSLambdaRequestRetryHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSLambdaRequestRetryHandler.m; path = AWSLambda/AWSLambdaRequestRetryHandler.m; sourceTree = "<group>"; };
-		E3DF048995DD160685BA93C1D5357716 /* AWSIoT-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSIoT-umbrella.h"; sourceTree = "<group>"; };
-		E3E129F18D341064F3062CDD78A9647E /* AWSLogsService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSLogsService.h; path = AWSLogs/AWSLogsService.h; sourceTree = "<group>"; };
-		E3EF53CC788255B20E3103E8FFE1D0C4 /* AWSCognitoIdentityResources.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoIdentityResources.h; path = AWSCore/CognitoIdentity/AWSCognitoIdentityResources.h; sourceTree = "<group>"; };
-		E4112A0C681BFA4744E5405D469A9283 /* AWSIoTDataModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSIoTDataModel.h; path = AWSIoT/AWSIoTDataModel.h; sourceTree = "<group>"; };
-		E47843B562C7A02E08DFF3F3FC55E71F /* AWSMachineLearningService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMachineLearningService.m; path = AWSMachineLearning/AWSMachineLearningService.m; sourceTree = "<group>"; };
-		E47E55AC213669924219E1EE049CC3C8 /* AWSJKBigDecimal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSJKBigDecimal.h; path = AWSCognitoIdentityProvider/Internal/JKBigInteger/AWSJKBigDecimal.h; sourceTree = "<group>"; };
-		E4983577D421A354EB61BDD48D9DC4C0 /* AWSDDASLLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSDDASLLogger.m; path = AWSCore/Logging/AWSDDASLLogger.m; sourceTree = "<group>"; };
-		E498C105803AA3FCCAA4B2973077EA89 /* AWSMobileAnalyticsPausedSessionState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsPausedSessionState.m; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsPausedSessionState.m; sourceTree = "<group>"; };
-		E4C5E6B29E0CD145919A50A2F7CD3C0E /* AWSKinesis-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSKinesis-umbrella.h"; sourceTree = "<group>"; };
-		E4EC032D2FFF528C3DF045363C1F4478 /* AWSLambdaInvoker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSLambdaInvoker.h; path = AWSLambda/AWSLambdaInvoker.h; sourceTree = "<group>"; };
-		E517FFF846A2388635B956FB63768EA8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		E5623FE9D952346145D2C71C3C28DE88 /* AWSKMSModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSKMSModel.h; path = AWSKMS/AWSKMSModel.h; sourceTree = "<group>"; };
-		E5814577DDB95B56878084107E85C41F /* AWSGZIP.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSGZIP.m; path = AWSCore/GZIP/AWSGZIP.m; sourceTree = "<group>"; };
-		E5A482D7DE2E88F48271078257F1D6FA /* AWSDynamoDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSDynamoDB.h; path = AWSDynamoDB/AWSDynamoDB.h; sourceTree = "<group>"; };
-		E64D98AD401B07248683CC780C5C37B7 /* AWSPinpointTargetingClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSPinpointTargetingClient.h; path = AWSPinpoint/AWSPinpointTargetingClient.h; sourceTree = "<group>"; };
-		E66BF8C40186E230F12027CE029D06E3 /* BFAudioSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFAudioSource.h; path = AWSLex/Bluefront/include/BFAudioSource.h; sourceTree = "<group>"; };
-		E6DB902A1821236C82E2B5F172155384 /* AWSIoTDataManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSIoTDataManager.h; path = AWSIoT/AWSIoTDataManager.h; sourceTree = "<group>"; };
-		E71C8308338F8A6BC839E61719D8AB6E /* AWSLexService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSLexService.m; path = AWSLex/AWSLexService.m; sourceTree = "<group>"; };
-		E72146FBFAF8DF39698E18746AAA0139 /* AWSSignInManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSSignInManager.m; path = AWSAuthSDK/Sources/AWSAuthCore/AWSSignInManager.m; sourceTree = "<group>"; };
-		E7CC3BFF2111C9924ED7B371715D0821 /* AWSMTLValueTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMTLValueTransformer.h; path = AWSCore/Mantle/AWSMTLValueTransformer.h; sourceTree = "<group>"; };
-		E7D796C5A6584031D8CC091CC7D1CE51 /* AWSRekognitionService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSRekognitionService.m; path = AWSRekognition/AWSRekognitionService.m; sourceTree = "<group>"; };
-		E84BE595466B190B937E46BF326FC476 /* AWSEXTKeyPathCoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSEXTKeyPathCoding.h; path = AWSCore/Mantle/extobjc/AWSEXTKeyPathCoding.h; sourceTree = "<group>"; };
-		E8501310AA2E6834C4D5C2F0CC8652FC /* AWSKinesisRequestRetryHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSKinesisRequestRetryHandler.h; path = AWSKinesis/AWSKinesisRequestRetryHandler.h; sourceTree = "<group>"; };
-		E87279E838CB7404EA79801BB6FF609A /* AWSMTLReflection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMTLReflection.m; path = AWSCore/Mantle/AWSMTLReflection.m; sourceTree = "<group>"; };
-		E8D21CE9BB2558F14D3AE16B259447B3 /* FBSDKAppLink.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAppLink.h; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKAppLink.h; sourceTree = "<group>"; };
-		E975888503FD22FE4179B4C704E180A4 /* Pods-HygieaWasteSortingAppIOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HygieaWasteSortingAppIOS-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E97BBCF4C22BF2B066403968FBD60988 /* AWSCore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSCore-umbrella.h"; sourceTree = "<group>"; };
-		E9915FA046CCF3AE44E08F712860A2B6 /* FBSDKErrorRecoveryAttempter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKErrorRecoveryAttempter.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/ErrorRecovery/FBSDKErrorRecoveryAttempter.m; sourceTree = "<group>"; };
-		E9B73F5DA914C5A051DB4B192FB82268 /* AWSEC2Service.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSEC2Service.m; path = AWSEC2/AWSEC2Service.m; sourceTree = "<group>"; };
-		E9BF7B266D7CD80A8CB578FAECD3435B /* AWSIoTMQTTTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSIoTMQTTTypes.h; path = AWSIoT/AWSIoTMQTTTypes.h; sourceTree = "<group>"; };
-		E9C05B9106F592589AEC26574088E9D3 /* AWSGoogleSignInProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSGoogleSignInProvider.m; path = AWSAuthSDK/Sources/AWSGoogleSignIn/AWSGoogleSignInProvider.m; sourceTree = "<group>"; };
-		E9D6A22291079655D32410C037847178 /* AWSIoTDataManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSIoTDataManager.m; path = AWSIoT/AWSIoTDataManager.m; sourceTree = "<group>"; };
-		EA03DD3DA7599A9DC09E7CA2CA6FDA72 /* AWSMobileAnalyticsERSModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsERSModel.h; path = AWSMobileAnalytics/AWSMobileAnalyticsERS/AWSMobileAnalyticsERSModel.h; sourceTree = "<group>"; };
-		EA09960342153DBA762260F8CABB621A /* AWSCancellationTokenSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSCancellationTokenSource.m; path = AWSCore/Bolts/AWSCancellationTokenSource.m; sourceTree = "<group>"; };
-		EA8D728F6E01F2F81CB73CA230F61AB5 /* FBSDKImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKImageDownloader.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKImageDownloader.h; sourceTree = "<group>"; };
-		EA969A1120DAE516D0E05707CA4AF912 /* BFOpusDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFOpusDecoder.h; path = AWSLex/Bluefront/include/BFOpusDecoder.h; sourceTree = "<group>"; };
-		EAC2BCB8C04B48417DBE8477144BD459 /* AWSMobileAnalyticsService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsService.m; path = AWSMobileAnalytics/AWSMobileAnalyticsService.m; sourceTree = "<group>"; };
-		EB19F7C60125A7F02AE8639A4E84A8FE /* AWSMobileAnalyticsDelayedBlock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsDelayedBlock.m; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsDelayedBlock.m; sourceTree = "<group>"; };
-		EB203A753797C2AC52AF07AA616D5501 /* AWSMobileAnalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AWSMobileAnalytics.framework; path = AWSMobileAnalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB4628178553B51DF568E028D5BDA6C9 /* AWSMQTTMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMQTTMessage.h; path = AWSIoT/Internal/MQTTSDK/AWSMQTTMessage.h; sourceTree = "<group>"; };
-		EB5C29CCFF54744974735462DA300FD9 /* AWSAuthUIViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSAuthUIViewController.h; path = AWSAuthSDK/Sources/AWSAuthUI/AWSAuthUIViewController.h; sourceTree = "<group>"; };
-		EB7A747C2F93F729D9CF4F4E191F6B33 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		EBB7B811BFAC9601121ADB36599A9A15 /* AWSAbstractKinesisRecorder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSAbstractKinesisRecorder.m; path = AWSKinesis/AWSAbstractKinesisRecorder.m; sourceTree = "<group>"; };
-		EC3F5DA9AECA3F4F2C67870F08885970 /* AWSValidation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSValidation.h; path = AWSCore/Serialization/AWSValidation.h; sourceTree = "<group>"; };
-		EC9063AD15D14D11ECBA39DA976E1DB8 /* AWSSNSService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSSNSService.m; path = AWSSNS/AWSSNSService.m; sourceTree = "<group>"; };
-		EC9F96680EE828757EF7D7780B00661F /* AWSCognitoIdentityProvider-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AWSCognitoIdentityProvider-Info.plist"; sourceTree = "<group>"; };
-		ED0F5F5D80BDCD33395D1F04E9AABC00 /* AWSFormTableDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSFormTableDelegate.h; path = AWSAuthSDK/Sources/AWSUserPoolsSignIn/UserPoolsUI/AWSFormTableDelegate.h; sourceTree = "<group>"; };
-		ED2E32A9139B9AFA8F848A633D42F4B7 /* AWSPinpointTargetingClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSPinpointTargetingClient.m; path = AWSPinpoint/AWSPinpointTargetingClient.m; sourceTree = "<group>"; };
-		ED32731E5C650E5A8366C7F4D485091B /* AWSMobileAnalyticsOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsOptions.h; path = AWSMobileAnalytics/AWSMobileAnalyticsOptions.h; sourceTree = "<group>"; };
-		ED6142E635EEF12E1B84064A4F3450A1 /* FBSDKAppLinkResolver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKAppLinkResolver.m; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKAppLinkResolver.m; sourceTree = "<group>"; };
-		ED628552980228F3AFFC961B1CFDEBD6 /* AWSFirehoseSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSFirehoseSerializer.h; path = AWSKinesis/Internal/AWSFirehoseSerializer.h; sourceTree = "<group>"; };
-		ED7D6D0E5DCE0DC3625CE905B1148E04 /* AWSS3Resources.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSS3Resources.h; path = AWSS3/AWSS3Resources.h; sourceTree = "<group>"; };
-		EDA85914AB78D8FAD185E91988A19C3E /* AWSMobileClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileClient.m; path = AWSAuthSDK/Sources/AWSMobileClient/AWSMobileClient.m; sourceTree = "<group>"; };
-		EDDD1CDE3754EB967182F6483D064026 /* AWSUserPoolsUIHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSUserPoolsUIHelper.h; path = AWSAuthSDK/Sources/AWSUserPoolsSignIn/UserPoolsUI/AWSUserPoolsUIHelper.h; sourceTree = "<group>"; };
-		EE069A200F47B1B88547609E39160BE7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		EE0C37DD4AD965E3123A755ADE8757FD /* AWSDDLog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSDDLog.m; path = AWSCore/Logging/AWSDDLog.m; sourceTree = "<group>"; };
-		EE6B68A713B2AE88D0B3DA7708102D88 /* AWSCognitoIdentityService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoIdentityService.h; path = AWSCore/CognitoIdentity/AWSCognitoIdentityService.h; sourceTree = "<group>"; };
-		EEC08472E06DEEE1450E21BA9D4E6EA5 /* AWSDynamoDB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AWSDynamoDB.xcconfig; sourceTree = "<group>"; };
-		EF308D6C3AF3431D5ACC325866702C7F /* AWSMobileAnalyticsPausedSessionState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsPausedSessionState.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsPausedSessionState.h; sourceTree = "<group>"; };
-		EF3F4B062D00C1A2C8AE3FB3B51D2B9E /* AWSRekognition-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSRekognition-prefix.pch"; sourceTree = "<group>"; };
-		EF704A416288746F3DAA5C9826BE4B9E /* FBSDKWebDialog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKWebDialog.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/WebDialog/FBSDKWebDialog.h; sourceTree = "<group>"; };
-		EF70DA35B28A585AD102E52FA811D0F1 /* AWSKinesis-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSKinesis-prefix.pch"; sourceTree = "<group>"; };
-		F0222E4F7986226AF0845527B0CA33A5 /* AWSMobileAnalyticsSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsSession.m; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsSession.m; sourceTree = "<group>"; };
-		F0A546B77782D026B9E01BDF1CA58F4D /* AWSAuthUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AWSAuthUI-Info.plist"; sourceTree = "<group>"; };
-		F1877EBD3E0078490E9ED95D625E5FC7 /* AWSMobileAnalyticsSerializerFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsSerializerFactory.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsSerializerFactory.h; sourceTree = "<group>"; };
-		F197255AF290BD5ED8B6A136D4EE7A0F /* FBSDKCopying.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKCopying.h; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKCopying.h; sourceTree = "<group>"; };
-		F1F51A04830CB0C214005D45FE06E0A7 /* AWSKinesisRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSKinesisRecorder.h; path = AWSKinesis/AWSKinesisRecorder.h; sourceTree = "<group>"; };
-		F20BC58FE66C4C0D9271C2F433134AF7 /* AWSMobileAnalyticsERSService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsERSService.m; path = AWSMobileAnalytics/AWSMobileAnalyticsERS/AWSMobileAnalyticsERSService.m; sourceTree = "<group>"; };
-		F21B714AB8FEDF26DF6CE1D2C4DC31D2 /* AWSLexService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSLexService.h; path = AWSLex/AWSLexService.h; sourceTree = "<group>"; };
-		F26F8535AE99BFB6E16EEBBD083784DE /* AWSSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSSerialization.h; path = AWSCore/Serialization/AWSSerialization.h; sourceTree = "<group>"; };
-		F32E2AB2CCA0BCFF0B1D8D293A69EA6B /* AWSPinpointEventRecorder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSPinpointEventRecorder.m; path = AWSPinpoint/AWSPinpointEventRecorder.m; sourceTree = "<group>"; };
-		F37A3A4F97D4AF82BAE80BD58D218DF8 /* AWSEC2-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSEC2-prefix.pch"; sourceTree = "<group>"; };
-		F3C161FA7F9856F7D203D527B9562686 /* FBSDKURL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKURL.m; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKURL.m; sourceTree = "<group>"; };
-		F3CD4A6AAB42686DCE343B1E63112A45 /* FBSDKLoginManagerLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKLoginManagerLogger.m; path = FBSDKLoginKit/FBSDKLoginKit/Internal/FBSDKLoginManagerLogger.m; sourceTree = "<group>"; };
-		F3F403DD16E4B3248241F750CDBE4CAE /* FBSDKAppLinkTarget.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKAppLinkTarget.m; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKAppLinkTarget.m; sourceTree = "<group>"; };
-		F4794141742A722DB43EB4C025F05C60 /* AWSMobileAnalytics.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AWSMobileAnalytics.modulemap; sourceTree = "<group>"; };
-		F481D3905659E4967E25C892B3D011AC /* FBSDKAppLinkUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAppLinkUtility.h; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKAppLinkUtility.h; sourceTree = "<group>"; };
-		F4C3F643A48DA46BD3582953C722385E /* FBSDKLoginKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSDKLoginKit.modulemap; sourceTree = "<group>"; };
-		F50CA64BD4B708CB7F3A6E062E7F2BDB /* _FBSDKTemporaryErrorRecoveryAttempter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _FBSDKTemporaryErrorRecoveryAttempter.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/ErrorRecovery/_FBSDKTemporaryErrorRecoveryAttempter.m; sourceTree = "<group>"; };
-		F51F43B1705889AA94250FBEF2102609 /* AWSMachineLearningResources.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMachineLearningResources.h; path = AWSMachineLearning/AWSMachineLearningResources.h; sourceTree = "<group>"; };
-		F522B37B276B2E453FDB6A97CB8A22BC /* BFAppLink.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFAppLink.m; path = Bolts/iOS/BFAppLink.m; sourceTree = "<group>"; };
-		F5319757B6BF9D6ECEC0B38488720BB7 /* AWSGoogleSignIn.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AWSGoogleSignIn.modulemap; sourceTree = "<group>"; };
-		F54DD7C399DCFE0F471F6240324F5CBC /* AWSUserPoolMFAViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSUserPoolMFAViewController.m; path = AWSAuthSDK/Sources/AWSUserPoolsSignIn/UserPoolsUI/AWSUserPoolMFAViewController.m; sourceTree = "<group>"; };
-		F58158F5367CCDBC08924FD8585F6624 /* FBSDKTimeSpentData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKTimeSpentData.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/AppEvents/FBSDKTimeSpentData.m; sourceTree = "<group>"; };
-		F5AD7E44E495B9254CFD6A3AC33C102E /* AWSMQTTSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMQTTSession.m; path = AWSIoT/Internal/MQTTSDK/AWSMQTTSession.m; sourceTree = "<group>"; };
-		F5CCE97A0E893A0109C3730EAC58E53F /* AWSSES.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AWSSES.modulemap; sourceTree = "<group>"; };
-		F6303B5C72233D37A36AFCADDCBE0114 /* AWSMobileAnalyticsCountDownLatch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsCountDownLatch.m; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsCountDownLatch.m; sourceTree = "<group>"; };
-		F6434063A6A8CC7E0D971F30D833725E /* NSArray+AWSMTLManipulationAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+AWSMTLManipulationAdditions.m"; path = "AWSCore/Mantle/NSArray+AWSMTLManipulationAdditions.m"; sourceTree = "<group>"; };
-		F6524FFF8F8074616815BC6CE6CF3E77 /* AWSMTLModel+NSCoding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "AWSMTLModel+NSCoding.m"; path = "AWSCore/Mantle/AWSMTLModel+NSCoding.m"; sourceTree = "<group>"; };
-		F698F8CAE63FA4B051253773120521C9 /* AWSMQTTMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMQTTMessage.m; path = AWSIoT/Internal/MQTTSDK/AWSMQTTMessage.m; sourceTree = "<group>"; };
-		F6B31E8875B1D897F9820A8868E64E3A /* FBSDKAppEventsDeviceInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKAppEventsDeviceInfo.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/AppEvents/FBSDKAppEventsDeviceInfo.m; sourceTree = "<group>"; };
-		F6C3705B376FB40787663DA7F5C5AC15 /* AWSS3Serializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSS3Serializer.m; path = AWSS3/AWSS3Serializer.m; sourceTree = "<group>"; };
-		F7293127B5E1B6DC183AB0EDF6A3CFFE /* FBSDKHybridAppEventsScriptMessageHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKHybridAppEventsScriptMessageHandler.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/AppEvents/FBSDKHybridAppEventsScriptMessageHandler.h; sourceTree = "<group>"; };
-		F751605E6368EC7ECA87FA9A1165E74F /* AWSCognitoIdentity+Fabric.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AWSCognitoIdentity+Fabric.h"; path = "AWSCore/CognitoIdentity/AWSCognitoIdentity+Fabric.h"; sourceTree = "<group>"; };
-		F7AABACEE89BBF461F1D72BF2E43483F /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSDKCoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7D8A0776B69212BFD058D443BD336A6 /* AWSXMLDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSXMLDictionary.m; path = AWSCore/XMLDictionary/AWSXMLDictionary.m; sourceTree = "<group>"; };
-		F7EBE54B2E382DAB63B04AA9B15828F5 /* AWSCognitoDataset.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoDataset.h; path = AWSCognito/AWSCognitoDataset.h; sourceTree = "<group>"; };
-		F7F3CF871DDB330AB160AB2E9A70DB7D /* BFCancellationTokenSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFCancellationTokenSource.h; path = Bolts/Common/BFCancellationTokenSource.h; sourceTree = "<group>"; };
-		F8176F5F8D2D5CB591D94E80D4D70663 /* AWSMTLModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMTLModel.h; path = AWSCore/Mantle/AWSMTLModel.h; sourceTree = "<group>"; };
-		F825D32E86051D113B4E44ACB86D2B09 /* AWSFacebookSignIn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AWSFacebookSignIn.framework; path = AWSFacebookSignIn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F8B360495DC9A80BFAFAD094B412A66A /* AWSCloudWatchModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSCloudWatchModel.m; path = AWSCloudWatch/AWSCloudWatchModel.m; sourceTree = "<group>"; };
-		F8B4882DEFAC471BFCFE90DE1ABA3F83 /* BFCancellationTokenRegistration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFCancellationTokenRegistration.m; path = Bolts/Common/BFCancellationTokenRegistration.m; sourceTree = "<group>"; };
-		F8EBE5A8DEAD5A117C8F8C04FF0576B3 /* AWSMobileAnalyticsAppleMonetizationEventBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsAppleMonetizationEventBuilder.m; path = AWSMobileAnalytics/AWSMobileAnalyticsAppleMonetizationEventBuilder.m; sourceTree = "<group>"; };
-		F93631CE86B5DD464685C36B0E654EAC /* AWSServiceEnum.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSServiceEnum.h; path = AWSCore/Service/AWSServiceEnum.h; sourceTree = "<group>"; };
-		F9610DCE1D222FDE93B131AB0D75D8B5 /* AWSElasticLoadBalancingService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSElasticLoadBalancingService.m; path = AWSElasticLoadBalancing/AWSElasticLoadBalancingService.m; sourceTree = "<group>"; };
-		F9B11F0AECAC08453E55ECF1E44A4B1D /* AWSCognitoAuth.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AWSCognitoAuth.modulemap; sourceTree = "<group>"; };
-		F9E6A65CF960478E8C64C0AFF98D569B /* FBSDKLoginManagerLoginResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKLoginManagerLoginResult.m; path = FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginManagerLoginResult.m; sourceTree = "<group>"; };
-		F9FCFF4C17229D67E9EF88645944E0D4 /* ResourceBundle-AWSLex-AWSLex-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-AWSLex-AWSLex-Info.plist"; sourceTree = "<group>"; };
-		F9FE21BBF5F6C0D9FCC3F259A95021C8 /* BFEncoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFEncoder.h; path = AWSLex/Bluefront/include/BFEncoder.h; sourceTree = "<group>"; };
-		FA088DEBF9EDB095C4DCD2F02E986A7E /* AWSMTLJSONAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMTLJSONAdapter.h; path = AWSCore/Mantle/AWSMTLJSONAdapter.h; sourceTree = "<group>"; };
-		FA39650466CE2FC4226D3FB09BC40FB8 /* AWSCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AWSCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA55690763AE8820FCD70C22D41221A5 /* BFAppLinkTarget.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFAppLinkTarget.h; path = Bolts/iOS/BFAppLinkTarget.h; sourceTree = "<group>"; };
-		FA5F9DAB8F718F75E2E5B3B6B87DFA37 /* AWSS3RequestRetryHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSS3RequestRetryHandler.m; path = AWSS3/AWSS3RequestRetryHandler.m; sourceTree = "<group>"; };
-		FA6F6FCE70CEBBE5C4847C2AE5CFA78A /* AWSAuthCore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AWSAuthCore.modulemap; sourceTree = "<group>"; };
-		FAA27CD96BBDF64C7C1B36A235F27D55 /* AWSCloudWatch-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSCloudWatch-prefix.pch"; sourceTree = "<group>"; };
-		FAC7AA37258D6B343E4827868AD039EA /* AWSMTLJSONAdapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMTLJSONAdapter.m; path = AWSCore/Mantle/AWSMTLJSONAdapter.m; sourceTree = "<group>"; };
-		FAD2CD4088156E5024AEEF3B2636CF31 /* AWSLogs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AWSLogs.framework; path = AWSLogs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB3F7BAE8C50F1BED67B676ECF3EB8BE /* BFLPCM16Encoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFLPCM16Encoder.h; path = AWSLex/Bluefront/include/BFLPCM16Encoder.h; sourceTree = "<group>"; };
-		FB557F911B8DFB59F811DD70E60AFDC5 /* FBSDKDeviceLoginManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKDeviceLoginManager.m; path = FBSDKLoginKit/FBSDKLoginKit/FBSDKDeviceLoginManager.m; sourceTree = "<group>"; };
-		FBBEBB4283C8E3A7A59EA69EFE5131D1 /* Pods_HygieaWasteSortingAppIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HygieaWasteSortingAppIOS.framework; path = "Pods-HygieaWasteSortingAppIOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FBF3A0A004C43B3E66134FC50AE5364E /* AWSKinesis-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AWSKinesis-Info.plist"; sourceTree = "<group>"; };
-		FC422B9F60958DC3FEA197DE08647670 /* AWSCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AWSCore.framework; path = AWSCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC6E8B0F555E09B6F29B96E9578CAB10 /* AWSCognitoIdentityUserPool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSCognitoIdentityUserPool.m; path = AWSCognitoIdentityProvider/AWSCognitoIdentityUserPool.m; sourceTree = "<group>"; };
-		FC7E1D9BD07EB11AE2FA3BDF2E1B40BB /* AWSKinesis.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AWSKinesis.xcconfig; sourceTree = "<group>"; };
-		FCE9A8D84CD9B7765A2D21AB39F7316F /* AWSIoTKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSIoTKeychain.m; path = AWSIoT/Internal/AWSIoTKeychain.m; sourceTree = "<group>"; };
-		FD40795C3E2B0883344ED40757458630 /* SignIn.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = SignIn.storyboard; path = AWSAuthSDK/Sources/AWSAuthUI/SignIn.storyboard; sourceTree = "<group>"; };
-		FD48C9DCBFE5D8470E84467482656606 /* AWSPinpointConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSPinpointConfiguration.h; path = AWSPinpoint/AWSPinpointConfiguration.h; sourceTree = "<group>"; };
-		FDD99D939A42902D320FA67952FA19A0 /* AWSLexSignature.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSLexSignature.h; path = AWSLex/AWSLexSignature.h; sourceTree = "<group>"; };
-		FDDDBCD2BF2EF1E9CDB3B4133CDB819E /* AWSUserPoolsSignIn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AWSUserPoolsSignIn.framework; path = AWSUserPoolsSignIn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE3FCC78A400B1A2050A152FAE1E2BDE /* AWSPollyModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSPollyModel.h; path = AWSPolly/AWSPollyModel.h; sourceTree = "<group>"; };
-		FE4992FBC847A8C00ADF64F58C3D165A /* FBSDKAccessTokenExpirer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKAccessTokenExpirer.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/TokenCaching/FBSDKAccessTokenExpirer.m; sourceTree = "<group>"; };
-		FEA97C1B952B6A4463E824C767C5BAAC /* FBSDKServerConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKServerConfiguration.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/ServerConfiguration/FBSDKServerConfiguration.h; sourceTree = "<group>"; };
-		FECCE49F94E3055AFC09A9810BC5EB2A /* AWSAbstractKinesisRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSAbstractKinesisRecorder.h; path = AWSKinesis/AWSAbstractKinesisRecorder.h; sourceTree = "<group>"; };
-		FF6E6420DF0A01C8B4DD8B19E29B7317 /* AWSDDFileLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSDDFileLogger.m; path = AWSCore/Logging/AWSDDFileLogger.m; sourceTree = "<group>"; };
-		FF9AD08CC9F0ACBD849F768580ABB710 /* AWSFMDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSFMDatabaseQueue.h; path = AWSCore/FMDB/AWSFMDatabaseQueue.h; sourceTree = "<group>"; };
-		FFE923771A0A04E63371DBDE61392BBC /* Bolts-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Bolts-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+<<<<<<< HEAD
 /* Begin PBXFrameworksBuildPhase section */
 		042F5622ABAECD98132042EDE1A3F68D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
@@ -3382,10 +2860,14 @@
 			sourceTree = "<group>";
 		};
 		0F12A85F34514D44669F36D979896CEF /* Frameworks */ = {
+=======
+/* Begin PBXGroup section */
+		09C5E90726D2521A760312DBF50D9358 /* Products */ = {
+>>>>>>> parent of f03af14... Task #131
 			isa = PBXGroup;
 			children = (
-				4247ED1AF2AB24D4C94A9A1209AC60F6 /* libBlueAudioSourceiOS.a */,
 			);
+<<<<<<< HEAD
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
@@ -3545,27 +3027,16 @@
 			name = "Support Files";
 			path = "../Target Support Files/AWSMachineLearning";
 >>>>>>> cb8b84e95056d971743e530b9cf340269a00fe88
-<<<<<<< HEAD
 =======
 			name = Products;
 >>>>>>> parent of f03af14... Task #131
 =======
 >>>>>>> parent of a504489... Merge branch 'IOS' of https://github.com/atshinn/HygieaWasteZero into IOS
-=======
->>>>>>> parent of 2bd6c46... revert #131
 			sourceTree = "<group>";
 		};
-		144EF91F349E63E2F61C56B665A57BD5 /* Frameworks */ = {
+		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E3B46FDE877B2F99180BF043AE1A456B /* AWSAuthCore.framework */,
-				8AB658DFC37CAAFE230B9D68960F5450 /* AWSCognitoIdentityProvider.framework */,
-				2ADEDB987B7D324F53DEF8128A3BE317 /* AWSCognitoIdentityProviderASF.framework */,
-				FA39650466CE2FC4226D3FB09BC40FB8 /* AWSCore.framework */,
-				050F641183E5E012D79F8A344360714C /* Bolts.framework */,
-				F7AABACEE89BBF461F1D72BF2E43483F /* FBSDKCoreKit.framework */,
-				5DAC34CE2F2C4AE9154420EC942ABF65 /* FBSDKLoginKit.framework */,
-				3D2FFC38B9AF68123ED1F04D0B9E0224 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -3573,11 +3044,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 >>>>>>> parent of a504489... Merge branch 'IOS' of https://github.com/atshinn/HygieaWasteZero into IOS
-=======
->>>>>>> parent of 2bd6c46... revert #131
 		160DFAF4A6C6D8CFC64E19254EEBA37B /* AWSElasticLoadBalancing */ = {
 			isa = PBXGroup;
 			children = (
@@ -3812,60 +3280,49 @@
 			sourceTree = "<group>";
 		};
 		37FF0BB845AADED0E3EF515EF4DB11E9 /* AWSMachineLearning */ = {
+=======
+		7DB346D0F39D3F0E887471402A8071AB = {
+>>>>>>> parent of f03af14... Task #131
 			isa = PBXGroup;
 			children = (
-				B0A73BCCB3EB34CE33DD26AF11D7C565 /* AWSMachineLearning.h */,
-				B506CBC4506197FC6A7B7461D2312B69 /* AWSMachineLearningModel.h */,
-				29241F1A693D52709936B42B1DCCCE18 /* AWSMachineLearningModel.m */,
-				F51F43B1705889AA94250FBEF2102609 /* AWSMachineLearningResources.h */,
-				BBBC75E835395FABD0C91F1C36125EB4 /* AWSMachineLearningResources.m */,
-				09B92CA535F81A6F71B8A74B22829E08 /* AWSMachineLearningService.h */,
-				E47843B562C7A02E08DFF3F3FC55E71F /* AWSMachineLearningService.m */,
-				518D84BD90B5F1CFF0F1CB046ECE2F15 /* Support Files */,
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
+				09C5E90726D2521A760312DBF50D9358 /* Products */,
+				F6CCA5D896907CE7506C37FD31FC265A /* Targets Support Files */,
 			);
-			name = AWSMachineLearning;
-			path = AWSMachineLearning;
 			sourceTree = "<group>";
 		};
-		388DD39AABBFE9610DDC96EAD7127027 /* AWSMobileClient */ = {
+		F6CCA5D896907CE7506C37FD31FC265A /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C5879F9EE1EDCB3034F1DDCD88A959CD /* AWSMobileClient.h */,
-				EDA85914AB78D8FAD185E91988A19C3E /* AWSMobileClient.m */,
-				7AD19422D17F4ECAF63918A885B8DA8C /* Support Files */,
 			);
-			name = AWSMobileClient;
-			path = AWSMobileClient;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		3BE29568A16854EA71C32FB480FF16B0 /* AWSSES */ = {
-			isa = PBXGroup;
-			children = (
-				7B7F026D58BCF4C80B606101E454ED0F /* AWSSES.h */,
-				A03E6293167DAEF21EB331B7744113DC /* AWSSESModel.h */,
-				32E1C52122C74E75CDB953F7D5686206 /* AWSSESModel.m */,
-				D648CCECB9D0842929AD04F1DE883069 /* AWSSESResources.h */,
-				162A193A2A4CCE3EF817E22B007CB6EF /* AWSSESResources.m */,
-				4DCBAFAD139AED9E5A91A7587601BF7D /* AWSSESService.h */,
-				21B6F6CF4CF99E2123F01608FDE1AA7B /* AWSSESService.m */,
-				99BF46E635391419EF5BC6FCBCB47588 /* Support Files */,
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
 			);
-			name = AWSSES;
-			path = AWSSES;
-			sourceTree = "<group>";
-		};
-		3D2FFC38B9AF68123ED1F04D0B9E0224 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				344881AD75718E330B333CC9C3DD348D /* CoreGraphics.framework */,
-				EB7A747C2F93F729D9CF4F4E191F6B33 /* Foundation.framework */,
-				E517FFF846A2388635B956FB63768EA8 /* Security.framework */,
-				EE069A200F47B1B88547609E39160BE7 /* SystemConfiguration.framework */,
-				7383AEB87A774D7F19637638862B7BC9 /* UIKit.framework */,
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 09C5E90726D2521A760312DBF50D9358 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
 			);
-			name = iOS;
-			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		41F47C4066A850871A5CE96E485D774F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -10420,6 +9877,12 @@
 			name = Release;
 		};
 		C4EAA84F44D044E108500A81C635F21E /* Release */ = {
+=======
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		17D95E4C683EBD85DA8A12582A7EA664 /* Release */ = {
+>>>>>>> parent of f03af14... Task #131
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -10469,7 +9932,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -10481,11 +9943,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 >>>>>>> parent of a504489... Merge branch 'IOS' of https://github.com/atshinn/HygieaWasteZero into IOS
-=======
->>>>>>> parent of 2bd6c46... revert #131
 		C5756FBA589EAF0190B68C14D095101D /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A0EDA348410BFA840516D312E37AE09A /* AWSUserPoolsSignIn.xcconfig */;
@@ -11302,12 +10761,75 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+=======
+		3A61DB7232C079D8C49E2517AD77B072 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+>>>>>>> parent of f03af14... Task #131
 			};
 			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+<<<<<<< HEAD
 		00371EC154189B811743F8528A310518 /* Build configuration list for PBXNativeTarget "AWSDynamoDB" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -11696,7 +11218,6 @@
 				57F079659D7D243639EB6681BEA3C2C1 /* Debug */,
 				1D289BC7F9E7073B365CF7EA4862637B /* Release */,
 >>>>>>> cb8b84e95056d971743e530b9cf340269a00fe88
-<<<<<<< HEAD
 =======
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
@@ -11706,8 +11227,6 @@
 >>>>>>> parent of f03af14... Task #131
 =======
 >>>>>>> parent of a504489... Merge branch 'IOS' of https://github.com/atshinn/HygieaWasteZero into IOS
-=======
->>>>>>> parent of 2bd6c46... revert #131
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

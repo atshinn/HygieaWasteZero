@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 PODS:
   - AWSAuth (2.6.32):
     - AWSAuth/Core (= 2.6.32)
@@ -206,5 +207,8 @@ SPEC CHECKSUMS:
   FBSDKLoginKit: 2f7249686d1e30ce8a5ef5400eedf50b3e3df332
 
 PODFILE CHECKSUM: cf835b91ab628a3c1d54219eac97a8f292dbd65c
+=======
+PODFILE CHECKSUM: 3883804378eb874f6b1fa896c57471314eb90904
+>>>>>>> parent of f03af14... Task #131
 
 COCOAPODS: 1.6.0.beta.1
