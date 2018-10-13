@@ -41,7 +41,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class login extends AppCompatActivity {
-    Context appContext;
     CognitoUserPool userPool;
     String key_url = "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_2KW8CF0tm/.well-known/jwks.json";
     // Initialize the Amazon Cognito credentials provider
@@ -78,13 +77,13 @@ public class login extends AppCompatActivity {
             ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.ACCESS_COARSE_LOCATION}, LOCATION_REQUEST_CODE);
         }
 
-        userPool  = new CognitoUserPool(getApplicationContext(), "us-west-2_2KW8CF0tm", "8mrvs89q1frh6hqooc4nt9b0", "53hqi241c7u51am44nckkjv6m2ugv0jima5nqglgu07ebtrsm7", Regions.US_WEST_2);
+        //userPool  = new CognitoUserPool(getApplicationContext(), "us-west-2_2KW8CF0tm", "8mrvs89q1frh6hqooc4nt9b0", "53hqi241c7u51am44nckkjv6m2ugv0jima5nqglgu07ebtrsm7", Regions.US_WEST_2);
         credentialsProvider = new CognitoCachingCredentialsProvider(
                 getApplicationContext(),
                 "us-west-2:6bd013d4-d707-4d4b-9174-29170cd89ad1", // Identity pool ID
                 Regions.US_WEST_2 // Region
         );
-        s3Client = new AmazonS3Client(credentialsProvider);
+        //s3Client = new AmazonS3Client(credentialsProvider);
 
         loadWidget = findViewById(R.id.progressBarLogin);
         loadWidget.setIndeterminate(true);
@@ -235,13 +234,8 @@ public class login extends AppCompatActivity {
         loginView.setWebViewClient(webBrowser.getINSTANCE());
         //Note to self: Always use the fully correct URL, this won't account for any minor differences
         //signupView.loadUrl("https://www.google.com/");
-        loginView.loadUrl("https://hywz-auth.auth.us-west-2.amazoncognito.com/login?response_type=token&client_id=8mrvs89q1frh6hqooc4nt9b0&redirect_uri=hygieawastezero://");
+        loginView.loadUrl(getString(R.string.signin_url));
         pollWebView();
-        //Don't do these things ---v
-        //while(token == ""){} //Main thread waits while user navigates signup/signin screens
-        ////implement token handling here
-        //Log.d("Token", token);
-
     }
 
     @Override
