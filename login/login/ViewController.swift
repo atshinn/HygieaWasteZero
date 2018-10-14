@@ -24,65 +24,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         
   
         
-    @IBOutlet weak var takeUsername: UITextField!
-    
-    @IBOutlet weak var takePassword: UITextField!
-    
-    @IBAction func checkLogin(_ sender: ViewController) {
-    
-        
-        
-        
-//            //Take Inputs
-//            username = takeUsername.text!
-//            password = takePassword.text!
-//
-//            //Flag to see if username and password are correct
-//            var flag: Bool = false
-//
-//            //Info from Json
-//            struct StoredData {
-//                var name: String
-//                var username: String
-//                var email: String
-//                var password: String
-//            }
-//
-//            struct jsonData: Codable {
-//                let name: String
-//                let username: String
-//                let email: String
-//                let password: String
-//            }
-//
-//            let data = try! JSONSerialization.data(withJSONObject: StoredData.self, options: [])
-//            let decoder = JSONDecoder()
-//            let stored = try! decoder.decode(jsonData.self, from: data)
-//
-//            if username == stored.username {
-//                if password == stored.password {
-//                    flag = true
-//                }
-//            }
-//            
-//            if flag == true {
-//                //Successful login
-//            }
-//            else {
-//                ErrorStatement.text = "Incorrect Username or Password"
-//            }
-//
-        }
-        
-//        @IBAction func jumpToSignUp(_ sender: SignUpViewController) {
-//            //Jump to Signup
-//        }
-//
-//        @IBAction func jumpToGuest(_ sender: ViewController) {
-//            //Jump to Camera for now
+//    @IBOutlet weak var takeUsername: UITextField!
+//    
+//    @IBOutlet weak var takePassword: UITextField!
+//    
+//    @IBAction func checkLogin(_ sender: ViewController) {
 //        }
     
-        
         override func viewDidLoad() {
             super.viewDidLoad()
             
@@ -99,16 +47,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         while !(webView.request?.url?.absoluteString.hasPrefix("hygieawastezeroios://"))! {
             
         }
-        completion(URLParse) // Or completion(SomeError.veryBadError)
+        completion(URLParse as! Error) // Or completion(SomeError.veryBadError)
     }
     
     func URLParse() {
-    if let error = error {
-    print("Oops! Something went wrong...")
-    } else {
-   let toSearch = webView.request.URL.absoluteString.components(separatedBy: "#id_token=")[1].components(separatedBy: "&")[0]
-    
-    }
+//        if let error = error {
+//    print("Oops! Something went wrong...")
+//    } else {
+        let toSearch = webView.request?.url?.absoluteString.components(separatedBy: "#id_token=")[1].components(separatedBy: "&")[0]
+        print (toSearch)
+        //}
     }
     
         //// ALL OF THESE FUNCTIONS SHOULD BE USED WHEN LOCATION IS RETRIEVED ////
