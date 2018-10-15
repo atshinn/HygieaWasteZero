@@ -116,6 +116,11 @@ def annotate__image():
         response = client.annotate_image(vision_call)
         return jsonify(response)
 
+@app.route('/predict', methods=['POST'])
+def predict():
+    json = request.get_json();
+    return jsonify(json);
+
 # =============================================================================
 # Teardown
 # =============================================================================
