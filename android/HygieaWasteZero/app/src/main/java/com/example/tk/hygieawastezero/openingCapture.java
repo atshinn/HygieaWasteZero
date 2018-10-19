@@ -13,6 +13,7 @@ import android.location.Location;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
@@ -49,12 +50,21 @@ public class openingCapture extends AppCompatActivity implements SurfaceHolder.C
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_opening_capture);
-
         ////Stores credentials across activities
         Bundle extras = getIntent().getExtras();
         accessKey = extras.getString("accessKey");
         secretKey = extras.getString("secretKey");
         ////
+
+         //Checks if user is in the developer group
+         //Can be used to trigger certain features
+        /*
+        if(extras.getBoolean("isDev")){
+            Log.d("isDev", "True");
+        } else {
+            Log.d("isDev", "False");
+        }
+        */
 
         bmpSingleton.getINSTANCE();
 

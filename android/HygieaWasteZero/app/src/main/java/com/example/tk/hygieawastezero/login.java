@@ -10,6 +10,7 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Base64;
 import android.util.Log;
 import android.view.View;
 import android.webkit.WebChromeClient;
@@ -20,6 +21,8 @@ import android.widget.Toast;
 import com.amazonaws.auth.AWSSessionCredentials;
 import com.amazonaws.auth.CognitoCachingCredentialsProvider;
 import com.amazonaws.regions.Regions;
+
+import org.json.JSONObject;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -35,6 +38,8 @@ public class login extends AppCompatActivity {
     private String token = "";
 
     private ProgressBar loadWidget;
+
+    boolean dev = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -146,12 +151,13 @@ public class login extends AppCompatActivity {
     }
 
     public void handleToken(){
-        Log.d("Token", token);
+        //Log.d("Token", token);
         tokenBearer bearer = new tokenBearer(token);
-        Log.d("Id", bearer.getIdToken());
-        Log.d("Access", bearer.getAccessToken());
-        Log.d("Expires in", Integer.toString(bearer.getExpiration()));
-        Log.d("Token type", bearer.getTokenType());
+        //Log.d("Id", bearer.getIdToken());
+        //Log.d("Access", bearer.getAccessToken());
+        //Log.d("Expires in", Integer.toString(bearer.getExpiration()));
+        //Log.d("Token type", bearer.getTokenType());
+        dev = isDev(bearer.getIdToken());
         Map<String, String> logins = new HashMap<String, String>();
         logins.put("cognito-idp.us-west-2.amazonaws.com/us-west-2_2KW8CF0tm", bearer.getIdToken());
         credentialsProvider.setLogins(logins);
@@ -177,7 +183,23 @@ public class login extends AppCompatActivity {
         Intent swap = new Intent(login.this, openingCapture.class);
         swap.putExtra("accessKey", c.getAWSAccessKeyId());
         swap.putExtra("secretKey", c.getAWSSecretKey());
+        swap.putExtra("isDev", dev);
         startActivity(swap);
         finish();
+    }
+
+    public boolean isDev(String s){
+        String[] idParts = s.split("\\.");
+        String enBody = idParts[1];
+        //Log.d("EnBody", enBody);
+        try{
+            JSONObject deBody = new JSONObject(new String(Base64.decode(enBody, Base64.DEFAULT)));
+            //Log.d("groups", deBody.getJSONArray("cognito:groups").getString(0));
+            return "dev".matches(deBody.getJSONArray("cognito:groups").getString(0));
+            //if(b){ Log.d("isDev", "True"); } else { Log.d("isDev", "False"); }
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+        return false;
     }
 }
