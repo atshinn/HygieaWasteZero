@@ -379,12 +379,12 @@ public class login extends AppCompatActivity {
     }
 
     public void handleToken(){
-        //Log.d("Token", token);
+        Log.d("Token", token);
         tokenBearer bearer = new tokenBearer(token);
-        //Log.d("Id", bearer.getIdToken());
-        //Log.d("Access", bearer.getAccessToken());
-        //Log.d("Expires in", Integer.toString(bearer.getExpiration()));
-        //Log.d("Token type", bearer.getTokenType());
+        Log.d("Id", bearer.getIdToken());
+        Log.d("Access", bearer.getAccessToken());
+        Log.d("Expires in", Integer.toString(bearer.getExpiration()));
+        Log.d("Token type", bearer.getTokenType());
         Map<String, String> logins = new HashMap<String, String>();
         logins.put("cognito-idp.us-west-2.amazonaws.com/us-west-2_2KW8CF0tm", bearer.getIdToken());
         credentialsProvider.setLogins(logins);
