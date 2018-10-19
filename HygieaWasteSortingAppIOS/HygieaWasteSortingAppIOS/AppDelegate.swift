@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  HygieaWasteSortingAppIOS
 //
-//  Created by Hesham Alghamdi on 9/1/18.
+//  Created by Hesham Alghamdi on 10/17/18.
 //  Copyright © 2018 Arizona State University. All rights reserved.
 //
 
@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
     }

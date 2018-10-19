@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController {
-
+    
     var captureSession = AVCaptureSession()
     var backCamera : AVCaptureDevice?
     var frontCamera : AVCaptureDevice?
@@ -34,9 +34,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-//    override func viewDidAppear(_ animated: Bool) {
-//        self.performSegue(withIdentifier: "loginSegue", sender: self);
-//    }
+        override func viewDidAppear(_ animated: Bool) {
+            self.performSegue(withIdentifier: "loginSegue", sender: self);
+        }
     
     func setupCaptureSession(){
         captureSession.sessionPreset = AVCaptureSession.Preset.photo
@@ -58,8 +58,8 @@ class ViewController: UIViewController {
         currentCamera = backCamera
         
     }
-
-
+    
+    
     func setupIO(){
         do{
             let captureDeviceInput = try AVCaptureDeviceInput(device: currentCamera! )
@@ -90,6 +90,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func CameraButtonAction(_ sender: Any) {
+    
         let settings = AVCapturePhotoSettings()
         photoOutput?.capturePhoto(with: settings, delegate: self)
         //performSegue(withIdentifier: "DisplayPhotoSegue", sender: nil)
@@ -97,20 +98,20 @@ class ViewController: UIViewController {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
-       
+        
+        
         
         //        if segue.identifier == "DisplayPhotoSegue" {
-//            let previewVC = segue.destination as! ImageViewController
-//            previewVC.image = self.image
-//        }
+        //            let previewVC = segue.destination as! ImageViewController
+        //            previewVC.image = self.image
+        //        }
     }
-//    override func didReceiveMemoryWarning() {
-//        super.didReceiveMemoryWarning()
-//        // Dispose of any resources that can be recreated.
-//    }
-
-
+    //    override func didReceiveMemoryWarning() {
+    //        super.didReceiveMemoryWarning()
+    //        // Dispose of any resources that can be recreated.
+    //    }
+    
+    
 }
 
 extension ViewController: AVCapturePhotoCaptureDelegate{
@@ -119,7 +120,7 @@ extension ViewController: AVCapturePhotoCaptureDelegate{
             image = UIImage(data: imageData)
             performSegue(withIdentifier: "LoadingSegue" , sender: nil)
             //performSegue(withIdentifier: "DisplayPhotoSegue" , sender: nil)
-    
+            
         }
     }
 }

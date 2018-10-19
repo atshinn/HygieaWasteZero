@@ -3,281 +3,192 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C5EA54F213B61B600846BC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5EA54E213B61B600846BC3 /* AppDelegate.swift */; };
-		2C5EA551213B61B600846BC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5EA550213B61B600846BC3 /* ViewController.swift */; };
-		2C5EA554213B61B600846BC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C5EA552213B61B600846BC3 /* Main.storyboard */; };
-		2C5EA557213B61B600846BC3 /* HygieaWasteSortingAppIOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C5EA555213B61B600846BC3 /* HygieaWasteSortingAppIOS.xcdatamodeld */; };
-		2C5EA559213B61B900846BC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C5EA558213B61B900846BC3 /* Assets.xcassets */; };
-		2C5EA55C213B61B900846BC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C5EA55A213B61B900846BC3 /* LaunchScreen.storyboard */; };
-		2C5EA567213B61B900846BC3 /* HygieaWasteSortingAppIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5EA566213B61B900846BC3 /* HygieaWasteSortingAppIOSTests.swift */; };
-		2C5EA572213B61B900846BC3 /* HygieaWasteSortingAppIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5EA571213B61B900846BC3 /* HygieaWasteSortingAppIOSUITests.swift */; };
-		2C9B8FA1214F520A000307EB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9B8FA0214F520A000307EB /* LoginViewController.swift */; };
-		2C9B8FA5214F52CA000307EB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9B8FA4214F52CA000307EB /* SignUpViewController.swift */; };
-		2C9B8FA7214F53BB000307EB /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9B8FA6214F53BB000307EB /* ImageViewController.swift */; };
-		2C9B8FA921536EC8000307EB /* ActIndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9B8FA821536EC8000307EB /* ActIndicatorViewController.swift */; };
-		2C9B8FAB2153804B000307EB /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9B8FAA2153804A000307EB /* ResultViewController.swift */; };
-		2EACC03A21598E8800440C55 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9B8FA0214F520A000307EB /* LoginViewController.swift */; };
-		2EACC03B21598E8900440C55 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9B8FA0214F520A000307EB /* LoginViewController.swift */; };
-		2EACC03E21598EBB00440C55 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9B8FA4214F52CA000307EB /* SignUpViewController.swift */; };
-		2EACC03F21598EBC00440C55 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9B8FA4214F52CA000307EB /* SignUpViewController.swift */; };
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-		8E94B44A8FCB95DB9F1E2960 /* Pods_HygieaWasteSortingAppIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E37AC24C0C109EA1182898B /* Pods_HygieaWasteSortingAppIOS.framework */; };
-=======
-		610A5C0D193C9F89204B1180 /* Pods_HygieaWasteSortingAppIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1D995AD180B33996984FEB /* Pods_HygieaWasteSortingAppIOS.framework */; };
-		8F3D50972555ED20EA30F8C6 /* Pods_HygieaWasteSortingAppIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71440A26A5DE0C79F2FAF071 /* Pods_HygieaWasteSortingAppIOSTests.framework */; };
-		D7D3C0A860F7B7C0C7C22EB1 /* Pods_HygieaWasteSortingAppIOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE6B9DA77EAF8AD52192671D /* Pods_HygieaWasteSortingAppIOSUITests.framework */; };
->>>>>>> cb8b84e95056d971743e530b9cf340269a00fe88
-=======
->>>>>>> parent of f03af14... Task #131
-=======
-		8E94B44A8FCB95DB9F1E2960 /* Pods_HygieaWasteSortingAppIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E37AC24C0C109EA1182898B /* Pods_HygieaWasteSortingAppIOS.framework */; };
->>>>>>> parent of a504489... Merge branch 'IOS' of https://github.com/atshinn/HygieaWasteZero into IOS
+		11D036AD7C7A6AC6F39D3E51 /* Pods_HygieaWasteSortingAppIOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63D6C2F25E4B4E4C21BD36F9 /* Pods_HygieaWasteSortingAppIOSUITests.framework */; };
+		1FEC974CA5AF8FE9CAFAB240 /* Pods_HygieaWasteSortingAppIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B6BE38AC3E80FE26B38C7E /* Pods_HygieaWasteSortingAppIOS.framework */; };
+		2C95D75021780D4A00A04143 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95D74F21780D4A00A04143 /* AppDelegate.swift */; };
+		2C95D75221780D4A00A04143 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95D75121780D4A00A04143 /* ViewController.swift */; };
+		2C95D75521780D4A00A04143 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C95D75321780D4A00A04143 /* Main.storyboard */; };
+		2C95D75821780D4A00A04143 /* HygieaWasteSortingAppIOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C95D75621780D4A00A04143 /* HygieaWasteSortingAppIOS.xcdatamodeld */; };
+		2C95D75A21780D7300A04143 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C95D75921780D7300A04143 /* Assets.xcassets */; };
+		2C95D75D21780D7300A04143 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C95D75B21780D7300A04143 /* LaunchScreen.storyboard */; };
+		2C95D76821780D7400A04143 /* HygieaWasteSortingAppIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95D76721780D7400A04143 /* HygieaWasteSortingAppIOSTests.swift */; };
+		2C95D77321780D7400A04143 /* HygieaWasteSortingAppIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95D77221780D7400A04143 /* HygieaWasteSortingAppIOSUITests.swift */; };
+		2C95D781217965EC00A04143 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95D780217965EC00A04143 /* LoginViewController.swift */; };
+		2C95D7832179661A00A04143 /* ActIndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95D7822179661A00A04143 /* ActIndicatorViewController.swift */; };
+		2C95D7852179663200A04143 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95D7842179663200A04143 /* ResultViewController.swift */; };
+		31102A01E62A35327F21EF77 /* Pods_HygieaWasteSortingAppIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46415E1BB1ABFBAADA9C467E /* Pods_HygieaWasteSortingAppIOSTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2C5EA563213B61B900846BC3 /* PBXContainerItemProxy */ = {
+		2C95D76421780D7400A04143 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2C5EA543213B61B600846BC3 /* Project object */;
+			containerPortal = 2C95D74421780D4900A04143 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2C5EA54A213B61B600846BC3;
+			remoteGlobalIDString = 2C95D74B21780D4A00A04143;
 			remoteInfo = HygieaWasteSortingAppIOS;
 		};
-		2C5EA56E213B61B900846BC3 /* PBXContainerItemProxy */ = {
+		2C95D76F21780D7400A04143 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2C5EA543213B61B600846BC3 /* Project object */;
+			containerPortal = 2C95D74421780D4900A04143 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2C5EA54A213B61B600846BC3;
+			remoteGlobalIDString = 2C95D74B21780D4A00A04143;
 			remoteInfo = HygieaWasteSortingAppIOS;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-		0E37AC24C0C109EA1182898B /* Pods_HygieaWasteSortingAppIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HygieaWasteSortingAppIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-=======
-		1ABF89D2EB65A199CF9CB50D /* Pods-HygieaWasteSortingAppIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HygieaWasteSortingAppIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-HygieaWasteSortingAppIOS/Pods-HygieaWasteSortingAppIOS.release.xcconfig"; sourceTree = "<group>"; };
->>>>>>> cb8b84e95056d971743e530b9cf340269a00fe88
-=======
->>>>>>> parent of f03af14... Task #131
-=======
-		0E37AC24C0C109EA1182898B /* Pods_HygieaWasteSortingAppIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HygieaWasteSortingAppIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
->>>>>>> parent of a504489... Merge branch 'IOS' of https://github.com/atshinn/HygieaWasteZero into IOS
-		2C5EA54B213B61B600846BC3 /* HygieaWasteSortingAppIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HygieaWasteSortingAppIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C5EA54E213B61B600846BC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2C5EA550213B61B600846BC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2C5EA553213B61B600846BC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2C5EA556213B61B600846BC3 /* HygieaWasteSortingAppIOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HygieaWasteSortingAppIOS.xcdatamodel; sourceTree = "<group>"; };
-		2C5EA558213B61B900846BC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2C5EA55B213B61B900846BC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2C5EA55D213B61B900846BC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2C5EA562213B61B900846BC3 /* HygieaWasteSortingAppIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HygieaWasteSortingAppIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C5EA566213B61B900846BC3 /* HygieaWasteSortingAppIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HygieaWasteSortingAppIOSTests.swift; sourceTree = "<group>"; };
-		2C5EA568213B61B900846BC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2C5EA56D213B61B900846BC3 /* HygieaWasteSortingAppIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HygieaWasteSortingAppIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C5EA571213B61B900846BC3 /* HygieaWasteSortingAppIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HygieaWasteSortingAppIOSUITests.swift; sourceTree = "<group>"; };
-		2C5EA573213B61B900846BC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2C9B8FA0214F520A000307EB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		2C9B8FA4214F52CA000307EB /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		2C9B8FA6214F53BB000307EB /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
-		2C9B8FA821536EC8000307EB /* ActIndicatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActIndicatorViewController.swift; sourceTree = "<group>"; };
-		2C9B8FAA2153804A000307EB /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-		AFBC675DA31493F0E81423CD /* Pods-HygieaWasteSortingAppIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HygieaWasteSortingAppIOS.debug.xcconfig"; path = "Target Support Files/Pods-HygieaWasteSortingAppIOS/Pods-HygieaWasteSortingAppIOS.debug.xcconfig"; sourceTree = "<group>"; };
-		BE95F35733B0E4CAD6613CFA /* Pods-HygieaWasteSortingAppIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HygieaWasteSortingAppIOS.release.xcconfig"; path = "Target Support Files/Pods-HygieaWasteSortingAppIOS/Pods-HygieaWasteSortingAppIOS.release.xcconfig"; sourceTree = "<group>"; };
-=======
-		35C8972A3A2E5B2827FA6DD8 /* Pods-HygieaWasteSortingAppIOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HygieaWasteSortingAppIOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HygieaWasteSortingAppIOSUITests/Pods-HygieaWasteSortingAppIOSUITests.release.xcconfig"; sourceTree = "<group>"; };
-		44CBAC3ADD00CCD1015AA129 /* Pods-HygieaWasteSortingAppIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HygieaWasteSortingAppIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HygieaWasteSortingAppIOS/Pods-HygieaWasteSortingAppIOS.debug.xcconfig"; sourceTree = "<group>"; };
-		46CD24633C9A3F6A14E7BE85 /* Pods-HygieaWasteSortingAppIOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HygieaWasteSortingAppIOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HygieaWasteSortingAppIOSTests/Pods-HygieaWasteSortingAppIOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		4CCA5DC4D0648B47BC7FE6E2 /* Pods-HygieaWasteSortingAppIOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HygieaWasteSortingAppIOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HygieaWasteSortingAppIOSUITests/Pods-HygieaWasteSortingAppIOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		5C12B0190D7C90C887F57E03 /* Pods-HygieaWasteSortingAppIOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HygieaWasteSortingAppIOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HygieaWasteSortingAppIOSTests/Pods-HygieaWasteSortingAppIOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		6B1D995AD180B33996984FEB /* Pods_HygieaWasteSortingAppIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HygieaWasteSortingAppIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		71440A26A5DE0C79F2FAF071 /* Pods_HygieaWasteSortingAppIOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HygieaWasteSortingAppIOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE6B9DA77EAF8AD52192671D /* Pods_HygieaWasteSortingAppIOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HygieaWasteSortingAppIOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
->>>>>>> cb8b84e95056d971743e530b9cf340269a00fe88
-=======
->>>>>>> parent of f03af14... Task #131
-=======
-		AFBC675DA31493F0E81423CD /* Pods-HygieaWasteSortingAppIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HygieaWasteSortingAppIOS.debug.xcconfig"; path = "Target Support Files/Pods-HygieaWasteSortingAppIOS/Pods-HygieaWasteSortingAppIOS.debug.xcconfig"; sourceTree = "<group>"; };
-		BE95F35733B0E4CAD6613CFA /* Pods-HygieaWasteSortingAppIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HygieaWasteSortingAppIOS.release.xcconfig"; path = "Target Support Files/Pods-HygieaWasteSortingAppIOS/Pods-HygieaWasteSortingAppIOS.release.xcconfig"; sourceTree = "<group>"; };
->>>>>>> parent of a504489... Merge branch 'IOS' of https://github.com/atshinn/HygieaWasteZero into IOS
+		2C95D74C21780D4A00A04143 /* HygieaWasteSortingAppIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HygieaWasteSortingAppIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C95D74F21780D4A00A04143 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2C95D75121780D4A00A04143 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2C95D75421780D4A00A04143 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C95D75721780D4A00A04143 /* HygieaWasteSortingAppIOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HygieaWasteSortingAppIOS.xcdatamodel; sourceTree = "<group>"; };
+		2C95D75921780D7300A04143 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C95D75C21780D7300A04143 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C95D75E21780D7300A04143 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C95D76321780D7400A04143 /* HygieaWasteSortingAppIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HygieaWasteSortingAppIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C95D76721780D7400A04143 /* HygieaWasteSortingAppIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HygieaWasteSortingAppIOSTests.swift; sourceTree = "<group>"; };
+		2C95D76921780D7400A04143 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C95D76E21780D7400A04143 /* HygieaWasteSortingAppIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HygieaWasteSortingAppIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C95D77221780D7400A04143 /* HygieaWasteSortingAppIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HygieaWasteSortingAppIOSUITests.swift; sourceTree = "<group>"; };
+		2C95D77421780D7400A04143 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C95D780217965EC00A04143 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2C95D7822179661A00A04143 /* ActIndicatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActIndicatorViewController.swift; sourceTree = "<group>"; };
+		2C95D7842179663200A04143 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		46415E1BB1ABFBAADA9C467E /* Pods_HygieaWasteSortingAppIOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HygieaWasteSortingAppIOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63D6C2F25E4B4E4C21BD36F9 /* Pods_HygieaWasteSortingAppIOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HygieaWasteSortingAppIOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83CCC5394595CE5BC7E98B1D /* Pods-HygieaWasteSortingAppIOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HygieaWasteSortingAppIOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HygieaWasteSortingAppIOSUITests/Pods-HygieaWasteSortingAppIOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9156CCFA87383703A68E8826 /* Pods-HygieaWasteSortingAppIOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HygieaWasteSortingAppIOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HygieaWasteSortingAppIOSTests/Pods-HygieaWasteSortingAppIOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		9BDD6762DD12D28C16BA5557 /* Pods-HygieaWasteSortingAppIOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HygieaWasteSortingAppIOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HygieaWasteSortingAppIOSUITests/Pods-HygieaWasteSortingAppIOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A9B6BE38AC3E80FE26B38C7E /* Pods_HygieaWasteSortingAppIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HygieaWasteSortingAppIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B72ADA9E6D0599B1A3F0BDF4 /* Pods-HygieaWasteSortingAppIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HygieaWasteSortingAppIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HygieaWasteSortingAppIOS/Pods-HygieaWasteSortingAppIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		BE684C8E822F5EA69238D755 /* Pods-HygieaWasteSortingAppIOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HygieaWasteSortingAppIOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HygieaWasteSortingAppIOSTests/Pods-HygieaWasteSortingAppIOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ED1E32F21D93F07947977658 /* Pods-HygieaWasteSortingAppIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HygieaWasteSortingAppIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-HygieaWasteSortingAppIOS/Pods-HygieaWasteSortingAppIOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2C5EA548213B61B600846BC3 /* Frameworks */ = {
+		2C95D74921780D4A00A04143 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-				8E94B44A8FCB95DB9F1E2960 /* Pods_HygieaWasteSortingAppIOS.framework in Frameworks */,
-=======
-				610A5C0D193C9F89204B1180 /* Pods_HygieaWasteSortingAppIOS.framework in Frameworks */,
->>>>>>> cb8b84e95056d971743e530b9cf340269a00fe88
-=======
->>>>>>> parent of f03af14... Task #131
-=======
-				8E94B44A8FCB95DB9F1E2960 /* Pods_HygieaWasteSortingAppIOS.framework in Frameworks */,
->>>>>>> parent of a504489... Merge branch 'IOS' of https://github.com/atshinn/HygieaWasteZero into IOS
+				1FEC974CA5AF8FE9CAFAB240 /* Pods_HygieaWasteSortingAppIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2C5EA55F213B61B900846BC3 /* Frameworks */ = {
+		2C95D76021780D7400A04143 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31102A01E62A35327F21EF77 /* Pods_HygieaWasteSortingAppIOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2C5EA56A213B61B900846BC3 /* Frameworks */ = {
+		2C95D76B21780D7400A04143 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11D036AD7C7A6AC6F39D3E51 /* Pods_HygieaWasteSortingAppIOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2C5EA542213B61B600846BC3 = {
+		2C95D74321780D4900A04143 = {
 			isa = PBXGroup;
 			children = (
-				2C5EA54D213B61B600846BC3 /* HygieaWasteSortingAppIOS */,
-				2C5EA565213B61B900846BC3 /* HygieaWasteSortingAppIOSTests */,
-				2C5EA570213B61B900846BC3 /* HygieaWasteSortingAppIOSUITests */,
-				2C5EA54C213B61B600846BC3 /* Products */,
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-				4665CFFECCABC674D7FD0F6D /* Pods */,
-				B6B86A353751665CF547FEE8 /* Frameworks */,
-=======
-				AA1484191F11AB44D05B78CD /* Pods */,
-				3EDDC9F1EC681172BE32F1DF /* Frameworks */,
->>>>>>> cb8b84e95056d971743e530b9cf340269a00fe88
-=======
->>>>>>> parent of f03af14... Task #131
-=======
-				4665CFFECCABC674D7FD0F6D /* Pods */,
-				B6B86A353751665CF547FEE8 /* Frameworks */,
->>>>>>> parent of a504489... Merge branch 'IOS' of https://github.com/atshinn/HygieaWasteZero into IOS
+				2C95D74E21780D4A00A04143 /* HygieaWasteSortingAppIOS */,
+				2C95D76621780D7400A04143 /* HygieaWasteSortingAppIOSTests */,
+				2C95D77121780D7400A04143 /* HygieaWasteSortingAppIOSUITests */,
+				2C95D74D21780D4A00A04143 /* Products */,
+				6E8FD205F33AE9B2C4BC0EC1 /* Pods */,
+				44CB14B92A7E72C5B98E0321 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		2C5EA54C213B61B600846BC3 /* Products */ = {
+		2C95D74D21780D4A00A04143 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2C5EA54B213B61B600846BC3 /* HygieaWasteSortingAppIOS.app */,
-				2C5EA562213B61B900846BC3 /* HygieaWasteSortingAppIOSTests.xctest */,
-				2C5EA56D213B61B900846BC3 /* HygieaWasteSortingAppIOSUITests.xctest */,
+				2C95D74C21780D4A00A04143 /* HygieaWasteSortingAppIOS.app */,
+				2C95D76321780D7400A04143 /* HygieaWasteSortingAppIOSTests.xctest */,
+				2C95D76E21780D7400A04143 /* HygieaWasteSortingAppIOSUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2C5EA54D213B61B600846BC3 /* HygieaWasteSortingAppIOS */ = {
+		2C95D74E21780D4A00A04143 /* HygieaWasteSortingAppIOS */ = {
 			isa = PBXGroup;
 			children = (
-				2C5EA54E213B61B600846BC3 /* AppDelegate.swift */,
-				2C9B8FA821536EC8000307EB /* ActIndicatorViewController.swift */,
-				2C9B8FA4214F52CA000307EB /* SignUpViewController.swift */,
-				2C5EA550213B61B600846BC3 /* ViewController.swift */,
-				2C5EA552213B61B600846BC3 /* Main.storyboard */,
-				2C9B8FA0214F520A000307EB /* LoginViewController.swift */,
-				2C9B8FAA2153804A000307EB /* ResultViewController.swift */,
-				2C9B8FA6214F53BB000307EB /* ImageViewController.swift */,
-				2C5EA558213B61B900846BC3 /* Assets.xcassets */,
-				2C5EA55A213B61B900846BC3 /* LaunchScreen.storyboard */,
-				2C5EA55D213B61B900846BC3 /* Info.plist */,
-				2C5EA555213B61B600846BC3 /* HygieaWasteSortingAppIOS.xcdatamodeld */,
+				2C95D74F21780D4A00A04143 /* AppDelegate.swift */,
+				2C95D75121780D4A00A04143 /* ViewController.swift */,
+				2C95D75321780D4A00A04143 /* Main.storyboard */,
+				2C95D75921780D7300A04143 /* Assets.xcassets */,
+				2C95D75B21780D7300A04143 /* LaunchScreen.storyboard */,
+				2C95D75E21780D7300A04143 /* Info.plist */,
+				2C95D75621780D4A00A04143 /* HygieaWasteSortingAppIOS.xcdatamodeld */,
+				2C95D780217965EC00A04143 /* LoginViewController.swift */,
+				2C95D7822179661A00A04143 /* ActIndicatorViewController.swift */,
+				2C95D7842179663200A04143 /* ResultViewController.swift */,
 			);
 			path = HygieaWasteSortingAppIOS;
 			sourceTree = "<group>";
 		};
-		2C5EA565213B61B900846BC3 /* HygieaWasteSortingAppIOSTests */ = {
+		2C95D76621780D7400A04143 /* HygieaWasteSortingAppIOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				2C5EA566213B61B900846BC3 /* HygieaWasteSortingAppIOSTests.swift */,
-				2C5EA568213B61B900846BC3 /* Info.plist */,
+				2C95D76721780D7400A04143 /* HygieaWasteSortingAppIOSTests.swift */,
+				2C95D76921780D7400A04143 /* Info.plist */,
 			);
 			path = HygieaWasteSortingAppIOSTests;
 			sourceTree = "<group>";
 		};
-		2C5EA570213B61B900846BC3 /* HygieaWasteSortingAppIOSUITests */ = {
+		2C95D77121780D7400A04143 /* HygieaWasteSortingAppIOSUITests */ = {
 			isa = PBXGroup;
 			children = (
-				2C5EA571213B61B900846BC3 /* HygieaWasteSortingAppIOSUITests.swift */,
-				2C5EA573213B61B900846BC3 /* Info.plist */,
+				2C95D77221780D7400A04143 /* HygieaWasteSortingAppIOSUITests.swift */,
+				2C95D77421780D7400A04143 /* Info.plist */,
 			);
 			path = HygieaWasteSortingAppIOSUITests;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of a504489... Merge branch 'IOS' of https://github.com/atshinn/HygieaWasteZero into IOS
-		4665CFFECCABC674D7FD0F6D /* Pods */ = {
+		44CB14B92A7E72C5B98E0321 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AFBC675DA31493F0E81423CD /* Pods-HygieaWasteSortingAppIOS.debug.xcconfig */,
-				BE95F35733B0E4CAD6613CFA /* Pods-HygieaWasteSortingAppIOS.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		B6B86A353751665CF547FEE8 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0E37AC24C0C109EA1182898B /* Pods_HygieaWasteSortingAppIOS.framework */,
+				A9B6BE38AC3E80FE26B38C7E /* Pods_HygieaWasteSortingAppIOS.framework */,
+				46415E1BB1ABFBAADA9C467E /* Pods_HygieaWasteSortingAppIOSTests.framework */,
+				63D6C2F25E4B4E4C21BD36F9 /* Pods_HygieaWasteSortingAppIOSUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-=======
->>>>>>> parent of f03af14... Task #131
+		6E8FD205F33AE9B2C4BC0EC1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B72ADA9E6D0599B1A3F0BDF4 /* Pods-HygieaWasteSortingAppIOS.debug.xcconfig */,
+				ED1E32F21D93F07947977658 /* Pods-HygieaWasteSortingAppIOS.release.xcconfig */,
+				BE684C8E822F5EA69238D755 /* Pods-HygieaWasteSortingAppIOSTests.debug.xcconfig */,
+				9156CCFA87383703A68E8826 /* Pods-HygieaWasteSortingAppIOSTests.release.xcconfig */,
+				83CCC5394595CE5BC7E98B1D /* Pods-HygieaWasteSortingAppIOSUITests.debug.xcconfig */,
+				9BDD6762DD12D28C16BA5557 /* Pods-HygieaWasteSortingAppIOSUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2C5EA54A213B61B600846BC3 /* HygieaWasteSortingAppIOS */ = {
+		2C95D74B21780D4A00A04143 /* HygieaWasteSortingAppIOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C5EA576213B61B900846BC3 /* Build configuration list for PBXNativeTarget "HygieaWasteSortingAppIOS" */;
+			buildConfigurationList = 2C95D77721780D7500A04143 /* Build configuration list for PBXNativeTarget "HygieaWasteSortingAppIOS" */;
 			buildPhases = (
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of a504489... Merge branch 'IOS' of https://github.com/atshinn/HygieaWasteZero into IOS
-				EBA8C81EB32F781B81360E06 /* [CP] Check Pods Manifest.lock */,
-				2C5EA547213B61B600846BC3 /* Sources */,
-				2C5EA548213B61B600846BC3 /* Frameworks */,
-				2C5EA549213B61B600846BC3 /* Resources */,
-				219D9B17EDB57B0E28340E34 /* [CP] Embed Pods Frameworks */,
-<<<<<<< HEAD
-=======
-				2BD70C7EE686041B99FB43B7 /* [CP] Check Pods Manifest.lock */,
-				2C5EA547213B61B600846BC3 /* Sources */,
-				2C5EA548213B61B600846BC3 /* Frameworks */,
-				2C5EA549213B61B600846BC3 /* Resources */,
-				789B269086927914E14F728E /* [CP] Embed Pods Frameworks */,
->>>>>>> cb8b84e95056d971743e530b9cf340269a00fe88
-=======
-				2C5EA547213B61B600846BC3 /* Sources */,
-				2C5EA548213B61B600846BC3 /* Frameworks */,
-				2C5EA549213B61B600846BC3 /* Resources */,
->>>>>>> parent of f03af14... Task #131
-=======
->>>>>>> parent of a504489... Merge branch 'IOS' of https://github.com/atshinn/HygieaWasteZero into IOS
+				5EDC633F0222EB7669F01F5A /* [CP] Check Pods Manifest.lock */,
+				2C95D74821780D4A00A04143 /* Sources */,
+				2C95D74921780D4A00A04143 /* Frameworks */,
+				2C95D74A21780D4A00A04143 /* Resources */,
+				6393F950907B1C56DC01FDB9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -285,110 +196,109 @@
 			);
 			name = HygieaWasteSortingAppIOS;
 			productName = HygieaWasteSortingAppIOS;
-			productReference = 2C5EA54B213B61B600846BC3 /* HygieaWasteSortingAppIOS.app */;
+			productReference = 2C95D74C21780D4A00A04143 /* HygieaWasteSortingAppIOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2C5EA561213B61B900846BC3 /* HygieaWasteSortingAppIOSTests */ = {
+		2C95D76221780D7400A04143 /* HygieaWasteSortingAppIOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C5EA579213B61B900846BC3 /* Build configuration list for PBXNativeTarget "HygieaWasteSortingAppIOSTests" */;
+			buildConfigurationList = 2C95D77A21780D7500A04143 /* Build configuration list for PBXNativeTarget "HygieaWasteSortingAppIOSTests" */;
 			buildPhases = (
-				2C5EA55E213B61B900846BC3 /* Sources */,
-				2C5EA55F213B61B900846BC3 /* Frameworks */,
-				2C5EA560213B61B900846BC3 /* Resources */,
+				70F007F9C8F9595CE97E420F /* [CP] Check Pods Manifest.lock */,
+				2C95D75F21780D7400A04143 /* Sources */,
+				2C95D76021780D7400A04143 /* Frameworks */,
+				2C95D76121780D7400A04143 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2C5EA564213B61B900846BC3 /* PBXTargetDependency */,
+				2C95D76521780D7400A04143 /* PBXTargetDependency */,
 			);
 			name = HygieaWasteSortingAppIOSTests;
 			productName = HygieaWasteSortingAppIOSTests;
-			productReference = 2C5EA562213B61B900846BC3 /* HygieaWasteSortingAppIOSTests.xctest */;
+			productReference = 2C95D76321780D7400A04143 /* HygieaWasteSortingAppIOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2C5EA56C213B61B900846BC3 /* HygieaWasteSortingAppIOSUITests */ = {
+		2C95D76D21780D7400A04143 /* HygieaWasteSortingAppIOSUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C5EA57C213B61B900846BC3 /* Build configuration list for PBXNativeTarget "HygieaWasteSortingAppIOSUITests" */;
+			buildConfigurationList = 2C95D77D21780D7500A04143 /* Build configuration list for PBXNativeTarget "HygieaWasteSortingAppIOSUITests" */;
 			buildPhases = (
-				2C5EA569213B61B900846BC3 /* Sources */,
-				2C5EA56A213B61B900846BC3 /* Frameworks */,
-				2C5EA56B213B61B900846BC3 /* Resources */,
+				B7AE334ED16E291DDD665055 /* [CP] Check Pods Manifest.lock */,
+				2C95D76A21780D7400A04143 /* Sources */,
+				2C95D76B21780D7400A04143 /* Frameworks */,
+				2C95D76C21780D7400A04143 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2C5EA56F213B61B900846BC3 /* PBXTargetDependency */,
+				2C95D77021780D7400A04143 /* PBXTargetDependency */,
 			);
 			name = HygieaWasteSortingAppIOSUITests;
 			productName = HygieaWasteSortingAppIOSUITests;
-			productReference = 2C5EA56D213B61B900846BC3 /* HygieaWasteSortingAppIOSUITests.xctest */;
+			productReference = 2C95D76E21780D7400A04143 /* HygieaWasteSortingAppIOSUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2C5EA543213B61B600846BC3 /* Project object */ = {
+		2C95D74421780D4900A04143 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Arizona State University";
 				TargetAttributes = {
-					2C5EA54A213B61B600846BC3 = {
-						CreatedOnToolsVersion = 9.3;
-						ProvisioningStyle = Automatic;
+					2C95D74B21780D4A00A04143 = {
+						CreatedOnToolsVersion = 10.0;
 					};
-					2C5EA561213B61B900846BC3 = {
-						CreatedOnToolsVersion = 9.3;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 2C5EA54A213B61B600846BC3;
+					2C95D76221780D7400A04143 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 2C95D74B21780D4A00A04143;
 					};
-					2C5EA56C213B61B900846BC3 = {
-						CreatedOnToolsVersion = 9.3;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 2C5EA54A213B61B600846BC3;
+					2C95D76D21780D7400A04143 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 2C95D74B21780D4A00A04143;
 					};
 				};
 			};
-			buildConfigurationList = 2C5EA546213B61B600846BC3 /* Build configuration list for PBXProject "HygieaWasteSortingAppIOS" */;
-			compatibilityVersion = "Xcode 8.0";
+			buildConfigurationList = 2C95D74721780D4900A04143 /* Build configuration list for PBXProject "HygieaWasteSortingAppIOS" */;
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 2C5EA542213B61B600846BC3;
-			productRefGroup = 2C5EA54C213B61B600846BC3 /* Products */;
+			mainGroup = 2C95D74321780D4900A04143;
+			productRefGroup = 2C95D74D21780D4A00A04143 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2C5EA54A213B61B600846BC3 /* HygieaWasteSortingAppIOS */,
-				2C5EA561213B61B900846BC3 /* HygieaWasteSortingAppIOSTests */,
-				2C5EA56C213B61B900846BC3 /* HygieaWasteSortingAppIOSUITests */,
+				2C95D74B21780D4A00A04143 /* HygieaWasteSortingAppIOS */,
+				2C95D76221780D7400A04143 /* HygieaWasteSortingAppIOSTests */,
+				2C95D76D21780D7400A04143 /* HygieaWasteSortingAppIOSUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2C5EA549213B61B600846BC3 /* Resources */ = {
+		2C95D74A21780D4A00A04143 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C5EA55C213B61B900846BC3 /* LaunchScreen.storyboard in Resources */,
-				2C5EA559213B61B900846BC3 /* Assets.xcassets in Resources */,
-				2C5EA554213B61B600846BC3 /* Main.storyboard in Resources */,
+				2C95D75D21780D7300A04143 /* LaunchScreen.storyboard in Resources */,
+				2C95D75A21780D7300A04143 /* Assets.xcassets in Resources */,
+				2C95D75521780D4A00A04143 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2C5EA560213B61B900846BC3 /* Resources */ = {
+		2C95D76121780D7400A04143 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2C5EA56B213B61B900846BC3 /* Resources */ = {
+		2C95D76C21780D7400A04143 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -397,9 +307,8 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-<<<<<<< HEAD
 /* Begin PBXShellScriptBuildPhase section */
-		219D9B17EDB57B0E28340E34 /* [CP] Embed Pods Frameworks */ = {
+		5EDC633F0222EB7669F01F5A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -407,7 +316,29 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HygieaWasteSortingAppIOS/Pods-HygieaWasteSortingAppIOS-frameworks.sh",
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HygieaWasteSortingAppIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6393F950907B1C56DC01FDB9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HygieaWasteSortingAppIOS/Pods-HygieaWasteSortingAppIOS-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSAuthUI/AWSAuthUI.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSAutoScaling/AWSAutoScaling.framework",
@@ -486,10 +417,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HygieaWasteSortingAppIOS/Pods-HygieaWasteSortingAppIOS-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HygieaWasteSortingAppIOS/Pods-HygieaWasteSortingAppIOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EBA8C81EB32F781B81360E06 /* [CP] Check Pods Manifest.lock */ = {
+		70F007F9C8F9595CE97E420F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -504,7 +435,29 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-HygieaWasteSortingAppIOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-HygieaWasteSortingAppIOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7AE334ED16E291DDD665055 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HygieaWasteSortingAppIOSUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -513,72 +466,64 @@
 		};
 /* End PBXShellScriptBuildPhase section */
 
-=======
->>>>>>> parent of f03af14... Task #131
 /* Begin PBXSourcesBuildPhase section */
-		2C5EA547213B61B600846BC3 /* Sources */ = {
+		2C95D74821780D4A00A04143 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C9B8FA5214F52CA000307EB /* SignUpViewController.swift in Sources */,
-				2C5EA557213B61B600846BC3 /* HygieaWasteSortingAppIOS.xcdatamodeld in Sources */,
-				2C5EA551213B61B600846BC3 /* ViewController.swift in Sources */,
-				2C9B8FAB2153804B000307EB /* ResultViewController.swift in Sources */,
-				2C9B8FA7214F53BB000307EB /* ImageViewController.swift in Sources */,
-				2C5EA54F213B61B600846BC3 /* AppDelegate.swift in Sources */,
-				2C9B8FA1214F520A000307EB /* LoginViewController.swift in Sources */,
-				2C9B8FA921536EC8000307EB /* ActIndicatorViewController.swift in Sources */,
+				2C95D7832179661A00A04143 /* ActIndicatorViewController.swift in Sources */,
+				2C95D781217965EC00A04143 /* LoginViewController.swift in Sources */,
+				2C95D75821780D4A00A04143 /* HygieaWasteSortingAppIOS.xcdatamodeld in Sources */,
+				2C95D75221780D4A00A04143 /* ViewController.swift in Sources */,
+				2C95D75021780D4A00A04143 /* AppDelegate.swift in Sources */,
+				2C95D7852179663200A04143 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2C5EA55E213B61B900846BC3 /* Sources */ = {
+		2C95D75F21780D7400A04143 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EACC03E21598EBB00440C55 /* SignUpViewController.swift in Sources */,
-				2EACC03A21598E8800440C55 /* LoginViewController.swift in Sources */,
-				2C5EA567213B61B900846BC3 /* HygieaWasteSortingAppIOSTests.swift in Sources */,
+				2C95D76821780D7400A04143 /* HygieaWasteSortingAppIOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2C5EA569213B61B900846BC3 /* Sources */ = {
+		2C95D76A21780D7400A04143 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EACC03F21598EBC00440C55 /* SignUpViewController.swift in Sources */,
-				2EACC03B21598E8900440C55 /* LoginViewController.swift in Sources */,
-				2C5EA572213B61B900846BC3 /* HygieaWasteSortingAppIOSUITests.swift in Sources */,
+				2C95D77321780D7400A04143 /* HygieaWasteSortingAppIOSUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2C5EA564213B61B900846BC3 /* PBXTargetDependency */ = {
+		2C95D76521780D7400A04143 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2C5EA54A213B61B600846BC3 /* HygieaWasteSortingAppIOS */;
-			targetProxy = 2C5EA563213B61B900846BC3 /* PBXContainerItemProxy */;
+			target = 2C95D74B21780D4A00A04143 /* HygieaWasteSortingAppIOS */;
+			targetProxy = 2C95D76421780D7400A04143 /* PBXContainerItemProxy */;
 		};
-		2C5EA56F213B61B900846BC3 /* PBXTargetDependency */ = {
+		2C95D77021780D7400A04143 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2C5EA54A213B61B600846BC3 /* HygieaWasteSortingAppIOS */;
-			targetProxy = 2C5EA56E213B61B900846BC3 /* PBXContainerItemProxy */;
+			target = 2C95D74B21780D4A00A04143 /* HygieaWasteSortingAppIOS */;
+			targetProxy = 2C95D76F21780D7400A04143 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2C5EA552213B61B600846BC3 /* Main.storyboard */ = {
+		2C95D75321780D4A00A04143 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2C5EA553213B61B600846BC3 /* Base */,
+				2C95D75421780D4A00A04143 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		2C5EA55A213B61B900846BC3 /* LaunchScreen.storyboard */ = {
+		2C95D75B21780D7300A04143 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2C5EA55B213B61B900846BC3 /* Base */,
+				2C95D75C21780D7300A04143 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -586,7 +531,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		2C5EA574213B61B900846BC3 /* Debug */ = {
+		2C95D77521780D7500A04143 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -637,8 +582,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -646,7 +592,7 @@
 			};
 			name = Debug;
 		};
-		2C5EA575213B61B900846BC3 /* Release */ = {
+		2C95D77621780D7500A04143 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -691,129 +637,131 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		2C5EA577213B61B900846BC3 /* Debug */ = {
+		2C95D77821780D7500A04143 /* Debug */ = {
 			isa = XCBuildConfiguration;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-			baseConfigurationReference = AFBC675DA31493F0E81423CD /* Pods-HygieaWasteSortingAppIOS.debug.xcconfig */;
-=======
-			baseConfigurationReference = 44CBAC3ADD00CCD1015AA129 /* Pods-HygieaWasteSortingAppIOS.debug.xcconfig */;
->>>>>>> cb8b84e95056d971743e530b9cf340269a00fe88
-=======
->>>>>>> parent of f03af14... Task #131
-=======
-			baseConfigurationReference = AFBC675DA31493F0E81423CD /* Pods-HygieaWasteSortingAppIOS.debug.xcconfig */;
->>>>>>> parent of a504489... Merge branch 'IOS' of https://github.com/atshinn/HygieaWasteZero into IOS
+			baseConfigurationReference = B72ADA9E6D0599B1A3F0BDF4 /* Pods-HygieaWasteSortingAppIOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2KH2Q727NM;
+				DEVELOPMENT_TEAM = MZP86L6CF2;
 				INFOPLIST_FILE = HygieaWasteSortingAppIOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = edu.asu.bsse.jaalbin.HygieaWasteSortingAppIOS;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.asu.bsse.halgham2.HygieaWasteSortingAppIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		2C5EA578213B61B900846BC3 /* Release */ = {
+		2C95D77921780D7500A04143 /* Release */ = {
 			isa = XCBuildConfiguration;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-			baseConfigurationReference = BE95F35733B0E4CAD6613CFA /* Pods-HygieaWasteSortingAppIOS.release.xcconfig */;
-=======
-			baseConfigurationReference = 1ABF89D2EB65A199CF9CB50D /* Pods-HygieaWasteSortingAppIOS.release.xcconfig */;
->>>>>>> cb8b84e95056d971743e530b9cf340269a00fe88
-=======
->>>>>>> parent of f03af14... Task #131
-=======
-			baseConfigurationReference = BE95F35733B0E4CAD6613CFA /* Pods-HygieaWasteSortingAppIOS.release.xcconfig */;
->>>>>>> parent of a504489... Merge branch 'IOS' of https://github.com/atshinn/HygieaWasteZero into IOS
+			baseConfigurationReference = ED1E32F21D93F07947977658 /* Pods-HygieaWasteSortingAppIOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2KH2Q727NM;
+				DEVELOPMENT_TEAM = MZP86L6CF2;
 				INFOPLIST_FILE = HygieaWasteSortingAppIOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = edu.asu.bsse.jaalbin.HygieaWasteSortingAppIOS;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.asu.bsse.halgham2.HygieaWasteSortingAppIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		2C5EA57A213B61B900846BC3 /* Debug */ = {
+		2C95D77B21780D7500A04143 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE684C8E822F5EA69238D755 /* Pods-HygieaWasteSortingAppIOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HygieaWasteSortingAppIOSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = edu.asu.bsse.halgham2.HygieaWasteSortingAppIOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HygieaWasteSortingAppIOS.app/HygieaWasteSortingAppIOS";
 			};
 			name = Debug;
 		};
-		2C5EA57B213B61B900846BC3 /* Release */ = {
+		2C95D77C21780D7500A04143 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9156CCFA87383703A68E8826 /* Pods-HygieaWasteSortingAppIOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HygieaWasteSortingAppIOSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = edu.asu.bsse.halgham2.HygieaWasteSortingAppIOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HygieaWasteSortingAppIOS.app/HygieaWasteSortingAppIOS";
 			};
 			name = Release;
 		};
-		2C5EA57D213B61B900846BC3 /* Debug */ = {
+		2C95D77E21780D7500A04143 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83CCC5394595CE5BC7E98B1D /* Pods-HygieaWasteSortingAppIOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HygieaWasteSortingAppIOSUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = edu.asu.bsse.halgham2.HygieaWasteSortingAppIOSUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = HygieaWasteSortingAppIOS;
 			};
 			name = Debug;
 		};
-		2C5EA57E213B61B900846BC3 /* Release */ = {
+		2C95D77F21780D7500A04143 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BDD6762DD12D28C16BA5557 /* Pods-HygieaWasteSortingAppIOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HygieaWasteSortingAppIOSUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = edu.asu.bsse.halgham2.HygieaWasteSortingAppIOSUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = HygieaWasteSortingAppIOS;
 			};
@@ -822,38 +770,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2C5EA546213B61B600846BC3 /* Build configuration list for PBXProject "HygieaWasteSortingAppIOS" */ = {
+		2C95D74721780D4900A04143 /* Build configuration list for PBXProject "HygieaWasteSortingAppIOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2C5EA574213B61B900846BC3 /* Debug */,
-				2C5EA575213B61B900846BC3 /* Release */,
+				2C95D77521780D7500A04143 /* Debug */,
+				2C95D77621780D7500A04143 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2C5EA576213B61B900846BC3 /* Build configuration list for PBXNativeTarget "HygieaWasteSortingAppIOS" */ = {
+		2C95D77721780D7500A04143 /* Build configuration list for PBXNativeTarget "HygieaWasteSortingAppIOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2C5EA577213B61B900846BC3 /* Debug */,
-				2C5EA578213B61B900846BC3 /* Release */,
+				2C95D77821780D7500A04143 /* Debug */,
+				2C95D77921780D7500A04143 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2C5EA579213B61B900846BC3 /* Build configuration list for PBXNativeTarget "HygieaWasteSortingAppIOSTests" */ = {
+		2C95D77A21780D7500A04143 /* Build configuration list for PBXNativeTarget "HygieaWasteSortingAppIOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2C5EA57A213B61B900846BC3 /* Debug */,
-				2C5EA57B213B61B900846BC3 /* Release */,
+				2C95D77B21780D7500A04143 /* Debug */,
+				2C95D77C21780D7500A04143 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2C5EA57C213B61B900846BC3 /* Build configuration list for PBXNativeTarget "HygieaWasteSortingAppIOSUITests" */ = {
+		2C95D77D21780D7500A04143 /* Build configuration list for PBXNativeTarget "HygieaWasteSortingAppIOSUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2C5EA57D213B61B900846BC3 /* Debug */,
-				2C5EA57E213B61B900846BC3 /* Release */,
+				2C95D77E21780D7500A04143 /* Debug */,
+				2C95D77F21780D7500A04143 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -861,17 +809,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		2C5EA555213B61B600846BC3 /* HygieaWasteSortingAppIOS.xcdatamodeld */ = {
+		2C95D75621780D4A00A04143 /* HygieaWasteSortingAppIOS.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				2C5EA556213B61B600846BC3 /* HygieaWasteSortingAppIOS.xcdatamodel */,
+				2C95D75721780D4A00A04143 /* HygieaWasteSortingAppIOS.xcdatamodel */,
 			);
-			currentVersion = 2C5EA556213B61B600846BC3 /* HygieaWasteSortingAppIOS.xcdatamodel */;
+			currentVersion = 2C95D75721780D4A00A04143 /* HygieaWasteSortingAppIOS.xcdatamodel */;
 			path = HygieaWasteSortingAppIOS.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = 2C5EA543213B61B600846BC3 /* Project object */;
+	rootObject = 2C95D74421780D4900A04143 /* Project object */;
 }
