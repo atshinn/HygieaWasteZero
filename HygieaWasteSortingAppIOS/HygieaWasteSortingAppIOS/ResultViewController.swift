@@ -10,6 +10,15 @@ import UIKit
 
 class ResultViewController: UIViewController {
     
+    @IBAction func SendToCompost(_ sender: UIButton) {
+        //sends image to compost folder
+    }
+    
+    @IBAction func SendToRecycle(_ sender: UIButton) {
+        //sends image to recycle folder
+    }
+    
+    
     @IBAction func BackToCamera(_ sender: Any) {
         performSegue(withIdentifier: "BackToCameraSegue" , sender: nil)
     }

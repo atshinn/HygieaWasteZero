@@ -80,7 +80,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TDQ-mF-941" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="865" y="26"/>
+            <point key="canvasLocation" x="1505" y="-18"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="ttF-wb-gGw">
@@ -93,6 +93,52 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uUF-QF-3i2">
                                 <rect key="frame" x="0.0" y="308" width="375" height="310"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVN-mV-KyO">
+                                        <rect key="frame" x="20" y="8" width="140" height="22"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="bQU-qb-S4D"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="ceD-rJ-plW"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="eXD-LM-e4g"/>
+                                            <constraint firstAttribute="height" constant="60" id="rVY-RV-oJd"/>
+                                        </constraints>
+                                        <state key="normal" title="Send to Compost">
+                                            <color key="titleColor" red="1" green="0.26961671399999998" blue="0.13717105909999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="CameraButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kLB-CF-BxZ"/>
+                                            <action selector="SendToCompost:" destination="m8s-xC-s8T" eventType="touchUpInside" id="J4V-nG-dsV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRJ-uJ-c8w">
+                                        <rect key="frame" x="183" y="8" width="140" height="22"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="ICN-ks-JGU"/>
+                                            <constraint firstAttribute="height" constant="60" id="NVt-07-S6p"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="Nz6-RB-LFh"/>
+                                            <constraint firstAttribute="width" constant="60" id="Y2t-zy-y1I"/>
+                                        </constraints>
+                                        <state key="normal" title="Send to Recycle">
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="CameraButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IUD-M4-crw"/>
+                                            <action selector="SendToRecycle:" destination="m8s-xC-s8T" eventType="touchUpInside" id="7RR-RD-oqN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48j-3g-a7D">
                                 <rect key="frame" x="125" y="626" width="124" height="30"/>
