@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">HygieaWasteZero</string>
+    <string name="signin_url">https://hywz-auth.auth.us-west-2.amazoncognito.com/login?response_type=token&amp;client_id=8mrvs89q1frh6hqooc4nt9b0&amp;redirect_uri=hygieawastezero://</string>
+</resources>

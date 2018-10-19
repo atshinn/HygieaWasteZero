@@ -1,0 +1,195 @@
+package com.example.tk.hygieawastezero;
+
+import android.Manifest;
+import android.content.Context;
+import android.content.ContextWrapper;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Matrix;
+import android.hardware.Camera;
+import android.location.Location;
+import android.support.v4.app.ActivityCompat;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.SurfaceHolder;
+import android.view.SurfaceView;
+import android.view.View;
+import android.widget.Button;
+
+import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.List;
+
+public class openingCapture extends AppCompatActivity implements SurfaceHolder.Callback{
+
+    Camera camera;
+
+    Camera.PictureCallback picCallback;
+
+    SurfaceHolder previewHolder;
+
+    private FusedLocationProviderClient mFusedLocationClient;
+
+    private double[] loc = new double[2];
+
+    Task<Location> task;
+
+    String accessKey = "null";
+    String secretKey = "null";
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_opening_capture);
+
+        ////Stores credentials across activities
+        Bundle extras = getIntent().getExtras();
+        accessKey = extras.getString("accessKey");
+        secretKey = extras.getString("secretKey");
+        ////
+
+        bmpSingleton.getINSTANCE();
+
+        mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
+        getLastLocation();
+
+        final Button capture = findViewById(R.id.capture);
+        capture.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                captureImage();
+            }
+        });
+
+        final SurfaceView camPreview = findViewById(R.id.cameraPreview);
+        previewHolder = camPreview.getHolder();
+        previewHolder.addCallback(this);
+        previewHolder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
+
+        picCallback = new Camera.PictureCallback(){
+            @Override
+            public void onPictureTaken(byte[] data, Camera camera) {
+                Intent startPreview = new Intent(openingCapture.this, previewScreen.class);
+                Bitmap decodeBitmap = BitmapFactory.decodeByteArray(data, 0, data.length);
+                bmpSingleton.setBmp(decodeBitmap);
+                startPreview.putExtra("path", saveToInternalStorage(decodeBitmap));
+                loc[0] = task.getResult().getLatitude();
+                loc[1] = task.getResult().getLongitude();
+                startPreview.putExtra("location", loc);
+                startPreview.putExtra("accessKey", accessKey);
+                startPreview.putExtra("secretKey", secretKey);
+                camera.release();
+                startActivity(startPreview);
+            }
+        };
+    }
+
+    ////Will be removed if file i/o is cut out////
+    private String saveToInternalStorage(Bitmap bitmapImage){
+        ContextWrapper cw = new ContextWrapper(getApplicationContext());
+
+        File directory = cw.getDir("imageDir", Context.MODE_PRIVATE);
+        File mypath = new File(directory,"pic.jpg");
+
+        //Prints path nicely if needed
+        //Log.d("Path", mypath.toString());
+
+        //To fix weird skew issue
+        Bitmap rotatedPic = rotate(bitmapImage);
+
+        FileOutputStream fos = null;
+        try {
+            fos = new FileOutputStream(mypath);
+            // Use the compress method on the BitMap object to write image to the OutputStream
+            rotatedPic.compress(Bitmap.CompressFormat.PNG, 100, fos);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                fos.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        return directory.getAbsolutePath();
+    }
+    ////////////////////////////////////////////////
+
+    private Bitmap rotate(Bitmap bitmapImage) {
+        int width = bitmapImage.getWidth();
+        int height = bitmapImage.getHeight();
+
+        Matrix matrix = new Matrix();
+        matrix.setRotate(90);
+
+        return Bitmap.createBitmap(bitmapImage, 0, 0, width, height, matrix, true);
+    }
+
+    private void captureImage() {
+        camera.takePicture(null, null, picCallback);
+    }
+
+    @Override
+    public void surfaceCreated(SurfaceHolder holder) {
+        camera = Camera.open();
+
+        Camera.Parameters parameters;
+        parameters = camera.getParameters();
+
+        camera.setDisplayOrientation(90);
+        parameters.setPreviewFrameRate(30);
+        parameters.setFocusMode(Camera.Parameters.FOCUS_MODE_CONTINUOUS_PICTURE);
+
+        //to fix skew after rotating
+        Camera.Size supportedSize = null;
+        List<Camera.Size> sizeList = camera.getParameters().getSupportedPreviewSizes();
+        supportedSize = sizeList.get(0);
+        for (int i = 1; i < sizeList.size(); i++){
+            if((sizeList.get(i).width * sizeList.get(i).height)>(supportedSize.width * supportedSize.height)){
+                supportedSize = sizeList.get(i);
+            }
+        }
+        parameters.setPreviewSize(supportedSize.width, supportedSize.height);
+
+        camera.setParameters(parameters);
+
+        try {
+            camera.setPreviewDisplay(holder);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        camera.startPreview();
+    }
+
+    public void getLastLocation(){
+        //loc[0] = 0;
+        //loc[1] = 0;
+
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED){
+
+            task = mFusedLocationClient.getLastLocation()
+                    .addOnSuccessListener(this, new OnSuccessListener<Location>() {
+                        @Override
+                        public void onSuccess(Location location) {
+                            // Got last known location. In some rare situations this can be null.
+                            if (location == null) {
+                                location.setLatitude(0);
+                                location.setLongitude(0);
+                            }
+                        }
+                    });
+        }
+    }
+    
+    @Override
+    public void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {}
+    @Override
+    public void surfaceDestroyed(SurfaceHolder holder) {}
+}
