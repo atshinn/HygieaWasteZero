@@ -18,7 +18,12 @@ public class resultsScreen extends AppCompatActivity {
 
         double[] location = extras.getDoubleArray("location");
         String resultStr = (String)extras.get("apiResults");
-        String locationStr = ("Latitude: " + location[0] + "\nLongitude: " + location[1]);
+        String locationStr = "";
+        try {
+            locationStr = ("Latitude: " + location[0] + "\nLongitude: " + location[1]);
+        }catch(Exception e){
+
+        }
 
         TextView scrollable1 = findViewById(R.id.scrollableText);
         TextView scrollable2 = findViewById(R.id.ScrollableText);

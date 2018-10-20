@@ -37,6 +37,8 @@ public class previewScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_preview_screen);
 
+        AWSMobileClient.getInstance().initialize(this).execute();
+
         loadWidget = findViewById(R.id.progressBar);
         loadWidget.setIndeterminate(true);
         loadWidget.setVisibility(View.VISIBLE);
@@ -86,16 +88,18 @@ public class previewScreen extends AppCompatActivity {
     }
 
     private void uploadImage(File img) throws Exception {
+
         if (login.credentialsProvider == null) {
             Log.e(this.getClass().getSimpleName(), "creds object is null");
             throw new Exception("CREDENTIALS ARE NULL");
         }
+        Log.e(getClass().getSimpleName(), AWSMobileClient.getInstance().getConfiguration().toString());
         TransferUtility transferUtil = TransferUtility.builder()
-                .defaultBucket("s3-us-west-1.amazonaws.com//hywz.wastezero")
-                .context(getApplicationContext())
-                .awsConfiguration(AWSMobileClient.getInstance().getConfiguration())
-                .s3Client(new AmazonS3Client(login.credentialsProvider))
-                .build();
+            .context(getApplicationContext())
+            .awsConfiguration(AWSMobileClient.getInstance().getConfiguration())
+            .defaultBucket("hywz.wastezero")
+            .s3Client(new AmazonS3Client(login.credentialsProvider))
+            .build();
 
         previewScreen.fn = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss").format(new Date());
         TransferObserver transferObv = transferUtil.upload(fn, img);
@@ -117,11 +121,14 @@ public class previewScreen extends AppCompatActivity {
 
             @Override
             public void onError(int id, Exception ex) {
+                Log.e(getClass().getSimpleName(), "INSIDE ON ERROR");
                 String exStr = previewScreen.stackTraceToString(ex);
                 Intent startResults = new Intent(previewScreen.this, resultsScreen.class);
                 startResults.putExtra("apiResults", exStr);
                 startActivity(startResults);
             }
         });
+
+
     }
 }
