@@ -46,37 +46,70 @@ public class openingCapture extends AppCompatActivity implements SurfaceHolder.C
     String accessKey = "null";
     String secretKey = "null";
 
+    static String buttonPressed = "";
+
+    private Button captureButton, recycleButton, compostButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_opening_capture);
+
         ////Stores credentials across activities
         Bundle extras = getIntent().getExtras();
         accessKey = extras.getString("accessKey");
         secretKey = extras.getString("secretKey");
-        ////
+
+        this.recycleButton = findViewById(R.id.recycle);
+        this.compostButton = findViewById(R.id.compost);
+        this.captureButton = findViewById(R.id.capture);
 
          //Checks if user is in the developer group
          //Can be used to trigger certain features
-        /*
+
         if(extras.getBoolean("isDev")){
+            this.recycleButton.setVisibility(View.VISIBLE);
+            this.compostButton.setVisibility(View.VISIBLE);
+            this.captureButton.setVisibility(View.GONE);
+
             Log.d("isDev", "True");
         } else {
+            this.recycleButton.setVisibility(View.GONE);
+            this.compostButton.setVisibility(View.GONE);
+            this.captureButton.setVisibility(View.VISIBLE);
+
             Log.d("isDev", "False");
         }
-        */
+
+        // ATTACH LISTENERS TO BUTTONS REGARDLESS OF THEIR VISIBILITY
+        // COULD BE SIMPLIFIED TO ONE LISTENER
+        this.captureButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                openingCapture.buttonPressed = "captureButton";
+                captureImage();
+            }
+        });
+
+        this.recycleButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                openingCapture.buttonPressed = "recycle";
+                captureImage();
+            }
+        });
+
+        this.compostButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                openingCapture.buttonPressed = "compost";
+                captureImage();
+            }
+        });
+
 
         bmpSingleton.getINSTANCE();
 
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         getLastLocation();
 
-        final Button capture = findViewById(R.id.capture);
-        capture.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                captureImage();
-            }
-        });
+
 
         final SurfaceView camPreview = findViewById(R.id.cameraPreview);
         previewHolder = camPreview.getHolder();
@@ -87,14 +120,23 @@ public class openingCapture extends AppCompatActivity implements SurfaceHolder.C
             @Override
             public void onPictureTaken(byte[] data, Camera camera) {
                 Intent startPreview = new Intent(openingCapture.this, previewScreen.class);
+
                 Bitmap decodeBitmap = BitmapFactory.decodeByteArray(data, 0, data.length);
                 bmpSingleton.setBmp(decodeBitmap);
-                startPreview.putExtra("path", saveToInternalStorage(decodeBitmap));
+
+                // GET LOCATION DATA
                 loc[0] = task.getResult().getLatitude();
                 loc[1] = task.getResult().getLongitude();
+
+                // PUT EXTRAS
+                startPreview.putExtra("path", saveToInternalStorage(decodeBitmap)); // NEED TO COME UP WITH DIFFERENT SOLUTION SO UI THREAD DOESNT HANG WHILE FILE I/0 IS HAPPENING
                 startPreview.putExtra("location", loc);
                 startPreview.putExtra("accessKey", accessKey);
                 startPreview.putExtra("secretKey", secretKey);
+                startPreview.putExtra("buttonPressed", openingCapture.buttonPressed);
+
+                // START NEXT VIEW (IN FUTURE MAYBE WE JUST HIDE THE CAMERA VIEW AND GET RID OF PREVIEW
+                //THEN PUT LOADING WIDGET HERE)
                 camera.release();
                 startActivity(startPreview);
             }
