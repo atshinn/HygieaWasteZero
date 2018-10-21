@@ -120,6 +120,7 @@ public class previewScreen extends AppCompatActivity {
                     startResults.putExtra("apiResults", previewScreen.buttonPressedStr + previewScreen.fn);
 
                     startActivity(startResults);
+                    finish();
                 }
             }
 
@@ -135,6 +136,7 @@ public class previewScreen extends AppCompatActivity {
                 Intent startResults = new Intent(previewScreen.this, resultsScreen.class);
                 startResults.putExtra("apiResults", exStr);
                 startActivity(startResults);
+                finish();
             }
         });
 
