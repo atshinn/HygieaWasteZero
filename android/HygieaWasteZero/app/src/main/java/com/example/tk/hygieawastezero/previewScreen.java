@@ -31,7 +31,7 @@ public class previewScreen extends AppCompatActivity {
 
     private ProgressBar loadWidget;
     public static String fn = "";
-
+    static String buttonPressedStr = "";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,6 +44,9 @@ public class previewScreen extends AppCompatActivity {
         loadWidget.setVisibility(View.VISIBLE);
 
         Bundle extras = getIntent().getExtras();
+
+        buttonPressedStr = (String)extras.get("buttonPressed");
+
         final double [] location = extras.getDoubleArray("location");
         //Log.d("Location", "Latitude: " + location[0] + "  Longitude: " + location[1]);
         RequestParams params = new RequestParams();
@@ -93,7 +96,11 @@ public class previewScreen extends AppCompatActivity {
             Log.e(this.getClass().getSimpleName(), "creds object is null");
             throw new Exception("CREDENTIALS ARE NULL");
         }
+
         Log.e(getClass().getSimpleName(), AWSMobileClient.getInstance().getConfiguration().toString());
+
+        String defaultBucket = "hywz.wastezero";
+
         TransferUtility transferUtil = TransferUtility.builder()
             .context(getApplicationContext())
             .awsConfiguration(AWSMobileClient.getInstance().getConfiguration())
@@ -102,7 +109,8 @@ public class previewScreen extends AppCompatActivity {
             .build();
 
         previewScreen.fn = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss").format(new Date());
-        TransferObserver transferObv = transferUtil.upload(fn, img);
+        previewScreen.fn +=".jpg";
+        TransferObserver transferObv = transferUtil.upload(buttonPressedStr + fn, img);
 
         transferObv.setTransferListener(new TransferListener() {
             @Override

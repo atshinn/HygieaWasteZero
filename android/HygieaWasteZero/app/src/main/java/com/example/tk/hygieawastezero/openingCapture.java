@@ -84,21 +84,21 @@ public class openingCapture extends AppCompatActivity implements SurfaceHolder.C
         // COULD BE SIMPLIFIED TO ONE LISTENER
         this.captureButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                openingCapture.buttonPressed = "captureButton";
+                openingCapture.buttonPressed = "unlabled/";
                 captureImage();
             }
         });
 
         this.recycleButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                openingCapture.buttonPressed = "recycle";
+                openingCapture.buttonPressed = "recycle/";
                 captureImage();
             }
         });
 
         this.compostButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                openingCapture.buttonPressed = "compost";
+                openingCapture.buttonPressed = "compost/";
                 captureImage();
             }
         });
@@ -133,7 +133,7 @@ public class openingCapture extends AppCompatActivity implements SurfaceHolder.C
                 startPreview.putExtra("location", loc);
                 startPreview.putExtra("accessKey", accessKey);
                 startPreview.putExtra("secretKey", secretKey);
-                startPreview.putExtra("buttonPressed", openingCapture.buttonPressed);
+                startPreview.putExtra("buttonPressed", openingCapture.buttonPressed+"/");
 
                 // START NEXT VIEW (IN FUTURE MAYBE WE JUST HIDE THE CAMERA VIEW AND GET RID OF PREVIEW
                 //THEN PUT LOADING WIDGET HERE)
