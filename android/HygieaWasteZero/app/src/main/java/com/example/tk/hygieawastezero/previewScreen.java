@@ -117,7 +117,8 @@ public class previewScreen extends AppCompatActivity {
             public void onStateChanged(int id, TransferState state) {
                 if (TransferState.COMPLETED == state) {
                     Intent startResults = new Intent(previewScreen.this, resultsScreen.class);
-                    startResults.putExtra("apiResults", previewScreen.fn);
+                    startResults.putExtra("apiResults", previewScreen.buttonPressedStr + previewScreen.fn);
+
                     startActivity(startResults);
                 }
             }
