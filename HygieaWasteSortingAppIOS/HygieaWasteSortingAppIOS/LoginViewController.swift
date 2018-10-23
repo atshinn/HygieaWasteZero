@@ -30,7 +30,8 @@ class LoginViewController: UIViewController, CLLocationManagerDelegate, UIWebVie
         webView.delegate = self
         // Do any additional setup after loading the view.
         
-        let requestURL = URL(string:"https://hywz-auth.auth.us-west-2.amazoncognito.com/login?response_type=code&client_id=7iea4023volnd3pfdp7jstdg61&redirect_uri=hygieawastezeroios://")
+        let requestURL = URL(string:"https://hywz-auth.auth.us-west-2.amazoncognito.com/login?response_type=token&client_id=8mrvs89q1frh6hqooc4nt9b0&redirect_uri=hygieawastezero://")
+        //let requestURL = URL(string:"https://www.google.com/")
         let request = URLRequest(url: requestURL!)
         webView.loadRequest(request)
         //            asynchronousURLPoll{error in if let error = error {
@@ -77,35 +78,40 @@ class LoginViewController: UIViewController, CLLocationManagerDelegate, UIWebVie
     }
     
     
-    func webViewDidFinishLoad(_ webView: UIWebView) {
-        if let text = webView.request?.url?.absoluteString{
-            if text.hasPrefix("hygieawastezeroios://") {
+    func webView(_ webView: UIWebView,
+                          shouldStartLoadWith request: URLRequest,
+                          navigationType: UIWebViewNavigationType) -> Bool {
+        //print("Finished loading page")
+        if let text = request.url?.absoluteString{
+            //print(text)
+            if text.hasPrefix("hygieawastezero://") {
                 let idToken = text.components(separatedBy: "#id_token=")[1].components(separatedBy: "&")[0]
+                print("ID_TOKENTEST:")
                 print (idToken)
-                print (text)
             }
         }
+        return true
     }
     
-    func asynchronousURLPoll(completion: @escaping (Error?) -> Void) {
-        var x = false
-        while (!x) {
-            let tokenString = webView.request?.url?.absoluteString
-            x = (tokenString?.hasPrefix("hygieawastezeroios://"))!
-        }
-        URLParse()
-        completion(nil) // Or completion(SomeError.veryBadError)
-    }
+    //func asynchronousURLPoll(completion: @escaping (Error?) -> Void) {
+    //    var x = false
+    //    while (!x) {
+    //        let tokenString = webView.request?.url?.absoluteString
+    //        x = (tokenString?.hasPrefix("hygieawastezero://"))!
+    //    }
+    //    URLParse()
+    //    completion(nil) // Or completion(SomeError.veryBadError)
+    //}
     
-    func URLParse() {
+    //func URLParse() {
         //        if let error = error {
         //    print("Oops! Something went wrong...")
         //    } else {
-        let toSearch = webView.request?.url?.absoluteString.components(separatedBy: "#id_token=")[1].components(separatedBy: "&")[0]
-        print (toSearch)
-        print ("test")
+    //    let toSearch = webView.request?.url?.absoluteString.components(separatedBy: "#id_token=")[1].components(separatedBy: "&")[0]
+    //    print (toSearch)
+    //    print ("test")
         //}
-    }
+    //}
     
     
     
