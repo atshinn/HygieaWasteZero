@@ -76,11 +76,12 @@
                     </view>
                     <connections>
                         <outlet property="webView" destination="2uD-W8-ECN" id="GNE-v7-2nA"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="cameraViewSegue" id="S64-9u-A0f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TDQ-mF-941" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1505" y="-18"/>
+            <point key="canvasLocation" x="1316" y="-36"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="ttF-wb-gGw">
@@ -197,4 +198,7 @@
             <point key="canvasLocation" x="1260" y="793"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="S64-9u-A0f"/>
+    </inferredMetricsTieBreakers>
 </document>

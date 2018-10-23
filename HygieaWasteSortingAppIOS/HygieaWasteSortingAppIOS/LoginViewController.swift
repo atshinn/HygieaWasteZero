@@ -34,14 +34,20 @@ class LoginViewController: UIViewController, CLLocationManagerDelegate, UIWebVie
         //let requestURL = URL(string:"https://www.google.com/")
         let request = URLRequest(url: requestURL!)
         webView.loadRequest(request)
-        //            asynchronousURLPoll{error in if let error = error {
-        //                 print("Oops! Something went wrong...")
-        //            } else {
-        //                print ("finished")
-        //                }
-        //            }
         
     }
+    
+    //    func webView(_ webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType navigationType: UIWebView.NavigationType) -> Bool {
+    //        if request.url?.scheme == "hygieawastezeroios" {
+    //            self.performSegue(withIdentifier: "cameraViewSegue", sender: self)
+    //        }
+    //    }
+    
+    
+    //    function onsubmit() {
+    //    window.location = "https://hywz-auth.auth.us-west-2.amazoncognito.com/login?response_type=code&client_id=7iea4023volnd3pfdp7jstdg61&redirect_uri=hygieawastezeroios://"
+    //    }
+    
     
     //// ALL OF THESE FUNCTIONS SHOULD BE USED WHEN LOCATION IS RETRIEVED ////
     func startReceivingLocation(){
@@ -92,28 +98,6 @@ class LoginViewController: UIViewController, CLLocationManagerDelegate, UIWebVie
         }
         return true
     }
-    
-    //func asynchronousURLPoll(completion: @escaping (Error?) -> Void) {
-    //    var x = false
-    //    while (!x) {
-    //        let tokenString = webView.request?.url?.absoluteString
-    //        x = (tokenString?.hasPrefix("hygieawastezero://"))!
-    //    }
-    //    URLParse()
-    //    completion(nil) // Or completion(SomeError.veryBadError)
-    //}
-    
-    //func URLParse() {
-        //        if let error = error {
-        //    print("Oops! Something went wrong...")
-        //    } else {
-    //    let toSearch = webView.request?.url?.absoluteString.components(separatedBy: "#id_token=")[1].components(separatedBy: "&")[0]
-    //    print (toSearch)
-    //    print ("test")
-        //}
-    //}
-    
-    
     
     
     ////---------------(End "All of these functions")-------------------////
