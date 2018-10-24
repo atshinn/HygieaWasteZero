@@ -8,15 +8,18 @@
 import Foundation
 import UIKit
 import CoreLocation
-//import AWSCognitoIdentityProvider.h
-
+import AWSCore
+import AWSCognito
+import AWSCognitoAuth
+import AWSUserPoolsSignIn
 
 
 class LoginViewController: UIViewController, CLLocationManagerDelegate, UIWebViewDelegate{
     
     //LocationManager base
     let locManager = CLLocationManager()
-    
+    //let credentialsProvider = AWSCognitoCredentialsProvider(regionType: .USWest2, identityPoolId: "us-west-2:6bd013d4-d707-4d4b-9174-29170cd89ad1")
+   
     @IBOutlet weak var webView: UIWebView!
     
     override func viewDidLoad() {
@@ -35,6 +38,36 @@ class LoginViewController: UIViewController, CLLocationManagerDelegate, UIWebVie
         let request = URLRequest(url: requestURL!)
         webView.loadRequest(request)
         
+        
+//        let configuration = AWSServiceConfiguration(region: .USWest2, credentialsProvider: credentialsProvider)
+//        AWSServiceManager.default().defaultServiceConfiguration = configuration
+        
+        
+    }
+    
+    func getCredential(Token: String){
+        let serviceConfiguration = AWSServiceConfiguration(region: .USWest2, credentialsProvider: nil)
+        let userPoolConfiguration = AWSCognitoIdentityUserPoolConfiguration(clientId: "8mrvs89q1frh6hqooc4nt9b0", clientSecret: "53hqi241c7u51am44nckkjv6m2ugv0jima5nqglgu07ebtrsm7", poolId: "us-west-2_2KW8CF0tm")
+        AWSCognitoIdentityUserPool.register(with: serviceConfiguration, userPoolConfiguration: userPoolConfiguration, forKey: "UserPool")
+        let pool = AWSCognitoIdentityUserPool(forKey: "UserPool")
+        let credentialsProvider = AWSCognitoCredentialsProvider(regionType: .USWest2, identityPoolId: "us-west-2:6bd013d4-d707-4d4b-9174-29170cd89ad1", identityProviderManager:pool)
+        var logins = [
+            "one" : "cognito-idp.us-west-2.amazonaws.com/us-west-2_2KW8CF0tm",
+            "two" : Token
+        ]
+        credentialsProvider.setValuesForKeys(logins)
+        credentialsProvider.getIdentityId().continueWith { (task: AWSTask!) -> AnyObject! in
+            
+            if (task.error != nil) {
+                print("Error: " + (task.error?.localizedDescription)!)
+                
+            } else {
+                // the task result will contain the identity id
+                let cognitoId = task.result
+                //preformSegue(
+            }
+            return nil
+        }
     }
     
     //    func webView(_ webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType navigationType: UIWebView.NavigationType) -> Bool {
@@ -86,7 +119,7 @@ class LoginViewController: UIViewController, CLLocationManagerDelegate, UIWebVie
     
     func webView(_ webView: UIWebView,
                           shouldStartLoadWith request: URLRequest,
-                          navigationType: UIWebViewNavigationType) -> Bool {
+                          navigationType: UIWebView.NavigationType) -> Bool {
         //print("Finished loading page")
         if let text = request.url?.absoluteString{
             //print(text)
@@ -94,6 +127,7 @@ class LoginViewController: UIViewController, CLLocationManagerDelegate, UIWebVie
                 let idToken = text.components(separatedBy: "#id_token=")[1].components(separatedBy: "&")[0]
                 print("ID_TOKENTEST:")
                 print (idToken)
+                getCredential(Token: idToken)
             }
         }
         return true
