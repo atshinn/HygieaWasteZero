@@ -1,5 +1,7 @@
 //Amazon S3 functions
 
+import AWSS3
+
 let S3BucketName: String = "hywz.wastezero"
 
 func uploadDataCompost() {
@@ -214,4 +216,8 @@ transferUtility.uploadData(data,
         }
         
         return nil;
+    }
+
+func application(_ application: UIApplication, handleEventsForBackgroundURLSession identifier: String, completionHandler: @escaping () -> Void) {
+    AWSS3TransferUtility.interceptApplication(application, handleEventsForBackgroundURLSession: identifier, completionHandler: completionHandler)
 }
