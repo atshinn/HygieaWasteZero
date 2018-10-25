@@ -20,6 +20,7 @@
 		2C95D781217965EC00A04143 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95D780217965EC00A04143 /* LoginViewController.swift */; };
 		2C95D7832179661A00A04143 /* ActIndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95D7822179661A00A04143 /* ActIndicatorViewController.swift */; };
 		2C95D7852179663200A04143 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95D7842179663200A04143 /* ResultViewController.swift */; };
+		2EA4DA8D218198FC004630A8 /* AWSS3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA4DA8C218198FC004630A8 /* AWSS3.swift */; };
 		31102A01E62A35327F21EF77 /* Pods_HygieaWasteSortingAppIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46415E1BB1ABFBAADA9C467E /* Pods_HygieaWasteSortingAppIOSTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		2C95D780217965EC00A04143 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2C95D7822179661A00A04143 /* ActIndicatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActIndicatorViewController.swift; sourceTree = "<group>"; };
 		2C95D7842179663200A04143 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		2EA4DA8C218198FC004630A8 /* AWSS3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSS3.swift; sourceTree = "<group>"; };
 		46415E1BB1ABFBAADA9C467E /* Pods_HygieaWasteSortingAppIOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HygieaWasteSortingAppIOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63D6C2F25E4B4E4C21BD36F9 /* Pods_HygieaWasteSortingAppIOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HygieaWasteSortingAppIOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83CCC5394595CE5BC7E98B1D /* Pods-HygieaWasteSortingAppIOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HygieaWasteSortingAppIOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HygieaWasteSortingAppIOSUITests/Pods-HygieaWasteSortingAppIOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 		2C95D74321780D4900A04143 = {
 			isa = PBXGroup;
 			children = (
+				2EA4DA8C218198FC004630A8 /* AWSS3.swift */,
 				2C95D74E21780D4A00A04143 /* HygieaWasteSortingAppIOS */,
 				2C95D76621780D7400A04143 /* HygieaWasteSortingAppIOSTests */,
 				2C95D77121780D7400A04143 /* HygieaWasteSortingAppIOSUITests */,
@@ -472,6 +475,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C95D7832179661A00A04143 /* ActIndicatorViewController.swift in Sources */,
+				2EA4DA8D218198FC004630A8 /* AWSS3.swift in Sources */,
 				2C95D781217965EC00A04143 /* LoginViewController.swift in Sources */,
 				2C95D75821780D4A00A04143 /* HygieaWasteSortingAppIOS.xcdatamodeld in Sources */,
 				2C95D75221780D4A00A04143 /* ViewController.swift in Sources */,
