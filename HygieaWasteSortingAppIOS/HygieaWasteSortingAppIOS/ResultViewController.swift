@@ -11,11 +11,11 @@ import UIKit
 class ResultViewController: UIViewController {
     
     @IBAction func SendToCompost(_ sender: UIButton) {
-        //sends image to compost folder
+        uploadDataCompost()
     }
     
     @IBAction func SendToRecycle(_ sender: UIButton) {
-        //sends image to recycle folder
+        uploadDataRecycle()
     }
     
     

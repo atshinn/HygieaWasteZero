@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:AmazonS3.swift">
+   </FileRef>
+   <FileRef
+      location = "group:AWSDeveloper.swift">
+   </FileRef>
+   <FileRef
       location = "group:HygieaWasteSortingAppIOS.xcodeproj">
    </FileRef>
    <FileRef
