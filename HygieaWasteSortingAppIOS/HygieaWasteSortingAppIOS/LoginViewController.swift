@@ -8,7 +8,8 @@
 import Foundation
 import UIKit
 import CoreLocation
-//import AWSCognitoIdentityProvider.h
+import AWSCore
+import AWSCognitoIdentityProvider
 
 
 
@@ -18,7 +19,8 @@ class LoginViewController: UIViewController, CLLocationManagerDelegate, UIWebVie
     let locManager = CLLocationManager()
     
     @IBOutlet weak var webView: UIWebView!
-    
+    @IBOutlet var identityIdTask: AWSTask<NSString>!
+    //@IBOutlet var identityId: NSString!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,7 +36,6 @@ class LoginViewController: UIViewController, CLLocationManagerDelegate, UIWebVie
         //let requestURL = URL(string:"https://www.google.com/")
         let request = URLRequest(url: requestURL!)
         webView.loadRequest(request)
-        
     }
     
     //    func webView(_ webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType navigationType: UIWebView.NavigationType) -> Bool {
@@ -94,11 +95,46 @@ class LoginViewController: UIViewController, CLLocationManagerDelegate, UIWebVie
                 let idToken = text.components(separatedBy: "#id_token=")[1].components(separatedBy: "&")[0]
                 print("ID_TOKENTEST:")
                 print (idToken)
+                getCreds(token: idToken)
             }
         }
         return true
     }
     
+    func getCreds(token: String){
+        //let idProvMana = AWSIdentityProviderManager.self
+        //idProvider.logins(["cognito-idp.us-west-2.amazonaws.com/us-west-2_2KW8CF0tm" : token])
+        //AWSIdentityProviderManager.setLogins()
+        //AWSIdentityProviderManager.
+        //AWSCognitoIdentityProviderUserPoolType
+        //idProvider.init(tokens: ["cognito-idp.us-west-2.amazonaws.com/us-west-2_2KW8CF0tm" : token as NSString])
+        //idProvider.logins
+        let idProviderIns = idProvider(tokens: ["cognito-idp.us-west-2.amazonaws.com/us-west-2_2KW8CF0tm" : token as NSString])
+        
+        let credentialsProvider = AWSCognitoCredentialsProvider(
+            regionType: .USWest2,
+            identityPoolId: "us-west-2_2KW8CF0tm",
+            identityProviderManager: idProviderIns)
+        //identityIdTask = credentialsProvider.getIdentityId()
+        //let credentialsProvider = AWSCognitoCredentialsProvider(regionType: .USWest2, identityPoolId: "us-west-2_2KW8CF0tm")
+        //let configuration = AWSServiceConfiguration(region: .USWest2, credentialsProvider: credentialsProvider)
+        //AWSServiceManager.default().defaultServiceConfiguration = configuration
+        //self.credentialsProvider.logins = token
+        
+        identityIdTask = credentialsProvider.getIdentityId().continueWith(block: {(task) -> AnyObject? in
+            if (task.error != nil) {
+                print("Error: " + task.error!.localizedDescription)
+            } else {
+                //task result contains identity id
+                let cognitoId = task.result!
+                print("Cognito id: \(cognitoId)")
+            }
+            return task;
+        }) as! AWSTask<NSString>
+        //Call identityIdTask.result! to geth the identityId needed
+        //identityId = identityIdTask.result!
+        self.performSegue(withIdentifier: "cameraViewSegue", sender: self)
+    }
     
     ////---------------(End "All of these functions")-------------------////
     override func didReceiveMemoryWarning() {
