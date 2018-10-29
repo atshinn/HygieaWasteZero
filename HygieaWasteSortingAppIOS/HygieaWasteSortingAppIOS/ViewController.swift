@@ -5,12 +5,13 @@
 //  Created by Hesham Alghamdi on 9/1/18.
 //  Copyright © 2018 Arizona State University. All rights reserved.
 //
-
+import Foundation
 import UIKit
 import AVFoundation
 
 class ViewController: UIViewController {
     
+    //let vc = LoginViewController()
     var captureSession = AVCaptureSession()
     var backCamera : AVCaptureDevice?
     var frontCamera : AVCaptureDevice?
@@ -34,9 +35,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-        override func viewDidAppear(_ animated: Bool) {
-            self.performSegue(withIdentifier: "loginSegue", sender: self);
-        }
+//        override func viewDidAppear(_ animated: Bool) {
+//            if(vc.identityId == nil) {
+//            self.performSegue(withIdentifier: "loginSegue", sender: self);
+//            }
+//        }
     
     func setupCaptureSession(){
         captureSession.sessionPreset = AVCaptureSession.Preset.photo
