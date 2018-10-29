@@ -14,10 +14,10 @@ import AWSCognitoIdentityProvider
 
 
 class LoginViewController: UIViewController, CLLocationManagerDelegate, UIWebViewDelegate{
-    
+    //let vc = ViewController()
     //LocationManager base
     let locManager = CLLocationManager()
-    
+    //var loggedIn = false
     var credentialsProvider = AWSCognitoCredentialsProvider()
     
     @IBOutlet weak var webView: UIWebView!
@@ -90,7 +90,7 @@ class LoginViewController: UIViewController, CLLocationManagerDelegate, UIWebVie
     
     func webView(_ webView: UIWebView,
                           shouldStartLoadWith request: URLRequest,
-                          navigationType: UIWebViewNavigationType) -> Bool {
+                          navigationType: UIWebView.NavigationType) -> Bool {
         //print("Finished loading page")
         if let text = request.url?.absoluteString{
             //print(text)
@@ -140,6 +140,7 @@ class LoginViewController: UIViewController, CLLocationManagerDelegate, UIWebVie
                     print(task.result!)
                     self.identityId = task.result!
                     t = false
+                   // self.loggedIn = true
                     self.performSegue(withIdentifier: "cameraViewSegue", sender: self)
                 }
             }
