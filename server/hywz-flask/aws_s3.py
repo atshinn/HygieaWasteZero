@@ -6,7 +6,7 @@ Created on Fri Sep  7 13:01:48 2018
 """
 import boto3 as aws
 import os
-
+from matplotlib import pyplot as plt
 def _get_aws_resource(resource, region=None):
     print('resource={} region={}'.format(resource, region))   
     
@@ -40,12 +40,28 @@ def get_s3(res=None):
     return res
 
 
-def retreive_object_from_bucket(auth, key, bucket, fn, region_name):
-    s3 = aws.resource('s3', region_name=region_name, aws_acess_key_id=auth[0], aws_secret_access_key=auth[1])
+def download(bucket_name, region, fkey, fp):
+    s3 = aws.client('s3', aws_access_key_id=os.environ['AWS_AK'], aws_secret_access_key=os.environ['AWS_SAK'], region_name=region)
+    finished = False
+    fsize = s3.head_object(Bucket=bucket_name, Key=fkey)['ContentLength']
+    print('FSIZE =', fsize)
     
-    buck = s3.Bucket(bucket)
+    def callback(transferred):
+        nonlocal fsize
+        nonlocal finished
+        print(fsize, finished)
+        if(fsize == transferred):
+            finished = True
+    cb = callback
     
+    fp = os.path.join(os.getcwd(), fkey.split('/')[-1])
     
+    s3.download_file(bucket_name, fkey, fp, Callback=cb)
+    while not finished:
+        pass
+    print('download finished')
+    
+    return plt.imread(fp)
 
 def add_bin_to_bucket(i_bin, key):
     try:
