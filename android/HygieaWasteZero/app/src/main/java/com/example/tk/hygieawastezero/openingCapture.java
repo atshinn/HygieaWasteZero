@@ -10,6 +10,10 @@ import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
 import android.hardware.Camera;
 import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
+import android.location.LocationProvider;
+import android.provider.Settings;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -41,7 +45,7 @@ public class openingCapture extends AppCompatActivity implements SurfaceHolder.C
 
     private double[] loc = new double[2];
 
-    Task<Location> task;
+    public Task<Location> task;
 
     String accessKey = "null";
     String secretKey = "null";
@@ -125,8 +129,13 @@ public class openingCapture extends AppCompatActivity implements SurfaceHolder.C
                 bmpSingleton.setBmp(decodeBitmap);
 
                 // GET LOCATION DATA
-                loc[0] = task.getResult().getLatitude();
-                loc[1] = task.getResult().getLongitude();
+                if (task.getResult() == null){
+                    loc[0] = 0;
+                    loc[1] = 0;
+                } else {
+                    loc[0] = task.getResult().getLatitude();
+                    loc[1] = task.getResult().getLongitude();
+                }
 
                 // PUT EXTRAS
                 startPreview.putExtra("path", saveToInternalStorage(decodeBitmap)); // NEED TO COME UP WITH DIFFERENT SOLUTION SO UI THREAD DOESNT HANG WHILE FILE I/0 IS HAPPENING
@@ -223,17 +232,36 @@ public class openingCapture extends AppCompatActivity implements SurfaceHolder.C
     public void getLastLocation(){
         //loc[0] = 0;
         //loc[1] = 0;
-
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED){
 
             task = mFusedLocationClient.getLastLocation()
                     .addOnSuccessListener(this, new OnSuccessListener<Location>() {
                         @Override
-                        public void onSuccess(Location location) {
+                        public void onSuccess(final Location location) {
                             // Got last known location. In some rare situations this can be null.
                             if (location == null) {
-                                location.setLatitude(0);
-                                location.setLongitude(0);
+                                Log.d("LKL Err", "Can't get last known location, need to work out how to get our own");
+                                /*
+                                if (ActivityCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+                                    LocationManager mLocationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+                                    LocationListener mLocationListener = new LocationListener() {
+                                        @Override
+                                        public void onLocationChanged(Location l) {
+                                            location.set(l);
+                                        }
+
+                                        @Override
+                                        public void onStatusChanged(String provider, int status, Bundle extras) { }
+
+                                        @Override
+                                        public void onProviderEnabled(String provider) { }
+
+                                        @Override
+                                        public void onProviderDisabled(String provider) { }
+                                    };
+                                    mLocationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 0, mLocationListener);
+                                }
+                                */
                             }
                         }
                     });
