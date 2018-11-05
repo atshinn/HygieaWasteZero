@@ -11,7 +11,8 @@ import AVFoundation
 
 class ViewController: UIViewController {
     
-    //let vc = LoginViewController()
+    let loginController = LoginViewController()
+    var pressedBtnString: String = String()
     var captureSession = AVCaptureSession()
     var backCamera : AVCaptureDevice?
     var frontCamera : AVCaptureDevice?
@@ -22,11 +23,32 @@ class ViewController: UIViewController {
     var previewLayer: AVCaptureVideoPreviewLayer?
     
     var  image: UIImage?
+    var persImageData: Data?
+    
+    @IBOutlet weak var recycleButton: UIButton!
+    @IBOutlet weak var compostButton: UIButton!
+    @IBOutlet weak var captureButton: UIButton!
+    @IBOutlet weak var compostLabel: UILabel!
+    @IBOutlet weak var captureLabel: UILabel!
+    @IBOutlet weak var recycleLabel: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        compostLabel.textColor = UIColor.white
+        captureLabel.textColor = UIColor.white
+        recycleLabel.textColor = UIColor.white
         
+        if(!loginController.isDev){
+            recycleButton.isHidden = true
+            recycleButton.isEnabled = false
+            compostButton.isHidden = true
+            compostButton.isEnabled = false
+            recycleLabel.isHidden = true
+            recycleLabel.isEnabled = false
+            compostLabel.isHidden = true
+            compostLabel.isEnabled = false
+        }
         setupCaptureSession()
         setupDevice()
         setupIO()
@@ -93,7 +115,19 @@ class ViewController: UIViewController {
     
     
     @IBAction func CameraButtonAction(_ sender: Any) {
-    
+        pressedBtnString = "/unlabled/"
+        let settings = AVCapturePhotoSettings()
+        photoOutput?.capturePhoto(with: settings, delegate: self)
+        //performSegue(withIdentifier: "DisplayPhotoSegue", sender: nil)
+    }
+    @IBAction func RecycleButtonAction(_ sender: Any) {
+        pressedBtnString = "/recycle/"
+        let settings = AVCapturePhotoSettings()
+        photoOutput?.capturePhoto(with: settings, delegate: self)
+        //performSegue(withIdentifier: "DisplayPhotoSegue", sender: nil)
+    }
+    @IBAction func CompostButtonAction(_ sender: Any) {
+        pressedBtnString = "/compost/"
         let settings = AVCapturePhotoSettings()
         photoOutput?.capturePhoto(with: settings, delegate: self)
         //performSegue(withIdentifier: "DisplayPhotoSegue", sender: nil)
@@ -120,6 +154,7 @@ class ViewController: UIViewController {
 extension ViewController: AVCapturePhotoCaptureDelegate{
     func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
         if let imageData = photo.fileDataRepresentation(){
+            persImageData = imageData
             image = UIImage(data: imageData)
             performSegue(withIdentifier: "LoadingSegue" , sender: nil)
             //performSegue(withIdentifier: "DisplayPhotoSegue" , sender: nil)

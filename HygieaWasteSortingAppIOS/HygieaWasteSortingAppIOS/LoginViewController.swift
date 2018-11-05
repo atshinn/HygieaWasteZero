@@ -90,7 +90,7 @@ class LoginViewController: UIViewController, CLLocationManagerDelegate, UIWebVie
     
     func webView(_ webView: UIWebView,
                           shouldStartLoadWith request: URLRequest,
-                          navigationType: UIWebView.NavigationType) -> Bool {
+                          navigationType: UIWebViewNavigationType) -> Bool {
         //print("Finished loading page")
         if let text = request.url?.absoluteString{
             //print(text)

@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hng-0U-V0o">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hng-0U-V0o">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,8 +20,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBz-sX-C6S">
-                                <rect key="frame" x="157.5" y="587" width="60" height="60"/>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBz-sX-C6S" userLabel="capture">
+                                <rect key="frame" x="158" y="587" width="60" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="E9U-LE-O8y"/>
@@ -35,22 +38,98 @@
                                     <action selector="CameraButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kyt-t0-g4C"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Capture" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afQ-5w-Opn">
+                                <rect key="frame" x="154" y="558" width="67" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgd-8v-mFf" userLabel="recycle">
+                                <rect key="frame" x="45" y="587" width="60" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="0lR-T0-3k9"/>
+                                    <constraint firstAttribute="height" constant="60" id="BAV-WB-Tij"/>
+                                    <constraint firstAttribute="width" constant="60" id="fKL-X1-kAh"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="nD5-iM-dTk"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="RecycleButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jew-Vu-wdu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Recycle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqJ-oP-tRp">
+                                <rect key="frame" x="45" y="558" width="60" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Osu-uT-uh6" userLabel="compost">
+                                <rect key="frame" x="272" y="587" width="60" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="1PU-lh-WQa"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="Ck4-CA-Phr"/>
+                                    <constraint firstAttribute="width" constant="60" id="Jm2-r1-h6L"/>
+                                    <constraint firstAttribute="height" constant="60" id="Och-7H-MIw"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="CompostButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oUd-IU-PKW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Trash" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0a8-7R-Kvc">
+                                <rect key="frame" x="278" y="558" width="48" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="rgd-8v-mFf" firstAttribute="firstBaseline" secondItem="sBz-sX-C6S" secondAttribute="firstBaseline" id="8nd-t1-JQS"/>
+                            <constraint firstItem="Osu-uT-uh6" firstAttribute="firstBaseline" secondItem="sBz-sX-C6S" secondAttribute="firstBaseline" id="BqJ-AY-aZ9"/>
+                            <constraint firstItem="Osu-uT-uh6" firstAttribute="baseline" secondItem="rgd-8v-mFf" secondAttribute="baseline" id="HOy-Kr-PqL"/>
+                            <constraint firstItem="Osu-uT-uh6" firstAttribute="top" secondItem="sBz-sX-C6S" secondAttribute="top" id="QUB-XW-cPQ"/>
+                            <constraint firstItem="rgd-8v-mFf" firstAttribute="baseline" secondItem="Osu-uT-uh6" secondAttribute="baseline" id="Thk-l5-ZUt"/>
+                            <constraint firstItem="Osu-uT-uh6" firstAttribute="leading" secondItem="sBz-sX-C6S" secondAttribute="trailing" constant="54" id="Tub-i3-2hY"/>
+                            <constraint firstItem="Osu-uT-uh6" firstAttribute="firstBaseline" secondItem="rgd-8v-mFf" secondAttribute="firstBaseline" id="Y9K-xq-64Z"/>
+                            <constraint firstItem="Osu-uT-uh6" firstAttribute="top" secondItem="rgd-8v-mFf" secondAttribute="top" id="ZUF-ha-H6B"/>
+                            <constraint firstItem="Osu-uT-uh6" firstAttribute="baseline" secondItem="sBz-sX-C6S" secondAttribute="baseline" id="dL9-pg-tKb"/>
+                            <constraint firstItem="rgd-8v-mFf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="jJx-My-Mpm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sBz-sX-C6S" secondAttribute="bottom" constant="20" id="k2h-Td-cqM"/>
+                            <constraint firstItem="rgd-8v-mFf" firstAttribute="baseline" secondItem="sBz-sX-C6S" secondAttribute="baseline" id="kBs-X7-DZv"/>
                             <constraint firstItem="sBz-sX-C6S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v6S-Y3-0eQ"/>
+                            <constraint firstItem="rgd-8v-mFf" firstAttribute="firstBaseline" secondItem="Osu-uT-uh6" secondAttribute="firstBaseline" id="w7h-py-tvb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sBz-sX-C6S" secondAttribute="bottom" constant="20" id="zVB-Gm-4b1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="captureButton" destination="sBz-sX-C6S" id="UmV-qD-QwU"/>
+                        <outlet property="captureLabel" destination="afQ-5w-Opn" id="dgn-4W-Qzk"/>
+                        <outlet property="compostButton" destination="Osu-uT-uh6" id="iVb-ZK-a1j"/>
+                        <outlet property="compostLabel" destination="0a8-7R-Kvc" id="4oc-2L-swq"/>
+                        <outlet property="recycleButton" destination="rgd-8v-mFf" id="p9p-GR-zht"/>
+                        <outlet property="recycleLabel" destination="wqJ-oP-tRp" id="trn-pi-u3m"/>
                         <segue destination="dzZ-bs-tDJ" kind="presentation" identifier="LoadingSegue" id="P6F-06-xYl"/>
                         <segue destination="hng-0U-V0o" kind="presentation" identifier="loginSegue" id="P3H-ju-y2v"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="669.60000000000002" y="31.934032983508249"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="cUm-RE-Upf">
@@ -91,9 +170,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uUF-QF-3i2">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uUF-QF-3i2">
                                 <rect key="frame" x="0.0" y="308" width="375" height="310"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVN-mV-KyO">
                                         <rect key="frame" x="20" y="8" width="140" height="22"/>
@@ -140,6 +218,14 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="YRJ-uJ-c8w" secondAttribute="trailing" constant="52" id="35B-d6-7rX"/>
+                                    <constraint firstItem="YRJ-uJ-c8w" firstAttribute="leading" secondItem="uUF-QF-3i2" secondAttribute="leading" constant="183" id="4sH-xD-Pvl"/>
+                                    <constraint firstAttribute="bottom" secondItem="YRJ-uJ-c8w" secondAttribute="bottom" constant="280" id="882-7D-8Ba"/>
+                                    <constraint firstItem="YRJ-uJ-c8w" firstAttribute="leading" secondItem="IVN-mV-KyO" secondAttribute="trailing" constant="23" id="ZOo-Pr-IVn"/>
+                                    <constraint firstItem="YRJ-uJ-c8w" firstAttribute="top" secondItem="uUF-QF-3i2" secondAttribute="topMargin" id="qdD-nI-I60"/>
+                                    <constraint firstItem="YRJ-uJ-c8w" firstAttribute="baseline" secondItem="IVN-mV-KyO" secondAttribute="baseline" id="wUa-TO-jKR"/>
+                                </constraints>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48j-3g-a7D">
                                 <rect key="frame" x="125" y="626" width="124" height="30"/>
@@ -191,6 +277,7 @@
                     </view>
                     <connections>
                         <outlet property="activity" destination="Txl-Zr-mlx" id="hVk-aR-wUT"/>
+                        <segue destination="m8s-xC-s8T" kind="presentation" id="7ML-TK-xab"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VdG-9k-rJz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -199,6 +286,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="S64-9u-A0f"/>
+        <segue reference="P6F-06-xYl"/>
+        <segue reference="jPQ-Ag-cIF"/>
     </inferredMetricsTieBreakers>
 </document>
