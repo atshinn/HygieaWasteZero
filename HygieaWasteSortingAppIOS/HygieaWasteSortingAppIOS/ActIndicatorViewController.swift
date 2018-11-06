@@ -13,8 +13,8 @@ import AWSS3
 
 class ActIndicatorViewController: UIViewController {
     
-    
-    @IBOutlet weak var activity: UIActivityIndicatorView!
+    //Note to self, use XCode's Product -> Clean next time I get the chance to work with this.
+    //@IBOutlet weak var activity: UIActivityIndicatorView!
     //Functions that might be used later
     //    var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
     //    func loading(){
