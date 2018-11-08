@@ -57,11 +57,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-//        override func viewDidAppear(_ animated: Bool) {
-//            if(vc.identityId == nil) {
-//            self.performSegue(withIdentifier: "loginSegue", sender: self);
-//            }
-//        }
     
     func setupCaptureSession(){
         captureSession.sessionPreset = AVCaptureSession.Preset.photo
@@ -118,31 +113,28 @@ class ViewController: UIViewController {
         pressedBtnString = "/unlabled/"
         let settings = AVCapturePhotoSettings()
         photoOutput?.capturePhoto(with: settings, delegate: self)
-        //performSegue(withIdentifier: "DisplayPhotoSegue", sender: nil)
     }
     @IBAction func RecycleButtonAction(_ sender: Any) {
         pressedBtnString = "/recycle/"
         let settings = AVCapturePhotoSettings()
         photoOutput?.capturePhoto(with: settings, delegate: self)
-        //performSegue(withIdentifier: "DisplayPhotoSegue", sender: nil)
     }
     @IBAction func CompostButtonAction(_ sender: Any) {
         pressedBtnString = "/compost/"
         let settings = AVCapturePhotoSettings()
         photoOutput?.capturePhoto(with: settings, delegate: self)
-        //performSegue(withIdentifier: "DisplayPhotoSegue", sender: nil)
     }
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        
         
         //        if segue.identifier == "DisplayPhotoSegue" {
         //            let previewVC = segue.destination as! ImageViewController
         //            previewVC.image = self.image
         //        }
     }
+    
+    
     //    override func didReceiveMemoryWarning() {
     //        super.didReceiveMemoryWarning()
     //        // Dispose of any resources that can be recreated.
@@ -157,7 +149,6 @@ extension ViewController: AVCapturePhotoCaptureDelegate{
             persImageData = imageData
             image = UIImage(data: imageData)
             performSegue(withIdentifier: "LoadingSegue" , sender: nil)
-            //performSegue(withIdentifier: "DisplayPhotoSegue" , sender: nil)
             
         }
     }

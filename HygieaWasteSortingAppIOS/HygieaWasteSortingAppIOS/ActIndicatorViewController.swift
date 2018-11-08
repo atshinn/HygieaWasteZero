@@ -14,7 +14,7 @@ import AWSS3
 class ActIndicatorViewController: UIViewController {
     
     //Note to self, use XCode's Product -> Clean next time I get the chance to work with this.
-    //@IBOutlet weak var activity: UIActivityIndicatorView!
+    @IBOutlet weak var activity: UIActivityIndicatorView!
     //Functions that might be used later
     //    var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
     //    func loading(){
@@ -31,12 +31,11 @@ class ActIndicatorViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.activity.startAnimating()
         uploadData()
     }
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        performSegue(withIdentifier: "ResultSegue" , sender: nil)
-//    }
+
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -80,7 +79,8 @@ class ActIndicatorViewController: UIViewController {
                                     
                                     if let _ = task.result {
                                         self.resultTxt = fileString
-                                        self.performSegue(withIdentifier: "Result View Controller", sender: nil)
+                                        self.activity.startAnimating()
+                                        self.performSegue(withIdentifier: "ResultViewSegue", sender: nil)
                                     }
                                     return nil;
         }
