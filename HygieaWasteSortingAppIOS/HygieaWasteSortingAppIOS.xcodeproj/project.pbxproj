@@ -25,6 +25,7 @@
 		2CA9111521869B8B00C6B624 /* Cognito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA9111221869B8A00C6B624 /* Cognito.swift */; };
 		2CA9111621869B8B00C6B624 /* AWSDeveloper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA9111321869B8B00C6B624 /* AWSDeveloper.swift */; };
 		2E4A2FD221940DD900CC52CA /* DynamoDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4A2FD121940DD900CC52CA /* DynamoDB.swift */; };
+		2E82810121950AA300556943 /* Boto3.py in Resources */ = {isa = PBXBuildFile; fileRef = 2E82810021950AA300556943 /* Boto3.py */; };
 		31102A01E62A35327F21EF77 /* Pods_HygieaWasteSortingAppIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46415E1BB1ABFBAADA9C467E /* Pods_HygieaWasteSortingAppIOSTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		2CA9111221869B8A00C6B624 /* Cognito.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cognito.swift; sourceTree = "<group>"; };
 		2CA9111321869B8B00C6B624 /* AWSDeveloper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWSDeveloper.swift; sourceTree = "<group>"; };
 		2E4A2FD121940DD900CC52CA /* DynamoDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamoDB.swift; sourceTree = "<group>"; };
+		2E82810021950AA300556943 /* Boto3.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = Boto3.py; sourceTree = "<group>"; };
 		46415E1BB1ABFBAADA9C467E /* Pods_HygieaWasteSortingAppIOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HygieaWasteSortingAppIOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63D6C2F25E4B4E4C21BD36F9 /* Pods_HygieaWasteSortingAppIOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HygieaWasteSortingAppIOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83CCC5394595CE5BC7E98B1D /* Pods-HygieaWasteSortingAppIOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HygieaWasteSortingAppIOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HygieaWasteSortingAppIOSUITests/Pods-HygieaWasteSortingAppIOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				2E4A2FD121940DD900CC52CA /* DynamoDB.swift */,
+				2E82810021950AA300556943 /* Boto3.py */,
 				2CA9111321869B8B00C6B624 /* AWSDeveloper.swift */,
 				2CA9111121869B8A00C6B624 /* AWSS3.swift */,
 				2CA9111221869B8A00C6B624 /* Cognito.swift */,
@@ -302,6 +305,7 @@
 			files = (
 				2C95D75D21780D7300A04143 /* LaunchScreen.storyboard in Resources */,
 				2C95D75A21780D7300A04143 /* Assets.xcassets in Resources */,
+				2E82810121950AA300556943 /* Boto3.py in Resources */,
 				2C95D75521780D4A00A04143 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
