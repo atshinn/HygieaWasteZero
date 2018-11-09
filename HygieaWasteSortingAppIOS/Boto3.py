@@ -43,37 +43,146 @@
 ##for i in response['Items']:
 ##    print(i['???'], ":", i['???'])
 
+#import boto3
+#
+#dynamodb = boto3.resource('dynamodb')
+#
+#table = dynamodb.create_table(
+#    TableName='Compost',
+#    KeySchema=[
+#        {
+#            'AttributeName': '???',
+#            'KeyType': '???'
+#        },
+#        {
+#            'AttributeName': '???',
+#            'KeyType': '???'
+#        }
+#        ],
+#    AttributeDefinitions=[
+#        {
+#            'AttributeName': '???',
+#            'AttributeType': '???'
+#        },
+#        {
+#            'AttributeName': '???',
+#            'AttributeType': '???'
+#        },
+#        ],
+#    ProvisionedThroughput={
+#            'ReadCapacityUnits': 1,
+#            'WriteCapacityUnits': 1
+#        }
+#        )
+#
+#table.meta.client.get_waiter('table_exists').wait(TableName='???')
+#print(table.item_count)
+
+import os
 import boto3
 
-dynamodb = boto3.resource('dynamodb')
+client = boto3.client('dynamodb')
 
-table = dynamodb.create_table(
-    TableName='Compost',
-    KeySchema=[
-        {
-            'AttributeName': 'username',
-            'KeyType': 'HASH'
-        },
-        {
-            'AttributeName': 'last_name',
-            'KeyType': 'RANGE'
-        }
-        ],
-    AttributeDefinitions=[
-        {
-            'AttributeName': 'username',
-            'AttributeType': 'S'
-        },
-        {
-            'AttributeName': 'last_name',
-            'AttributeType': 'S'
-        },
-        ],
-    ProvisionedThroughput={
-            'ReadCapacityUnits': 1,
-            'WriteCapacityUnits': 1
-        }
-        )
+client = boto3.client('dynamodb', aws_access_key_id='AKIAIK2KN2KQZFS7P6H', aws_secret_access_key='zXHC2ZYOtD0woz34BexonTMGc9LjRtpTDbyDJZ56', region_name='us-west-2')
 
-table.meta.client.get_waiter('table_exists').wait(TableName='users')
-print(table.item_count)
+key = os.environ['Compost']
+key = os.environ['Recycle']
+key = os.environ['Unlabeled']
+
+var AWS = require('aws-sdk');
+AWS.config.update({region: 'us-west-2'});
+
+ddb = new AWS.DynamoDB({apiVersion: '2018-11-09'});
+
+var params = {
+    AttributeDefinitions: [
+       {
+           AttributeName: 'Compost_ID',
+           AttributeType: 'String'
+       }
+    ],
+    KeySchema: [
+       {
+           AttributeName: 'Compost_ID',
+           KeyType: 'String'
+       }
+    ],
+    ProvisionedThroughput: {
+        ReadCapacityUnits: 1,
+        WriteCapacityUnits: 1
+    },
+    TableName: 'Compost',
+        StreamSpecification: {
+        StreamEnabled: false
+    }
+};
+
+ddb.createTable(params, function(err, data) {
+    if (err) {
+        console.log("Error", err);
+    } else {
+        console.log("Success", data);
+    }
+});
+
+var params = {
+    AttributeDefinitions: [
+       {
+           AttributeName: 'Recycle_ID',
+           AttributeType: 'String'
+       }
+   ],
+   KeySchema: [
+       {
+           AttributeName: 'Recycle_ID',
+           KeyType: 'String'
+       }
+   ],
+        ProvisionedThroughput: {
+           ReadCapacityUnits: 1,
+           WriteCapacityUnits: 1
+        },
+        TableName: 'Recycle',
+            StreamSpecification: {
+            StreamEnabled: false
+    }
+};
+
+ddb.createTable(params, function(err, data) {
+    if (err) {
+        console.log("Error", err);
+    } else {
+        console.log("Success", data);
+    }
+});
+
+var params = {
+    AttributeDefinitions: [
+       {
+           AttributeName: 'Unlabeled_ID',
+           AttributeType: 'String'
+       }
+    ],
+    KeySchema: [
+       {
+           AttributeName: 'Unlabeled_ID',
+           KeyType: 'String'
+       }
+    ],
+    ProvisionedThroughput: {
+        ReadCapacityUnits: 1,
+        WriteCapacityUnits: 1
+    },
+    TableName: 'Unlabeled',
+        StreamSpecification: {
+        StreamEnabled: false
+    }
+};
+
+ddb.createTable(params, function(err, data) {
+    if (err) {
+        console.log("Error", err);
+    } else {
+        console.log("Success", data);
+    }
+});
