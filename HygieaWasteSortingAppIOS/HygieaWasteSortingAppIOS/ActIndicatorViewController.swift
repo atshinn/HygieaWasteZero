@@ -28,6 +28,7 @@ class ActIndicatorViewController: UIViewController {
     let loginView = LoginViewController()
     let camView = ViewController()
     var resultTxt: String = String()
+    let data = Data.self
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +44,8 @@ class ActIndicatorViewController: UIViewController {
     
     func uploadData() {
         
-        let data: Data = camView.persImageData! // Data to be uploaded
+        
+        //let data: Data = camView.persImageData! // Data to be uploaded
         
         let expression = AWSS3TransferUtilityUploadExpression()
         expression.progressBlock = {(task, progress) in

@@ -127,11 +127,10 @@ class ViewController: UIViewController {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        //        if segue.identifier == "DisplayPhotoSegue" {
-        //            let previewVC = segue.destination as! ImageViewController
-        //            previewVC.image = self.image
-        //        }
+                if segue.identifier == "LoadingSegue" {
+                    let loadingVC = segue.destination as! ActIndicatorViewController
+                    loadingVC.data = self.data
+                }
     }
     
     
