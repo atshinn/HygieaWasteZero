@@ -90,7 +90,7 @@ class LoginViewController: UIViewController, CLLocationManagerDelegate, UIWebVie
     
     func webView(_ webView: UIWebView,
                           shouldStartLoadWith request: URLRequest,
-                          navigationType: UIWebView.NavigationType) -> Bool {
+                          navigationType: UIWebViewNavigationType) -> Bool {
         //print("Finished loading page")
         if let text = request.url?.absoluteString{
             //print(text)
@@ -154,8 +154,9 @@ class LoginViewController: UIViewController, CLLocationManagerDelegate, UIWebVie
     func determineDev(token: String){
         print("Token: " + token)
         let tokenArray = token.split(separator: ".")
-        let splitString = String(tokenArray[1])
+        let splitString = String(tokenArray[1].prefix(upTo: String.Index.init(encodedOffset: 500)))
         print("SplitString: " + splitString)
+        print("SplitString.length: " + String(splitString.count))
         if let decodedData = Data(base64Encoded: splitString){
             if let decodedString = String(data: decodedData, encoding: .utf8){
                 print(decodedString)
