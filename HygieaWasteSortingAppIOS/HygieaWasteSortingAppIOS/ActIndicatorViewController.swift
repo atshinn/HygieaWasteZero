@@ -15,25 +15,18 @@ class ActIndicatorViewController: UIViewController {
     
     //Note to self, use XCode's Product -> Clean next time I get the chance to work with this.
     @IBOutlet weak var activity: UIActivityIndicatorView!
-    //Functions that might be used later
-    //    var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
-    //    func loading(){
-    //
-    //        activityIndicator.center = self.view.center
-    //        activityIndicator.hidesWhenStopped = true
-    //        activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
-    //        view.addSubview(activityIndicator)
-    //        activityIndicator.startAnimating()
-    //    }
+
+
     let loginView = LoginViewController()
     let camView = ViewController()
     var resultTxt: String = String()
-    let data = Data.self
+    var data: Data = Data()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.activity.startAnimating()
         uploadData()
+        //self.performSegue(withIdentifier: "ResultViewSegue", sender: nil)
     }
 
     
@@ -67,25 +60,25 @@ class ActIndicatorViewController: UIViewController {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         let fileDate = formatter.string(from: Date())
-        let fileString = camView.pressedBtnString + fileDate
-        transferUtility.uploadData(data,
-                                   bucket: "hywz.wastezero",
-                                   key: fileString,
-                                   contentType: "image/jpeg",
-                                   expression: expression,
-                                   completionHandler: completionHandler).continueWith {
-                                    (task) -> AnyObject? in
-                                    if let error = task.error {
-                                        print("Error: \(error.localizedDescription)")
-                                    }
-                                    
-                                    if let _ = task.result {
-                                        self.resultTxt = fileString
-                                        self.activity.startAnimating()
+//        let fileString = camView.pressedBtnString + fileDate
+//        transferUtility.uploadData(data,
+//                                   bucket: "hywz.wastezero",
+//                                   key: fileString,
+//                                   contentType: "image/jpeg",
+//                                   expression: expression,
+//                                   completionHandler: completionHandler).continueWith {
+//                                    (task) -> AnyObject? in
+//                                    if let error = task.error {
+//                                        print("Error: \(error.localizedDescription)")
+//                                    }
+//
+//                                    if let _ = task.result {
+//                                        self.resultTxt = fileString
+                                        self.activity.stopAnimating()
                                         self.performSegue(withIdentifier: "ResultViewSegue", sender: nil)
-                                    }
-                                    return nil;
-        }
+//                                    }
+//                                    return nil;
+//        }
     }
     
     /*
