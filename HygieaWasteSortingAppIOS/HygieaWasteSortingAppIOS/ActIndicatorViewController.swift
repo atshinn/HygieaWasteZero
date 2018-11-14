@@ -60,25 +60,25 @@ class ActIndicatorViewController: UIViewController {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         let fileDate = formatter.string(from: Date())
-//        let fileString = camView.pressedBtnString + fileDate
-//        transferUtility.uploadData(data,
-//                                   bucket: "hywz.wastezero",
-//                                   key: fileString,
-//                                   contentType: "image/jpeg",
-//                                   expression: expression,
-//                                   completionHandler: completionHandler).continueWith {
-//                                    (task) -> AnyObject? in
-//                                    if let error = task.error {
-//                                        print("Error: \(error.localizedDescription)")
-//                                    }
-//
-//                                    if let _ = task.result {
-//                                        self.resultTxt = fileString
+        let fileString = camView.pressedBtnString + fileDate
+        transferUtility.uploadData(data,
+                                   bucket: "hywz.wastezero",
+                                   key: fileString,
+                                   contentType: "image/jpeg",
+                                   expression: expression,
+                                   completionHandler: completionHandler).continueWith {
+                                    (task) -> AnyObject? in
+                                    if let error = task.error {
+                                        print("Error: \(error.localizedDescription)")
+                                    }
+
+                                    if let _ = task.result {
+                                        self.resultTxt = fileString
                                         self.activity.stopAnimating()
                                         self.performSegue(withIdentifier: "ResultViewSegue", sender: nil)
-//                                    }
-//                                    return nil;
-//        }
+                                    }
+                                    return nil;
+        }
     }
     
     /*

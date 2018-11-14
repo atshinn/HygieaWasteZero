@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -36,9 +35,8 @@
                                     <action selector="CameraButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kyt-t0-g4C"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Capture" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afQ-5w-Opn">
-                                <rect key="frame" x="154" y="558" width="67" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capture" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afQ-5w-Opn">
+                                <rect key="frame" x="157" y="558" width="61.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -61,9 +59,8 @@
                                     <action selector="RecycleButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jew-Vu-wdu"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Recycle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqJ-oP-tRp">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Recycle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqJ-oP-tRp">
                                 <rect key="frame" x="45" y="558" width="60" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -86,9 +83,8 @@
                                     <action selector="CompostButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oUd-IU-PKW"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Trash" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0a8-7R-Kvc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Trash" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0a8-7R-Kvc">
                                 <rect key="frame" x="278" y="558" width="48" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -98,16 +94,21 @@
                         <constraints>
                             <constraint firstItem="rgd-8v-mFf" firstAttribute="firstBaseline" secondItem="sBz-sX-C6S" secondAttribute="firstBaseline" id="8nd-t1-JQS"/>
                             <constraint firstItem="Osu-uT-uh6" firstAttribute="firstBaseline" secondItem="sBz-sX-C6S" secondAttribute="firstBaseline" id="BqJ-AY-aZ9"/>
+                            <constraint firstItem="Osu-uT-uh6" firstAttribute="top" secondItem="0a8-7R-Kvc" secondAttribute="bottom" constant="8" id="GDA-qV-Ian"/>
                             <constraint firstItem="Osu-uT-uh6" firstAttribute="baseline" secondItem="rgd-8v-mFf" secondAttribute="baseline" id="HOy-Kr-PqL"/>
+                            <constraint firstItem="rgd-8v-mFf" firstAttribute="top" secondItem="wqJ-oP-tRp" secondAttribute="bottom" constant="8" id="Id4-4j-8x1"/>
+                            <constraint firstItem="sBz-sX-C6S" firstAttribute="top" secondItem="afQ-5w-Opn" secondAttribute="bottom" constant="8" id="L8C-6g-MXN"/>
                             <constraint firstItem="Osu-uT-uh6" firstAttribute="top" secondItem="sBz-sX-C6S" secondAttribute="top" id="QUB-XW-cPQ"/>
                             <constraint firstItem="rgd-8v-mFf" firstAttribute="baseline" secondItem="Osu-uT-uh6" secondAttribute="baseline" id="Thk-l5-ZUt"/>
                             <constraint firstItem="Osu-uT-uh6" firstAttribute="leading" secondItem="sBz-sX-C6S" secondAttribute="trailing" constant="54" id="Tub-i3-2hY"/>
+                            <constraint firstItem="sBz-sX-C6S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U2W-ZJ-SIJ"/>
                             <constraint firstItem="Osu-uT-uh6" firstAttribute="firstBaseline" secondItem="rgd-8v-mFf" secondAttribute="firstBaseline" id="Y9K-xq-64Z"/>
                             <constraint firstItem="Osu-uT-uh6" firstAttribute="top" secondItem="rgd-8v-mFf" secondAttribute="top" id="ZUF-ha-H6B"/>
                             <constraint firstItem="Osu-uT-uh6" firstAttribute="baseline" secondItem="sBz-sX-C6S" secondAttribute="baseline" id="dL9-pg-tKb"/>
                             <constraint firstItem="rgd-8v-mFf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="jJx-My-Mpm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sBz-sX-C6S" secondAttribute="bottom" constant="20" id="k2h-Td-cqM"/>
                             <constraint firstItem="rgd-8v-mFf" firstAttribute="baseline" secondItem="sBz-sX-C6S" secondAttribute="baseline" id="kBs-X7-DZv"/>
+                            <constraint firstItem="afQ-5w-Opn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uxh-at-CAo"/>
                             <constraint firstItem="sBz-sX-C6S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v6S-Y3-0eQ"/>
                             <constraint firstItem="rgd-8v-mFf" firstAttribute="firstBaseline" secondItem="Osu-uT-uh6" secondAttribute="firstBaseline" id="w7h-py-tvb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sBz-sX-C6S" secondAttribute="bottom" constant="20" id="zVB-Gm-4b1"/>
@@ -258,19 +259,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Loading" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4w-UX-Uhl">
-                                <rect key="frame" x="157" y="434" width="61" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Txl-Zr-mlx">
+                                <rect key="frame" x="177.5" y="323.5" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4w-UX-Uhl">
+                                <rect key="frame" x="150" y="126" width="75" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Txl-Zr-mlx">
-                                <rect key="frame" x="177" y="254" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="g4w-UX-Uhl" firstAttribute="centerX" secondItem="wUi-gw-wXc" secondAttribute="centerX" id="EGe-4S-saG"/>
+                            <constraint firstItem="Txl-Zr-mlx" firstAttribute="centerX" secondItem="wUi-gw-wXc" secondAttribute="centerX" id="V9o-LB-A7r"/>
+                            <constraint firstItem="Txl-Zr-mlx" firstAttribute="centerY" secondItem="wUi-gw-wXc" secondAttribute="centerY" id="b5a-sr-b3k"/>
+                            <constraint firstItem="g4w-UX-Uhl" firstAttribute="top" secondItem="J1b-bT-NfO" secondAttribute="top" constant="106" id="dH4-G7-1LA"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="J1b-bT-NfO"/>
                     </view>
                     <connections>

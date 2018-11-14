@@ -24,6 +24,7 @@
 		2CA9111421869B8B00C6B624 /* AWSS3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA9111121869B8A00C6B624 /* AWSS3.swift */; };
 		2CA9111521869B8B00C6B624 /* Cognito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA9111221869B8A00C6B624 /* Cognito.swift */; };
 		2CA9111621869B8B00C6B624 /* AWSDeveloper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA9111321869B8B00C6B624 /* AWSDeveloper.swift */; };
+		2CDFF7A7219BB2E400FB8426 /* hygiea_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CDFF7A6219BB2E300FB8426 /* hygiea_logo.png */; };
 		2E4A2FD221940DD900CC52CA /* DynamoDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4A2FD121940DD900CC52CA /* DynamoDB.swift */; };
 		2E82810121950AA300556943 /* Boto3.py in Resources */ = {isa = PBXBuildFile; fileRef = 2E82810021950AA300556943 /* Boto3.py */; };
 		31102A01E62A35327F21EF77 /* Pods_HygieaWasteSortingAppIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46415E1BB1ABFBAADA9C467E /* Pods_HygieaWasteSortingAppIOSTests.framework */; };
@@ -68,6 +69,7 @@
 		2CA9111121869B8A00C6B624 /* AWSS3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWSS3.swift; sourceTree = "<group>"; };
 		2CA9111221869B8A00C6B624 /* Cognito.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cognito.swift; sourceTree = "<group>"; };
 		2CA9111321869B8B00C6B624 /* AWSDeveloper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWSDeveloper.swift; sourceTree = "<group>"; };
+		2CDFF7A6219BB2E300FB8426 /* hygiea_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hygiea_logo.png; sourceTree = "<group>"; };
 		2E4A2FD121940DD900CC52CA /* DynamoDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamoDB.swift; sourceTree = "<group>"; };
 		2E82810021950AA300556943 /* Boto3.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = Boto3.py; sourceTree = "<group>"; };
 		46415E1BB1ABFBAADA9C467E /* Pods_HygieaWasteSortingAppIOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HygieaWasteSortingAppIOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,6 +152,7 @@
 				2C95D780217965EC00A04143 /* LoginViewController.swift */,
 				2C95D7822179661A00A04143 /* ActIndicatorViewController.swift */,
 				2C95D7842179663200A04143 /* ResultViewController.swift */,
+				2CDFF7A8219BB2F100FB8426 /* Images */,
 			);
 			path = HygieaWasteSortingAppIOS;
 			sourceTree = "<group>";
@@ -170,6 +173,14 @@
 				2C95D77421780D7400A04143 /* Info.plist */,
 			);
 			path = HygieaWasteSortingAppIOSUITests;
+			sourceTree = "<group>";
+		};
+		2CDFF7A8219BB2F100FB8426 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2CDFF7A6219BB2E300FB8426 /* hygiea_logo.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 		44CB14B92A7E72C5B98E0321 /* Frameworks */ = {
@@ -304,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C95D75D21780D7300A04143 /* LaunchScreen.storyboard in Resources */,
+				2CDFF7A7219BB2E400FB8426 /* hygiea_logo.png in Resources */,
 				2C95D75A21780D7300A04143 /* Assets.xcassets in Resources */,
 				2E82810121950AA300556943 /* Boto3.py in Resources */,
 				2C95D75521780D4A00A04143 /* Main.storyboard in Resources */,
