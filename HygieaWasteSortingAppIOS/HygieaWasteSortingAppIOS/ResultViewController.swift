@@ -10,6 +10,10 @@ import UIKit
 
 class ResultViewController: UIViewController {
     
+    
+    @IBOutlet weak var viewText: UILabel!
+    var loadView = ActIndicatorViewController()
+    
     @IBAction func SendToCompost(_ sender: UIButton) {
         //sends image to compost folder
     }
@@ -27,7 +31,7 @@ class ResultViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.viewText.text = loadView.resultTxt
         // Do any additional setup after loading the view.
     }
     
