@@ -250,3 +250,68 @@ ddb.deleteTable(params, function(err, data) {
     }
 });
 
+### ADDING ITEMS INTO TABLE : COMPOST ###
+
+var AWS = require('aws-sdk');
+AWS.config.update({region: 'us-west-2'});
+
+var docClient = new AWS.DynamoDB.DocumentClient({apiVersion: '2018-11-15'});
+
+var params = {
+    TableName: 'Compost',
+    Item: {
+        'ITEM': LINK,
+    }
+};
+
+docClient.put(params, function(err, data) {
+    if (err) {
+        console.log("Error", err);
+    } else {
+        console.log("Success", data);
+    }
+});
+
+### ADDING ITEMS INTO TABLE : RECYCLE ###
+
+var AWS = require('aws-sdk');
+AWS.config.update({region: 'us-west-2'});
+
+var docClient = new AWS.DynamoDB.DocumentClient({apiVersion: '2018-11-15'});
+
+var params = {
+    TableName: 'Recycle',
+    Item: {
+        'ITEM': LINK,
+    }
+};
+
+docClient.put(params, function(err, data) {
+    if (err) {
+        console.log("Error", err);
+    } else {
+        console.log("Success", data);
+    }
+});
+
+### ADDING ITEMS INTO TABLE : UNLABELED ###
+
+var AWS = require('aws-sdk');
+AWS.config.update({region: 'us-west-2'});
+
+var docClient = new AWS.DynamoDB.DocumentClient({apiVersion: '2018-11-15'});
+
+var params = {
+    TableName: 'Unlabled',
+    Item: {
+        'ITEM': LINK,
+    }
+};
+
+docClient.put(params, function(err, data) {
+    if (err) {
+        console.log("Error", err);
+    } else {
+        console.log("Success", data);
+    }
+});
