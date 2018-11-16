@@ -315,3 +315,63 @@ docClient.put(params, function(err, data) {
         console.log("Success", data);
     }
 });
+
+### GETTING ITEM : COMPOST ###
+
+var AWS = require('aws-sdk');
+AWS.config.update({region: 'us-west-2'});
+
+var docClient = new AWS.DynamoDB.DocumentClient({apiVersion: '2018-11-16'});
+
+var params = {
+    TableName: 'Compost',
+    Key: {'KEY': LINK}
+};
+
+docClient.get(params, function(err, data) {
+    if (err) {
+        console.log("Error", err);
+    } else {
+        console.log("Success", data.Item);
+    }
+});
+
+### GETTING ITEM : RECYCLE ###
+
+var AWS = require('aws-sdk');
+AWS.config.update({region: 'us-west-2'});
+
+var docClient = new AWS.DynamoDB.DocumentClient({apiVersion: '2018-11-16'});
+
+var params = {
+    TableName: 'Recycle',
+    Key: {'KEY': LINK}
+};
+
+docClient.get(params, function(err, data) {
+    if (err) {
+        console.log("Error", err);
+    } else {
+        console.log("Success", data.Item);
+    }
+});
+
+### GETTING ITEM : UNLABELED ###
+
+var AWS = require('aws-sdk');
+AWS.config.update({region: 'us-west-2'});
+
+var docClient = new AWS.DynamoDB.DocumentClient({apiVersion: '2018-11-16'});
+
+var params = {
+    TableName: 'Unlabeled',
+    Key: {'KEY': LINK}
+};
+
+docClient.get(params, function(err, data) {
+    if (err) {
+        console.log("Error", err);
+    } else {
+        console.log("Success", data.Item);
+    }
+});
