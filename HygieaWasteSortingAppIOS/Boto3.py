@@ -375,3 +375,87 @@ docClient.get(params, function(err, data) {
         console.log("Success", data.Item);
     }
 });
+
+### UPDATING ITEMS : Compost ###
+
+var AWS = require('aws-sdk');
+AWS.config.update({region: 'us-west-2'});
+
+var docClient = new AWS.DynamoDB.DocumentClient({apiVersion: '2018-11-19'});
+
+var link = LINK;
+
+var params = {
+    TableName: 'Compost',
+    Key: {
+        'Link' : LINK,
+    },
+    UpdateExpression: 'set Link = :l,
+    ExpressionAttributeValues: {
+        ':l' : 'NEW_LINK',
+    }
+};
+
+docClient.update(params, function(err, data) {
+     if (err) {
+        console.log("Error", err);
+     } else {
+        console.log("Success", data);
+     }
+});
+
+### UPDATING ITEMS : RECYCLE ###
+
+var AWS = require('aws-sdk');
+AWS.config.update({region: 'us-west-2'});
+
+var docClient = new AWS.DynamoDB.DocumentClient({apiVersion: '2018-11-19'});
+
+var link = LINK;
+
+var params = {
+    TableName: 'Recycle',
+    Key: {
+        'Link' : LINK,
+    },
+    UpdateExpression: 'set Link = :l,
+    ExpressionAttributeValues: {
+        ':l' : 'NEW_LINK',
+}
+};
+
+docClient.update(params, function(err, data) {
+     if (err) {
+        console.log("Error", err);
+     } else {
+        console.log("Success", data);
+     }
+});
+
+### UPDATING ITEMS : UNLABELED ###
+
+var AWS = require('aws-sdk');
+AWS.config.update({region: 'us-west-2'});
+
+var docClient = new AWS.DynamoDB.DocumentClient({apiVersion: '2018-11-19'});
+
+var link = LINK;
+
+var params = {
+    TableName: 'Unlabeled',
+    Key: {
+        'Link' : LINK,
+    },
+    UpdateExpression: 'set Link = :l,
+    ExpressionAttributeValues: {
+        ':l' : 'NEW_LINK',
+}
+};
+
+docClient.update(params, function(err, data) {
+     if (err) {
+        console.log("Error", err);
+     } else {
+        console.log("Success", data);
+     }
+});
