@@ -209,7 +209,7 @@ ddb.listTables({Limit: 3}, function(err, data) {
     }
 });
 
-### DESCRIBING ###
+### DESCRIBING : COMPOST ###
 
 var AWS = require('aws-sdk');
 AWS.config.update({region: 'us-west-2'});
@@ -217,7 +217,7 @@ AWS.config.update({region: 'us-west-2'});
 ddb = new AWS.DynamoDB({apiVersion: '2018-11-13'});
 
 var params = {
-    TableName: process.argv[2]
+    Compost: process.argv[2]
 };
 
 ddb.listTables({Limit: 3}, function(err, data) {
@@ -228,12 +228,49 @@ ddb.listTables({Limit: 3}, function(err, data) {
     }
 });
 
+### DESCRIBING : RECYCLE ###
+
+var AWS = require('aws-sdk');
+AWS.config.update({region: 'us-west-2'});
+
+ddb = new AWS.DynamoDB({apiVersion: '2018-11-13'});
+
+var params = {
+    Recyle: process.argv[2]
+};
+
+ddb.listTables({Limit: 3}, function(err, data) {
+   if (err) {
+        console.log("Error", err.code);
+   } else {
+        console.log("Success", data.Table.KeySchema);
+   }
+});
+
+### DESCRIBING : UNLABELED ###
+
+var AWS = require('aws-sdk');
+AWS.config.update({region: 'us-west-2'});
+
+ddb = new AWS.DynamoDB({apiVersion: '2018-11-13'});
+
+var params = {
+    Unlabled: process.argv[2]
+};
+
+ddb.listTables({Limit: 3}, function(err, data) {
+   if (err) {
+        console.log("Error", err.code);
+   } else {
+        console.log("Success", data.Table.KeySchema);
+   }
+});
+
 ### DELETING ###
 
 var AWS = require('aws-sdk');
 AWS.config.update({region: 'us-west-2'});
 
-// Create the DynamoDB service object
 ddb = new AWS.DynamoDB({apiVersion: '2018-11-13'});
 
 var params = {
