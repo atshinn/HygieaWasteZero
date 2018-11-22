@@ -266,7 +266,7 @@ ddb.listTables({Limit: 3}, function(err, data) {
    }
 });
 
-### DELETING ###
+### DELETING : COMPOST ###
 
 var AWS = require('aws-sdk');
 AWS.config.update({region: 'us-west-2'});
@@ -274,7 +274,49 @@ AWS.config.update({region: 'us-west-2'});
 ddb = new AWS.DynamoDB({apiVersion: '2018-11-13'});
 
 var params = {
-    TableName: process.argv[2]
+    Compost: process.argv[2]
+};
+
+ddb.deleteTable(params, function(err, data) {
+    if (err && err.code === 'ResourceNotFoundException') {
+        console.log("Error: Table not found");
+    } else if (err && err.code === 'ResourceInUseException') {
+        console.log("Error: Table in use");
+    } else {
+        console.log("Success", data);
+    }
+});
+
+### DELETING : RECYCLE ###
+
+var AWS = require('aws-sdk');
+AWS.config.update({region: 'us-west-2'});
+
+ddb = new AWS.DynamoDB({apiVersion: '2018-11-13'});
+
+var params = {
+    Recycle: process.argv[2]
+};
+
+ddb.deleteTable(params, function(err, data) {
+    if (err && err.code === 'ResourceNotFoundException') {
+        console.log("Error: Table not found");
+    } else if (err && err.code === 'ResourceInUseException') {
+        console.log("Error: Table in use");
+    } else {
+        console.log("Success", data);
+    }
+});
+
+### DELETING : UNLABELED ###
+
+var AWS = require('aws-sdk');
+AWS.config.update({region: 'us-west-2'});
+
+ddb = new AWS.DynamoDB({apiVersion: '2018-11-13'});
+
+var params = {
+    Unlabled: process.argv[2]
 };
 
 ddb.deleteTable(params, function(err, data) {
