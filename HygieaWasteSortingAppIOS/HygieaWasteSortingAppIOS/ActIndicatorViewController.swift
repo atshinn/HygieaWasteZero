@@ -52,6 +52,9 @@ class ActIndicatorViewController: UIViewController {
             DispatchQueue.main.async(execute: {
                 // Do something e.g. Alert a user for transfer completion.
                 // On failed uploads, `error` contains the error object.
+                self.resultTxt = fileString
+                //self.activity.stopAnimating()
+                self.performSegue(withIdentifier: "ResultViewSegue", sender: nil)
             })
         }
         
@@ -73,9 +76,9 @@ class ActIndicatorViewController: UIViewController {
                                     }
 
                                     if let _ = task.result {
-                                        self.resultTxt = fileString
+                                        //self.resultTxt = fileString
                                         //self.activity.stopAnimating()
-                                        self.performSegue(withIdentifier: "ResultViewSegue", sender: nil)
+                                        //self.performSegue(withIdentifier: "ResultViewSegue", sender: nil)
                                     }
                                     return nil;
         }
