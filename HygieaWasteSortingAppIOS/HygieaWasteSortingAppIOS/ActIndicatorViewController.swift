@@ -74,7 +74,7 @@ class ActIndicatorViewController: UIViewController {
 
                                     if let _ = task.result {
                                         self.resultTxt = fileString
-                                        self.activity.stopAnimating()
+                                        //self.activity.stopAnimating()
                                         self.performSegue(withIdentifier: "ResultViewSegue", sender: nil)
                                     }
                                     return nil;
