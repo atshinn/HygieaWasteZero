@@ -93,7 +93,7 @@ key = os.environ['Unlabeled']
 var AWS = require('aws-sdk');
 AWS.config.update({region: 'us-west-2'});
 
-ddb = new AWS.DynamoDB({apiVersion: '2018-11-09'});
+ddb = new AWS.DynamoDB({apiVersion: 'Version 1'});
 
 ### COMPOST ###
 
@@ -199,7 +199,7 @@ ddb.createTable(params, function(err, data) {
 var AWS = require('aws-sdk');
 AWS.config.update({region: 'us-west-2'});
 
-ddb = new AWS.DynamoDB({apiVersion: '2018-11-13'});
+ddb = new AWS.DynamoDB({apiVersion: 'Version 1'});
 
 ddb.listTables({Limit: 3}, function(err, data) {
     if (err) {
@@ -214,7 +214,7 @@ ddb.listTables({Limit: 3}, function(err, data) {
 var AWS = require('aws-sdk');
 AWS.config.update({region: 'us-west-2'});
 
-ddb = new AWS.DynamoDB({apiVersion: '2018-11-13'});
+ddb = new AWS.DynamoDB({apiVersion: 'Version 1'});
 
 var params = {
     Compost: process.argv[2]
@@ -233,7 +233,7 @@ ddb.listTables({Limit: 3}, function(err, data) {
 var AWS = require('aws-sdk');
 AWS.config.update({region: 'us-west-2'});
 
-ddb = new AWS.DynamoDB({apiVersion: '2018-11-13'});
+ddb = new AWS.DynamoDB({apiVersion: 'Version 1'});
 
 var params = {
     Recyle: process.argv[2]
@@ -252,7 +252,7 @@ ddb.listTables({Limit: 3}, function(err, data) {
 var AWS = require('aws-sdk');
 AWS.config.update({region: 'us-west-2'});
 
-ddb = new AWS.DynamoDB({apiVersion: '2018-11-13'});
+ddb = new AWS.DynamoDB({apiVersion: 'Version 1'});
 
 var params = {
     Unlabled: process.argv[2]
@@ -271,7 +271,7 @@ ddb.listTables({Limit: 3}, function(err, data) {
 var AWS = require('aws-sdk');
 AWS.config.update({region: 'us-west-2'});
 
-ddb = new AWS.DynamoDB({apiVersion: '2018-11-13'});
+ddb = new AWS.DynamoDB({apiVersion: 'Version 1'});
 
 var params = {
     Compost: process.argv[2]
@@ -292,7 +292,7 @@ ddb.deleteTable(params, function(err, data) {
 var AWS = require('aws-sdk');
 AWS.config.update({region: 'us-west-2'});
 
-ddb = new AWS.DynamoDB({apiVersion: '2018-11-13'});
+ddb = new AWS.DynamoDB({apiVersion: 'Version 1'});
 
 var params = {
     Recycle: process.argv[2]
@@ -313,7 +313,7 @@ ddb.deleteTable(params, function(err, data) {
 var AWS = require('aws-sdk');
 AWS.config.update({region: 'us-west-2'});
 
-ddb = new AWS.DynamoDB({apiVersion: '2018-11-13'});
+ddb = new AWS.DynamoDB({apiVersion: 'Version 1'});
 
 var params = {
     Unlabled: process.argv[2]
@@ -334,7 +334,7 @@ ddb.deleteTable(params, function(err, data) {
 var AWS = require('aws-sdk');
 AWS.config.update({region: 'us-west-2'});
 
-var docClient = new AWS.DynamoDB.DocumentClient({apiVersion: '2018-11-15'});
+var docClient = new AWS.DynamoDB.DocumentClient({apiVersion: 'Version 1'});
 
 var params = {
     TableName: 'Compost',
@@ -356,7 +356,7 @@ docClient.put(params, function(err, data) {
 var AWS = require('aws-sdk');
 AWS.config.update({region: 'us-west-2'});
 
-var docClient = new AWS.DynamoDB.DocumentClient({apiVersion: '2018-11-15'});
+var docClient = new AWS.DynamoDB.DocumentClient({apiVersion: 'Version 1'});
 
 var params = {
     TableName: 'Recycle',
@@ -378,7 +378,7 @@ docClient.put(params, function(err, data) {
 var AWS = require('aws-sdk');
 AWS.config.update({region: 'us-west-2'});
 
-var docClient = new AWS.DynamoDB.DocumentClient({apiVersion: '2018-11-15'});
+var docClient = new AWS.DynamoDB.DocumentClient({apiVersion: 'Version 1'});
 
 var params = {
     TableName: 'Unlabled',
@@ -400,7 +400,7 @@ docClient.put(params, function(err, data) {
 var AWS = require('aws-sdk');
 AWS.config.update({region: 'us-west-2'});
 
-var docClient = new AWS.DynamoDB.DocumentClient({apiVersion: '2018-11-16'});
+var docClient = new AWS.DynamoDB.DocumentClient({apiVersion: 'Version 1'});
 
 var params = {
     TableName: 'Compost',
@@ -420,7 +420,7 @@ docClient.get(params, function(err, data) {
 var AWS = require('aws-sdk');
 AWS.config.update({region: 'us-west-2'});
 
-var docClient = new AWS.DynamoDB.DocumentClient({apiVersion: '2018-11-16'});
+var docClient = new AWS.DynamoDB.DocumentClient({apiVersion: 'Version 1'});
 
 var params = {
     TableName: 'Recycle',
@@ -440,7 +440,7 @@ docClient.get(params, function(err, data) {
 var AWS = require('aws-sdk');
 AWS.config.update({region: 'us-west-2'});
 
-var docClient = new AWS.DynamoDB.DocumentClient({apiVersion: '2018-11-16'});
+var docClient = new AWS.DynamoDB.DocumentClient({apiVersion: 'Version 1'});
 
 var params = {
     TableName: 'Unlabeled',
@@ -460,7 +460,7 @@ docClient.get(params, function(err, data) {
 var AWS = require('aws-sdk');
 AWS.config.update({region: 'us-west-2'});
 
-var docClient = new AWS.DynamoDB.DocumentClient({apiVersion: '2018-11-19'});
+var docClient = new AWS.DynamoDB.DocumentClient({apiVersion: 'Version 1'});
 
 var link = LINK;
 
@@ -488,7 +488,7 @@ docClient.update(params, function(err, data) {
 var AWS = require('aws-sdk');
 AWS.config.update({region: 'us-west-2'});
 
-var docClient = new AWS.DynamoDB.DocumentClient({apiVersion: '2018-11-19'});
+var docClient = new AWS.DynamoDB.DocumentClient({apiVersion: 'Version 1'});
 
 var link = LINK;
 
@@ -516,7 +516,7 @@ docClient.update(params, function(err, data) {
 var AWS = require('aws-sdk');
 AWS.config.update({region: 'us-west-2'});
 
-var docClient = new AWS.DynamoDB.DocumentClient({apiVersion: '2018-11-19'});
+var docClient = new AWS.DynamoDB.DocumentClient({apiVersion: 'Version 1'});
 
 var link = LINK;
 
