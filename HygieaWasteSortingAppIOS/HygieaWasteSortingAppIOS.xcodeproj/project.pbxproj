@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		11D036AD7C7A6AC6F39D3E51 /* Pods_HygieaWasteSortingAppIOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63D6C2F25E4B4E4C21BD36F9 /* Pods_HygieaWasteSortingAppIOSUITests.framework */; };
 		1FEC974CA5AF8FE9CAFAB240 /* Pods_HygieaWasteSortingAppIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B6BE38AC3E80FE26B38C7E /* Pods_HygieaWasteSortingAppIOS.framework */; };
+		2C6EC57321AE328800798DDB /* cameraicon.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 2C6EC57221AE328700798DDB /* cameraicon.PNG */; };
+		2C6EC57A21AE386F00798DDB /* recycleIcon.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 2C6EC57821AE386E00798DDB /* recycleIcon.JPG */; };
+		2C6EC57B21AE386F00798DDB /* composeIcon.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 2C6EC57921AE386E00798DDB /* composeIcon.JPG */; };
 		2C95D75021780D4A00A04143 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95D74F21780D4A00A04143 /* AppDelegate.swift */; };
 		2C95D75221780D4A00A04143 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95D75121780D4A00A04143 /* ViewController.swift */; };
 		2C95D75521780D4A00A04143 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C95D75321780D4A00A04143 /* Main.storyboard */; };
@@ -48,6 +51,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C6EC57221AE328700798DDB /* cameraicon.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cameraicon.PNG; sourceTree = "<group>"; };
+		2C6EC57821AE386E00798DDB /* recycleIcon.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = recycleIcon.JPG; sourceTree = "<group>"; };
+		2C6EC57921AE386E00798DDB /* composeIcon.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = composeIcon.JPG; sourceTree = "<group>"; };
 		2C95D74C21780D4A00A04143 /* HygieaWasteSortingAppIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HygieaWasteSortingAppIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C95D74F21780D4A00A04143 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C95D75121780D4A00A04143 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -178,6 +184,9 @@
 		2CDFF7A8219BB2F100FB8426 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				2C6EC57221AE328700798DDB /* cameraicon.PNG */,
+				2C6EC57821AE386E00798DDB /* recycleIcon.JPG */,
+				2C6EC57921AE386E00798DDB /* composeIcon.JPG */,
 				2CDFF7A6219BB2E300FB8426 /* hygiea_logo.png */,
 			);
 			path = Images;
@@ -315,9 +324,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C95D75D21780D7300A04143 /* LaunchScreen.storyboard in Resources */,
+				2C6EC57B21AE386F00798DDB /* composeIcon.JPG in Resources */,
 				2CDFF7A7219BB2E400FB8426 /* hygiea_logo.png in Resources */,
 				2C95D75A21780D7300A04143 /* Assets.xcassets in Resources */,
+				2C6EC57321AE328800798DDB /* cameraicon.PNG in Resources */,
 				2E82810121950AA300556943 /* Boto3.py in Resources */,
+				2C6EC57A21AE386F00798DDB /* recycleIcon.JPG in Resources */,
 				2C95D75521780D4A00A04143 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

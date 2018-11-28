@@ -48,6 +48,19 @@ class ActIndicatorViewController: UIViewController {
         }
         
         var completionHandler: AWSS3TransferUtilityUploadCompletionHandlerBlock?
+      
+        
+        
+        
+        
+        let transferUtility = AWSS3TransferUtility.default()
+        
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        let fileDate = formatter.string(from: Date())
+        let fileString = camView.pressedBtnString + fileDate
+        
+        
         completionHandler = { (task, error) -> Void in
             DispatchQueue.main.async(execute: {
                 // Do something e.g. Alert a user for transfer completion.
@@ -58,12 +71,8 @@ class ActIndicatorViewController: UIViewController {
             })
         }
         
-        let transferUtility = AWSS3TransferUtility.default()
         
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-        let fileDate = formatter.string(from: Date())
-        let fileString = camView.pressedBtnString + fileDate
+        
         transferUtility.uploadData(data,
                                    bucket: "hywz.wastezero",
                                    key: fileString,
@@ -82,6 +91,15 @@ class ActIndicatorViewController: UIViewController {
                                     }
                                     return nil;
         }
+        
+        
+        
+        
+        
+        
+        
+        
+        
     }
     
     /*
