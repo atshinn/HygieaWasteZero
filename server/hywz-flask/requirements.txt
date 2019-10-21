@@ -85,5 +85,5 @@ six==1.11.0
 tabulate==0.7.5
 termcolor==1.1.0
 urllib3==1.22
-Werkzeug==0.14.1
+Werkzeug==0.15.3
 xlrd==1.1.0
